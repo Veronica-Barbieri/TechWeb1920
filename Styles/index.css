@@ -1,0 +1,50 @@
+* {
+  margin: 0em;
+  padding: 0em;
+}
+.header {
+  width: 100%;
+}
+.nb-col1 {
+  display: inline-block;
+  width: 80%;
+}
+.nb-logo {
+  display: inline-block;
+  text-align: left;
+  width: 19%
+}
+.nb-login{
+  display: inline-block;
+  text-align: right;
+  width: 19%
+}
+.navbar {
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+}
+.nb-item {
+  display: inline-block;
+  margin: 0em 2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.singlepannel{
+  display: none;
+  width: 100%;
+}
+.carta{
+  display: inline-block;
+  width: 30%;
+}
+.active {
+  display: block;
+}
+
+#hot_decks {
+  display: inline-block;
+}

@@ -13,7 +13,8 @@
                                   mazzo, deck, regole" />
 
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
-
+  <link rel="stylesheet" href="Styles/index.css">
+  <script type="text/javascript" src="Scripts/home.js"></script>
 </head>
 
 <body>
@@ -37,40 +38,3 @@
     </a>
   </div>
 </body>
-
-<style media="screen">
-  * {
-    margin: 0em;
-    padding: 0em;
-  }
-  .header {
-    width: 100%;
-  }
-  .nb-col1 {
-    display: inline-block;
-    width: 80%;
-  }
-  .nb-logo {
-    display: inline-block;
-    text-align: left;
-    width: 19%
-  }
-  .nb-login{
-    display: inline-block;
-    text-align: right;
-    width: 19%
-  }
-  .navbar {
-    display: inline-block;
-    text-align: center;
-    width: 80%;
-  }
-  .nb-item {
-    display: inline-block;
-    margin: 0em 2em;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-</style>

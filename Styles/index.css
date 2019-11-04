@@ -1,0 +1,92 @@
+* {
+  margin: 0em;
+  padding: 0em;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+}
+.nb-col1 {
+  display: inline-block;
+  width: 80%;
+}
+.nb-logo , .nb-login{
+  display: inline-block;
+  text-align: left;
+  width: 19%
+}
+.nb-logo {
+  text-align: left;
+}
+.nb-login{
+  text-align: right;
+}
+.navbar {
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+}
+.nb-item {
+  display: inline-block;
+  margin: 0em 2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.singlepannel{
+  display: none;
+  width: 100%;
+}
+.carta{
+  display: inline-block;
+  width: 30%;
+}
+.active {
+  display: block;
+}
+
+#hot_decks {
+  display: inline-block;
+}
+/*Stile wiki carte*/
+.wiki_nav {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+.wiki {
+  border: 1px solid #000;
+}
+.card_box {
+  display: inline-block;
+  margin: 0.5em
+}
+fieldset {
+  margin-bottom: 1em;
+}
+legend {
+  font-size: 1.5em;
+}
+.color_checkbox, .src_col1, .src_col2 {
+  display: inline-block;
+}
+.src_col1, .src_col2 {
+  width: 49%;
+}
+.src_dropdown {
+  display: block;
+  width: 40%;
+}
+.color_checkbox img, .color_checkbox input, .src_col1, .src_col2 {
+  vertical-align: middle;
+}
+.src_dropdown, .color_checkbox, .input {
+  margin: 0.5em;
+}
+.current_page {
+  border: 1px solid #000;
+}

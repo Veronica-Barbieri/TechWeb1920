@@ -93,12 +93,15 @@
       </div>
     </div>
   </fieldset>
-  <input type="submit" value="Cerca">
+  <input type="submit" name="search_input" value="Cerca">
 </form>
 <div class="wiki_nav">
   <div class="wiki" id="wiki">
     <?php foreach ($cards as $key => $value) {
-      if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {?>
+      if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {
+        /*NOTA BENE : a causa dei controller dummy non ho un controllo su
+        $tot_cards mentre quando verranno implementate le query da database
+        $tot_cards e il numero di entry in $cards(key) saranno coerenti*/?>
         <div class="card_box">
         <img src="<?php echo $value["img"]; ?>" alt="<?php echo $value["nome"]; ?>">
         <p><?php echo $value["nome"]; ?></p>

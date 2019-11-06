@@ -26,7 +26,7 @@
       <!-- Rivedere gli href per i nomi delle pagine -->
       <ul class="navbar">
         <li class="nb-item"> <a class="nb-link" href="index.php" xml:lang="en">Home</a> </li>
-        <li class="nb-item"> <a class="nb-link" href="rules.php">Regole</a> </li>
+        <li class="nb-item"> <a class="nb-link" href="regole.php">Regole</a> </li>
         <li class="nb-item"> <a class="nb-link" href="cardwiki.php">Wiki Carte</a> </li>
         <li class="nb-item"> <a class="nb-link" href="deck_forum.php" xml:lang="en">Forum</a> </li>
         <li class="nb-item"> <a class="nb-link" href="contacts.php" xml:lang="en">About us</a> </li>

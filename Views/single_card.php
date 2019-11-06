@@ -1,4 +1,3 @@
-<body id="homepage">
 <div id="caratteristiche">
   <h1>Caratteristiche carta</h1>
   <ul>
@@ -14,4 +13,3 @@
   </ul>
   <img xml:lang="en" id="" src="Resources/carta1.jpg" >
 </div>
-</body>

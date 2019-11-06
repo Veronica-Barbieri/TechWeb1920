@@ -12,7 +12,6 @@
     <li>Numero carta</li>
     <li>Artista immagine</li>
   </ul>
-  <img xml:lang="en" id="" src="images/.jpeg" >
+  <img xml:lang="en" id="" src="Resources/carta1.jpg" >
 </div>
 </body>
-</html>

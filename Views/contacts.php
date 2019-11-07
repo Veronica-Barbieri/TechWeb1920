@@ -9,7 +9,7 @@
 
 <div class="box" id="form">
 	<h2><span xml:lang="en">Form </span>di contatto</h2>
-	<form action="email.php" method="post">
+	<form action="contacts.php" method="post">
 	Nome: <input type="text" name="nome">
 	Cognome: <input type="text" name="cognome"><br>
 	E-mail: <input type="text" name="email"><br>

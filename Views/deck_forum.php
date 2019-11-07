@@ -67,5 +67,7 @@
       </div>
     </div>
   </fieldset>
+  <input type="reset" name="reset" value="Resetta la ricerca">
   <input type="submit" value="Cerca">
+
 </form>

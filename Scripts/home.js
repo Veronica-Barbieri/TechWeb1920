@@ -3,3 +3,11 @@ function changeCards(pannelid){
   document.getElementById(pannelid).className = "singlepannel active";
 
 }
+
+function show(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function hide(id) {
+  document.getElementById(id).style.display = "none";
+}

@@ -90,3 +90,8 @@ legend {
 .current_page {
   border: 1px solid #000;
 }
+
+/*style pagina user*/
+.hidden {
+  display: none;
+}

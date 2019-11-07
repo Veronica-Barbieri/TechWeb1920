@@ -93,6 +93,7 @@
       </div>
     </div>
   </fieldset>
+  <input type="reset" name="reset" value="Resetta la ricerca">
   <input type="submit" name="search_input" value="Cerca">
 </form>
 <div class="wiki_nav">

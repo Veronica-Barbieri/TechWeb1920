@@ -14,10 +14,9 @@
 	<h1> Hot Decks </h1>
 	<?php foreach ($deck as $num => $value) { ?>
 		<div class="deck">
-			<p><?php echo $value["nome"] ?><p>
-			<p><?php echo $value["autore"] ?></p>
-			<p><?php echo $value["param"] ?></p>
-			<p><?php echo $value["note"] ?></p>
+			<p><?php echo $value["Nome"] ?><p>
+			<p><?php echo $value["Autore"] ?></p>
+			<p><?php echo $value["Tipo"] ?></p>
 		</div>
 	<?php } ?>
 </div>
@@ -25,20 +24,20 @@
 
 
 <div class="box" id="card_panel">
-	<h1>Collezzionale tutte!</h1>
+	<h1>Collezionale tutte!</h1>
 	<div class="color_container">
-		<?php foreach ($button as $key => $value) { ?>
+		<?php foreach ($trisample as $key => $value) { ?>
     <button type="button" name="button<?php echo $key ?>" onclick="changeCards('pannel<?php echo $key ?>')">
       Bottone <?php echo $key+1 ?>
     </button>
   <?php } ?>
   <div class="pannelcarte">
-    <?php foreach ($button as $key => $pannel) { ?>
+    <?php foreach ($trisample as $key => $pannel) { ?>
       <div class="singlepannel <?php echo "".($key==0) ? "active" : ""; ?> " id="pannel<?php echo $key ?>">
         <?php foreach ($pannel as $card) { ?>
           <div class="carta">
-            <h1><?php echo $card["titolo"]?></h1>
-            <img src="<?php echo $card["img"]?>" alt="<?php echo $card["alt"]?>">
+            <h1><?php echo $card["Nome"]?></h1>
+            <img src="<?php echo $card["Img_path"]?>" alt="<?php echo $card["Id"]?>">
 					</div>
         <?php } ?>
       </div>

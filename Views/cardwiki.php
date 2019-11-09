@@ -104,8 +104,8 @@
         $tot_cards mentre quando verranno implementate le query da database
         $tot_cards e il numero di entry in $cards(key) saranno coerenti*/?>
         <div class="card_box">
-        <img src="<?php echo $value["img"]; ?>" alt="<?php echo $value["nome"]; ?>">
-        <p><?php echo $value["nome"]; ?></p>
+        <img src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["nome"]; ?>">
+        <p><?php echo $value["Nome"]; ?></p>
         </div>
     <?php
       }

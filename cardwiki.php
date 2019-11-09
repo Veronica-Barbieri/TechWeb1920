@@ -4,7 +4,7 @@ $pagein = array(
   'Namepage' => 'Wiki delle carte'
 );
 
-  $disp_card = 12;
+  $disp_card = 10;
 
   //error_reporting (E_ALL);
   require_once ("Views/header.php");

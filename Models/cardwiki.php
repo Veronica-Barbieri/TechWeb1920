@@ -1,17 +1,36 @@
 <?php
 
+include 'DBconnection.php';
+
 if (intval($_GET["page"])) {
   $cur_page = intval($_GET["page"]);
 }else {
   $cur_page = 1;
 }
 
-$tot_cards = 25; /*da implementare il count con query su database*/
+$query_cards = Query("SELECT * FROM carta");
+
+while ($row = mysqli_fetch_assoc($query_cards))
+{
+  $result[] = $row;
+}
+
+$tot_cards = count($result); /*da implementare il count con query su database*/
 
 $num_pages = ($tot_cards % $disp_card)? intdiv($tot_cards, $disp_card)+1 : intdiv($tot_cards, $disp_card);
 
+$q_4cards = "SELECT Nome, Img_path FROM carta";
+
+//effettuo la query sul database usando la funzione Query che è stata definita nel file DBconnection
+$card_general = Query($q_4cards);
+
+//salvo in un array il risultato della mia query
+while ($row_card = mysqli_fetch_assoc($card_general)) {
+  $cards[] = $row_card;
+}
+
 /*da implementare la selezione delle carte con query su database*/
-$cards = array (
+/*$cards = array (
             array( //info carta singola
               "nome" => "carta1" ,
               "img" => "Resources/carta1.jpg"
@@ -112,5 +131,5 @@ $cards = array (
               "nome" => "carta25" ,
               "img" => "Resources/carta3.jpg"
             )
-        );
+        );*/
  ?>

@@ -1,100 +1,101 @@
+/*NOTA BENE: il popolamento è in stato PARZIALE e soggetto a modifiche*/
 USE TechWeb;
 DELETE FROM carte_in_mazzo;
 DELETE FROM mazzo;
 DELETE FROM user;
 DELETE FROM carta;
 /* Popolamento Tabella Carte */
-INSERT INTO carta(Nome, Costo_verde, Costo_rosso, Costo_blu, Costo_bianco, Costo_nero, Costo_nocolor, Tipo, Descrizione, Flavour_text, Edizione, Rarità, Artista, DEF, ATK, img_path) VALUES
-/*Id 1*/('Time Sieve', 0, 0, 1, 0, 1, 0, 'Artefatto', 'Sacrifice five artifacts: Take an extra turn
+INSERT INTO carta(Nome, Colore, Costo_verde, Costo_rosso, Costo_blu, Costo_bianco, Costo_nero, Costo_nocolor, Tipo, Descrizione, Flavour_text, Espansione, Rarita, Artista, DEF, ATK, img_path) VALUES
+/*Id 1*/('Time Sieve', 'Blu', 0, 0, 1, 0, 1, 0, 'Artefatto', 'Sacrifice five artifacts: Take an extra turn
   after this one.', '"Prego di non essere mai considerata vecchia o inutile" -- Sharuum Egemone',
   'Alara Reborn', 'Rara', 'Franz', NULL, NULL, 'Resources/carta1.jpg'),
 
-/*Id 2*/('Forest', NULL, NULL, NULL, NULL, NULL, NULL, 'Terra', NULL, NULL, 'Duel Decks',
+/*Id 2*/('Forest', 'Verde', NULL, NULL, NULL, NULL, NULL, NULL, 'Terra', NULL, NULL, 'Duel Decks',
   'Terra', 'John Avon', NULL, NULL, 'Resources/carta4.jpeg'),
 
-/*Id 3*/('Magmaw',0,2,0,0,0,3,'Creatura - Elementale','Sacrifice a nonland permanent:
+/*Id 3*/('Magmaw', 'Rosso',0,2,0,0,0,3,'Creatura','Sacrifice a nonland permanent:
   Magmaw deals 1 damage to any target.','"The purpose of existence is simple:
   everything is fuel for the magmaw." —Jaji, magmaw worshipper','Rise of the Eldrazi',
   'Rara','Karl Kopinski',4,4,'Resources/carta5.jpeg'),
 
-/*Id 4*/('Plant Elemental',1,0,0,0,0,1,'Creatura - Elementale Pianta','When Plant
+/*Id 4*/('Plant Elemental', 'Verde',1,0,0,0,0,1,'Creatura','When Plant
   Elemental enters the battlefield, sacrifice it unless you sacrifice a Forest.',
   NULL,'Portal','Non comune','Ted Naifeh',4,3,'Resources/carta6.jpeg'),
 
-/*Id 5*/('Barren Moor',NULL,NULL,NULL,NULL,NULL,NULL,'Terra','Barren Moor enters the
+/*Id 5*/('Barren Moor', 'Nero',NULL,NULL,NULL,NULL,NULL,NULL,'Terra','Barren Moor enters the
   battlefield tapped.','Commander 2018','Archenemy','Comune',' Heather Hudson',NULL,NULL,
   'Resources/carta7.png'),
 
-/*Id 6*/('Mind Raker',0,0,0,0,1,3,'Creatura - Eldrazi Processor','Devoid (This card has
+/*Id 6*/('Mind Raker', 'Nero',0,0,0,0,1,3,'Creatura','Devoid (This card has
   no color.) When Mind Raker enters the battlefield, you may put a card an
   opponent owns from exile into that player\'s graveyard. If you do, each
   opponent discards a card.','It consumes any dreams of victory.','Battle for
   Zendikar','Comune','Lius Lasahido',3,3,'Resources/carta8.png'),
 
-/*Id 7*/('Cabal Patriarch',0,0,0,0,3,3,'Legendary Creature — Human Wizard','(2+B) Sacrifice a
+/*Id 7*/('Cabal Patriarch', 'Nero',0,0,0,0,3,3,'Creatura','(2+B) Sacrifice a
   creature: Target creature gets -2/-2 until end of turn. (2+B) Exile a creature card
   from your graveyard: Target creature gets -2/-2 until end of turn.',NULL,'Odyssey',
   'Rara','Mark Zug',5,5,'Resources/carta9.jpeg'),
 
-/*Id 8*/('Oriss, Samite Guardian',0,0,2,0,1,0,' Legendary Creature — Human Cleric','Prevent
+/*Id 8*/('Oriss, Samite Guardian', 'Blu', 0,0,2,0,1,0,'Creatura','Prevent
   all damage that would be dealt to target creature this turn. Grandeur — Discard
   another card named Oriss, Samite Guardian: Target player can\'t cast spells
   this turn, and creatures that player controls can\'t attack this turn.',NULL,
   'Future Sight','Rara','Michael Komarck',3,1,'Resources/carta10.jpeg'),
 
-/*Id 9*/('Island', NULL, NULL, NULL, NULL, NULL, NULL, 'Terra', NULL, NULL, ' Throne of
+/*Id 9*/('Island', 'Verde', NULL, NULL, NULL, NULL, NULL, NULL, 'Terra', NULL, NULL, ' Throne of
   Eldraine','Terra', 'John Avon', NULL, NULL, 'Resources/carta11.png'),
 
-/*Id 10*/('Swamp', NULL, NULL, NULL, NULL, NULL, NULL, 'Palude', NULL, NULL, ' Throne of
+/*Id 10*/('Swamp', 'Verde', NULL, NULL, NULL, NULL, NULL, NULL, 'Palude', NULL, NULL, ' Throne of
   Eldraine','Terra', 'Paul Scott Canavan', NULL, NULL, 'Resources/carta12.png'),
 
-/*Id 11*/('Battle Mastery',0,0,0,1,0,2,'Enchantment — Aura','Enchant creature: Enchanted
+/*Id 11*/('Battle Mastery', 'Bianco', 0,0,0,1,0,2,'Incantesimo','Enchant creature: Enchanted
   creature has double strike. (It deals both first-strike and regular combat
   damage.)','"There is elegance in all the Ojutai do—even their killing."—Kirada
   , Silumgar enforcer','Battlebond','Non comune','Viktor Titov',NULL,NULL,
   'Resources/carta13.png'),
 
-/*Id 12*/('Cobra Trap',2,0,0,0,0,4,' Instant — Trap','If a noncreature permanent under
+/*Id 12*/('Cobra Trap', 'Verde',2,0,0,0,0,4,'Istantanea','If a noncreature permanent under
   your control was destroyed this turn by a spell or ability an opponent
   controlled, you may pay Green rather than pay this spell\'s mana cost. Create
   four 1/1 green Snake creature tokens.',NULL,' Magic: The Gathering-Commander',
   'Non comune','Scott Chou',NULL,NULL,'Resources/carta14.jpeg'),
 
-/*Id 13*/('Aerial Caravan',0,0,2,0,0,4,'Creature — Human Soldier','Flying (1+2B): Exile
+/*Id 13*/('Aerial Caravan','Bianco',0,0,2,0,0,4,'Creatura','Flying (1+2B): Exile
   the top card of your library. Until end of turn, you may play that card.
   (Reveal the card as you exile it.)','Successful delivery is not guaranteed.',
   'Mercadian Masques','Rara','DiTerlizzi',3,4,'Resources/carta15.jpeg'),
 
-/*Id 14*/('Act of Aggression', 0, 2, 0, 0, 0, 2, 'Istant', 'Gain control of target
+/*Id 14*/('Act of Aggression','Rosso', 0, 2, 0, 0, 0, 2, 'Istantanea', 'Gain control of target
   creature an opponent controls until the end of turn. Untap that creature. It gains
   haste until the end of the turn.', NULL, 'Commander 2015', 'Uncommon','Whit Brachna',
   NULL, NULL, 'Resources/carta16.jpg'),
 
-/*Id 15*/('Abbey Griffin', 0, 0, 0, 1, 0, 3, 'Creature — Griffin', 'Flying, vigilance',
+/*Id 15*/('Abbey Griffin','Bianco', 0, 0, 0, 1, 0, 3, 'Creatura', 'Flying, vigilance',
   'The darkness swarms with vampires and ghouls, but allies are not lacking. —
    Mikaeus, the Lunarca', 'Innistrad', 'Common', 'Jaime Jones', 2, 2, 'Resources/carta1.jpg'),
 
-/*Id 16*/('Alhammarret, High Arbiter', 0, 0, 2, 0, 0, 5, 'Legendary Creature — Sphinx', 'Flying.
+/*Id 16*/('Alhammarret, High Arbiter','Blu', 0, 0, 2, 0, 0, 5, 'Creatura', 'Flying.
   As Alhammarret, High Arbiter enters the battlefield, each opponent reveals their hand. You choose
   the name of a nonland card revealed this way. Your opponents can \'t cast spells with the chosen name
   (as long as this creature is on the battlefield).)', NULL, 'Magic Origins', 'Rare', 'Richard Wright',
   5, 5, "Resources/carta2.jpg"),
 
-/*Id 17*/('Anowon, the Ruin Sage', 0, 0, 0, 0, 2, 3, 'Legendary Creature — Vampire Shaman',
+/*Id 17*/('Anowon, the Ruin Sage','Nero', 0, 0, 0, 0, 2, 3, 'Creatura',
   'At the beginning of your upkeep, each player sacrifices a non-Vampire creature.', '"Too many have
   died looking for that map. And now here it is in the hands of the arrogant little girl Chandra Nalaar."',
   'Commander 2017', 'Rare', 'Dan Scott', 4, 3, 'Resources/carta3.jpg'),
 
-/*Id 18*/('Abundant Growth', 1, 0, 0, 0, 0, 0, 'Enchantment — Aura', 'Enchant land
+/*Id 18*/('Abundant Growth','Verde', 1, 0, 0, 0, 0, 0, 'Incantesimo', 'Enchant land
   When Abundant Growth enters the battlefield, draw a card. Enchanted land has
   Tap: Add one mana of any color.', NULL, 'Avacyn Restored', 'Common', 'Vincent Proce', NULL, NULL,
   "Resources/carta17.jpg"),
 
-/*Id 19*/('Acid Web Spider', 2, 0, 0, 0, 0, 3, 'Creature — Spider', 'Reach. When Acid Web Spider enters
+/*Id 19*/('Acid Web Spider','Verde', 2, 0, 0, 0, 0, 3, 'Creatura', 'Reach. When Acid Web Spider enters
   the battlefield, you may destroy target Equipment.', 'His canvas is an excellent source of molten
   copper for the brave or the foolish.', 'Scars of Mirrodin', 'Uncommon', 'Austin Hsu', 3, 5, 'Resources/carta18.jpg'),
 
-/*Id 20*/('Academy Drake', 0, 0, 1, 0, 0, 2, 'Creature — Drake', 'Kicker 4 (You may pay an additional 4 as you
+/*Id 20*/('Academy Drake','Blu', 0, 0, 1, 0, 0, 2, 'Creatura', 'Kicker 4 (You may pay an additional 4 as you
   cast this spell). Flying. If Academy Drake was kicked, it enters the battlefield with two +1/+1 counters on it.',
   NULL, 'Dominaria', 'Common', 'Svetlin Velinov', 2, 2, 'Resources/carta19.jpg');
 
@@ -119,7 +120,7 @@ INSERT INTO mazzo (Nome,Autore,Tipo,Colore_verde,Colore_rosso,Colore_blu,Colore_
 ('Mazeura\'s Nightmares','usr2','Mono Black Sacrifice',0,0,0,1,0,0);/*Id 8*/
 
 /*Popolamento Tabella carte_in_mazzo*/
-INSERT INTO carte_in_mazzo (Id_mazzo,Id_carta,Q_tà) VALUES
+INSERT INTO carte_in_mazzo (Id_mazzo,Id_carta,Q_ta) VALUES
 /*mazzo 1*/
 (1,1,1),
 (1,2,3),

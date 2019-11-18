@@ -9,7 +9,6 @@
   require_once ("Views/header.php");
   require_once ("Models/deck_forum.php");
   require_once ("Views/deck_forum.php");
-  require_once ("Views/deck_view.php");
   require_once ("Views/footer.php");
 
  ?>

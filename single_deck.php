@@ -1,6 +1,6 @@
 <?php
   $pagein = array(
-    'Namepage' => ''
+    'Namepage' => $_GET["name"]
   );
 
   require_once ("Views/header.php");

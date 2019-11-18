@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL && ~E_NOTICE);
 include 'DBconnection.php';
 
 if (intval($_GET["page"])) {
@@ -21,6 +21,35 @@ $num_pages = ($tot_cards % $disp_card)? intdiv($tot_cards, $disp_card)+1 : intdi
 
 $q_4cards = "SELECT Nome, Img_path FROM carta";
 
+//manipolazione array posix_get
+if($_GET) {
+  $aux_get = array();
+  if($_GET["nomecarta"] && $_GET["nomecarta"]!="") $aux_get["Nome"] = $_GET["nomecarta"];
+  if($_GET["bianco"]) $aux_get["bianco"] = "Bianco";
+  if($_GET["blu"]) $aux_get["blu"] =  "Blu";
+  if($_GET["nero"]) $aux_get["nero"] = "Nero";
+  if($_GET["rosso"]) $aux_get["rosso"] = "Rosso";
+  if($_GET["verde"]) $aux_get["verde"] = "Verde";
+}
+
+if ($aux_get && $aux_get != "") $q_4cards .= " WHERE ";
+if ($aux_get["Nome"]) {
+  $q_4cards = $q_4cards.'Nome="'.$aux_get["Nome"].'"';
+  foreach ($aux_get as $key => $value) {
+    if($key != "Nome") {
+      $q_4cards = $q_4cards.' OR Colore="'.$value.'"';
+    }
+  }
+} else {
+  foreach ($aux_get as $value) {
+    if($value != end($aux_get)) {
+      $q_4cards = $q_4cards.'Colore="'.$value.'" OR ';
+    } else {
+      $q_4cards = $q_4cards.'Colore="'.$value.'"';
+    }
+  }
+}
+
 //effettuo la query sul database usando la funzione Query che è stata definita nel file DBconnection
 $card_general = Query($q_4cards);
 
@@ -29,107 +58,8 @@ while ($row_card = mysqli_fetch_assoc($card_general)) {
   $cards[] = $row_card;
 }
 
-/*da implementare la selezione delle carte con query su database*/
-/*$cards = array (
-            array( //info carta singola
-              "nome" => "carta1" ,
-              "img" => "Resources/carta1.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta2" ,
-              "img" => "Resources/carta2.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta3" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta4" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta5" ,
-              "img" => "Resources/carta1.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta6" ,
-              "img" => "Resources/carta1.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta7" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta8" ,
-              "img" => "Resources/carta2.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta9" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta10" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta11" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta12" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta13" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta14" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta15" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta16" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta17" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta18" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta19" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta20" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta21" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta22" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta23" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta24" ,
-              "img" => "Resources/carta3.jpg"
-            ),
-            array( //info carta singola
-              "nome" => "carta25" ,
-              "img" => "Resources/carta3.jpg"
-            )
-        );*/
+$tot_cards = count($cards); /*da implementare il count con query su database*/
+
+$num_pages = ($tot_cards % $disp_card)? intdiv($tot_cards, $disp_card)+1 : intdiv($tot_cards, $disp_card);
+
  ?>

@@ -1,4 +1,4 @@
-<form class="src_form" action="cardwiki.php" method="get"><!-- da implementare la gestione del form -->
+<form class="src_form" action="cardwiki.php?<?php echo http_build_query($_GET); ?>" method="get"><!-- da implementare la gestione del form -->
   <fieldset class="src_col1">
     <legend for="filter">Cerca la tua carta:</legend>
     <div class="src_field_group">
@@ -10,35 +10,35 @@
         <label for="color">
           <img src="Resources/White_Mana.png" alt="Bianco">
         </label>
-        <input type="checkbox" name="color" value="Bianco">
+        <input type="checkbox" name="bianco" value="1">
       </div>
       <div class="color_checkbox">
         <label for="color">
           <img src="Resources/Blue_Mana.png" alt="Blu">
         </label>
-        <input type="checkbox" name="color" value="Blu">
+        <input type="checkbox" name="blu" value="1">
       </div>
       <div class="color_checkbox">
         <label for="color">
           <img src="Resources/Black_Mana.png" alt="Nero">
         </label>
-        <input type="checkbox" name="color" value="Nero">
+        <input type="checkbox" name="nero" value="1">
       </div>
       <div class="color_checkbox">
         <label for="color">
           <img src="Resources/Red_Mana.png" alt="Rosso">
         </label>
-        <input type="checkbox" name="color" value="Rosso">
+        <input type="checkbox" name="rosso" value="1">
       </div>
       <div class="color_checkbox">
         <label for="color">
           <img src="Resources/Green_Mana.png" alt="Verde">
         </label>
-        <input type="checkbox" name="color" value="Verde">
+        <input type="checkbox" name="verde" value="1">
       </div>
     </div>
   </fieldset>
-  <fieldset class="src_col2">
+  <!--<fieldset class="src_col2">
     <legend for="filter">Filtra per:</legend>
     <div class="src_field_group">
       <div class="src_dropdown_group">
@@ -92,10 +92,13 @@
         </select>
       </div>
     </div>
-  </fieldset>
+  </fieldset>-->
   <input type="reset" name="reset" value="Resetta la ricerca">
   <input type="submit" name="search_input" value="Cerca">
 </form>
+
+
+
 <div class="wiki_nav">
   <div class="wiki" id="wiki">
     <?php foreach ($cards as $key => $value) {
@@ -113,23 +116,23 @@
   </div>
   <div class="btn_box">
     <?php if ($num_pages>=2) {?>
-      <a href="cardwiki.php?page=1"> <span class="fas fa-angle-double-left"></span> </a>
+      <a href="cardwiki.php?page=1<?php echo "&".http_build_query($_GET); ?>"> <span class="fas fa-angle-double-left"></span> </a>
     <?php }
     if ($cur_page>1) {?>
       <a href="cardwiki.php?page=<?php echo $cur_page-1; ?>"> <span class="fas fa-angle-left"></span> </a>
     <?php }
     if ($cur_page>2) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page-2; ?>"><?php echo $cur_page-2; ?></a>
+      <a href="cardwiki.php?page=<?php echo $cur_page-2; ?>"></a>
     <?php }
     if ($cur_page>1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page-1; ?>"><?php echo $cur_page-1; ?></a>
+      <a href="cardwiki.php?page=<?php echo $cur_page-1; ?>"</a>
     <?php } ?>
     <a href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
     <?php if ($num_pages-$cur_page>=1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page+1; ?>"><?php echo $cur_page+1; ?></a>
+      <a href="cardwiki.php?page=<?php echo $cur_page+1; ?>"</a>
     <?php }
     if ($num_pages-$cur_page>=2) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page+2; ?>"><?php echo $cur_page+2; ?></a>
+      <a href="cardwiki.php?page=<?php echo $cur_page+2; ?>"</a>
     <?php }
     if ($num_pages-$cur_page>=1) {?>
       <a href="cardwiki.php?page=<?php echo $cur_page+1; ?>"> <span class="fas fa-angle-right"></span> </a>

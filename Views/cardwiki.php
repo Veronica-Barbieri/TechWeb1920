@@ -102,10 +102,7 @@
 <div class="wiki_nav">
   <div class="wiki" id="wiki">
     <?php foreach ($cards as $key => $value) {
-      if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {
-        /*NOTA BENE : a causa dei controller dummy non ho un controllo su
-        $tot_cards mentre quando verranno implementate le query da database
-        $tot_cards e il numero di entry in $cards(key) saranno coerenti*/?>
+      if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {?>
         <div class="card_box">
         <img src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>">
         <a href="single_card.php?id=<?php echo $value["Id"] ?>&name=<?php echo $value["Nome"] ?>"><?php echo $value["Nome"]; ?></a>

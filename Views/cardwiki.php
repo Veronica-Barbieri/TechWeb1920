@@ -1,4 +1,4 @@
-<form class="src_form" action="cardwiki.php?<?php echo http_build_query($_GET); ?>" method="get"><!-- da implementare la gestione del form -->
+<form class="src_form" action="cardwiki.php" method="get"><!-- da implementare la gestione del form -->
   <fieldset class="src_col1">
     <legend for="filter">Cerca la tua carta:</legend>
     <div class="src_field_group">
@@ -114,31 +114,31 @@
       }
     } ?>
   </div>
-  <div class="btn_box">
+  <div class="btn_box"><!-- da fare in modo che se non ho le prime 2 / 1 pagina stampo ache la 4* e 5* -->
     <?php if ($num_pages>=2) {?>
-      <a href="cardwiki.php?page=1<?php echo "&".http_build_query($_GET); ?>"> <span class="fas fa-angle-double-left"></span> </a>
+      <a href="cardwiki.php?page=1<?php echo '&'.http_build_query($_GET); ?>"> <span class="fas fa-angle-double-left"></span> </a>
     <?php }
     if ($cur_page>1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page-1; ?>"> <span class="fas fa-angle-left"></span> </a>
+      <a href="cardwiki.php?page=<?php echo $cur_page-1; echo '&'.http_build_query($_GET);?>"> <span class="fas fa-angle-left"></span> </a>
     <?php }
     if ($cur_page>2) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page-2; ?>"></a>
+      <a href="cardwiki.php?page=<?php echo $cur_page-2; echo '&'.http_build_query($_GET);?>"><?php echo $cur_page-2; ?></a>
     <?php }
     if ($cur_page>1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page-1; ?>"</a>
+      <a href="cardwiki.php?page=<?php echo $cur_page-1; echo '&'.http_build_query($_GET);?>"><?php echo $cur_page-1; ?></a>
     <?php } ?>
     <a href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
     <?php if ($num_pages-$cur_page>=1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page+1; ?>"</a>
+      <a href="cardwiki.php?page=<?php echo $cur_page+1; echo '&'.http_build_query($_GET);?>"><?php echo $cur_page+1; ?></a>
     <?php }
     if ($num_pages-$cur_page>=2) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page+2; ?>"</a>
+      <a href="cardwiki.php?page=<?php echo $cur_page+2; echo '&'.http_build_query($_GET);?>"><?php echo $cur_page+2; ?></a>
     <?php }
     if ($num_pages-$cur_page>=1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page+1; ?>"> <span class="fas fa-angle-right"></span> </a>
+      <a href="cardwiki.php?page=<?php echo $cur_page+1; echo '&'.http_build_query($_GET);?>"> <span class="fas fa-angle-right"></span> </a>
     <?php }
     if ($num_pages>=2) {?>
-      <a href="cardwiki.php?page=<?php echo $num_pages; ?>"> <span class="fas fa-angle-double-right"></span> </a>
+      <a href="cardwiki.php?page=<?php echo $num_pages; echo '&'.http_build_query($_GET);?>"> <span class="fas fa-angle-double-right"></span> </a>
     <?php } ?>
   </div>
 </div>

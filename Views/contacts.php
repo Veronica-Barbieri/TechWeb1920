@@ -12,9 +12,9 @@
 	<form action="contacts.php" method="post">
 	Nome: <input type="text" name="nome">
 	Cognome: <input type="text" name="cognome"><br>
-	E-mail: <input type="text" name="email"><br>
+	E-mail: <input type="email" name="email"><br>
 	Oggetto: <input type="text" name="oggetto"><br>
-	<input type="text" name="testo"><br>
+	Commento: <textarea input type="text" name="testo" placeholder="Scrivi qui il tuo commento"></textarea><br>
 	<input type="submit">
 	</form>
 </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Nov 18, 2019 alle 14:27
+-- Creato il: Nov 19, 2019 alle 12:23
 -- Versione del server: 5.7.17
 -- Versione PHP: 7.1.3
 
@@ -61,11 +61,11 @@ INSERT INTO `carta` (`Id`, `Nome`, `Colore`, `Costo_verde`, `Costo_rosso`, `Cost
 (5, 'Barren Moor', 'Nero', NULL, NULL, NULL, NULL, NULL, NULL, 'Terra', 'Barren Moor enters the\n  battlefield tapped.', 'Commander 2018', 'Archenemy', 'Comune', ' Heather Hudson', NULL, NULL, 'Resources/carta7.png'),
 (6, 'Mind Raker', 'Nero', 0, 0, 0, 0, 1, 3, 'Creatura', 'Devoid (This card has\n  no color.) When Mind Raker enters the battlefield, you may put a card an\n  opponent owns from exile into that player\'s graveyard. If you do, each\n  opponent discards a card.', 'It consumes any dreams of victory.', 'Battle for\n  Zendika', 'Comune', 'Lius Lasahido', 3, 3, 'Resources/carta8.png'),
 (7, 'Cabal Patriarch', 'Nero', 0, 0, 0, 0, 3, 3, 'Creatura', '(2+B) Sacrifice a\n  creature: Target creature gets -2/-2 until end of turn. (2+B) Exile a creature card\n  from your graveyard: Target creature gets -2/-2 until end of turn.', NULL, 'Odyssey', 'Rara', 'Mark Zug', 5, 5, 'Resources/carta9.jpeg'),
-(8, 'Oriss, Samite Guardian', 'Blu', 0, 0, 2, 0, 1, 0, 'Creatura', 'Prevent\n  all damage that would be dealt to target creature this turn. Grandeur — Discard\n  another card named Oriss, Samite Guardian: Target player can\'t cast spells\n  this turn, and creatures that player controls can\'t attack this turn.', NULL, 'Future Sight', 'Rara', 'Michael Komarck', 3, 1, 'Resources/carta10.jpeg'),
+(8, 'Oriss, Samite Guardian', 'Blu', 0, 0, 2, 0, 1, 0, ' Creatura', 'Prevent\n  all damage that would be dealt to target creature this turn. Grandeur — Discard\n  another card named Oriss, Samite Guardian: Target player can\'t cast spells\n  this turn, and creatures that player controls can\'t attack this turn.', NULL, 'Future Sight', 'Rara', 'Michael Komarck', 3, 1, 'Resources/carta10.jpeg'),
 (9, 'Island', 'Verde', NULL, NULL, NULL, NULL, NULL, NULL, 'Terra', NULL, NULL, ' Throne of\n  Eldrain', 'Terra', 'John Avon', NULL, NULL, 'Resources/carta11.png'),
 (10, 'Swamp', 'Verde', NULL, NULL, NULL, NULL, NULL, NULL, 'Palude', NULL, NULL, ' Throne of\n  Eldrain', 'Terra', 'Paul Scott Canavan', NULL, NULL, 'Resources/carta12.png'),
 (11, 'Battle Mastery', 'Bianco', 0, 0, 0, 1, 0, 2, 'Incantesimo', 'Enchant creature: Enchanted\n  creature has double strike. (It deals both first-strike and regular combat\n  damage.)', '\"There is elegance in all the Ojutai do—even their killing.\"—Kirada\n  , Silumgar enforcer', 'Battlebond', 'Non comune', 'Viktor Titov', NULL, NULL, 'Resources/carta13.png'),
-(12, 'Cobra Trap', 'Verde', 2, 0, 0, 0, 0, 4, 'Istantanea', 'If a noncreature permanent under\n  your control was destroyed this turn by a spell or ability an opponent\n  controlled, you may pay Green rather than pay this spell\'s mana cost. Create\n  four 1/1 green Snake creature tokens.', NULL, ' Magic: The Gatherin', 'Non comune', 'Scott Chou', NULL, NULL, 'Resources/carta14.jpeg'),
+(12, 'Cobra Trap', 'Verde', 2, 0, 0, 0, 0, 4, ' Istantanea', 'If a noncreature permanent under\n  your control was destroyed this turn by a spell or ability an opponent\n  controlled, you may pay Green rather than pay this spell\'s mana cost. Create\n  four 1/1 green Snake creature tokens.', NULL, ' Magic: The Gatherin', 'Non comune', 'Scott Chou', NULL, NULL, 'Resources/carta14.jpeg'),
 (13, 'Aerial Caravan', 'Bianco', 0, 0, 2, 0, 0, 4, 'Creatura', 'Flying (1+2B): Exile\n  the top card of your library. Until end of turn, you may play that card.\n  (Reveal the card as you exile it.)', 'Successful delivery is not guaranteed.', 'Mercadian Masques', 'Rara', 'DiTerlizzi', 3, 4, 'Resources/carta15.jpeg'),
 (14, 'Act of Aggression', 'Rosso', 0, 2, 0, 0, 0, 2, 'Istantanea', 'Gain control of target\n  creature an opponent controls until the end of turn. Untap that creature. It gains\n  haste until the end of the turn.', NULL, 'Commander 2015', 'Uncommon', 'Whit Brachna', NULL, NULL, 'Resources/carta16.jpg'),
 (15, 'Abbey Griffin', 'Bianco', 0, 0, 0, 1, 0, 3, 'Creatura', 'Flying, vigilance', 'The darkness swarms with vampires and ghouls, but allies are not lacking. —\n   Mikaeus, the Lunarca', 'Innistrad', 'Common', 'Jaime Jones', 2, 2, 'Resources/carta1.jpg'),

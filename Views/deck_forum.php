@@ -14,33 +14,34 @@
         <label for="color">
           <img src="Resources/White_Mana.png" alt="Bianco">
         </label>
-        <input type="checkbox" name="color" value="Bianco">
+        <input type="checkbox" name="bianco" value="Bianco">
       </div>
       <div class="color_checkbox">
         <label for="color">
           <img src="Resources/Blue_Mana.png" alt="Blu">
         </label>
-        <input type="checkbox" name="color" value="Blu">
+        <input type="checkbox" name="blu" value="Blu">
       </div>
       <div class="color_checkbox">
         <label for="color">
           <img src="Resources/Black_Mana.png" alt="Nero">
         </label>
-        <input type="checkbox" name="color" value="Nero">
+        <input type="checkbox" name="nero" value="Nero">
       </div>
       <div class="color_checkbox">
         <label for="color">
           <img src="Resources/Red_Mana.png" alt="Rosso">
         </label>
-        <input type="checkbox" name="color" value="Rosso">
+        <input type="checkbox" name="rosso" value="Rosso">
       </div>
       <div class="color_checkbox">
         <label for="color">
           <img src="Resources/Green_Mana.png" alt="Verde">
         </label>
-        <input type="checkbox" name="color" value="Verde">
+        <input type="checkbox" name="verde" value="Verde">
       </div>
     </div>
+    <!--
     <legend for="filter">Filtra per:</legend>
     <div class="src_field_group">
       <div class="src_dropdown_group">
@@ -65,7 +66,7 @@
           <option value="Public">Pubblicazione</option>
         </select>
       </div>
-    </div>
+    </div>-->
   </fieldset>
   <input type="reset" name="reset" value="Resetta la ricerca">
   <input type="submit" value="Cerca">

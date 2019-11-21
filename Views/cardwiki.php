@@ -66,7 +66,7 @@
           <option value="M19">Core Set 2019</option>
           <option value="M20">Core Set 2020</option>
         </select>
-      </div>
+      </div>-->
       <div class="src_dropdown_group">
         <label class="dropdown_text" for="order">Tipo di carta:</label>
         <select class="src_dropdown" name="Tipo">
@@ -81,6 +81,7 @@
           <option value="Tribale">Tribale</option>
         </select>
       </div>
+      <!--
       <div class="src_dropdown_group">
         <label class="dropdown_text" for="order">Ordina per:</label>
         <select class="src_dropdown" name="Order" id="order">
@@ -96,46 +97,58 @@
   <input type="reset" name="reset" value="Resetta la ricerca">
   <input type="submit" name="search_input" value="Cerca">
 </form>
-
-
-
 <div class="wiki_nav">
-  <div class="wiki" id="wiki">
-    <?php foreach ($cards as $key => $value) {
-      if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {?>
-        <div class="card_box">
-        <img src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>">
-        <a href="single_card.php?id=<?php echo $value["Id"] ?>&name=<?php echo $value["Nome"] ?>"><?php echo $value["Nome"]; ?></a>
-        </div>
-    <?php
-      }
-    } ?>
-  </div>
-  <div class="btn_box"><!-- da fare in modo che se non ho le prime 2 / 1 pagina stampo ache la 4* e 5* -->
-    <?php if ($num_pages>=2) {?>
-      <a href="cardwiki.php?page=1<?php echo '&'.http_build_query($_GET); ?>"> <span class="fas fa-angle-double-left"></span> </a>
-    <?php }
-    if ($cur_page>1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page-1; echo '&'.http_build_query($_GET);?>"> <span class="fas fa-angle-left"></span> </a>
-    <?php }
-    if ($cur_page>2) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page-2; echo '&'.http_build_query($_GET);?>"><?php echo $cur_page-2; ?></a>
-    <?php }
-    if ($cur_page>1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page-1; echo '&'.http_build_query($_GET);?>"><?php echo $cur_page-1; ?></a>
-    <?php } ?>
-    <a href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
-    <?php if ($num_pages-$cur_page>=1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page+1; echo '&'.http_build_query($_GET);?>"><?php echo $cur_page+1; ?></a>
-    <?php }
-    if ($num_pages-$cur_page>=2) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page+2; echo '&'.http_build_query($_GET);?>"><?php echo $cur_page+2; ?></a>
-    <?php }
-    if ($num_pages-$cur_page>=1) {?>
-      <a href="cardwiki.php?page=<?php echo $cur_page+1; echo '&'.http_build_query($_GET);?>"> <span class="fas fa-angle-right"></span> </a>
-    <?php }
-    if ($num_pages>=2) {?>
-      <a href="cardwiki.php?page=<?php echo $num_pages; echo '&'.http_build_query($_GET);?>"> <span class="fas fa-angle-double-right"></span> </a>
-    <?php } ?>
-  </div>
+  <?php if ($cards) {?>
+    <div class="wiki" id="wiki">
+      <?php foreach ($cards as $key => $value) {
+        if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {?>
+          <div class="card_box">
+          <a href="single_card.php?id=<?php echo $value["Id"] ?>&name=<?php echo $value["Nome"] ?>">
+            <p><?php echo $value["Nome"]; ?></p>
+            <img src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>">
+          </a>
+          </div>
+      <?php
+        }
+      } ?>
+    </div>
+    <div class="btn_box"><!-- da fare in modo che se non ho le prime 2 / 1 pagina stampo ache la 4* e 5* -->
+      <?php if ($num_pages>=2) {
+        $_GET["page"] = 1;?>
+        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-double-left"></span> </a>
+      <?php }
+      if ($cur_page>1) {
+        $_GET["page"] = $cur_page-1;?>
+        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-left"></span> </a>
+      <?php }
+      if ($cur_page>2) {
+        $_GET["page"] = $cur_page-2;?>
+        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page-2; ?></a>
+      <?php }
+      if ($cur_page>1) {
+        $_GET["page"] = $cur_page-1;?>
+        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page-1; ?></a>
+      <?php } ?>
+      <a href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
+      <?php if ($num_pages-$cur_page>=1) {
+        $_GET["page"] = $cur_page+1;?>
+        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page+1; ?></a>
+      <?php }
+      if ($num_pages-$cur_page>=2) {
+        $_GET["page"] = $cur_page+2;?>
+        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page+2; ?></a>
+      <?php }
+      if ($num_pages-$cur_page>=1) {
+        $_GET["page"] = $cur_page+1;?>
+        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-right"></span> </a>
+      <?php }
+      if ($num_pages>=2) {
+        $_GET["page"] = $num_pages;?>
+        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-double-right"></span> </a>
+      <?php } ?>
+    </div>
+  <?php } else { ?>
+    <h1>NESSUNA CARTA TROVATA!</h1>
+    <p>Effettuare una nuova ricerca o cliccare il pulsante resetta la ricerca per tornare all'elenco completo delle carte</p>
+  <?php } ?>
 </div>

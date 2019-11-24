@@ -3,14 +3,14 @@
 function card_name_color_query($infoarray)
 {
   $aux_get = array();
-  if($infoarray["nomecarta"] && $infoarray["nomecarta"]!="") $aux_get["Nome"] = $infoarray["nomecarta"];
-  if($infoarray["bianco"]) $aux_get["bianco"] = "Bianco";
-  if($infoarray["blu"]) $aux_get["blu"] =  "Blu";
-  if($infoarray["nero"]) $aux_get["nero"] = "Nero";
-  if($infoarray["rosso"]) $aux_get["rosso"] = "Rosso";
-  if($infoarray["verde"]) $aux_get["verde"] = "Verde";
+  if(!empty($infoarray["nomecarta"])/* && $infoarray["nomecarta"]!=""*/) $aux_get["Nome"] = $infoarray["nomecarta"];
+  if(isset($infoarray["bianco"])) $aux_get["bianco"] = "Bianco";
+  if(isset($infoarray["blu"])) $aux_get["blu"] =  "Blu";
+  if(isset($infoarray["nero"])) $aux_get["nero"] = "Nero";
+  if(isset($infoarray["rosso"])) $aux_get["rosso"] = "Rosso";
+  if(isset($infoarray["verde"])) $aux_get["verde"] = "Verde";
 
-  if ($aux_get && $aux_get != "") $par_query .= " WHERE ";
+  if (!empty($aux_get) && isset($aux_get)) $par_query .= " WHERE ";
   if ($aux_get["Nome"]) {
     $par_query .= 'Nome="'.$aux_get["Nome"].'"';
     foreach ($aux_get as $key => $value) {
@@ -43,16 +43,18 @@ function deck_name_color_query($infoarray)
   if($infoarray["rosso"]) $aux_color["Colore_rosso"] = 1;
   if($infoarray["verde"]) $aux_color["Colore_verde"] = 1;
 
-debug_output($aux_info);
-debug_output($aux_color);
-
-  if(isset($aux_info) || isset($aux_color)) $par_query .= " WHERE ";
-  if(isset($aux_info)) {
+  if((isset($aux_info) && !empty($aux_info)) || (isset($aux_color) && !empty($aux_color)))
+    $par_query .= " WHERE ";
+  if(isset($aux_info) && !empty($aux_info)) {
     foreach ($aux_info as $key => $value) {
       $par_query .= $key.'="'.$value.'"';
       if ($value != end($aux_info)) $par_query .= " AND ";
     }
-    if (isset($aux_color)) $par_query .= " AND ";
+    if (!empty($aux_color)) {
+      $par_query .= " AND ";
+      debug_output($aux_color);
+      echo "<br>";
+    }
   }
 
   if (isset($aux_color)) {

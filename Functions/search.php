@@ -56,9 +56,11 @@ debug_output($aux_color);
   }
 
   if (isset($aux_color)) {
+    $count = count($aux_color);
     foreach ($aux_color as $key => $value) {
       $par_query .= $key.'='.$value;
-      if ($value != end($aux_color)) $par_query .= " AND ";
+      if (--$count <=0 ) break;
+      $par_query .= " AND ";
     }
   }
   return $par_query;

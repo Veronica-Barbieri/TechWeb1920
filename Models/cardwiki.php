@@ -22,7 +22,7 @@ $num_pages = calc_num_pages($result, $disp_card);
 $q4_cards = "SELECT Id, Nome, Img_path FROM carta";
 
 // aggiunta dei fitri alla query per estrarre le carte
-if($_GET && $_GET != "")
+if(isset($_GET) && !empty($_GET))
 $q4_cards .= card_name_color_query($_GET);
 
 //effettuo la query sul database usando la funzione Query definita nel file DBconnection

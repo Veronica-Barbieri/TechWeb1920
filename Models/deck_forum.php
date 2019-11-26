@@ -19,15 +19,16 @@ $query_decks_res = Query($query_decks);
 //converto l'oggetto tornato da query in un array che contiene i mazzi
 while ($row = mysqli_fetch_assoc($query_decks_res))
 {
-  $deck[] = $row;
+  $deck_all[] = $row;
 }
 
 //calcolo il totale dei mazzi per poter sapere di quante pagine fare il display
 $num_pages = calc_num_pages($deck, $disp_deck);
 
-if ($_GET && $_GET != "") {
+
+/*Costruzione query per ricera*/
+if (isset($_GET) && !empty($_GET)) {
   $query_decks .= deck_name_color_query($_GET);
-  echo $query_decks;
 }
 
 $query_decks_res = Query($query_decks);
@@ -36,7 +37,6 @@ while ($row = mysqli_fetch_assoc($query_decks_res))
 {
   $deck[] = $row;
 }
-
 //calcolo il totale dei mazzi per poter sapere di quante pagine fare il display
 $num_pages = calc_num_pages($deck, $disp_deck);
 

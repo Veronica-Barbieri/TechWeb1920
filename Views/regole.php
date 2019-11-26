@@ -26,13 +26,13 @@
   <li> <a href="#risolvere">Rispondere e usare la pila</a> </li>
 </ul>
 <h1 id="basi">Le basi del gioco</h1>
-<p>
+<p class="simpleText">
   Per iniziare una partita, rimescola il tuo mazzo, che viene anche chiamato
   grimorio. Pesca una mano di sette carte e conta le terre. Puoi controllare la
   riga di testo subito sotto l’illustrazione di una carta per capire di che tipo
   è.
 </p>
-<p>
+<p class="simpleText">
   Tu e il tuo avversario cominciate la partita con 20 punti vita ciascuno,
   che dovrete entrambi annotare in qualche modo (ad esempio, usando un dado
   oppure carta e penna). Riduci a 0 i punti vita del tuo avversario e vincerai
@@ -42,7 +42,7 @@
 <ul>
   <li>
     <h2 id="tipi_terra">Terre</h2>
-    <p>
+    <p class="simpleText">
       Le carte terra costituiscono la base di qualsiasi mazzo efficace di Magic,
       perché producono mana, l’energia magica necessaria per lanciare tutte le
       altre carte del mazzo. Puoi giocare una terra durante la fase principale
@@ -50,7 +50,7 @@
       campo di battaglia. Le tue terre vengono STAPpate (raddrizzate) all’inizio
       di ogni tuo turno, pronte per essere usate di nuovo.
      </p>
-     <p>
+     <p class="simpleText">
        Esistono cinque tipi di terre base, ognuno corrispondente a uno dei
        cinque colori
      </p>
@@ -64,7 +64,7 @@
   </li>
   <li>
     <h2 id="tipi_magie">Magie</h2>
-    <p>
+    <p class="simpleText">
       Qualsiasi carta non terra può essere lanciata come magia. Alcuni tipi di
       magia vengono messi sul campo di battaglia e diventano “permanenti”,
       altri producono il loro effetto e poi vengono messi nel tuo cimitero (la
@@ -73,7 +73,7 @@
   </li>
   <li>
     <h2 id="tipi_creature">Creature</h2>
-    <p>
+    <p class="simpleText">
       Le creature sono permanenti che rappresentano i seguaci al tuo comando.
       Durante il combattimento, possono attaccare gli avversari e difenderti
       dagli assalti nemici. Puoi lanciare le magie creatura durante la tua fase
@@ -82,7 +82,7 @@
   </li>
   <li>
     <h2 id="tipi_inc">Artefatti e incantesimi</h2>
-    <p>
+    <p class="simpleText">
       Gli artefatti e gli incantesimi sono permanenti che rappresentano oggetti
       magici e manifestazioni magiche stabili. Molti artefatti sono incolori,
       quindi non richiedono mana di un colore specifico per essere lanciati.
@@ -92,7 +92,7 @@
   </li>
   <li>
     <h2 id="tipi_streg">Stregonerie e istantanei</h2>
-    <p>
+    <p class="simpleText">
       Le magie stregoneria e istantaneo rappresentano potenti incantamenti che
       possono influenzare la partita in molti modi diversi. Dopo che il loro
       effetto è avvenuto, queste magie vengono messe nel tuo cimitero. Puoi
@@ -104,7 +104,7 @@
   </li>
   <li>
     <h2 id="tipi_planeswalker">Planeswalker</h2>
-    <p>
+    <p class="simpleText">
       I planeswalker sono alleati potenti a cui puoi fare appello affinché
       combattano al tuo fianco. Per scoprire maggiori informazioni sui
       planeswalker, visita la pagina sulle
@@ -115,7 +115,7 @@
   </li>
 </ul>
 <h1 id="lanciare">Giocare una carta</h1>
-<p>
+<p class="simpleText">
   Tutte le carte tranne le terre presentano un costo di mana nell’angolo in alto
   a destra. Questo costo è composto da simboli che specificano quale tipo di
   mana devi spendere per lanciare quella magia. Devi pagare il mana rappresentato
@@ -125,7 +125,7 @@
   Il simbolo "4" grigio significa quattro mana di qualsiasi tipo. Quindi, questo costo
   deve essere pagato con due mana rossi e quattro mana di qualsiasi tipo.
 </p>
-<p>
+<p class="simpleText">
   Per pagare un costo di mana, TAPpa (ruota di lato) le terre necessarie sul campo
   di battaglia; in questo modo, mostrerai che le hai utilizzate per produrre
   mana. Le carte TAPpate vengono STAPpate all’inizio di ogni tuo turno, pronte
@@ -134,13 +134,13 @@
   Montagne, Foreste o altre terre in qualsiasi combinazione.
 </p>
 <h1 id="combat">Combattimento</h1>
-<p>
+<p class="simpleText">
   Vinci la partita se riduci a 0 i punti vita dell’avversario. Il metodo più
   comune per raggiungere questo obiettivo è attaccare l’avversario con le
   creature durante il combattimento.
 </p>
 <h2 id="atk">Attaccare</h2>
-<p>
+<p class="simpleText">
   Durante il tuo turno, decidi se attaccare e con quali creature farlo. Non puoi
   attaccare con una creatura se è TAPpata o se è entrata nel campo di battaglia
   in questo turno. Hai a disposizione una fase di combattimento a metà del tuo
@@ -149,14 +149,14 @@
   APpale. Le tue creature TAPpate, come le terre TAPpate, verranno STAPpate
   all’inizio del tuo prossimo turno
 </p>
-<p>
+<p class="simpleText">
   Nella maggior parte dei casi, le tue creature attaccano l’avversario, o
   talvolta anche i planeswalker; in ogni caso, non possono mai attaccare
   direttamente altre creature. Vengono semplicemente inviate attraverso il
   campo di battaglia e sarà il tuo avversario a decidere cosa accadrà dopo.
 </p>
 <h2 id="def">Bloccare</h2>
-<p>
+<p class="simpleText">
   Ora immagina di trovarti dall’altro lato del campo di battaglia: il tuo
   avversario ti ha attaccato con alcune delle sue creature. Se controlli delle
   creature STAPpate, puoi usarle per bloccare. Quando una creatura blocca, non
@@ -166,7 +166,7 @@
   dalla creatura attaccante a ognuno dei bloccanti.
 </p>
 <h1 id="risolvere">Rispondere e usare la pila</h1>
-<p>
+<p class="simpleText">
   Quando lanci una magia, non si risolve immediatamente (non ha subito effetto),
   deve attendere in pila. Ogni giocatore, tu compreso, ha adesso la possibilità
   di lanciare un istantaneo o attivare un’abilità in risposta. Se un giocatore
@@ -192,7 +192,7 @@
 		color:cornsilk;
 	}
 	
-	p{
+	.simpleText{
 		padding-left: 8em;
 		padding-right:8em;
 	}

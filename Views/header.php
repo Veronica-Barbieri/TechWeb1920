@@ -64,6 +64,7 @@
 	
 	.nb-logo{
 		padding-top:2em;
+		vertical-align:middle;
 	}
 	
 	.nb-logo,.navbar{

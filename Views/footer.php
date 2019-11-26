@@ -31,7 +31,6 @@
   .footer {
     padding: 0.6em;
 	background:#383838;
-	display:table-cell;
 	vertical-align:bottom;
 	text-align:center;
 	overflow:hidden;

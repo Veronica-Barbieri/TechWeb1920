@@ -50,11 +50,14 @@
 
 	<?php foreach ($trisample as $key => $value) { ?>
 	#manaButton<?php echo $key?>{
-		background:url('./Resources/<?php echo $ManaColors[$key]?>') no-repeat;
+		background:url('./Resources/<?php echo $ManaColors[$key]?>');
 		cursor:pointer;
-		width:2em;
-		height:2em;
+		width:2.3em;
+		height:2.3em;
 		border: none;
+		margin-top:2em;
+		margin:0.5em;
+		border-style:solid;
 	}
 	<?php } ?>
 	
@@ -62,38 +65,25 @@
 		background-color:#383838;
 	}
 	
-	.deck,#hot_decks h1{
-	 text-align:center;	
-	}
-	
-	h1,p{
-		text-align:center;
-		padding-left: 8em;
-		padding-right:8em;
-	}
-	h1{
-		text-align:center;
-		color:cornsilk;
-	}
-	
-	#card_panel h1{
-		text-align:center;
-	}
 	
 	p{
+		padding-left: 8em;
+		padding-right:8em;
 		color:white;
+	}
+	
+	h1{
+		color:cornsilk;
 	}
 	
 	.carta h1{
 		padding:0em;
 	}
 	
-	.color_container{
-		text-align:center;
-	}
-	
 	.immagine{
-		width:50%;
+		width:15em;
 	}
-	
+	.pannelcarte{
+		display: inline;
+	}
 </style>

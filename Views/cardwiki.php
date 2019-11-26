@@ -1,3 +1,4 @@
+<div class="content">
 <form class="src_form" action="cardwiki.php" method="get"><!-- da implementare la gestione del form -->
   <fieldset class="src_col1">
     <legend for="filter">Cerca la tua carta:</legend>
@@ -151,4 +152,5 @@
     <h1>NESSUNA CARTA TROVATA!</h1>
     <p>Effettuare una nuova ricerca o cliccare il pulsante resetta la ricerca per tornare all'elenco completo delle carte</p>
   <?php } ?>
+</div>
 </div>

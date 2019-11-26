@@ -1,3 +1,4 @@
+<div class=content>
 <form class="login_frm" action="usr_page.php" method="post">
   <fieldset>
     <legend>Accedi al tuo account</legend>
@@ -6,8 +7,9 @@
     <input type="submit" name="login_input" value="Login">
   </fieldset>
 </form>
-<!--
+
 <style media="screen">
+
   fieldset{
     margin: auto;
     width: 50%;
@@ -21,6 +23,17 @@
     padding: 0.3em;
     margin-left: 0.5em;
   }
-
+  
+  legend{
+		text-align:center;
+		color:cornsilk;
+  }
+  
+  body{
+	background:#383838;  
+  }
+	
 </style>
--->
+
+</div>
+

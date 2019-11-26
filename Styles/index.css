@@ -5,17 +5,14 @@
 a {
   text-decoration: none;
 }
-.header {
-  width: 100%;
-}
+
 .nb-col1 {
   display: inline-block;
   width: 80%;
 }
 .nb-logo , .nb-login{
   display: inline-block;
-  text-align: left;
-  width: 19%
+  width: 19%;
 }
 .nb-logo {
   text-align: left;
@@ -41,6 +38,7 @@ ul {
   display: none;
   width: 100%;
 }
+
 .carta{
   display: inline-block;
   width: 30%;
@@ -49,9 +47,7 @@ ul {
   display: block;
 }
 
-#hot_decks {
-  display: inline-block;
-}
+
 /*Stile wiki carte*/
 .wiki_nav {
   text-align: center;
@@ -95,3 +91,24 @@ legend {
 .hidden {
   display: none;
 }
+
+html,body{
+	height:100%;
+	width:100%;
+	margin:0;
+	display:table;
+}
+
+body{
+	min-height:100%;
+	height:100%;
+}
+
+.content{
+	  display:table-row;
+}
+
+.box{
+		padding-top:2em;
+}
+

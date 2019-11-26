@@ -1,6 +1,6 @@
 <!-- bisogna aggiungere un bottone che riporti l'utente alla pagina della wiki
 delle carte senza che prema back dal browser -->
-
+<div class="content">
 <div id="caratteristiche">
   <h1>Caratteristiche carta</h1>
   <ul>
@@ -73,4 +73,5 @@ delle carte senza che prema back dal browser -->
     ?>
   </ul>
   <img xml:lang="en" id="<?php echo "Immagine della carta ".$card_info["Nome"] ?>" src="<?php echo $card_info["img_path"]?>">
+</div>
 </div>

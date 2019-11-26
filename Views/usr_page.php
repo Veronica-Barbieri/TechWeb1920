@@ -1,3 +1,4 @@
+<div class="content">
 <img src="Resources/carta1.jpg" alt="robba">
 <h1>Username</h1>
 <button type="button" name="edit_profile" onclick="show('usr_form')">
@@ -74,5 +75,6 @@
   if ($num_pages>=2) {?>
     <a href="<?php echo $pagein["Controller"]; ?>?page=<?php echo $num_pages; ?>"> <span class="fas fa-angle-double-right"></span> </a>
   <?php } ?>
+</div>
 </div>
 </div>

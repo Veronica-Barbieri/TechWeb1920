@@ -1,3 +1,4 @@
+<div class="content">
 <form class="src_form" action="deck_forum.php" method="get"><!-- da implementare la gestione del form -->
   <fieldset class="src_col1">
     <legend for="filter">Cerca un mazzo:</legend>
@@ -147,5 +148,6 @@
     $_GET["page"] = $num_pages;?>
     <a href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>"> <span class="fas fa-angle-double-right"></span> </a>
   <?php } ?>
+</div>
 </div>
 </div>

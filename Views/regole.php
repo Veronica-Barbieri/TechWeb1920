@@ -1,3 +1,4 @@
+<div class="content">
 <h1>Glossario</h1>
 <a href="https://magicthegathering.fandom.com/it/wiki/Glossario">
   Per leggere un glossario di tutti i termini utili, CLICCA QUI!
@@ -173,3 +174,46 @@
   c’è già in attesa. Se entrambi i giocatori decidono di non fare nulla, si
   risolve la magia o abilità in cima alla pila.
 </p>
+</div>
+
+
+
+<style>
+	
+	.content{
+		text-align:center;
+	}
+	
+	body{
+		background:#383838;
+	}
+	
+	h1,h2{
+		color:cornsilk;
+	}
+	
+	p{
+		padding-left: 8em;
+		padding-right:8em;
+	}
+	
+	p{
+		color:white;
+	}
+	
+	ul li{
+		color:cornsilk;
+	}
+	
+	ul li a:hover,a:hover{
+		color:white;
+		text-decoration:underline;
+	}
+	
+	ul li a,a{
+		color:burlywood;
+		text-decoration: underline;
+		
+	}
+	
+</style>

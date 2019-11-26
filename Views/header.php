@@ -21,7 +21,7 @@
   <div class="header" id="header">
     <div class="nb-col1">
       <a class="nb-logo" href="index.php">
-        <i class="fab fa-wizards-of-the-coast" style="font-size: 5em;"></i>
+        <i class="fab fa-wizards-of-the-coast" style="font-size: 7em;"></i>
       </a>
       <!-- Rivedere gli href per i nomi delle pagine -->
       <ul class="navbar">
@@ -38,3 +38,58 @@
     </a>
   </div>
 </body>
+
+<style>
+
+	.header{
+		min-height:10%;
+		background-color:#383838;
+	}
+	
+	.nb-item{
+		font-size:150%;
+		margin-bottom:2%;
+	}
+	
+	.fab fa-wizards-of-the-coast{
+		top:0;
+		height:auto;
+		width:auto;
+	}
+	
+	.nb-link{
+		text-decoration: underline;
+		text-decoration-color:burlywood;
+	}
+	
+	.nb-logo{
+		padding-top:2em;
+	}
+	
+	.nb-logo,.navbar{
+		text-align: center;
+	}
+	.nb-login{
+		text-align:right;
+	}
+	
+	.nb-logo,.nb-link,.nb-login{
+		color:burlywood;
+	}
+	
+	.nb-link:visited,.nb-login:visited{
+		color:chocolate;
+		text-decoration-color:chocolate;
+	}
+	
+	
+	.nb-link:hover,.nb-login:hover,.nb-logo:hover{
+		color:white;
+		text-decoration-color:white;
+	}
+	
+	.nb-login{
+		font-size:150%;
+	}
+	
+</style>

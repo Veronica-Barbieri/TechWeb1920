@@ -60,4 +60,10 @@ while ($row_deck = mysqli_fetch_assoc($deck_general)){
 }
 
 $deck = array($all_decks[0], $all_decks[1], $all_decks[2]);
+
+$Colori = array('Mana Verde','Mana Rosso','Mana Blu','Mana Nero','Mana Bianco');
+
+$ManaColors = array ('Green_Mana.png','Red_Mana.png','Blue_Mana.png','Black_Mana.png','White_Mana.png')
+
+
 ?>

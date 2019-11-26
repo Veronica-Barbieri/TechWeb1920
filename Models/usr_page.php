@@ -4,6 +4,10 @@ error_reporting(E_ALL && ~E_NOTICE);
 include 'DBconnection.php';
 include 'Functions/search.php';
 
+session_start();
+
+$curr_usr = $_SESSION["Username"];
+
 if (intval($_GET["page"])) {
   $cur_usr_page = intval($_GET["page"]);
 }else {
@@ -11,8 +15,8 @@ if (intval($_GET["page"])) {
 }
 
 //definisco la query per i mazzi
-// NB: aggiungere il controllo sul singolo utente
-$query_usr_decks = "SELECT Id, Nome, Autore, Tipo, Colore_verde, Colore_rosso, Colore_blu, Colore_nero, Colore_bianco, Upvote  FROM mazzo"/*WHERE Autore = "logged user"*/;
+// N.B.: aggiungere il controllo sul singolo utente
+$query_usr_decks = "SELECT *  FROM mazzo WHERE Autore = '$curr_usr'";
 //effettuo la query sulla tabella dei mazzi per recuperarne le informzioni
 $query_usr_decks_res = Query($query_usr_decks);
 

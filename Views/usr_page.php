@@ -1,5 +1,4 @@
-<img src="Resources/carta1.jpg" alt="robba">
-<h1>Username</h1>
+<h1><?php echo "Benvenuto ".$curr_usr."!";?></h1>
 <button type="button" name="edit_profile" onclick="show('usr_form')">
   Modifica le tue informazioni
 </button>
@@ -12,7 +11,6 @@
     <input type="email" name="mail" value="">
     <label>Password</label>
     <input type="password" name="pwd" value="">
-    <textarea name="bio" rows="8" cols="50" placeholder="Una breve descrizione di te"></textarea>
     <input type="submit" name="save" value="Salva">
     <input type="reset" name="reset" value="Resetta i campi">
     <input type="reset" name="cancel" value="Cancella" onclick="hide('usr_form')">
@@ -22,7 +20,6 @@
 <div class="wiki_nav deck_nav">
   <div class="wiki" id="usr_deck_list">
     <?php foreach ($usr_deck as $key => $value) {
-      if ($key >= $disp_deck*($cur_usr_page-1) && $key < $disp_deck*$cur_usr_page) {
         ?>
         <a href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
           <div class="deck_box">
@@ -44,35 +41,6 @@
           </div>
         </a>
     <?php
-      }
     } ?>
   </div>
-
-<div class="btn_box">
-  <?php if ($num_pages>=2) {?>
-    <a href="<?php echo $pagein["Controller"]; ?>?page=1"> <span class="fas fa-angle-double-left"></span> </a>
-  <?php }
-  if ($cur_usr_page>1) {?>
-    <a href="<?php echo $pagein["Controller"]; ?>?page=<?php echo $cur_usr_page-1; ?>"> <span class="fas fa-angle-left"></span> </a>
-  <?php }
-  if ($cur_usr_page>2) {?>
-    <a href="<?php echo $pagein["Controller"]; ?>?page=<?php echo $cur_usr_page-2; ?>"><?php echo $cur_usr_page-2; ?></a>
-  <?php }
-  if ($cur_usr_page>1) {?>
-    <a href="<?php echo $pagein["Controller"]; ?>?page=<?php echo $cur_usr_page-1; ?>"><?php echo $cur_usr_page-1; ?></a>
-  <?php } ?>
-  <a href="#wiki" class="current_page"><?php echo $cur_usr_page; ?></a>
-  <?php if ($num_pages-$cur_usr_page>=1) {?>
-    <a href="<?php echo $pagein["Controller"]; ?>?page=<?php echo $cur_usr_page+1; ?>"><?php echo $cur_usr_page+1; ?></a>
-  <?php }
-  if ($num_pages-$cur_usr_page>=2) {?>
-    <a href="<?php echo $pagein["Controller"]; ?>?page=<?php echo $cur_usr_page+2; ?>"><?php echo $cur_usr_page+2; ?></a>
-  <?php }
-  if ($num_pages-$cur_usr_page>=1) {?>
-    <a href="<?php echo $pagein["Controller"]; ?>?page=<?php echo $cur_usr_page+1; ?>"> <span class="fas fa-angle-right"></span> </a>
-  <?php }
-  if ($num_pages>=2) {?>
-    <a href="<?php echo $pagein["Controller"]; ?>?page=<?php echo $num_pages; ?>"> <span class="fas fa-angle-double-right"></span> </a>
-  <?php } ?>
-</div>
 </div>

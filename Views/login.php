@@ -1,4 +1,4 @@
-<form class="login_frm" action="usr_page.php" method="post">
+<form class="login_frm" action="usr_check.php" method="post">
   <fieldset>
     <legend>Accedi al tuo account</legend>
     <input type="text" name="username" placeholder="Il tuo Username">

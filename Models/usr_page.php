@@ -1,135 +1,26 @@
 <?php
+error_reporting(E_ALL && ~E_NOTICE);
+
+include 'DBconnection.php';
+include 'Functions/search.php';
+
 if (intval($_GET["page"])) {
-  $cur_page = intval($_GET["page"]);
+  $cur_usr_page = intval($_GET["page"]);
 }else {
-  $cur_page = 1;
+  $cur_usr_page = 1;
 }
 
-/*Vedi NOTA BENE in Views/deck_view.php*/
-$tot_decks = 5;
+//definisco la query per i mazzi
+// NB: aggiungere il controllo sul singolo utente
+$query_usr_decks = "SELECT Id, Nome, Autore, Tipo, Colore_verde, Colore_rosso, Colore_blu, Colore_nero, Colore_bianco, Upvote  FROM mazzo"/*WHERE Autore = "logged user"*/;
+//effettuo la query sulla tabella dei mazzi per recuperarne le informzioni
+$query_usr_decks_res = Query($query_usr_decks);
 
-$num_pages = ($tot_decks % $disp_deck)? intdiv($tot_decks, $disp_deck)+1 : intdiv($tot_decks, $disp_deck);
-
-$deck = array (
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 2",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 3",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 4",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 5",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 6",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 7",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 8",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 9",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 10",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            ),
-            array(
-              "nome" => "nome deck 1",
-              "autore" => "nome autore deck 1",
-              "param" => "caratteristiche deck 1",
-              "note" => "qui verranno scritte le note sul deck 1"
-            )
-);
+//converto l'oggetto tornato da query in un array che contiene i mazzi
+while ($row = mysqli_fetch_assoc($query_usr_decks_res))
+{
+  $usr_deck[] = $row;
+}
+//calcolo il totale dei mazzi per poter sapere di quante pagine fare il display
+$num_pages = calc_num_pages($usr_deck, $disp_deck);
  ?>

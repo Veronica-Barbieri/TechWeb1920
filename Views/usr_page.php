@@ -8,7 +8,7 @@
 </form> || primo metodo usato, non praticabile
 perché poco accessibile-->
 
-<form class="usr_form hidden" id="usr_form" action="usr_page.php" method="post">
+<form class="usr_form hidden" id="usr_form" action="Models/usr_mod_account.php" method="post">
   <fieldset>
     <legend for="filter">Modifica i tuoi dati:</legend>
     <label>Username</label>
@@ -42,7 +42,6 @@ perché poco accessibile-->
               echo "<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>";
             ?>
             <h1> <?php echo $value["Nome"]; ?> </h1>
-            <p> <?php echo $value["Autore"]; ?> </p>
             <p> <?php echo $value["Tipo"]; ?> </p>
           </div>
         </a>

@@ -4,6 +4,8 @@ $pagein = array(
   'Namepage' => 'Wiki delle carte'
 );
 
+  session_start();
+
   $disp_card = 10;
 
   //error_reporting (E_ALL);

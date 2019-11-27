@@ -2,6 +2,8 @@
 
 include "DBconnection.php";
 
+session_start();
+
 $logging_user = $_POST['username'];
 
 $usr_check = "SELECT * FROM user WHERE Username = '$logging_user' ";
@@ -13,7 +15,6 @@ while($row = mysqli_fetch_assoc($q4_usr_check)){
 }
 
 if(isset($usr) && $_POST["username"] == $usr["Username"] && $_POST["pwd"] == $usr["Pwd"]){
-  session_start();
   $_SESSION["Username"] = $usr["Username"];
   header('Location: usr_page.php');
 } else {

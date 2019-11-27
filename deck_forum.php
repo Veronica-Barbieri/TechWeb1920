@@ -4,6 +4,8 @@
     'Controller' => 'deck_forum.php'
   );
 
+  session_start();
+
   $disp_deck = 15;
   //error_reporting (E_ALL);
   require_once ("Views/header.php");

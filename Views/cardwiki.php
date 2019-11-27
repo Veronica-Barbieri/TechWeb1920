@@ -37,65 +37,48 @@
         <input type="checkbox" name="verde" value="1">
       </div>
     </div>
-  </fieldset>
-  <!--<fieldset class="src_col2">
-    <legend for="filter">Filtra per:</legend>
     <div class="src_field_group">
       <div class="src_dropdown_group">
-        <label class="dropdown_text" for="order">Edizione:</label>
-        <select class="src_dropdown" name="Set">
-          <option value="None">Nessuna scelta</option>
-          <option value="LEA">Edizione limitata Alpha</option>
-          <option value="LEB">Edizione limitata Beta</option>
-          <option value="2ED">Edizione unlimited</option>
-          <option value="3ED">Edizione Revisionata</option>
-          <option value="4ED">Quarta Edizione</option>
-          <option value="5ED">Quinta Edizione</option>
-          <option value="6ED">Sesta Edizione Classica</option>
-          <option value="7ED">Settima Edizione</option>
-          <option value="8ED">Ottava Edizione</option>
-          <option value="9ED">Nona Edizione</option>
-          <option value="10ED">Decima Edizione</option>
-          <option value="M10">Magic 2010</option>
-          <option value="M11">Magic 2011</option>
-          <option value="M12">Magic 2013</option>
-          <option value="M13">Magic 2014</option>
-          <option value="M14">Magic 2015</option>
-          <option value="M15">Magic 2015</option>
-          <option value="ORI">Magic Origins</option>
-          <option value="M19">Core Set 2019</option>
-          <option value="M20">Core Set 2020</option>
-        </select>
-      </div>-->
-      <div class="src_dropdown_group">
-        <label class="dropdown_text" for="order">Tipo di carta:</label>
-        <select class="src_dropdown" name="Tipo">
-          <option value="None">Nessuna scelta</option>
-          <option value="Artefatto">Artefatto</option>
-          <option value="Creatura">Creatura</option>
-          <option value="Incantesimo">Incantesimo</option>
-          <option value="Istantaneo">Istantaneo</option>
-          <option value="Planeswalker">Planeswalker</option>
-          <option value="Stregoneria">Stregoneria</option>
-          <option value="Terra">Terra</option>
-          <option value="Tribale">Tribale</option>
-        </select>
-      </div>
-      <!--
-      <div class="src_dropdown_group">
-        <label class="dropdown_text" for="order">Ordina per:</label>
-        <select class="src_dropdown" name="Order" id="order">
-          <option value="None">Nessuna scelta</option>
-          <option value="Nome">Nome della carta</option>
-          <option value="Atk">Attacco</option>
-          <option value="Def">Difesa</option>
-          <option value="Colore">Colore</option>
-        </select>
-      </div>
+        <label class="dropdown_text" for="order">Espansione:</label>
+        <select class="src_dropdown" name="set">
+            <option value="None">Nessuna scelta</option>
+            <optgroup label="Core Sets">
+              <option value="Set Base 2020">Set Base 2020</option>
+              <option value="Set Base 2019">Set Base 2019</option>
+              <option value="Set Base 2015">Set Base 2015</option>
+              <option value="Set Base 2014">Set Base 2014</option>
+              <option value="Set Base 2013">Set Base 2013</option>
+              <option value="Set Base 2012">Set Base 2012</option>
+              <option value="Set Base 2011">Set Base 2011</option>
+              <option value="Set Base 2010">Set Base 2010</option>
+              <option value="Set Base Decima Edizione">Set Base Decima Edizione</option>
+              <option value="Set Base Nona Edizione">Set Base Nona Edizione</option>
+              <option value="Set Base Ottava Edizione">Set Base Ottava Edizione</option>
+              <option value="Set Base Ottava Edizione">Set Base Settima Edizione</option>
+              <option value="Set Base Sesta Edizione">Set Base Sesta Edizione</option>
+              <option value="Set Base Quinta Edizione">Set Base Quinta Edizione</option>
+              <option value="Set Base Quarta Edizione">Set Base Quarta Edizione</option>
+            </optgroup>
+          </select>
     </div>
-  </fieldset>-->
-  <input type="reset" name="reset" value="Resetta la ricerca">
+    <div class="src_dropdown_group">
+      <label class="dropdown_text" for="order">Tipo di carta:</label>
+      <select class="src_dropdown" name="tipo">
+        <option value="None">Nessuna scelta</option>
+        <option value="Artefatto">Artefatto</option>
+        <option value="Creatura">Creatura</option>
+        <option value="Incantesimo">Incantesimo</option>
+        <option value="Istantaneo">Istantaneo</option>
+        <option value="Planeswalker">Planeswalker</option>
+        <option value="Stregoneria">Stregoneria</option>
+        <option value="Terra">Terra</option>
+        <option value="Tribale">Tribale</option>
+      </select>
+    </div>
+  </div>
+  </fieldset>
   <input type="submit" name="search_input" value="Cerca">
+  <input type="reset" name="reset" value="Resetta la ricerca">
 </form>
 <div class="wiki_nav">
   <?php if ($cards) {?>

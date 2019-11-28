@@ -36,16 +36,17 @@
 		<h1>Collezionale tutte!</h1>
 		<div class="color_container">
 			<?php foreach ($trisample as $key => $value) { ?>
-			<button id="manaButton<?php echo $key?>" type="button" name="button<?php echo $key ?>" onclick="changeCards('pannel<?php echo $key ?>')" alt="<?php echo $Colori[$key] ?>">
+			<button class="manaButton" type="button" name="button<?php echo $Colori["$key"]; ?>" onclick="changeCards('pannel<?php echo $key; ?>')" alt="<?php echo $Colori["$key"]; ?>">
+				<img src="Resources/<?php echo $ManaColors["$key"]; ?>" alt="<?php echo $Colori["$key"]; ?>">
 			</button>
 			<?php } ?>
 				<div class="pannelcarte">
 					<?php foreach ($trisample as $key => $pannel) { ?>
-					<div class="singlepannel <?php echo "".($key==0) ? "active" : ""; ?> " id="pannel<?php echo $key ?>">
+					<div class="singlepannel <?php echo "".($key==0) ? "active" : ""; ?> " id="pannel<?php echo $key; ?>">
 						<?php foreach ($pannel as $card) { ?>
 							<div class="carta">
-								<h1><?php echo $card["Nome"]?></h1>
-								<img class="immagine" src="<?php echo $card["Img_path"]?>" alt="<?php echo $card["Id"]?>">
+								<h1><?php echo $card["Nome"];?></h1>
+								<img class="immagine" src="<?php echo $card["Img_path"];?>" alt="<?php echo $card["Id"];?>">
 							</div>
 						<?php } ?>
 					</div>
@@ -53,14 +54,12 @@
 				</div>
 		</div>
 	</div>
-	
+
 </div>
 
 <style>
 
-	<?php foreach ($trisample as $key => $value) { ?>
-	#manaButton<?php echo $key?>{
-		background:url('./Resources/<?php echo $ManaColors[$key]?>');
+	.manaButton{
 		cursor:pointer;
 		width:2.3em;
 		height:2.3em;
@@ -69,27 +68,26 @@
 		margin:0.5em;
 		border-style:solid;
 	}
-	<?php } ?>
-	
+
 	.box{
 		background-color:#383838;
 	}
-	
-	
+
+
 	p{
 		padding-left: 8em;
 		padding-right:8em;
 		color:white;
 	}
-	
+
 	h1{
 		color:cornsilk;
 	}
-	
+
 	.carta h1{
 		padding:0em;
 	}
-	
+
 	.immagine{
 		width:15em;
 	}

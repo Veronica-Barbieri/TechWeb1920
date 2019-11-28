@@ -1,4 +1,3 @@
-<div class="content">
 <div class="deck_about">
   <h1> <?php echo $info_deck["Nome"] ?> </h1>
   <h2> <?php echo $info_deck["Autore"] ?> </h2>
@@ -145,5 +144,4 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
   echo "</ul>";
   echo "</div>";
 } ?>
-</div>
 </div>

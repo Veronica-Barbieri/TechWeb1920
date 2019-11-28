@@ -1,10 +1,14 @@
 <?php
+
+include 'DBconnection.php';
+
 $pagein = array(
   'Namepage' => 'Login'
 );
+  
+  session_start();
 
-//error_reporting (E_ALL);
-require_once ("Views/header.php");
-require_once ("Views/login.php");
-require_once ("Views/footer.php");
- ?>
+  require_once ("Views/header.php");
+  require_once ("Views/login.php");
+  require_once ("Views/footer.php");
+?>

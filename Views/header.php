@@ -33,9 +33,15 @@
       </ul>
 
     </div>
-    <a class="nb-login" href="login.php">
-      <i class="fas fa-sign-in-alt" xml:lang="en">Login</i>
-    </a>
+    <?php if(isset($_SESSION["Username"])) {
+      echo "<a class='nb-login' href='usr_page.php'>";
+      echo "<i class='fas fa-sign-in-alt' xml:lang='en'>".$_SESSION["Username"]."</i>";
+      echo "</a>";
+    } else {
+      echo "<a class='nb-login' href='login.php'>";
+      echo "<i class='fas fa-sign-in-alt' xml:lang='en'>Login</i>";
+      echo "</a>";
+  } ?>
   </div>
 </body>
 

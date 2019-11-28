@@ -19,12 +19,25 @@ function CloseCon($conn){
 }
 
  //funzione che si occupa di aprire la connessione con il database e effettuare
- //una query
+ //una query per la ricerca di dati nel database
 function Query($query_string){
   $conn = OpenCon() or die ("Conncetion Failed: " . mysqli_connect_error());
   $response = mysqli_query($conn, $query_string);
   CloseCon($conn);
   return $response;
+}
+
+//funzione che si occupa di aprire la connessione con il database e effettuare
+//la modifica di dati presenti all'interno del database
+function Update_Query($query_string){
+  $conn = OpenCon() or die ("Conncetion Failed: " . mysqli_connect_error());
+  if(mysqli_query($conn, $query_string)){
+      $updated = "Record updated successfully";
+  } else {
+      $updated = "Error updating record: " . mysqli_error($conn);
+  }
+  CloseCon($conn);
+  return $updated;
 }
 
 

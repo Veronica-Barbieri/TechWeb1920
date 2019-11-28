@@ -1,5 +1,5 @@
 <div class=content>
-<form class="login_frm" action="usr_page.php" method="post">
+<form class="login_frm" action="usr_check.php" method="post">
   <fieldset>
     <legend>Accedi al tuo account</legend>
     <label for="username" class="simpleText">Username:</label>
@@ -9,7 +9,7 @@
     <input class="button" type="submit" name="login_input" value="Login">
   </fieldset>
 </form>
-
+</div>
 <style media="screen">
 
   fieldset{
@@ -57,6 +57,4 @@
   }
 	
 </style>
-
-</div>
 

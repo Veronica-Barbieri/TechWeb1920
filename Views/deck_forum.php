@@ -58,16 +58,17 @@
           <option value="Terra">Terra</option>
           <option value="Tribale">Tribale</option>
         </select>
-      </div>
+      </div>-->
       <div class="src_dropdown_group">
         <label class="dropdown_text" for="order">Ordina per:</label>
-        <select class="src_dropdown" name="Order" id="order">
+        <select class="src_dropdown" name="order" id="order">
           <option value="None">Nessuna scelta</option>
           <option value="Nome">Nome del mazzo</option>
-          <option value="Public">Pubblicazione</option>
+          <option value="Autore">Nome dell'autore</option>
+          <option value="Upvote">Numero di Like</option>
         </select>
       </div>
-    </div>-->
+    </div>
   </fieldset>
   <input type="reset" name="reset" value="Resetta la ricerca">
   <input type="submit" value="Cerca">

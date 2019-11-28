@@ -51,7 +51,7 @@ $trisample = array($Verde[0], $Rosso[0], $Blu[0], $Nero[0], $Bianco[0]);
 
 /*----------------------------------------------------------------------------------------*/
 /*Gestione dei mazzi*/
-$q_4decks = "SELECT Nome, Autore, Tipo FROM mazzo";
+$q_4decks = "SELECT Id, Nome, Autore, Tipo, Colore_verde, Colore_rosso, Colore_blu, Colore_nero, Colore_bianco, Upvote  FROM mazzo";
 
 $deck_general = Query($q_4decks);
 

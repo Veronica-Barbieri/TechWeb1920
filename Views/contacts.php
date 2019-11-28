@@ -22,7 +22,7 @@
 				<input class="inputArea" type="text" name="oggetto">
 				<label for="commento" class="simpleText">Commento:</label>
 				<textarea class="inputArea" rows="6" cols="40" input type="text" name="testo"></textarea>
-			    <input class="button" type="submit" name="contacts_input" value="Invia il tuo commento">
+			    <input class="formButton" type="submit" name="contacts_input" value="Invia il tuo commento">
 		</fieldset>
 		</form>
 	</div>
@@ -62,8 +62,7 @@
 		display:block;
 	}
 	
-	#form .button{
-		margin:1em;
+	#form .formButton{
 		display:block;
 		margin:auto;
 		margin-top:2em;

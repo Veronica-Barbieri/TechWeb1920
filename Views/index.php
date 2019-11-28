@@ -35,7 +35,7 @@
 		<div class="color_container">
 			<div class="color_btn_box">
 				<?php foreach ($trisample as $key => $value) { ?>
-					<button class="manaButton btn" type="button" name="button<?php echo $Colori["$key"]; ?>" onclick="changeCards('pannel<?php echo $key; ?>')" alt="<?php echo $Colori["$key"]; ?>">
+					<button class="manaButton" type="button" name="button<?php echo $Colori["$key"]; ?>" onclick="changeCards('pannel<?php echo $key; ?>')" alt="<?php echo $Colori["$key"]; ?>">
 						<img src="Resources/<?php echo $ManaColors["$key"]; ?>" alt="<?php echo $Colori["$key"]; ?>">
 					</button>
 				<?php } ?>
@@ -66,16 +66,17 @@
 	}
 	.manaButton{
 		border: solid;
-		padding: 0.5em 3em 0.2em 3em;
-		background-color: #fff8dc;
+		padding: 0.5em 2em 0.2em 2em;
+		color:white;
+		background-color:#383838;
 	}
 
-	p{
+	.content p{
 		padding-left: 8em;
 		padding-right:8em;
 		color:white;
 	}
-	h1{
+	.content h1{
 		color:cornsilk;
 		font-size: 2em;
 		padding-bottom: 0.5em;
@@ -104,6 +105,9 @@
 	}
 	.card_title{
 		font-size: 1em;
+	}
+	.manaButton:focus{
+		background-color:cornsilk;
 	}
 
 </style>

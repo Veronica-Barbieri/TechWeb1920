@@ -1,3 +1,4 @@
+<div class="content">
 <div class="deck_about">
   <h1> <?php echo $info_deck["Nome"] ?> </h1>
   <h2> <?php echo $info_deck["Autore"] ?> </h2>
@@ -18,7 +19,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       echo "<li>";
       echo "<p>".$value["Nome"]."</p>";
       echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
+      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img card='deck_img' src=".$value["Img_path"]." alt='immagine carta'></a>";
       echo  "</li>";
       }
     }
@@ -35,7 +36,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       echo "<li>";
       echo "<p>".$value["Nome"]."</p>";
       echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
+      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img card='deck_img' src=".$value["Img_path"]." alt='immagine carta'></a>";
       echo  "</li>";
       }
     }
@@ -52,7 +53,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       echo "<li>";
       echo "<p>".$value["Nome"]."</p>";
       echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
+      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img card='deck_img' src=".$value["Img_path"]." alt='immagine carta'></a>";
       echo  "</li>";
       }
     }
@@ -69,7 +70,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       echo "<li>";
       echo "<p>".$value["Nome"]."</p>";
       echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
+      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img card='deck_img' src=".$value["Img_path"]." alt='immagine carta'></a>";
       echo  "</li>";
       }
     }
@@ -86,7 +87,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       echo "<li>";
       echo "<p>".$value["Nome"]."</p>";
       echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
+      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img card='deck_img' src=".$value["Img_path"]." alt='immagine carta'></a>";
       echo  "</li>";
       }
     }
@@ -103,7 +104,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       echo "<li>";
       echo "<p>".$value["Nome"]."</p>";
       echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
+      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img card='deck_img' src=".$value["Img_path"]." alt='immagine carta'></a>";
       echo  "</li>";
       }
     }
@@ -120,7 +121,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       echo "<li>";
       echo "<p>".$value["Nome"]."</p>";
       echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
+      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img card='deck_img' src=".$value["Img_path"]." alt='immagine carta'></a>";
       echo  "</li>";
       }
     }
@@ -137,7 +138,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       echo "<li>";
       echo "<p>".$value["Nome"]."</p>";
       echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
+      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img card='deck_img' src=".$value["Img_path"]." alt='immagine carta'></a>";
       echo  "</li>";
       }
     }
@@ -145,3 +146,29 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
   echo "</div>";
 } ?>
 </div>
+</div>
+
+<style>
+	body{
+		background:#383838;
+	}
+	.deck_cards li{
+		padding-left: 8em;
+		padding-right:8em;
+		color:white;
+	}
+	.deck_cards ul{
+		margin-bottom:2em;
+	}
+	.deck_cards h1,.deck_about h1,.deck_about p,.deck_about h2{
+		color:cornsilk;
+		font-size: 2em;
+		padding-bottom: 0.5em;
+	}
+	.card_type ul li{
+		width:auto;
+		display: inline-block;
+		margin:0.5em;
+	}
+
+</style>

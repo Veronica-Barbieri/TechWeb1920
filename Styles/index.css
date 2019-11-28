@@ -42,11 +42,16 @@ ul {
   width: 80%;
 }
 .wiki {
-  border: 1px solid #000;
+  border: 1px solid;
+  border-color:white;
 }
 .card_box {
+  width:auto;
   display: inline-block;
   margin: 0.5em
+}
+.card_img{
+	width: 12em
 }
 fieldset {
   margin-bottom: 1em;

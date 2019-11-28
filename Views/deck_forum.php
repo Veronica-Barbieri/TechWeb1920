@@ -68,10 +68,9 @@
           <option value="Upvote">Numero di Like</option>
         </select>
       </div>
-    </div>
+  <input class="formButton" type="submit" value="Cerca">
+  <input class="formButton" type="reset" name="reset" value="Resetta la ricerca">
   </fieldset>
-  <input type="reset" name="reset" value="Resetta la ricerca">
-  <input type="submit" value="Cerca">
 </form>
 <div class="wiki_nav deck_nav">
   <div class="wiki" id="deck_list">
@@ -152,3 +151,48 @@
 </div>
 </div>
 </div>
+
+<style>
+	body{
+		background-color:#383838;
+	}
+	legend{
+	  padding:0.3em;
+	  color:cornsilk;
+	  text-align:center;
+	}
+	label{
+		color:cornsilk;
+		margin:0.5em;
+	}
+	.src_dropdown{
+		margin:auto;
+		margin-top:0.5em;
+		margin-bottom:0.5em;
+	}
+	.src_form{
+		margin-bottom:2em;
+	}
+	.src_form .formButton{
+		display:inline-block;
+		margin:2em;
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+	.wiki a{
+		color:burlywood;
+		text-decoration: underline;
+		text-decoration-color:burlywood;
+	}
+	.wiki a:visited{
+		color:chocolate;
+		text-decoration: underline;
+		text-decoration-color:chocolate;
+	}
+	.btn_box a{
+		color:burlywood;
+	}
+	.btn_box a:visied{
+		color:chocolate;
+	}
+</style>

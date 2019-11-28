@@ -6,7 +6,7 @@
 	<input class="inputArea" type="text" name="username">
     <label for="password" class="simpleText">Password:</label>
 	<input class="inputArea" type="password" name="pwd">
-    <input class="button" type="submit" name="login_input" value="Login">
+    <input class="formButton" type="submit" name="login_input" value="Login">
   </fieldset>
 </form>
 </div>
@@ -39,7 +39,7 @@
 	  display:block;
   }
   
-  .login_frm .button{
+  .login_frm .formButton{
 		margin:1em;
 		display:block;
 		margin:auto;

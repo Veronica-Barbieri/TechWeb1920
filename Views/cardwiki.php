@@ -77,9 +77,9 @@
       </select>
     </div>
   </div>
+  <input class="formButton" type="submit" name="search_input" value="Cerca">
+  <input class="formButton" type="reset" name="reset" value="Resetta la ricerca">
   </fieldset>
-  <input type="submit" name="search_input" value="Cerca">
-  <input type="reset" name="reset" value="Resetta la ricerca">
 </form>
 <div class="wiki_nav">
   <?php if ($cards) {?>
@@ -89,7 +89,7 @@
           <div class="card_box">
           <a href="single_card.php?id=<?php echo $value["Id"] ?>&name=<?php echo $value["Nome"] ?>">
             <p><?php echo $value["Nome"]; ?></p>
-            <img src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>">
+            <img class="card_img" src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>">
           </a>
           </div>
       <?php
@@ -133,7 +133,52 @@
     </div>
   <?php } else { ?>
     <h1>NESSUNA CARTA TROVATA!</h1>
-    <p>Effettuare una nuova ricerca o cliccare il pulsante resetta la ricerca per tornare all'elenco completo delle carte</p>
+    <p class="simpleText">Effettuare una nuova ricerca o cliccare il pulsante resetta la ricerca per tornare all'elenco completo delle carte</p>
   <?php } ?>
 </div>
 </div>
+<style>
+	body{
+		background-color:#383838;
+	}
+	legend{
+	  padding:0.3em;
+	  color:cornsilk;
+	  text-align:center;
+	}
+	label{
+		color:cornsilk;
+		margin:0.5em;
+	}
+	.src_dropdown{
+		margin:auto;
+		margin-top:0.5em;
+		margin-bottom:0.5em;
+	}
+	.src_form{
+		margin-bottom:2em;
+	}
+	.src_form .formButton{
+		display:inline-block;
+		margin:2em;
+		margin-top:1em;
+		margin-bottom:1em;
+	}
+	.wiki a{
+		color:burlywood;
+		text-decoration: underline;
+		text-decoration-color:burlywood;
+	}
+	.wiki a:visited{
+		color:chocolate;
+		text-decoration: underline;
+		text-decoration-color:chocolate;
+	}
+	
+	.btn_box a{
+		color:burlywood;
+	}
+	.btn_box a:visied{
+		color:chocolate;
+	}
+</style>

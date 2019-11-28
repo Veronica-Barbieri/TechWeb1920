@@ -35,22 +35,6 @@ ul {
   list-style-type: none;
 }
 
-.singlepannel{
-  display: none;
-  width: 100%;
-}
-
-.carta{
-  display: inline-block;
-  margin:5em;
-  margin-top:1em;
-}
-
-.active {
-  display: block;
-}
-
-
 /*Stile wiki carte*/
 .wiki_nav {
   text-align: center;
@@ -112,4 +96,3 @@ body{
 .box{
 	padding-top:2em;
 }
-

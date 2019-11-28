@@ -10,88 +10,100 @@
 			ottenendo i mazzi di base gratuitamente e lanciandoti in una sfida contro giocatori da tutto il mondo.
 		</p>
 	</div>
-<div class="box" id="hot_decks">
-	<h1> Hot Decks </h1>
-	<?php foreach ($deck as $num => $value) { ?>
-			<h1> <?php echo $value["Nome"]; ?> </h1>
-			<?php
-			if($value["Colore_verde"])
-				echo "<img src='Resources/Green_Mana.png' alt='colore mazzo verde'>";
-			if($value["Colore_rosso"])
-				echo "<img src='Resources/Red_Mana.png' alt='colore mazzo rosso'>";
-			if($value["Colore_blu"])
-				echo "<img src='Resources/Blue_Mana.png' alt='colore mazzo blu'>";
-			if($value["Colore_nero"])
-				echo "<img src='Resources/Black_Mana.png' alt='colore mazzo nero'>";
-			if($value["Colore_bianco"])
-				echo "<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>";
-			?>
-			<p> <?php echo $value["Autore"]; ?> </p>
-			<p> <?php echo $value["Tipo"]; ?> </p>
-		</div>
-	<?php } ?>
-</div>
-
-	<div class="box" id="card_panel">
+	<div class="box" id="hot_decks">
+		<h1> Hot Decks </h1>
+		<?php foreach ($deck as $num => $value) { ?>
+				<h1> <?php echo $value["Nome"]; ?> </h1>
+				<?php
+				if($value["Colore_verde"])
+					echo "<img src='Resources/Green_Mana.png' alt='colore mazzo verde'>";
+				if($value["Colore_rosso"])
+					echo "<img src='Resources/Red_Mana.png' alt='colore mazzo rosso'>";
+				if($value["Colore_blu"])
+					echo "<img src='Resources/Blue_Mana.png' alt='colore mazzo blu'>";
+				if($value["Colore_nero"])
+					echo "<img src='Resources/Black_Mana.png' alt='colore mazzo nero'>";
+				if($value["Colore_bianco"])
+					echo "<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>";
+				?>
+				<p> <?php echo $value["Autore"]; ?> </p>
+				<p> <?php echo $value["Tipo"]; ?> </p>
+		<?php } ?>
+	</div>
+	<div class="color_container_box box" id="card_panel">
 		<h1>Collezionale tutte!</h1>
 		<div class="color_container">
-			<?php foreach ($trisample as $key => $value) { ?>
-			<button class="manaButton" type="button" name="button<?php echo $Colori["$key"]; ?>" onclick="changeCards('pannel<?php echo $key; ?>')" alt="<?php echo $Colori["$key"]; ?>">
-				<img src="Resources/<?php echo $ManaColors["$key"]; ?>" alt="<?php echo $Colori["$key"]; ?>">
-			</button>
-			<?php } ?>
-				<div class="pannelcarte">
-					<?php foreach ($trisample as $key => $pannel) { ?>
-					<div class="singlepannel <?php echo "".($key==0) ? "active" : ""; ?> " id="pannel<?php echo $key; ?>">
-						<?php foreach ($pannel as $card) { ?>
-							<div class="carta">
-								<h1><?php echo $card["Nome"];?></h1>
-								<img class="immagine" src="<?php echo $card["Img_path"];?>" alt="<?php echo $card["Id"];?>">
-							</div>
-						<?php } ?>
-					</div>
+			<div class="color_btn_box">
+				<?php foreach ($trisample as $key => $value) { ?>
+					<button class="manaButton btn" type="button" name="button<?php echo $Colori["$key"]; ?>" onclick="changeCards('pannel<?php echo $key; ?>')" alt="<?php echo $Colori["$key"]; ?>">
+						<img src="Resources/<?php echo $ManaColors["$key"]; ?>" alt="<?php echo $Colori["$key"]; ?>">
+					</button>
 				<?php } ?>
+			</div>
+			<div class="pannelcarte">
+				<?php foreach ($trisample as $key => $pannel) { ?>
+				<div class="singlepannel <?php echo "".($key==0) ? "active" : ""; ?> " id="pannel<?php echo $key; ?>">
+					<?php foreach ($pannel as $card) { ?>
+						<div class="carta">
+							<h1 class="card_title"><?php echo $card["Nome"];?></h1>
+							<img class="card_img" src="<?php echo $card["Img_path"];?>" alt="<?php echo $card["Id"];?>">
+						</div>
+					<?php } ?>
 				</div>
+				<?php } ?>
+			</div>
 		</div>
 	</div>
-
 </div>
 
 <style>
 
-	.manaButton{
-		cursor:pointer;
-		width:2.3em;
-		height:2.3em;
-		border: none;
-		margin-top:2em;
-		margin:0.5em;
-		border-style:solid;
-	}
-
-	.box{
+	.content{
 		background-color:#383838;
 	}
-
+	.btn {
+		cursor:pointer;
+	}
+	.manaButton{
+		border: solid;
+		padding: 0.5em 3em 0.2em 3em;
+		background-color: #fff8dc;
+	}
 
 	p{
 		padding-left: 8em;
 		padding-right:8em;
 		color:white;
 	}
-
 	h1{
 		color:cornsilk;
+		font-size: 2em;
+		padding-bottom: 0.5em;
+	}
+	.color_btn_box {
+		width: 100%;
+	}
+	.color_container_box {
+		text-align: center;
+	}
+	.singlepannel{
+	  display: none;
+	  width: 100%;
+	}
+	.carta{
+	  display: inline-block;
+	  margin-left:2em;
+	  margin-top:0.5em;
+		width: auto;
+	}
+	.active {
+	  display: block;
+	}
+	.card_img{
+		width: 12em;
+	}
+	.card_title{
+		font-size: 1em;
 	}
 
-	.carta h1{
-		padding:0em;
-	}
-
-	.immagine{
-		width:15em;
-	}
-	.pannelcarte{
-		display: inline;
-	}
 </style>

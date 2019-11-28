@@ -25,8 +25,9 @@ perché poco accessibile-->
     <input type="reset" name="cancel" value="Cancella" onclick="hide('usr_form')">
   </fieldset>
 </form>
-<h1>I mazzi creati da te!</h1>
+
 <div class="wiki_nav deck_nav">
+<h1>I mazzi creati da te!</h1>
   <div class="wiki" id="usr_deck_list">
     <?php foreach ($usr_deck as $key => $value) {
         ?>

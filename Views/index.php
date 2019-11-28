@@ -28,18 +28,16 @@
 			?>
 			<p> <?php echo $value["Autore"]; ?> </p>
 			<p> <?php echo $value["Tipo"]; ?> </p>
-		</div>
 	<?php } ?>
-</div>
+	</div>
 
 	<div class="box" id="card_panel">
 		<h1>Collezionale tutte!</h1>
 		<div class="color_container">
-			<?php foreach ($trisample as $key => $value) { ?>
-			<button id="manaButton<?php echo $key?>" type="button" name="button<?php echo $key ?>" onclick="changeCards('pannel<?php echo $key ?>')" alt="<?php echo $Colori[$key] ?>">
-			</button>
+			<?php foreach ($Colori as $key => $value) { ?>
+			<input type="image" id="manaButton" src="Resources/<?php echo $ManaColors[$key]?>" alt="<?php echo $Colori[$key] ?>" name="button<?php echo $key ?>" onclick="changeCards('pannel<?php echo $key ?>')"> </input>
 			<?php } ?>
-				<div class="pannelcarte">
+			<div class="pannelcarte">
 					<?php foreach ($trisample as $key => $pannel) { ?>
 					<div class="singlepannel <?php echo "".($key==0) ? "active" : ""; ?> " id="pannel<?php echo $key ?>">
 						<?php foreach ($pannel as $card) { ?>
@@ -58,9 +56,7 @@
 
 <style>
 
-	<?php foreach ($trisample as $key => $value) { ?>
-	#manaButton<?php echo $key?>{
-		background:url('./Resources/<?php echo $ManaColors[$key]?>');
+	#manaButton{
 		cursor:pointer;
 		width:2.3em;
 		height:2.3em;
@@ -69,7 +65,6 @@
 		margin:0.5em;
 		border-style:solid;
 	}
-	<?php } ?>
 	
 	.box{
 		background-color:#383838;
@@ -96,4 +91,5 @@
 	.pannelcarte{
 		display: inline;
 	}
+	
 </style>

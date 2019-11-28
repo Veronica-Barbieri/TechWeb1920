@@ -10,7 +10,7 @@
 			ottenendo i mazzi di base gratuitamente e lanciandoti in una sfida contro giocatori da tutto il mondo.
 		</p>
 	</div>
-	<div class="box" id="hot_decks">
+	<div class="hot_decks inline_el box" id="hot_decks">
 		<h1> Hot Decks </h1>
 		<?php foreach ($deck as $num => $value) { ?>
 				<h1> <?php echo $value["Nome"]; ?> </h1>
@@ -30,7 +30,7 @@
 				<p> <?php echo $value["Tipo"]; ?> </p>
 		<?php } ?>
 	</div>
-	<div class="color_container_box box" id="card_panel">
+	<div class="color_container_box inline_el box" id="card_panel">
 		<h1>Collezionale tutte!</h1>
 		<div class="color_container">
 			<div class="color_btn_box">
@@ -44,7 +44,7 @@
 				<?php foreach ($trisample as $key => $pannel) { ?>
 				<div class="singlepannel <?php echo "".($key==0) ? "active" : ""; ?> " id="pannel<?php echo $key; ?>">
 					<?php foreach ($pannel as $card) { ?>
-						<div class="carta">
+						<div class="carta inline_el">
 							<h1 class="card_title"><?php echo $card["Nome"];?></h1>
 							<img class="card_img" src="<?php echo $card["Img_path"];?>" alt="<?php echo $card["Id"];?>">
 						</div>
@@ -58,6 +58,9 @@
 
 <style>
 
+	.inline_el{
+		display: inline-block;
+	}
 	.content{
 		background-color:#383838;
 	}
@@ -91,7 +94,6 @@
 	  width: 100%;
 	}
 	.carta{
-	  display: inline-block;
 	  margin-left:2em;
 	  margin-top:0.5em;
 		width: auto;

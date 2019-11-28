@@ -188,8 +188,10 @@
 		background:#383838;
 	}
 	
-	h1,h2{
+	.content h1,.content h2{
 		color:cornsilk;
+		margin-top:1em;
+		margin-bottom:1em;
 	}
 	
 	.simpleText{

@@ -12,49 +12,73 @@
 		<form action="contacts.php" method="post">
 		<fieldset>
 			<legend><span xml:lang="en">Form </span>di contatto</legend>
-				<p class="simpleText">Nome:<input type="text" name="nome"><br></p>
-				<p class="simpleText">Cognome:<input type="text" name="cognome"><br></p>
-				<p class="simpleText">E-mail:<input type="email" name="email"><br></p>
-				<p class="simpleText">Oggetto:<input type="text" name="oggetto"><br></p>
-				<p class="simpleText">Commento:<textarea rows="6" cols="40" input type="text" name="testo" placeholder="Scrivi qui il tuo commento"></textarea><br></p>
-			<input class="button" type="submit" name="contacts_input" value="Invia il tuo commento">
+				<label for="nome" class="simpleText">Nome:</label>
+				<input class="inputArea"type="text" name="nome">
+				<label for="cognome" class="simpleText">Cognome:</label>
+				<input class="inputArea" type="text" name="cognome">
+				<label for="e-mail" class="simpleText">E-mail:</label>
+				<input class="inputArea" type="email" name="email">
+				<label for="oggetto" class="simpleText">Oggetto:</label>
+				<input class="inputArea" type="text" name="oggetto">
+				<label for="commento" class="simpleText">Commento:</label>
+				<textarea class="inputArea" rows="6" cols="40" input type="text" name="testo"></textarea>
+			    <input class="button" type="submit" name="contacts_input" value="Invia il tuo commento">
 		</fieldset>
 		</form>
 	</div>
 </div>
 
 <style>
-
 	body{
 		background:#383838;
 	}
 
-	legend{
-		padding:0.3em;
-		text-align:center;
-		color:cornsilk;
-	}
-	
 	fieldset{
-		color:cornsilk;
-		width:50%;
-		text-align:center;
-		margin:auto;
-	}
+    margin: auto;
+    width: 50%;
+    text-align: center;
+	color:cornsilk;
+  }
+  
+  fieldset > input {
+    display: inline-block;
+    margin: 0.5em;
+  }
+  
+  fieldset > legend {
+    padding: 0.3em;
+    margin-left: 0.5em;
+  }
+ 
+  legend{
+	  padding:0.3em;
+	  text-align:center;
+	  color:cornsilk;
+  }
+  
 	
 	#form .simpleText{
 		margin:0.5em;
+		display:block;
 	}
 	
 	#form .button{
 		margin:1em;
+		display:block;
+		margin:auto;
+		margin-top:2em;
+		margin-bottom:2em;
 	}
 	
-	.simpleText{
-		padding-left: 8em;
+	#presentation .simpleText{
+		padding-left:8em;
 		padding-right:8em;
 	}
-  
+	
+	.inputArea{
+		color:white;
+		background-color:grey;
+	}
 	
 	h1,h2,ul li{
 		color:cornsilk;

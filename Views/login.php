@@ -2,8 +2,10 @@
 <form class="login_frm" action="usr_page.php" method="post">
   <fieldset>
     <legend>Accedi al tuo account</legend>
-    <p class="simpleText">Username:<input type="text" name="username"><br></p>
-    <p class="simpleText">Password:<input type="password" name="pwd"><br></p>
+    <label for="username" class="simpleText">Username:</label>
+	<input class="inputArea" type="text" name="username">
+    <label for="password" class="simpleText">Password:</label>
+	<input class="inputArea" type="password" name="pwd">
     <input class="button" type="submit" name="login_input" value="Login">
   </fieldset>
 </form>
@@ -34,16 +36,22 @@
     
   .login_frm .simpleText{
 	  margin:0.5em;
+	  display:block;
   }
   
   .login_frm .button{
 		margin:1em;
+		display:block;
+		margin:auto;
+		margin-top:2em;
+		margin-bottom:2em;
   }
   
-  .simpleText{
-		padding-left: 8em;
-		padding-right:8em;
+  .inputArea{
+		color:white;
+		background-color:grey;
 	}
+  
   body{
 	background:#383838;  
   }

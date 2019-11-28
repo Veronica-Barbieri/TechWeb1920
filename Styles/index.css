@@ -51,7 +51,8 @@ ul {
   margin: 0.5em
 }
 .card_img{
-	width: 12em
+	width: 12em;
+	margin-top:1em;
 }
 fieldset {
   margin-bottom: 1em;

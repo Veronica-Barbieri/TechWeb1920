@@ -111,5 +111,8 @@
 	.manaButton:focus{
 		background-color:cornsilk;
 	}
+	.card_title{
+		margin-top:1em;
+	}
 
 </style>

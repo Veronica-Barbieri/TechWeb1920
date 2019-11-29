@@ -75,23 +75,3 @@ delle carte senza che prema back dal browser -->
   <img xml:lang="en" id="<?php echo "Immagine della carta ".$card_info["Nome"] ?>" src="<?php echo $card_info["img_path"]?>">
 </div>
 </div>
-
-<style>
-	body{
-		background:#383838;
-	}
-	#caratteristiche li{
-		padding-left: 8em;
-		padding-right:8em;
-		color:white;
-	}
-	#caratteristiche ul{
-		margin-bottom:2em;
-	}
-	#caratteristiche h1{
-		color:cornsilk;
-		font-size: 2em;
-		padding-bottom: 0.5em;
-	}
-
-</style>

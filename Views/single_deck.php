@@ -2,7 +2,7 @@
 <div class="deck_about">
   <h1> <?php echo $info_deck["Nome"] ?> </h1>
   <h2> <?php echo $info_deck["Autore"] ?> </h2>
-  <p> <?php echo $info_deck["Tipo"] ?> </p>
+  <p class="simpleText"> <?php echo $info_deck["Tipo"] ?> </p>
 </div>
 
 <div class="deck_cards">
@@ -147,29 +147,3 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
 } ?>
 </div>
 </div>
-
-<style>
-	body{
-		background:#383838;
-	}
-	.deck_cards li{
-		padding-left: 8em;
-		padding-right:8em;
-		color:white;
-	}
-	.deck_cards ul{
-		margin-bottom:2em;
-	}
-	.deck_cards h1,.deck_about h1,.deck_about p,.deck_about h2{
-		color:cornsilk;
-		font-size: 2em;
-		padding-bottom: 0.5em;
-	}
-	.card_type ul li{
-		width:auto;
-		display: inline-block;
-		text-align:center;
-		margin:auto;
-	}
-
-</style>

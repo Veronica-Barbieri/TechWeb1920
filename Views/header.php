@@ -20,83 +20,27 @@
 <body>
   <div class="header" id="header">
     <div class="nb-col1">
-      <a class="nb-logo" href="index.php">
+      <a class="nb-logo link" href="index.php">
         <i class="fab fa-wizards-of-the-coast" style="font-size: 7em;"></i>
       </a>
       <!-- Rivedere gli href per i nomi delle pagine -->
       <ul class="navbar">
-        <li class="nb-item"> <a class="nb-link" href="index.php" xml:lang="en">Home</a> </li>
-        <li class="nb-item"> <a class="nb-link" href="regole.php">Regole</a> </li>
-        <li class="nb-item"> <a class="nb-link" href="cardwiki.php">Wiki Carte</a> </li>
-        <li class="nb-item"> <a class="nb-link" href="deck_forum.php" xml:lang="en">Forum</a> </li>
-        <li class="nb-item"> <a class="nb-link" href="contacts.php" xml:lang="en">About us</a> </li>
+        <li class="nb-item link"> <a class="nb-link link" href="index.php" xml:lang="en">Home</a> </li>
+        <li class="nb-item link"> <a class="nb-link link" href="regole.php">Regole</a> </li>
+        <li class="nb-item link"> <a class="nb-link link" href="cardwiki.php">Wiki Carte</a> </li>
+        <li class="nb-item link"> <a class="nb-link link" href="deck_forum.php" xml:lang="en">Forum</a> </li>
+        <li class="nb-item link"> <a class="nb-link link" href="contacts.php" xml:lang="en">About us</a> </li>
       </ul>
 
     </div>
     <?php if(isset($_SESSION["Username"])) {
-      echo "<a class='nb-login' href='usr_page.php'>";
+      echo "<a class='nb-login link' href='usr_page.php'>";
       echo "<i class='fas fa-sign-in-alt' xml:lang='en'>".$_SESSION["Username"]."</i>";
       echo "</a>";
     } else {
-      echo "<a class='nb-login' href='login.php'>";
+      echo "<a class='nb-login link' href='login.php'>";
       echo "<i class='fas fa-sign-in-alt' xml:lang='en'>Login</i>";
       echo "</a>";
   } ?>
   </div>
 </body>
-
-<style>
-
-	.header{
-		min-height:10%;
-		background-color:#383838;
-	}
-	
-	.nb-item{
-		font-size:150%;
-		margin-bottom:2%;
-	}
-	
-	.fab fa-wizards-of-the-coast{
-		top:0;
-		height:auto;
-		width:auto;
-	}
-	
-	.nb-link{
-		text-decoration: underline;
-		text-decoration-color:burlywood;
-	}
-	
-	.nb-logo{
-		padding-top:2em;
-		vertical-align:middle;
-	}
-	
-	.nb-logo,.navbar{
-		text-align: center;
-	}
-	.nb-login{
-		text-align:right;
-	}
-	
-	.nb-logo,.nb-link,.nb-login{
-		color:burlywood;
-	}
-	
-	.nb-link:visited,.nb-login:visited{
-		color:chocolate;
-		text-decoration-color:chocolate;
-	}
-	
-	
-	.nb-link:hover,.nb-login:hover,.nb-logo:hover{
-		color:white;
-		text-decoration-color:white;
-	}
-	
-	.nb-login{
-		font-size:150%;
-	}
-	
-</style>

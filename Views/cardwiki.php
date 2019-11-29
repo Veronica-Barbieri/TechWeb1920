@@ -5,7 +5,7 @@
     <div class="src_field_group">
       <div class="input">
         <label>Nome della carta</label>
-        <input type="text" name="nomecarta" value="">
+        <input class="inputArea" type="text" name="nomecarta" value="">
       </div>
       <div class="color_checkbox">
         <label for="color">
@@ -87,7 +87,7 @@
       <?php foreach ($cards as $key => $value) {
         if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {?>
           <div class="card_box">
-          <a href="single_card.php?id=<?php echo $value["Id"] ?>&name=<?php echo $value["Nome"] ?>">
+          <a class="cardLink link" href="single_card.php?id=<?php echo $value["Id"] ?>&name=<?php echo $value["Nome"] ?>">
             <p><?php echo $value["Nome"]; ?></p>
             <img class="card_img" src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>">
           </a>
@@ -99,36 +99,36 @@
     <div class="btn_box"><!-- da fare in modo che se non ho le prime 2 / 1 pagina stampo ache la 4* e 5* -->
       <?php if ($num_pages>=2) {
         $_GET["page"] = 1;?>
-        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-double-left"></span> </a>
+        <a class="link" href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-double-left"></span> </a>
       <?php }
       if ($cur_page>1) {
         $_GET["page"] = $cur_page-1;?>
-        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-left"></span> </a>
+        <a class="link" href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-left"></span> </a>
       <?php }
       if ($cur_page>2) {
         $_GET["page"] = $cur_page-2;?>
-        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page-2; ?></a>
+        <a class="link" href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page-2; ?></a>
       <?php }
       if ($cur_page>1) {
         $_GET["page"] = $cur_page-1;?>
-        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page-1; ?></a>
+        <a class="link" href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page-1; ?></a>
       <?php } ?>
-      <a href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
+      <a class="link" href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
       <?php if ($num_pages-$cur_page>=1) {
         $_GET["page"] = $cur_page+1;?>
-        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page+1; ?></a>
+        <a class="link" href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page+1; ?></a>
       <?php }
       if ($num_pages-$cur_page>=2) {
         $_GET["page"] = $cur_page+2;?>
-        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page+2; ?></a>
+        <a class="link" href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page+2; ?></a>
       <?php }
       if ($num_pages-$cur_page>=1) {
         $_GET["page"] = $cur_page+1;?>
-        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-right"></span> </a>
+        <a class="link" href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-right"></span> </a>
       <?php }
       if ($num_pages>=2) {
         $_GET["page"] = $num_pages;?>
-        <a href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-double-right"></span> </a>
+        <a class="link" href="cardwiki.php?<?php echo http_build_query($_GET);?>"> <span class="fas fa-angle-double-right"></span> </a>
       <?php } ?>
     </div>
   <?php } else { ?>
@@ -137,48 +137,3 @@
   <?php } ?>
 </div>
 </div>
-<style>
-	body{
-		background-color:#383838;
-	}
-	legend{
-	  padding:0.3em;
-	  color:cornsilk;
-	  text-align:center;
-	}
-	label{
-		color:cornsilk;
-		margin:0.5em;
-	}
-	.src_dropdown{
-		margin:auto;
-		margin-top:0.5em;
-		margin-bottom:0.5em;
-	}
-	.src_form{
-		margin-bottom:2em;
-	}
-	.src_form .formButton{
-		display:inline-block;
-		margin:2em;
-		margin-top:1em;
-		margin-bottom:1em;
-	}
-	.wiki a{
-		color:burlywood;
-		text-decoration: underline;
-		text-decoration-color:burlywood;
-	}
-	.wiki a:visited{
-		color:chocolate;
-		text-decoration: underline;
-		text-decoration-color:chocolate;
-	}
-	
-	.btn_box a{
-		color:burlywood;
-	}
-	.btn_box a:visied{
-		color:chocolate;
-	}
-</style>

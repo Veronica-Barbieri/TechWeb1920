@@ -1,7 +1,7 @@
 <div class="content">
 	<div class="box" id="rules">
 		<h1> Insegui nuove sfide! </h1>
-			<p> Benvenuto nel mondo di <span xml:lang="en"> Magic: The Gathering </span>, il gioco di carte collezionabili di maggior successo al mondo. Stai per scoprire i motivi che spingono
+			<p class="simpleText"> Benvenuto nel mondo di <span xml:lang="en"> Magic: The Gathering </span>, il gioco di carte collezionabili di maggior successo al mondo. Stai per scoprire i motivi che spingono
 			milioni di persone in tutto il pianeta a giocare a Magic: profondità strategica, mondi fantastici, personaggi carismatici e una community globale.
 			Esistono migliaia di carte tra cui scegliere: da dove iniziare? Ogni giocatore deve possedere un mazzo contenente almeno 60 carte e un intropack è
 			un ottimo modo per procurarsene uno. Gli intro pack ti forniscono tutto il necessario per iniziare a giocare: un mazzo di 60 carte, pronto per
@@ -26,8 +26,8 @@
 				if($value["Colore_bianco"])
 					echo "<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>";
 				?>
-				<p> <?php echo $value["Autore"]; ?> </p>
-				<p> <?php echo $value["Tipo"]; ?> </p>
+				<p class="simpleText"> <?php echo $value["Autore"]; ?> </p>
+				<p class="simpleText"> <?php echo $value["Tipo"]; ?> </p>
 		<?php } ?>
 	</div>
 	<div class="color_container_box inline_el box" id="card_panel">
@@ -55,64 +55,3 @@
 		</div>
 	</div>
 </div>
-
-<style>
-
-	.inline_el{
-		display: inline-block;
-	}
-	.content{
-		background-color:#383838;
-	}
-	.btn {
-		cursor:pointer;
-	}
-	.manaButton{
-		border: solid;
-		padding: 0.5em 2em 0.2em 2em;
-		color:white;
-		background-color:#383838;
-	}
-
-	.content p{
-		padding-left: 8em;
-		padding-right:8em;
-		color:white;
-	}
-	.content h1{
-		color:cornsilk;
-		font-size: 2em;
-		padding-bottom: 0.5em;
-	}
-	.color_btn_box {
-		width: 100%;
-	}
-	.color_container_box {
-		text-align: center;
-	}
-	.singlepannel{
-	  display: none;
-	  width: 100%;
-	}
-	.carta{
-	  margin-left:2em;
-	  margin-top:0.5em;
-		width: auto;
-	}
-	.active {
-	  display: block;
-	}
-	.card_img{
-		width: 12em;
-	}
-	.card_title{
-		font-size: 1em;
-	}
-	.manaButton:focus{
-		background-color:cornsilk;
-	}
-	.card_title{
-		margin-top:1em;
-	}
-
-</style>

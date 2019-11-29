@@ -1,104 +1,187 @@
-* {
-  margin: 0em;
-  padding: 0em;
+*{
+  margin:0em;
+  padding:0em;
 }
-
-a {
-  text-decoration: none;
+/*link='.wiki .linkedDeck','.nb-link','.nb-logo','.nb-login','.externalLink','.cardLink',.btn_box a*/
+.menu a,.linkText,.link{
+	color:burlywood;
 }
-
-.nb-col1 {
-  display: inline-block;
-  width: 80%;
+.link{
+	text-decoration:none;
 }
-.nb-logo , .nb-login{
-  display: inline-block;
-  width: 19%;
+.link:visited,.linkText:visited{
+	color:chocolate;
 }
-.nb-logo {
-  text-align: left;
+.link:hover,.linkText:hover,.footerText,.footerTextTitle{
+	color:white;
 }
-.nb-login{
-  text-align: right;
+.listaMana,.content fieldset,.content legend,.content h1,.content h2,.content h3,#form ul li{
+	color:cornsilk;
 }
-.navbar {
-  display: inline-block;
-  text-align: center;
-  width: 80%;
+ul{
+	list-style-type:none;
 }
-.nb-item {
-  display: inline-block;
-  margin: 0em 2em;
-}
-
-ul {
-  list-style-type: none;
-}
-
-/*Stile wiki carte*/
-.wiki_nav {
-  text-align: center;
-  margin: auto;
-  width: 80%;
-}
-.wiki {
-  border: 1px solid;
-  border-color:white;
-}
-.card_box {
-  width:auto;
-  display: inline-block;
-  margin: 0.5em
+.content,.header,.footer,.manaButton{
+	background-color:#383838;
 }
 .card_img{
-	width: 12em;
+	width:12em;
 	margin-top:1em;
 }
-fieldset {
-  margin-bottom: 1em;
+.card_type{
+	margin-top:0.5em;
 }
-legend {
-  font-size: 1.5em;
-}
-.color_checkbox, .src_col1, .src_col2 {
-  display: inline-block;
-}
-.src_col1, .src_col2 {
-  width: 49%;
-}
-.src_dropdown {
-  display: block;
-  width: 40%;
-}
-.color_checkbox img, .color_checkbox input, .src_col1, .src_col2 {
-  vertical-align: middle;
-}
-.src_dropdown, .color_checkbox, .input {
-  margin: 0.5em;
-}
-.current_page {
-  border: 1px solid #000;
-}
-
-/*style pagina user*/
-.hidden {
-  display: none;
-}
-
 html,body{
 	height:100%;
-	margin:0;
-}
-
-body{
 	font-family: Arial, Helvetica, sans-serif;
 }
-
 .content{
-	min-height:50%;
+	min-height:54%;
 	text-align:center;
 }
-
 .box{
 	padding-top:2em;
 }
+.content fieldset{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.content fieldset > .content input {
+    display: inline-block;
+    margin: 0.5em;
+}
+.content fieldset > .content legend {
+    padding: 0.3em;
+    margin-left: 0.5em;
+}
+.content legend{
+	padding:0.3em;
+	text-align:center;
+	font-size:1.5em;
+}
+.inline_el,.color_checkbox, .src_col1, .src_col2,.navbar,.nb-col1,.nb-logo,.nb-login,.nb-item,.card_type ul li {
+	display: inline-block;
+}
+.src_dropdown {
+	display: block;
+	width: 50%;
+	margin:auto;
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+}
+.color_checkbox{
+	margin: 0.5em;
+}
+/*
+.current_page {
+  border: 1px solid #000;
+}*/
+.form .simpleText,.content label{
+	margin:0.5em;
+	display:block;
+}
+.form .formButton{
+	display:block;
+	margin:auto;
+	margin-top:2em;
+	margin-bottom:2em;
+}
+.content .simpleText,#caratteristiche li,.deck_cards li{
+	padding-left:8em;
+	padding-right:8em;
+	color:white;
+}
+.content h1,.content h2,.content h3,#form ul li{
+	margin-bottom:0.5em;
+}
+.content h2,.content h3{
+	margin-top:0.5em;
+}
+.manaButton{
+	border: solid;
+	padding: 0.5em 2em 0.2em 2em;
+	color:white;
+	cursor:pointer;
+}
+.carta{
+	margin-left:2em;
+	margin-top:0.5em;
+}
+#caratteristiche h1{
+	color:cornsilk;
+	font-size:2em;
+	margin-bottom:0.5em;
+}
+#caratteristiche ul,.src_form{
+	margin-bottom:2em;
+}
+.card_box {
+  display: inline-block;
+  margin: 0.5em
+}
+.wiki_nav {
+  margin: auto;
+  width: 80%;
+}
+.wiki{
+  border: 1px solid white;
+}
+.src_form .formButton,.deck_box{
+	display:inline-block;
+	margin:2em;
+	margin-top:1em;
+	margin-bottom:1em;
+}
+.deck_box .Title{
+	font-size:2em;
+}
+/*header*/
+.nb-item {
+	margin: 0em 2em;
+	font-size:150%;
+}
+.nb-col1,.navbar{
+	width: 80%;
+}
+.nb-logo,.nb-login{
+	width: 19%;
+}
+.nb-logo{
+	padding-top:2em;
+	vertical-align:middle;
+}
+.nb-logo,.navbar{
+	text-align:center;
+}
+.nb-login{
+	font-size:150%;
+	text-align:right;
+}	
+/*end header*/
+.singlepannel,.hidden{
+	display: none;
+}
+.active{
+	display:block;
+}
+.card_title{
+	margin-top:1em;
+	font-size: 1em;
+}
+.manaButton:focus{
+	background-color:cornsilk;
+}
+/* footer */
+.footer{
+    padding:0.6em;
+	vertical-align:bottom;
+	text-align:center;
+}
+.footerTextTitle{
+	margin-bottom:10%;
+}
+.sez-footer {
+    display:inline-block;
+	padding: 2em;
+} 

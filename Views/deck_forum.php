@@ -5,11 +5,11 @@
     <div class="src_field_group">
       <div class="input">
         <label>Nome del mazzo</label>
-        <input type="text" name="nomemazzo" value="">
+        <input class="inputArea" type="text" name="nomemazzo" value="">
       </div>
       <div class="input">
         <label>Nome dell'autore</label>
-        <input type="text" name="nomeautore" value="">
+        <input class="inputArea" type="text" name="nomeautore" value="">
       </div>
       <div class="color_checkbox">
         <label for="color">
@@ -77,7 +77,7 @@
     <?php foreach ($deck as $key => $value) {
       if ($key >= $disp_deck*($cur_page-1) && $key < $disp_deck*$cur_page) {
         ?>
-        <a href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
+        <a class="linkedDeck link"href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
           <div class="deck_box">
             <?php
             if($value["Colore_verde"])
@@ -91,7 +91,7 @@
             if($value["Colore_bianco"])
               echo "<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>";
             ?>
-            <h1> <?php echo $value["Nome"]; ?> </h1>
+            <p class="Title"> <?php echo $value["Nome"]; ?> </p>
             <p> <?php echo $value["Autore"]; ?> </p>
             <p> <?php echo $value["Tipo"]; ?> </p>
           </div>
@@ -103,96 +103,51 @@
 <div class="btn_box">
   <?php if ($num_pages>=2) {
     $_GET["page"] = 1;?>
-    <a href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET);?>">
+    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET);?>">
       <span class="fas fa-angle-double-left"></span>
     </a>
   <?php }
   if ($cur_page>1) {
     $_GET["page"] = $cur_page-1;?>
-    <a href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <span class="fas fa-angle-left"></span>
     </a>
   <?php }
   if ($cur_page>2) {
     $_GET["page"] = $cur_page-2;?>
-    <a href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <?php echo $cur_page-2; ?>
     </a>
   <?php }
   if ($cur_page>1) {
     $_GET["page"] = $cur_page-1;?>
-    <a href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <?php echo $cur_page-1; ?>
     </a>
   <?php } ?>
-  <a href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
+  <a class="link" href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
   <?php if ($num_pages-$cur_page>=1) {
     $_GET["page"] = $cur_page+1;?>
-    <a href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <?php echo $cur_page+1; ?>
     </a>
   <?php }
   if ($num_pages-$cur_page>=2) {
     $_GET["page"] = $cur_page+2;?>
-    <a href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <?php echo $cur_page+2; ?>
     </a>
   <?php }
   if ($num_pages-$cur_page>=1) {
     $_GET["page"] = $cur_page+1;?>
-    <a href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <span class="fas fa-angle-right"></span>
     </a>
   <?php }
   if ($num_pages>=2) {
     $_GET["page"] = $num_pages;?>
-    <a href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>"> <span class="fas fa-angle-double-right"></span> </a>
+    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>"> <span class="fas fa-angle-double-right"></span> </a>
   <?php } ?>
 </div>
 </div>
 </div>
-
-<style>
-	body{
-		background-color:#383838;
-	}
-	legend{
-	  padding:0.3em;
-	  color:cornsilk;
-	  text-align:center;
-	}
-	label{
-		color:cornsilk;
-		margin:0.5em;
-	}
-	.src_dropdown{
-		margin:auto;
-		margin-top:0.5em;
-		margin-bottom:0.5em;
-	}
-	.src_form{
-		margin-bottom:2em;
-	}
-	.src_form .formButton{
-		display:inline-block;
-		margin:2em;
-		margin-top:1em;
-		margin-bottom:1em;
-	}
-	.wiki a{
-		color:burlywood;
-		text-decoration: underline;
-		text-decoration-color:burlywood;
-	}
-	.wiki a:visited{
-		color:chocolate;
-		text-decoration: underline;
-		text-decoration-color:chocolate;
-	}
-	.btn_box a{
-		color:burlywood;
-	}
-	.btn_box a:visied{
-		color:chocolate;
-	}
-</style>

@@ -6,6 +6,11 @@
 
   session_start();
 
+  if(!isset($_SESSION["Username"])){
+    header("HTTP/1.1 401 Unauthorized");
+    exit;
+  }
+
   $disp_deck = 3;
   //error_reporting (E_ALL);
   require_once ("Views/header.php");
@@ -14,5 +19,4 @@
   //require_once ("Views/deck_view.php");
   require_once ("Views/footer.php");
 
-  Debug_output(session_status());
  ?>

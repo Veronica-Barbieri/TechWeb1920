@@ -9,139 +9,138 @@
 <!--Per ogni carta presente nel mazzo ne verifico la tipologia e ne effettuo la stampa
 ordinando l'output in modo che le carte siano divise per tipologia-->
 
-<?php if($tipo_in_mazzo["Artefatto"]==true) {
-  echo "<div class='card_type'>";
-  echo "<h1>Artefatto</h1>";
-  echo "<ul>";
-  foreach ($cards_in_deck as $key => $value) {
-    if ($value["Tipo"] == "Artefatto") {
-      echo "<li>";
-      echo "<p>".$value["Nome"]."</p>";
-      echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
-      echo  "</li>";
-      }
-    }
-  echo "</ul>";
-  echo "</div>";
-} ?>
+<?php if($tipo_in_mazzo["Artefatto"]==true) { ?>
+  <div class='card_type'>
+  <h1>Artefatto</h1>
+  <ul>
+<?php foreach ($cards_in_deck as $key => $value) {
+    if ($value["Tipo"] == "Artefatto") {  ?>
+      <li>
+      <p><?php echo $value["Nome"];?></p>
+      <p><?php echo $value["Artista"];?></p>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      </li>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+  </div>
+<?php } ?>
 
-<?php if($tipo_in_mazzo["Creatura"]==true) {
-  echo "<div class='card_type'>";
-  echo "<h1>Creatura</h1>";
-  echo "<ul>";
-  foreach ($cards_in_deck as $key => $value) {
-    if ($value["Tipo"] == "Creatura") {
-      echo "<li>";
-      echo "<p>".$value["Nome"]."</p>";
-      echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
-      echo  "</li>";
-      }
-    }
-  echo "</ul>";
-  echo "</div>";
-} ?>
+<?php if($tipo_in_mazzo["Creatura"]==true) { ?>
+  <div class='card_type'>
+  <h1>Creatura</h1>
+  <ul>
+<?php foreach ($cards_in_deck as $key => $value) {
+    if ($value["Tipo"] == "Creatura") {  ?>
+      <li>
+      <p><?php echo $value["Nome"];?></p>
+      <p><?php echo $value["Artista"];?></p>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      </li>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+  </div>
+<?php } ?>
 
-<?php if($tipo_in_mazzo["Incantesimo"]==true) {
-  echo "<div class='card_type'>";
-  echo "<h1>Incantesimo</h1>";
-  echo "<ul>";
-  foreach ($cards_in_deck as $key => $value) {
-    if ($value["Tipo"] == "Incantesimo") {
-      echo "<li>";
-      echo "<p>".$value["Nome"]."</p>";
-      echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
-      echo  "</li>";
-      }
-    }
-  echo "</ul>";
-  echo "</div>";
-} ?>
+<?php if($tipo_in_mazzo["Incantesimo"]==true) { ?>
+  <div class='card_type'>
+  <h1>Incantesimo</h1>
+  <ul>
+<?php foreach ($cards_in_deck as $key => $value) {
+    if ($value["Tipo"] == "Incantesimo") {  ?>
+      <li>
+      <p><?php echo $value["Nome"];?></p>
+      <p><?php echo $value["Artista"];?></p>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      </li>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+  </div>
+<?php } ?>
 
-<?php if($tipo_in_mazzo["Istantanea"]==true) {
-  echo "<div class='card_type'>";
-  echo "<h1>Istantanea</h1>";
-  echo "<ul>";
-  foreach ($cards_in_deck as $key => $value) {
-    if ($value["Tipo"] == "Istantanea") {
-      echo "<li>";
-      echo "<p>".$value["Nome"]."</p>";
-      echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
-      echo  "</li>";
-      }
-    }
-  echo "</ul>";
-  echo "</div>";
-} ?>
+<?php if($tipo_in_mazzo["Istantanea"]==true) { ?>
+  <div class='card_type'>
+  <h1>Istantanea</h1>
+  <ul>
+<?php foreach ($cards_in_deck as $key => $value) {
+    if ($value["Tipo"] == "Artefatto") {  ?>
+      <li>
+      <p><?php echo $value["Nome"];?></p>
+      <p><?php echo $value["Artista"];?></p>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      </li>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+  </div>
+<?php } ?>
 
-<?php if($tipo_in_mazzo["Planeswalker"]==true) {
-  echo "<div class='card_type'>";
-  echo "<h1>Planeswalker</h1>";
-  echo "<ul>";
-  foreach ($cards_in_deck as $key => $value) {
-    if ($value["Tipo"] == "Planeswalker") {
-      echo "<li>";
-      echo "<p>".$value["Nome"]."</p>";
-      echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
-      echo  "</li>";
-      }
-    }
-  echo "</ul>";
-  echo "</div>";
-} ?>
+<?php if($tipo_in_mazzo["Planeswalker"]==true) { ?>
+  <div class='card_type'>
+  <h1>Planeswalker</h1>
+  <ul>
+<?php foreach ($cards_in_deck as $key => $value) {
+    if ($value["Tipo"] == "Planeswalker") {  ?>
+      <li>
+      <p><?php echo $value["Nome"];?></p>
+      <p><?php echo $value["Artista"];?></p>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      </li>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+  </div>
+<?php } ?>
 
-<?php if($tipo_in_mazzo["Stregoneria"]==true) {
-  echo "<div class='card_type'>";
-  echo "<h1>Stregoneria</h1>";
-  echo "<ul>";
-  foreach ($cards_in_deck as $key => $value) {
-    if ($value["Tipo"] == "Stregoneria") {
-      echo "<li>";
-      echo "<p>".$value["Nome"]."</p>";
-      echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
-      echo  "</li>";
-      }
-    }
-  echo "</ul>";
-  echo "</div>";
-} ?>
+<?php if($tipo_in_mazzo["Stregoneria"]==true) { ?>
+  <div class='card_type'>
+  <h1>Stregoneria</h1>
+  <ul>
+<?php foreach ($cards_in_deck as $key => $value) {
+    if ($value["Tipo"] == "Stregoneria") {  ?>
+      <li>
+      <p><?php echo $value["Nome"];?></p>
+      <p><?php echo $value["Artista"];?></p>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      </li>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+  </div>
+<?php } ?>
 
-<?php if($tipo_in_mazzo["Terra"]==true) {
-  echo "<div class='card_type'>";
-  echo "<h1>Terra</h1>";
-  echo "<ul>";
-  foreach ($cards_in_deck as $key => $value) {
-    if ($value["Tipo"] == "Terra") {
-      echo "<li>";
-      echo "<p>".$value["Nome"]."</p>";
-      echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
-      echo  "</li>";
-      }
-    }
-  echo "</ul>";
-  echo "</div>";
-} ?>
+<?php if($tipo_in_mazzo["Terra"]==true) { ?>
+  <div class='card_type'>
+  <h1>Terra</h1>
+  <ul>
+<?php foreach ($cards_in_deck as $key => $value) {
+    if ($value["Tipo"] == "Terra") {  ?>
+      <li>
+      <p><?php echo $value["Nome"];?></p>
+      <p><?php echo $value["Artista"];?></p>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      </li>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+  </div>
+<?php } ?>
 
-<?php if($tipo_in_mazzo["Tribale"]==true) {
-  echo "<div class='card_type'>";
-  echo "<h1>Tribale</h1>";
-  echo "<ul>";
-  foreach ($cards_in_deck as $key => $value) {
-    if ($value["Tipo"] == "Tribale") {
-      echo "<li>";
-      echo "<p>".$value["Nome"]."</p>";
-      echo "<p>".$value["Artista"]."</p>";
-      echo  "<a href='single_card.php?id=".$value["Id"]."&name=".$value["Nome"]."'><img src=".$value["Img_path"]." alt='immagine carta'></a>";
-      echo  "</li>";
-      }
-    }
-  echo "</ul>";
-  echo "</div>";
-} ?>
-</div>
+<?php if($tipo_in_mazzo["Tribale"]==true) { ?>
+  <div class='card_type'>
+  <h1>Tribale</h1>
+  <ul>
+<?php foreach ($cards_in_deck as $key => $value) {
+    if ($value["Tipo"] == "Tribale") {  ?>
+      <li>
+      <p><?php echo $value["Nome"];?></p>
+      <p><?php echo $value["Artista"];?></p>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      </li>
+      <?php } ?>
+    </ul>
+    <?php } ?>
+  </div>
+<?php } ?>

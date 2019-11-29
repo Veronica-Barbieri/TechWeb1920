@@ -14,18 +14,17 @@
 	<h1> Hot Decks </h1>
 	<?php foreach ($deck as $num => $value) { ?>
 			<h1> <?php echo $value["Nome"]; ?> </h1>
-			<?php
-			if($value["Colore_verde"])
-				echo "<img src='Resources/Green_Mana.png' alt='colore mazzo verde'>";
-			if($value["Colore_rosso"])
-				echo "<img src='Resources/Red_Mana.png' alt='colore mazzo rosso'>";
-			if($value["Colore_blu"])
-				echo "<img src='Resources/Blue_Mana.png' alt='colore mazzo blu'>";
-			if($value["Colore_nero"])
-				echo "<img src='Resources/Black_Mana.png' alt='colore mazzo nero'>";
-			if($value["Colore_bianco"])
-				echo "<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>";
-			?>
+			<?php if($value["Colore_verde"]) { ?>
+				<img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
+			<?php } if($value["Colore_rosso"]) { ?>
+				<img src='Resources/Red_Mana.png' alt='colore mazzo rosso'>
+			<?php } if($value["Colore_blu"]) { ?>
+				<img src='Resources/Blue_Mana.png' alt='colore mazzo blu'>
+			<?php } if($value["Colore_nero"]) { ?>
+				<img src='Resources/Black_Mana.png' alt='colore mazzo nero'>
+			<?php } if($value["Colore_bianco"]) { ?>
+				<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>
+			<?php } ?>
 			<p> <?php echo $value["Autore"]; ?> </p>
 			<p> <?php echo $value["Tipo"]; ?> </p>
 		</div>

@@ -2,5 +2,5 @@
   session_start();
   session_unset();
   session_destroy();
-  require_once "index.php";
+  header("Location: index.php");
  ?>

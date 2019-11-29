@@ -18,4 +18,8 @@ while ($row = mysqli_fetch_assoc($query_usr_decks_res))
 {
   $usr_deck[] = $row;
 }
+
+if(count($usr_deck)==0){
+  $usr_deck=0;
+}
  ?>

@@ -25,27 +25,29 @@ perché poco accessibile-->
 <h1>I mazzi creati da te!</h1>
 <div class="wiki_nav deck_nav">
   <div class="wiki" id="usr_deck_list">
-    <?php foreach ($usr_deck as $key => $value) {
-        ?>
+    <?php if($usr_deck!=0){
+        foreach ($usr_deck as $key => $value) { ?>
         <a href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
           <div class="deck_box">
             <?php
-            if($value["Colore_verde"])
-              echo "<img src='Resources/Green_Mana.png' alt='colore mazzo verde'>";
-            if($value["Colore_rosso"])
-              echo "<img src='Resources/Red_Mana.png' alt='colore mazzo rosso'>";
-            if($value["Colore_blu"])
-              echo "<img src='Resources/Blue_Mana.png' alt='colore mazzo blu'>";
-            if($value["Colore_nero"])
-              echo "<img src='Resources/Black_Mana.png' alt='colore mazzo nero'>";
-            if($value["Colore_bianco"])
-              echo "<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>";
-            ?>
+            if($value["Colore_verde"]) {?>
+              <img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
+            <?php } if($value["Colore_rosso"]) {?>
+              <img src='Resources/Red_Mana.png' alt='colore mazzo rosso'>
+            <?php } if($value["Colore_blu"]) { ?>
+              <img src='Resources/Blue_Mana.png' alt='colore mazzo blu'>
+            <?php } if($value["Colore_nero"]) { ?>
+              <img src='Resources/Black_Mana.png' alt='colore mazzo nero'>
+            <?php } if($value["Colore_bianco"]) { ?>
+              <img src='Resources/White_Mana.png' alt='colore mazzo bianco'>
+            <?php } ?>
             <h1> <?php echo $value["Nome"]; ?> </h1>
             <p> <?php echo $value["Tipo"]; ?> </p>
           </div>
         </a>
-    <?php
-    } ?>
+    <?php }
+    } else { ?>
+    <p>Non sono ancora stati creati mazzi</p>
+  <?php } ?>
   </div>
 </div>

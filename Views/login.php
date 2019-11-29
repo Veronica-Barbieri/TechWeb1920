@@ -1,4 +1,4 @@
-<form id="login_frm" class="login_frm" action="usr_check.php" method="post">
+<form id="login_frm" class="login_frm" action="Models/usr_check.php" method="post">
   <fieldset>
     <legend>Accedi al tuo account</legend>
     <input type="text" name="username" placeholder="Il tuo Username">
@@ -8,7 +8,7 @@
   <p>Non hai un account?</p>
   <button type="button" name="registration_frm" onclick="show_and_hide('registration_frm', 'login_frm')">Registrati!</button>
 </form>
-<form id="registration_frm" class="registration_frm" action="usr_add.php" method="post">
+<form id="registration_frm" class="registration_frm" action="Functions/usr_add.php" method="post">
   <fieldset>
     <legend>Inserisci i tuoi dati</legend>
     <input type="text" name="username" placeholder="Il tuo Username qui">

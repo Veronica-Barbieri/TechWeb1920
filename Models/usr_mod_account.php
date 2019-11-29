@@ -1,6 +1,6 @@
 <?php
 
-  include "../DBconnection.php";
+  include "../Functions/DBconnection.php";
   session_start();
 
   $data = array(

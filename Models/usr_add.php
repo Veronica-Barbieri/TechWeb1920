@@ -1,6 +1,6 @@
 <?php
 
-include "../DBconnection.php";
+include "../Functions/DBconnection.php";
 
 $user_name = $_POST["username"];
 $mail = $_POST["mail"];
@@ -18,9 +18,11 @@ if($user_name==$name_result){
   header("Location: ../login.php");
 } else if($mail==$mail_result) {
   header("Location: ../login.php");
+} else if($user_name=="" || $mail=="" || $pwd==""){
+  header("Location: ../login.php");
 } else {
   $i4_newuser = "INSERT INTO user (Username, Pwd, Email) VALUES ('$user_name', '$pwd', '$mail')";
-  $new_user_errors=UpdateOrInsert_Query($i4_newuser, "Insert"); 
+  $new_user_errors=UpdateOrInsert_Query($i4_newuser, "Insert");
   header("Location: ../login.php");
 }
 ?>

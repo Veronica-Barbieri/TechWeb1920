@@ -1,6 +1,6 @@
 <?php
 
-include "DBconnection.php";
+include "Functions/DBconnection.php";
 
 //salvo l'id del singolo mazzo passato in GET
 $mazzo = $_GET["id"];

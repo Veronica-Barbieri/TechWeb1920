@@ -1,6 +1,6 @@
 <?php
 
-include "DBconnection.php";
+include "Functions/DBconnection.php";
 //query da effettuare sul database (deve essere corretta per ricercare i colori)
 $q_4cards = "SELECT Nome, Img_path, Id, Colore FROM carta";
 

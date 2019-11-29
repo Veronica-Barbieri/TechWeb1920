@@ -95,3 +95,7 @@ legend {
 .hidden {
   display: none;
 }
+
+.registration_frm {
+  display: none;
+}

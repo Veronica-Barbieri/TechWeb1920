@@ -186,7 +186,7 @@ INSERT INTO `mazzo` (`Id`, `Nome`, `Autore`, `Tipo`, `Colore_rosso`, `Colore_ver
 
 CREATE TABLE `user` (
   `Username` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `Pwd` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `Pwd` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
   `Email` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   `Admin` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -196,11 +196,11 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`Username`, `Pwd`, `Email`, `Admin`) VALUES
-('usr1', 'robba', 'ciccio.pasticcio@gmail.com', 0),
-('usr2', 'robbausr2', 'paolo@rossi.com', 0),
-('usr3', 'robbausr3', 'magic.lol@gmail.com', 0),
-('amm1', 'robbaamm1', 'amminitratore1@gmail.com', 1),
-('amm2', 'robbaamm2', 'amminitratore2@outlook.com', 1);
+('giacomo', '39d8eb8050f7e5e62719c73948fed22561bf84e256822bf46d04fbc0ba1f55b6', 'ciccio.pasticcio@gmail.com', 0),
+('usr2', 'db2a60410d32e19766d6205a5011e0e25ac1f16744b8185a530b50af91951dcb', 'paolo@rossi.com', 0),
+('usr3', '42c132b447f5fbcf548054b0ef541e1033cf87620270e07a18e7bc4708bf39e5', 'magic.lol@gmail.com', 0),
+('amm1', 'cdd76addd13ae0b93c363b5202f17cb4c0843a68e80c5cea5f21d8b15e642f2c', 'amministratore1@gmail.com', 0),
+('amm2', 'c57b0de93d96274d60af9cd57540737e368043162cfd4b039fdfe4321b3227ff', 'amministratore2@gmail.com', 0);
 
 --
 -- Indici per le tabelle scaricate

@@ -185,3 +185,7 @@ html,body{
     display:inline-block;
 	padding: 2em;
 }
+
+.registration_frm {
+  display: none;
+}

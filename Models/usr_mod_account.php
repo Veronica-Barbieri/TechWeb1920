@@ -1,6 +1,6 @@
 <?php
 
-  include "../DBconnection.php";
+  include "../Functions/DBconnection.php";
   session_start();
 
   $data = array(
@@ -8,6 +8,8 @@
         "mail" => $_POST["mail"],
         "pwd" => $_POST["pwd"]
       );
+
+  $data["pwd"] = hash('sha256', $data["pwd"]);
 
   if($data["usrname"]!="" || $data["mail"]!="" || $data["pwd"]!=""){
     $u4_users = "UPDATE user SET";
@@ -29,15 +31,14 @@
     $u4_users .= " WHERE Username='{$_SESSION["Username"]}'";
     $u4_mazzo .= " WHERE Autore='{$_SESSION["Username"]}'";
 
-    $_SESSION["Username"] = $data["usrname"];
+    if($data["usrname"]!="")
+      $_SESSION["Username"] = $data["usrname"];
 
-    $errors_users = Update_Query($u4_users);
-    $errors_mazzo = Update_Query($u4_mazzo);
+    $errors_users = UpdateOrInsert_Query($u4_users, "Update");
+    $errors_mazzo = UpdateOrInsert_Query($u4_mazzo, "Update");
 
     header("Location: ../usr_page.php");
   } else {
     header("Location: ../usr_page.php"); //qui viene inserita una funzione javascript che segnala di riempire i campi
   }
-
-
- ?>
+?>

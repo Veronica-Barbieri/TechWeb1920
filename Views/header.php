@@ -26,17 +26,15 @@
          <li class="nb-item"><a class="nb-link" href="index.php" xml:lang="en">Home</a></li><li class="nb-item"><a class="nb-link" href="regole.php">Regole</a></li><li class="nb-item"><a class="nb-link" href="cardwiki.php">Wiki Carte</a></li><li class="nb-item"><a class="nb-link" href="deck_forum.php" xml:lang="en">Forum</a></li><li class="nb-item"><a class="nb-link" href="contacts.php" xml:lang="en">About us</a></li>
       </ul>
     </div>
-    <div class="nb-login">
-      <?php if(isset($_SESSION["Username"])) {
-        echo "<a class='nb-link' href='usr_page.php'>";
-        echo "<i class='fas fa-sign-in-alt' xml:lang='en'></i>";
-        echo $_SESSION["Username"]."</a>";
-      } else {
-        echo "<a class='nb-link' href='login.php'>";
-        echo "<i class='fas fa-sign-in-alt' xml:lang='en'></i>";
-        echo "Login</a>";
-      } ?>
-    </div>
+    <?php if(isset($_SESSION["Username"])) { ?>
+      <a class='nb-login' href='usr_page.php'>
+      <i class='fas fa-sign-in-alt' xml:lang='en'><?php echo $_SESSION["Username"] ?></i>
+      </a>
+    <?php } else {  ?>
+      <a class='nb-login' href='login.php'>
+      <i class='fas fa-sign-in-alt' xml:lang='en'>Login</i>
+      </a>
+  <?php } ?>
   </div>
 
 <style>

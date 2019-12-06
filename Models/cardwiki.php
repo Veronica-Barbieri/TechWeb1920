@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL && ~E_NOTICE);
-include 'DBconnection.php';
+include 'Functions/DBconnection.php';
 include 'Functions/search.php';
 
 if (intval($_GET["page"])) {

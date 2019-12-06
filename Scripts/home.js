@@ -11,3 +11,8 @@ function show(id) {
 function hide(id) {
   document.getElementById(id).style.display = "none";
 }
+
+function show_and_hide(show_id, hide_id){
+  document.getElementById(show_id).style.display = "block";
+  document.getElementById(hide_id).style.display = "none";
+}

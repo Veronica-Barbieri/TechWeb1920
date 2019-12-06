@@ -2,7 +2,6 @@
   margin:0em;
   padding:0em;
 }
-/*link='.wiki .linkedDeck','.nb-link','.nb-logo','.nb-login','.externalLink','.cardLink',.btn_box a*/
 .menu a,.linkText,.link{
 	color:burlywood;
 }
@@ -132,12 +131,13 @@ html,body{
 	margin:2em;
 	margin-top:1em;
 	margin-bottom:1em;
+
 }
 .deck_box .Title{
 	font-size:2em;
 }
 /*header*/
-.nb-item {
+/*.nb-item {
 	margin: 0em 2em;
 	font-size:150%;
 }
@@ -157,7 +157,7 @@ html,body{
 .nb-login{
 	font-size:150%;
 	text-align:right;
-}	
+}	*/
 /*end header*/
 .singlepannel,.hidden{
 	display: none;
@@ -184,4 +184,4 @@ html,body{
 .sez-footer {
     display:inline-block;
 	padding: 2em;
-} 
+}

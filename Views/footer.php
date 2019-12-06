@@ -26,6 +26,3 @@
     </ul>
   </div>
 </div>
-<style media="screen">
-
-</style>

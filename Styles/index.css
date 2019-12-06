@@ -2,45 +2,48 @@
   margin:0em;
   padding:0em;
 }
+html,body{
+  height:100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+  list-style-type:none;
+}
+.content,.header,.footer,.manaButton{
+  background-color:#383838;
+}
+.content{
+  min-height:54%;
+  text-align:center;
+}
 .menu a,.linkText,.link{
-	color:burlywood;
+	color:#deb887;
 }
 .link{
 	text-decoration:none;
 }
 .link:visited,.linkText:visited{
-	color:chocolate;
+	color:#7B3F00;
 }
 .link:hover,.linkText:hover,.footerText,.footerTextTitle{
-	color:white;
+	color:#FFFFFF;
 }
 .listaMana,.content fieldset,.content legend,.content h1,.content h2,.content h3,#form ul li{
-	color:cornsilk;
-}
-ul{
-	list-style-type:none;
-}
-.content,.header,.footer,.manaButton{
-	background-color:#383838;
+	color:#fff8dc;
 }
 .card_img{
 	width:12em;
 	margin-top:1em;
+  border-radius: 10px;
 }
 .card_type{
 	margin-top:0.5em;
 }
-html,body{
-	height:100%;
-	font-family: Arial, Helvetica, sans-serif;
-}
-.content{
-	min-height:54%;
-	text-align:center;
-}
 .box{
 	padding-top:2em;
 }
+
+/*******************/
 .content fieldset{
     margin: auto;
     width: 50%;
@@ -59,7 +62,8 @@ html,body{
 	text-align:center;
 	font-size:1.5em;
 }
-.inline_el,.color_checkbox, .src_col1, .src_col2,.navbar,.nb-col1,.nb-logo,.nb-login,.nb-item,.card_type ul li {
+/*******************/
+.inline_el,.color_checkbox, .src_col1, .src_col2,.card_type ul li {
 	display: inline-block;
 }
 .src_dropdown {
@@ -72,10 +76,6 @@ html,body{
 .color_checkbox{
 	margin: 0.5em;
 }
-/*
-.current_page {
-  border: 1px solid #000;
-}*/
 .form .simpleText,.content label{
 	margin:0.5em;
 	display:block;
@@ -89,7 +89,7 @@ html,body{
 .content .simpleText,#caratteristiche li,.deck_cards li{
 	padding-left:8em;
 	padding-right:8em;
-	color:white;
+	color:#FFFFFF;
 }
 .content h1,.content h2,.content h3,#form ul li{
 	margin-bottom:0.5em;
@@ -100,7 +100,7 @@ html,body{
 .manaButton{
 	border: solid;
 	padding: 0.5em 2em 0.2em 2em;
-	color:white;
+	color:#FFFFFF;
 	cursor:pointer;
 }
 .carta{
@@ -108,7 +108,7 @@ html,body{
 	margin-top:0.5em;
 }
 #caratteristiche h1{
-	color:cornsilk;
+	color:#fff8dc;
 	font-size:2em;
 	margin-bottom:0.5em;
 }
@@ -124,7 +124,7 @@ html,body{
   width: 80%;
 }
 .wiki{
-  border: 1px solid white;
+  border: 1px solid #FFFFFF;
 }
 .src_form .formButton,.deck_box{
 	display:inline-block;
@@ -136,29 +136,57 @@ html,body{
 .deck_box .Title{
 	font-size:2em;
 }
-/*header*/
-/*.nb-item {
-	margin: 0em 2em;
-	font-size:150%;
+
+/*--------
+CSS HEADER
+----------*/
+.header{
+  width: 100%;
+  text-align: center;
+  background-color: #383838;
+  border-bottom: 3px solid;
+  box-shadow: inset 0px -2px 31px 0.1em black;
 }
-.nb-col1,.navbar{
-	width: 80%;
-}
-.nb-logo,.nb-login{
-	width: 19%;
+
+.nb-col1, .nb-login, .nb-logo, .nb-item{
+  display: inline-block;
 }
 .nb-logo{
-	padding-top:2em;
-	vertical-align:middle;
+  text-align: left;
+  vertical-align: middle;
+  padding: 1.1em;
 }
-.nb-logo,.navbar{
-	text-align:center;
+.nb-logo img{
+  width: 4em;
+}
+.nb-col1{
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
 }
 .nb-login{
-	font-size:150%;
-	text-align:right;
-}	*/
+  text-align: right;
+  font-size: 1.2em;
+}
+.nb-item{
+  padding: 0.7em 0;
+  border-right: 2px solid #d2691e;
+}
+.nb-item:first-child{
+  border-left: 2px solid #d2691e;
+}
+.nb-item:hover{
+  background-color: #d2691e;
+  transition: 0.3s;
+}
+.nb-link{
+  padding: 0.7em 1em;
+  font-size: 1.2em;
+  color: #fff8dc;
+}
 /*end header*/
+
 .singlepannel,.hidden{
 	display: none;
 }
@@ -170,7 +198,7 @@ html,body{
 	font-size: 1em;
 }
 .manaButton:focus{
-	background-color:cornsilk;
+	background-color:#fff8dc;
 }
 /* footer */
 .footer{

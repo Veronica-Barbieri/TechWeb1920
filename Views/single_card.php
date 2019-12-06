@@ -70,6 +70,6 @@ delle carte senza che prema back dal browser -->
     <li>Valore difesa: <?php echo $card_info["DEF"];?></li>
     <?php } ?>
   </ul>
-  <img xml:lang="en" id="Immagine della carta<?php echo $card_info["Nome"];?>" src="<?php echo $card_info["img_path"];?>">
+  <img class="card_img" xml:lang="en" id="Immagine della carta<?php echo $card_info["Nome"];?>" src="<?php echo $card_info["img_path"];?>">
 </div>
 </div>

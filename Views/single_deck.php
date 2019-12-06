@@ -19,7 +19,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       <li>
       <p><?php echo $value["Nome"];?></p>
       <p><?php echo $value["Artista"];?></p>
-      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img class="card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
       </li>
       <?php } ?>
     </ul>
@@ -36,7 +36,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       <li>
       <p><?php echo $value["Nome"];?></p>
       <p><?php echo $value["Artista"];?></p>
-      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img class="card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
       </li>
       <?php } ?>
     </ul>
@@ -53,7 +53,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       <li>
       <p><?php echo $value["Nome"];?></p>
       <p><?php echo $value["Artista"];?></p>
-      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img class="card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
       </li>
       <?php } ?>
     </ul>
@@ -70,7 +70,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       <li>
       <p><?php echo $value["Nome"];?></p>
       <p><?php echo $value["Artista"];?></p>
-      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img class="card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
       </li>
       <?php } ?>
     </ul>
@@ -87,7 +87,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       <li>
       <p><?php echo $value["Nome"];?></p>
       <p><?php echo $value["Artista"];?></p>
-      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img class="card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
       </li>
       <?php } ?>
     </ul>
@@ -104,7 +104,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       <li>
       <p><?php echo $value["Nome"];?></p>
       <p><?php echo $value["Artista"];?></p>
-      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img class="card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
       </li>
       <?php } ?>
     </ul>
@@ -121,7 +121,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       <li>
       <p><?php echo $value["Nome"];?></p>
       <p><?php echo $value["Artista"];?></p>
-      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img class="card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
       </li>
       <?php } ?>
     </ul>
@@ -138,7 +138,7 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
       <li>
       <p><?php echo $value["Nome"];?></p>
       <p><?php echo $value["Artista"];?></p>
-      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
+      <a href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'><img class="card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'></a>
       </li>
       <?php } ?>
     </ul>

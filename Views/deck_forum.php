@@ -62,7 +62,7 @@
       if ($key >= $disp_deck*($cur_page-1) && $key < $disp_deck*$cur_page) {
         ?>
         <a class="linkedDeck link"href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
-          <div class="deck_box">
+          <div class="deck_box box">
             <?php if($value["Colore_verde"]) { ?>
               <img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
             <?php } if($value["Colore_rosso"]) { ?>

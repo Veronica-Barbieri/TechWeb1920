@@ -1,38 +1,38 @@
 <div class="content">
 <form class="src_form" action="cardwiki.php" method="get"><!-- da implementare la gestione del form -->
-  <fieldset class="src_col1">
+  <fieldset class="src_col1 box">
     <legend for="filter">Cerca la tua carta:</legend>
     <div class="src_field_group">
-      <div class="input">
-        <label>Nome della carta</label>
+      <div class="in_label" class="input">
+        <label class="in_label">Nome della carta</label>
         <input class="inputArea" type="text" name="nomecarta" value="">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <label class="in_label" for="color">
           <img src="Resources/White_Mana.png" alt="Bianco">
         </label>
         <input type="checkbox" name="bianco" value="1">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <label class="in_label" for="color">
           <img src="Resources/Blue_Mana.png" alt="Blu">
         </label>
         <input type="checkbox" name="blu" value="1">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <label class="in_label" for="color">
           <img src="Resources/Black_Mana.png" alt="Nero">
         </label>
         <input type="checkbox" name="nero" value="1">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <label class="in_label" for="color">
           <img src="Resources/Red_Mana.png" alt="Rosso">
         </label>
         <input type="checkbox" name="rosso" value="1">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <label class="in_label" for="color">
           <img src="Resources/Green_Mana.png" alt="Verde">
         </label>
         <input type="checkbox" name="verde" value="1">
@@ -40,7 +40,7 @@
     </div>
     <div class="src_field_group">
       <div class="src_dropdown_group">
-        <label class="dropdown_text" for="order">Espansione:</label>
+        <label class="in_label" class="dropdown_text" for="order">Espansione:</label>
         <select class="src_dropdown" name="set">
             <option value="None">Nessuna scelta</option>
             <optgroup label="Core Sets">
@@ -63,7 +63,7 @@
           </select>
     </div>
     <div class="src_dropdown_group">
-      <label class="dropdown_text" for="order">Tipo di carta:</label>
+      <label class="in_label" class="dropdown_text" for="order">Tipo di carta:</label>
       <select class="src_dropdown" name="tipo">
         <option value="None">Nessuna scelta</option>
         <option value="Artefatto">Artefatto</option>

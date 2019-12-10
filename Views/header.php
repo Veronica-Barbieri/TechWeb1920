@@ -11,7 +11,6 @@
   <meta name="author" content="" />
   <meta name="keywords" content="gioco, carte, Magic the Gathering, MTG,
                                   mazzo, deck, regole" />
-
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link rel="stylesheet" href="Styles/index.css">
   <script type="text/javascript" src="Scripts/home.js"></script>
@@ -23,16 +22,18 @@
     </div>
     <div class="nb-col1">
       <ul class="navbar">
-         <li class="nb-item"><a class="nb-link" href="index.php" xml:lang="en">Home</a></li><li class="nb-item"><a class="nb-link" href="regole.php">Regole</a></li><li class="nb-item"><a class="nb-link" href="cardwiki.php">Wiki Carte</a></li><li class="nb-item"><a class="nb-link" href="deck_forum.php" xml:lang="en">Forum</a></li><li class="nb-item"><a class="nb-link" href="contacts.php" xml:lang="en">About us</a></li>
+         <li class="nb-item"><a class="nb-link" href="index.php" xml:lang="en"><i class="fas fa-home"></i>Home</a></li><li class="nb-item"><a class="nb-link" href="regole.php"><i class="fas fa-scroll"></i>Regole</a></li><li class="nb-item"><a class="nb-link" href="cardwiki.php"><i class="fas fa-hat-wizard"></i>Wiki Carte</a></li><li class="nb-item"><a class="nb-link" href="deck_forum.php" xml:lang="en"><i class="fas fa-archive"></i>Forum</a></li><li class="nb-item"><a class="nb-link" href="contacts.php" xml:lang="en"><i class="fas fa-users"></i>About us</a></li>
       </ul>
     </div>
     <?php if(isset($_SESSION["Username"])) { ?>
-      <a class='nb-login' href='usr_page.php'>
-      <i class='fas fa-sign-in-alt' xml:lang='en'><?php echo $_SESSION["Username"] ?></i>
+      <a class='nb-login nb-link' href='usr_page.php'>
+      <i class='fas fa-sign-in-alt' xml:lang='en'></i>
+      <?php echo $_SESSION["Username"] ?>
       </a>
     <?php } else {  ?>
-      <a class='nb-login' href='login.php'>
-      <i class='fas fa-sign-in-alt' xml:lang='en'>Login</i>
+      <a class='nb-login nb-link' href='login.php'>
+      <i class='fas fa-sign-in-alt' xml:lang='en'></i>
+      Login
       </a>
   <?php } ?>
   </div>

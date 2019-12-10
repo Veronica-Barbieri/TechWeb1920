@@ -4,12 +4,9 @@
   <h2> <?php echo $info_deck["Autore"] ?> </h2>
   <p class="simpleText"> <?php echo $info_deck["Tipo"] ?> </p>
 </div>
-
 <div class="deck_cards">
-
 <!--Per ogni carta presente nel mazzo ne verifico la tipologia e ne effettuo la stampa
 ordinando l'output in modo che le carte siano divise per tipologia-->
-
 <?php if($tipo_in_mazzo["Artefatto"]==true) { ?>
   <div class='card_type'>
   <h1>Artefatto</h1>
@@ -26,7 +23,6 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
     <?php } ?>
   </div>
 <?php } ?>
-
 <?php if($tipo_in_mazzo["Creatura"]==true) { ?>
   <div class='card_type'>
   <h1>Creatura</h1>
@@ -43,7 +39,6 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
     <?php } ?>
   </div>
 <?php } ?>
-
 <?php if($tipo_in_mazzo["Incantesimo"]==true) { ?>
   <div class='card_type'>
   <h1>Incantesimo</h1>
@@ -60,7 +55,6 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
     <?php } ?>
   </div>
 <?php } ?>
-
 <?php if($tipo_in_mazzo["Istantanea"]==true) { ?>
   <div class='card_type'>
   <h1>Istantanea</h1>
@@ -77,7 +71,6 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
     <?php } ?>
   </div>
 <?php } ?>
-
 <?php if($tipo_in_mazzo["Planeswalker"]==true) { ?>
   <div class='card_type'>
   <h1>Planeswalker</h1>
@@ -94,7 +87,6 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
     <?php } ?>
   </div>
 <?php } ?>
-
 <?php if($tipo_in_mazzo["Stregoneria"]==true) { ?>
   <div class='card_type'>
   <h1>Stregoneria</h1>
@@ -111,7 +103,6 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
     <?php } ?>
   </div>
 <?php } ?>
-
 <?php if($tipo_in_mazzo["Terra"]==true) { ?>
   <div class='card_type'>
   <h1>Terra</h1>
@@ -128,7 +119,6 @@ ordinando l'output in modo che le carte siano divise per tipologia-->
     <?php } ?>
   </div>
 <?php } ?>
-
 <?php if($tipo_in_mazzo["Tribale"]==true) { ?>
   <div class='card_type'>
   <h1>Tribale</h1>

@@ -1,5 +1,5 @@
 <div class="content">
-	<div class="box" id="rules">
+	<div class="pres_text" id="index_pres">
 		<h1> Insegui nuove sfide! </h1>
 		<p class="simpleText"> Benvenuto nel mondo di <span xml:lang="en"> Magic: The Gathering </span>, il gioco di carte collezionabili di maggior successo al mondo. Stai per scoprire i motivi che spingono
 			milioni di persone in tutto il pianeta a giocare a Magic: profondità strategica, mondi fantastici, personaggi carismatici e una community globale.

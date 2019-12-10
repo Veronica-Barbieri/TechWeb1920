@@ -4,7 +4,7 @@
   Per leggere un glossario di tutti i termini utili, CLICCA QUI!
 </a>
 <h2>Naviga le regole</h2>
-<ul class="menu" id="menu_regole">
+<ul class="menu box" id="menu_regole">
   <li> <a href="#basi">Le basi del gioco</a> </li>
   <li> <a href="#tipi">Tipi di carte</a>
     <ul>
@@ -170,69 +170,4 @@
       risolve la magia o abilità in cima alla pila.
     </p>
     </div>
-
-<style>
-	.content{
-		/*text-align:center;*/
-    background: #383838;
-  }
-
-/*	body{
-		background:#383838;
-	}*/
-
-	.content h1,.content h2{
-		color:#fff8dc;
-		/*margin-top:1em;*/
-		/*margin-bottom:1em;*/
-	}
-  .glossario{
-    position: relative;
-  }
-  .menu {
-    position: absolute;
-    left: 0;
-    border: 1px solid #fff8dc;
-    padding: 0.5em;
-  }
-  .content_regole{
-    margin-left: 22em;
-    width: 70%;
-  }
-	.simpleText{
-    color: #fff;
-		/*padding-left: 8em;*/
-		padding-right:8em;
-    padding-bottom: 0.5em;
-	}
-  .main_title{
-    font-size: 1.3em;
-    color: #fff;
-  }
-  .sec_title{
-    font-size: 1em;
-    padding-left: 0.8em;
-    color: #fff;
-  }
-/*	p{
-		color:white;
-	}*/
-
- /*.menu a{
-		color: #fff8dc;
-	}
- .menu li{
-   font-size: 0.8em;
- }*/
-	/*ul li a:hover,a:hover{
-		color:white;
-		text-decoration:underline;
-	}
-
-	ul li a,a{
-		color:burlywood;
-		text-decoration: underline;
-
-	}
-*/
-</style>
+</div>

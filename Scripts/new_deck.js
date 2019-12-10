@@ -2,14 +2,14 @@ function num_card_popup(id,nome) {
   var ris;
   var num = prompt("Scrivi la molteplicit&grave di questa carta:","0");
   if (num == 0 || num =="") {
-    //errore diopane
+    //errore
   }else {
     ris = [id,nome,num];
   }
   add_card(ris);
 }
 
-function add_card(data_array) {//EDIT
+function add_card(data_array) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {

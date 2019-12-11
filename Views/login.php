@@ -11,7 +11,7 @@
   <p>Non hai un account?</p>
   <button type="button" name="registration_frm" onclick="show_and_hide('registration_frm', 'login_frm')">Registrati!</button>
 </form>
-<form id="registration_frm" class="registration_frm" action="Models/usr_add.php" method="post">
+<form id="registration_frm" class="registration_frm hidden" action="Models/usr_add.php" method="post">
   <fieldset>
     <legend>Inserisci i tuoi dati</legend>
     <input type="text" name="username" placeholder="Il tuo Username qui" required>

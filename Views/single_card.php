@@ -2,11 +2,13 @@
 delle carte senza che prema back dal browser -->
 <div class="content">
 <div id="caratteristiche">
-  <h1>Caratteristiche carta</h1>
-  <ul>
-    <li>Nome carta: <?php echo $card_info["Nome"];?></li>
-    <li><?php
-    //controllo i costi delle carte e stampo le immagini che li rappresentano
+  <h1><?php echo $card_info["Nome"];?></h1>
+  <img class="single_card_img" xml:lang="en" id="Immagine della carta<?php echo $card_info["Nome"];?>" src="<?php echo $card_info["img_path"];?>">
+  <div class="desc_card box">
+    <ul>
+      <li>Nome carta: <?php echo $card_info["Nome"];?></li>
+      <li><?php
+      //controllo i costi delle carte e stampo le immagini che li rappresentano
       if($global_costo!=0) { ?>
         <p>Color:
         <?php } if($card_info["Costo_nocolor"]!=0) { ?>
@@ -52,24 +54,24 @@ delle carte senza che prema back dal browser -->
             <?php $bi++;
           };
         };
-    ?></p>
-  </li>
-    <li>Tipo: <?php echo $card_info["Tipo"];?></li>
-    <?php if($card_info["Descrizione"]) { ?>
-    <li>Descrizione: <?php echo $card_info["Descrizione"];?></li>
-    <?php } if($card_info["Flavour_text"]) { ?>
-    <li>Flavour text: <?php echo $card_info["Flavour_text"];?></li>
-    <?php } ?>
-    <li>Espansione: <?php echo $card_info["Espansione"];?></li>
-    <li>Rarit&agrave: <?php echo $card_info["Rarita"]; ?></li>
-    <li>Artista immagine: <?php echo $card_info["Artista"];?></li>
-    <?php
+        ?></p>
+      </li>
+      <li>Tipo: <?php echo $card_info["Tipo"];?></li>
+      <?php if($card_info["Descrizione"]) { ?>
+        <li>Descrizione: <?php echo $card_info["Descrizione"];?></li>
+      <?php } if($card_info["Flavour_text"]) { ?>
+        <li>Flavour text: <?php echo $card_info["Flavour_text"];?></li>
+      <?php } ?>
+      <li>Espansione: <?php echo $card_info["Espansione"];?></li>
+      <li>Rarit&agrave: <?php echo $card_info["Rarita"]; ?></li>
+      <li>Artista immagine: <?php echo $card_info["Artista"];?></li>
+      <?php
       if($card_info["ATK"]) { ?>
         <li>Valore attacco: <?php echo $card_info["ATK"];?></li>
-    <?php } if($card_info["DEF"]) { ?>
-    <li>Valore difesa: <?php echo $card_info["DEF"];?></li>
-    <?php } ?>
-  </ul>
-  <img class="card_img" xml:lang="en" id="Immagine della carta<?php echo $card_info["Nome"];?>" src="<?php echo $card_info["img_path"];?>">
+      <?php } if($card_info["DEF"]) { ?>
+        <li>Valore difesa: <?php echo $card_info["DEF"];?></li>
+      <?php } ?>
+    </ul>
+  </div>
 </div>
 </div>

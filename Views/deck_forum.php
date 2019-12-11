@@ -1,7 +1,7 @@
 <div class="content">
 <form class="src_form" action="deck_forum.php" method="get"><!-- da implementare la gestione del form -->
-  <fieldset class="src_col1">
-    <legend for="filter">Cerca un mazzo:</legend>
+  <fieldset class="src_col1 box">
+    <legend class="frm_title box" for="filter">Cerca un mazzo:</legend>
     <div class="src_field_group">
       <div class="input">
         <label>Nome del mazzo</label>
@@ -51,18 +51,18 @@
           <option value="Upvote">Numero di Like</option>
         </select>
       </div>
-  <input class="formButton" type="submit" value="Cerca">
-  <input class="formButton" type="reset" name="reset" value="Resetta la ricerca">
+  <input class="formButton btn" type="submit" value="Cerca">
+  <input class="formButton btn" type="reset" name="reset" value="Resetta la ricerca">
   </fieldset>
 </form>
-<div class="wiki_nav deck_nav">
+<div class="deck_nav">
   <div class="wiki" id="deck_list">
     <?php if($deck) {?>
     <?php foreach ($deck as $key => $value) {
       if ($key >= $disp_deck*($cur_page-1) && $key < $disp_deck*$cur_page) {
         ?>
         <a class="linkedDeck link"href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
-          <div class="deck_box box">
+          <div class="deck_box">
             <?php if($value["Colore_verde"]) { ?>
               <img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
             <?php } if($value["Colore_rosso"]) { ?>

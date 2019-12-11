@@ -13,20 +13,22 @@
 	<div class="box inline_el" id="hot_decks">
 		<h1> Hot Decks </h1>
 		<?php foreach ($deck as $num => $value) { ?>
-			<h1> <?php echo $value["Nome"]; ?> </h1>
-			<?php if($value["Colore_verde"]) { ?>
-				<img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
-			<?php } if($value["Colore_rosso"]) { ?>
-				<img src='Resources/Red_Mana.png' alt='colore mazzo rosso'>
-			<?php } if($value["Colore_blu"]) { ?>
-				<img src='Resources/Blue_Mana.png' alt='colore mazzo blu'>
-			<?php } if($value["Colore_nero"]) { ?>
-				<img src='Resources/Black_Mana.png' alt='colore mazzo nero'>
-			<?php } if($value["Colore_bianco"]) { ?>
-				<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>
-			<?php } ?>
-			<p class="simpleText"> <?php echo $value["Autore"]; ?> </p>
-			<p class="simpleText"> <?php echo $value["Tipo"]; ?> </p>
+			<div class="single_hot_deck">
+				<h2> <?php echo $value["Nome"]; ?> </h2>
+				<?php if($value["Colore_verde"]) { ?>
+					<img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
+				<?php } if($value["Colore_rosso"]) { ?>
+					<img src='Resources/Red_Mana.png' alt='colore mazzo rosso'>
+				<?php } if($value["Colore_blu"]) { ?>
+					<img src='Resources/Blue_Mana.png' alt='colore mazzo blu'>
+				<?php } if($value["Colore_nero"]) { ?>
+					<img src='Resources/Black_Mana.png' alt='colore mazzo nero'>
+				<?php } if($value["Colore_bianco"]) { ?>
+					<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>
+				<?php } ?>
+				<p class="simpleText"> <?php echo $value["Autore"]; ?> </p>
+				<p class="simpleText"> <?php echo $value["Tipo"]; ?> </p>
+			</div>
 		<?php } ?>
 	</div>
 	<div class="color_container_box inline_el box" id="card_panel">

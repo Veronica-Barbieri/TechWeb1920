@@ -1,7 +1,7 @@
 <div class="content">
 <form class="src_form" action="cardwiki.php" method="get"><!-- da implementare la gestione del form -->
   <fieldset class="src_col1 box">
-    <legend for="filter">Cerca la tua carta:</legend>
+    <legend class="frm_title box" for="filter">Cerca la tua carta:</legend>
     <div class="src_field_group">
       <div class="in_label" class="input">
         <label class="in_label">Nome della carta</label>
@@ -77,8 +77,8 @@
       </select>
     </div>
   </div>
-  <input class="formButton" type="submit" name="search_input" value="Cerca">
-  <input class="formButton" type="reset" name="reset" value="Resetta la ricerca">
+  <input class="formButton btn" type="submit" name="search_input" value="Cerca">
+  <input class="formButton btn" type="reset" name="reset" value="Resetta la ricerca">
   </fieldset>
 </form>
 <div class="wiki_nav">
@@ -88,7 +88,7 @@
         if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {?>
           <div class="card_box">
           <a class="cardLink link" href="single_card.php?id=<?php echo $value["Id"] ?>&name=<?php echo $value["Nome"] ?>">
-            <p><?php echo $value["Nome"]; ?></p>
+            <p class="card_title"><?php echo $value["Nome"]; ?></p>
             <img class="card_img" src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>">
           </a>
           </div>

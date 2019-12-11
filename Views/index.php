@@ -41,7 +41,7 @@
 			</div>
 			<div class="pannelcarte">
 				<?php foreach ($trisample as $key => $pannel) { ?>
-					<div class="singlepannel <?php echo "".($key==0) ? "active" : ""; ?> " id="pannel<?php echo $key; ?>">
+					<div class="<?php echo "".($key==0) ? "active" : "hidden"; ?> " id="pannel<?php echo $key; ?>">
 						<?php foreach ($pannel as $card) { ?>
 							<div class="carta inline_el">
 								<h1 class="card_title"><?php echo $card["Nome"];?></h1>

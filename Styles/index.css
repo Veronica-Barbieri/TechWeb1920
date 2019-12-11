@@ -19,6 +19,12 @@ a{
   padding: 0 0.4em;
   font-size: 1em;
 }
+.hidden{
+  display: none;
+}
+.active{
+  display:block;
+}
 /*--------
 CSS HEADER
 ----------*/
@@ -210,12 +216,6 @@ CSS HEADER
 }
 
 
-.singlepannel,.hidden{
-	display: none;
-}
-.active{
-	display:block;
-}
 .card_title{
 	font-size: 1em;
   padding-top: 0.5em

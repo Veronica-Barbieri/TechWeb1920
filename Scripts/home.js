@@ -5,14 +5,21 @@ function changeCards(pannelid){
 }
 
 function show(id) {
-  document.getElementById(id).style.display = "block";
+  var element = document.getElementById(id);
+  element.classList.add("active");
+  element.classList.remove("hidden");
 }
 
 function hide(id) {
-  document.getElementById(id).style.display = "none";
+  var element = document.getElementById(id);
+  element.classList.add("hidden");
+  element.classList.remove("active");
 }
 
 function show_and_hide(show_id, hide_id){
-  document.getElementById(show_id).style.display = "block";
-  document.getElementById(hide_id).style.display = "none";
+  var show_element = document.getElementById(show_id);
+  show_element.classList.add("active");
+  show_element.classList.remove("hidden");
+  var hide_element = document.getElementById(hide_id);
+  hide_element.classList.add("hidden");
 }

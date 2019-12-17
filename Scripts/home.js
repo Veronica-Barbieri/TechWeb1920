@@ -22,4 +22,5 @@ function show_and_hide(show_id, hide_id){
   show_element.classList.remove("hidden");
   var hide_element = document.getElementById(hide_id);
   hide_element.classList.add("hidden");
+  show_element.classList.remove("active");
 }

@@ -27,7 +27,11 @@
       </ul>
     </div>
     <?php if(isset($_SESSION["Username"])) { ?>
-      <a class='nb-login nb-link' href='usr_page.php'>
+      <?php if(isset($_SESSION["Admin"])){ ?>
+      <a class='nb-login nb-link' href='admin_page.php'>
+      <?php } else {?>
+        <a class='nb-login nb-link' href='usr_page.php'>
+      <?php } ?>
       <i class='fas fa-sign-in-alt' xml:lang='en'></i>
       <?php echo $_SESSION["Username"] ?>
       </a>

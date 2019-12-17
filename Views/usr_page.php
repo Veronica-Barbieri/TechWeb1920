@@ -4,10 +4,6 @@
     Modifica le tue informazioni
   </button>
   <button type="button" name="logout" onclick="window.location.href='logout.php'">Logout</button>
-  <!--<form action="logout.php">
-    <button type="submit">Logout</button>
-  </form> || primo metodo usato, non praticabile
-  perché poco accessibile-->
   <form class="usr_form hidden" id="usr_form" action="Models/usr_mod_account.php" method="post">
     <fieldset>
       <legend for="filter">Modifica i tuoi dati:</legend>

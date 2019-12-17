@@ -1,29 +1,29 @@
 <div class="content">
   <h1><?php echo "Benvenuto ".$curr_usr."!";?></h1>
-  <button type="button" name="edit_profile" onclick="show('usr_form')">
+  <button class="btn" type="button" name="edit_profile" onclick="show('usr_form')">
     Modifica le tue informazioni
   </button>
   <button type="button" name="logout" onclick="window.location.href='logout.php'">Logout</button>
   <form class="usr_form hidden" id="usr_form" action="Models/usr_mod_account.php" method="post">
-    <fieldset>
-      <legend for="filter">Modifica i tuoi dati:</legend>
+    <fieldset class="box">
+      <legend class="frm_title box" for="filter">Modifica i tuoi dati:</legend>
       <label>Username</label>
-      <input type="text" name="usrname" value="">
+        <input class="inputArea" type="text" name="usrname" value="">
       <label>Email</label>
-      <input type="email" name="mail" value="">
+        <input class="inputArea" type="email" name="mail" value="">
       <label>Password</label>
-      <input type="password" name="pwd" value="">
-      <input type="submit" name="save" value="Salva">
-      <input type="reset" name="reset" value="Resetta i campi">
-      <input type="reset" name="cancel" value="Cancella" onclick="hide('usr_form')">
+        <input class="inputArea" type="password" name="pwd" value="">
+      <input class="formButton btn" type="submit" name="save" value="Salva">
+      <input class="formButton btn" type="reset" name="reset" value="Resetta i campi">
+      <input class="formButton btn" type="reset" name="cancel" value="Cancella" onclick="hide('usr_form')">
     </fieldset>
   </form>
-  <div class="wiki_nav deck_nav">
+  <div class="deck_nav">
   <h1>I mazzi creati da te!</h1>
     <div class="wiki" id="usr_deck_list">
       <?php if($usr_deck!=0){
           foreach ($usr_deck as $key => $value) { ?>
-          <a href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
+          <a class="link" href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
             <div class="deck_box">
               <?php
               if($value["Colore_verde"]) {?>

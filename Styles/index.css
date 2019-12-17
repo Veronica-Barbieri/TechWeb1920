@@ -1,6 +1,6 @@
 *{
-  margin:0em;
-  padding:0em;
+  margin: 0em;
+  padding: 0em;
 }
 html{
   height: 100%;
@@ -10,10 +10,10 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 ul{
-  list-style-type:none;
+  list-style-type: none;
 }
 a{
-	text-decoration:none;
+	text-decoration: none;
 }
 .fas {
   padding: 0 0.4em;
@@ -62,7 +62,7 @@ CSS HEADER
   padding: 0.7em 0em;
   border-right: 2px solid #d2691e;
 }
-.nb-item:first-child{
+.nb-item: first-child{
   border-left: 2px solid #d2691e;
 }
 .nb-item:hover{
@@ -83,6 +83,8 @@ CSS HEADER
   margin-top: 1.2em;
   padding: 1em 0.5em 1em 0.5em;
   min-width: 50%;
+  background-color: #fff8dc1f;
+  vertical-align: top;
 }
 #hot_decks{
   padding: 0.6em;
@@ -91,21 +93,22 @@ CSS HEADER
   width: 20%;
   display: inline-block;
   min-width: 14.9em;
+  background-color: #fff8dc1f;
 }
 .content,.footer,.manaButton{
   background-color:#383838;
 }
 .content{
   min-height: 27.4em;
-  text-align:center;
-  padding: 1.5em;
+  text-align: center;
+  padding: 1.5em 4em 1.5em 4em;
   color: #fff;
 }
-.menu a,.linkText,.link{
+.menu a, .linkText, .link {
 	color:#deb887;
 }
 .link{
-	text-decoration:none;
+	text-decoration: none;
 }
 .link:visited,.linkText:visited{
 	color:#7B3F00;
@@ -113,7 +116,7 @@ CSS HEADER
 .link:hover,.linkText:hover,.footerText,.footerTextTitle{
 	color:#FFFFFF;
 }
-.listaMana,.content fieldset,.content legend,.content h1,.content h2,.content h3,#form ul li{
+.listaMana,.content fieldset,.content h1,.content h2,.content h3,#form ul li{
 	color:#fff8dc;
 }
 .card_img{
@@ -121,7 +124,8 @@ CSS HEADER
   border-radius: 11px;
 }
 .card_type{
-	margin-top:0.5em;
+	margin-top: 0.5em;
+  border-bottom: 1px solid #fff8dc59;
 }
 .box{
   box-shadow: 0 0 15px #000;
@@ -137,9 +141,15 @@ CSS HEADER
     display: inline-block;
     margin: 0.5em;
 }
-.content legend{
-	padding:0.3em;
-	font-size:1.5em;
+.frm_title{
+  padding: 0.3em;
+  margin-left: 0.8em;
+  margin-bottom: 0.3em;
+  font-size: 1.8em;
+  color:#fff8dc;
+  background-color: #383838;
+  border: 1px solid #fff8dc4a;
+  border-radius: 3px;
 }
 /*******************/
 .inline_el, .color_checkbox, .src_col1, .card_type ul li {
@@ -148,76 +158,98 @@ CSS HEADER
 .src_dropdown {
 	display: block;
 	width: 50%;
-	margin:auto;
-	margin-top:0.5em;
-	margin-bottom:0.5em;
+	margin: auto;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 .color_checkbox{
 	margin: 0.5em;
 }
-.form .simpleText,.content label{
-	margin:0.5em;
-	display:block;
+.cont_form{
+  width: 37%;
+  margin: auto;
+	display: block;
 }
-.form .formButton{
-	display:block;
-	margin:auto;
-	margin-top:2em;
-	margin-bottom:2em;
+.simpleText,.content label{
+	margin: 0.5em;
+	display: block;
 }
-#caratteristiche li,.deck_cards li{
-	padding-left:8em;
-	padding-right:8em;
+.formButton{
+	display: block;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+#caratteristiche li{
+	padding-left: 8em;
+	padding-right: 8em;
 	color:#FFFFFF;
 }
 .content h1,.content h2,.content h3,#form ul li{
-	padding-bottom:0.5em;
+	padding-bottom: 0.5em;
 }
 .content h2,.content h3{
-	margin-top:0.5em;
+	margin-top: 0.5em;
 }
 .manaButton{
 	border: solid black;
 	padding: 0.5em 2em 0.2em 2em;
-	cursor:pointer;
+	cursor: pointer;
   border-radius: 8px;
+}
+.manaButton:hover{
+  background-color: #fff8dc1f;
 }
 .carta{
 	padding: 0.6em;
 }
 #caratteristiche h1{
 	color:#fff8dc;
-	font-size:2em;
-	margin-bottom:0.5em;
+	font-size: 2em;
+	margin-bottom: 0.5em;
 }
 #caratteristiche ul{
-	margin-bottom:2em;
+	margin-bottom: 2em;
 }
 .card_box {
   display: inline-block;
-  margin: 0.5em
+  padding: 0.5em 1em 0.5em 1em;
+}
+.card_box:hover {
+    background-color: #fff8dc2e;
+    border-radius: 12px;
+    transition: 0.4s;
 }
 .wiki_nav {
-  /*margin: auto;*/
-  width: 65%;
+  width: 66%;
   margin-left: 25em;
 }
+
 .src_form{
   margin-left: 2em;
   position: absolute;
   left: 0;
 }
-.formButton,.deck_box{
-	display:inline-block;
+.deck_box{
+	display: block;
+  border: 1px solid #fff8dc59;
+  margin-bottom: 1em;
+  border-radius: 3px;
+}
+.deck_box:hover{
+  background-color: #fff8dc2e;
+}
+.formButton{
+	display: inline-block;
 	margin: 1em 2em 1em 2em;
 }
 .deck_box .Title{
-	font-size:2em;
+	font-size: 2em;
 }
 
 
 .card_title{
-	font-size: 1em;
+	font-size: 1.1em;
   padding-top: 0.5em
 }
 .manaButton:focus{
@@ -241,18 +273,99 @@ CSS HEADER
   padding: 0 3.5em 0 3.5em;
 }
 /**/
+
+/*deck forum*/
+#deck_list{
+  margin-top: 1.2em;
+}
+/**/
+
+/*single card*/
+.desc_card{
+  display: inline-block;
+  min-height: 22em;
+  vertical-align: middle;
+  padding: 1em 0 0 0;
+  width: 30%;
+}
+
+.single_card_img{
+  width: 15em;
+  border-radius: 11px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4em;
+  box-shadow: 0 0 2em #000;
+  border: 1px solid #fff8dc59;
+}
+/**/
+
+/*contatti / about us*/
+.inputArea{
+  padding: 0.4em;
+  border-radius: 3px;
+}
+/**/
+
+/*Single deck*/
+.deck_cards{
+  width: 80%;
+  margin: auto;
+}
+.deck_card_img{
+  display: block;
+  margin-top: -1em;
+}
+.num_card{
+  box-shadow: 0 0 15px black;
+  vertical-align: baseline;
+  width: 1.7em;
+  border-radius: 5px;
+  height: 1.7em;
+  color: #000;
+  transform: translateX(5em) translateY(1em);
+  background-color: #fff8dc;
+}
+.fa-square {
+  font-size: 2.2em;
+  transform: translatey(-3px) translateX(-2px);
+}
+/**/
+
+/*bottone*/
+.btn {
+  padding: 0.4em;
+  font-size: 0.9em;
+  border-radius: 3px;
+  background-color: #fff8dc;
+  border: none;
+  box-shadow: 0 0 5px black;
+}
+.btn:hover {
+  background-color: #d2691e;
+  transition: 0.2s;
+}
+/**/
+
+/*user page*/
+.deck_nav{
+  width: 66%;
+  margin: auto;
+}
+/**/
+
 /* footer */
 .footer{
-    padding:0.6em;
-	vertical-align:bottom;
-	text-align:center;
+    padding: 0.6em;
+	vertical-align: bottom;
+	text-align: center;
   box-shadow: inset 0px -2px 31px 0.1em black;
   border-top: 1px solid #fff8dc59;
 }
 .footerTextTitle{
-	margin-bottom:10%;
+	margin-bottom: 10%;
 }
 .sez-footer {
-    display:inline-block;
+    display: inline-block;
 	padding: 2em;
 }

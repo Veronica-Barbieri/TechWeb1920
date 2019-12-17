@@ -1,15 +1,15 @@
 <div class=content>
-<form class="form" id="login_frm"  action="Models/usr_check.php" method="post">
-  <fieldset>
-    <legend>Accedi al tuo account</legend>
+<form class="form" id="login_frm" action="Models/usr_check.php" method="post">
+  <fieldset class="box">
+    <legend class="frm_title box">Accedi al tuo account</legend>
     <label for="username">Username:</label>
-	<input class="inputArea" type="text" name="username">
+	   <input class="inputArea" type="text" name="username"  placeholder="Inserisci il tuo username">
     <label for="password">Password:</label>
-	<input class="inputArea" type="password" name="pwd">
-    <input class="formButton" type="submit" name="login_input" value="Login">
+      <input class="inputArea" type="password" name="pwd"  placeholder="Inserisci la tua password">
+    <input class="formButton btn" type="submit" name="login_input" value="Login">
   </fieldset>
   <p>Non hai un account?</p>
-  <button type="button" name="registration_frm" onclick="show_and_hide('registration_frm', 'login_frm')">Registrati!</button>
+  <button class="btn" type="button" name="" onclick="show_and_hide('registration_frm', 'login_frm')">Registrati!</button>
 </form>
 <form id="registration_frm" class="registration_frm hidden" action="Models/usr_add.php" method="post">
   <fieldset>
@@ -19,6 +19,6 @@
     <input type="password" name="pwd" placeholder="La tua Password qui" required>
     <input type="submit" name="registration_submit" value="Conferma" required>
   </fieldset>
-  <button type="button" name="login_back" onclick="show_and_hide('login_frm', 'registration_frm')">Ho già un account</button>
+  <button class="btn" type="button" name="login_back" onclick="show_and_hide('login_frm', 'registration_frm')">Ho già un account</button>
 </form>
 </div>

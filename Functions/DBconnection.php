@@ -29,7 +29,7 @@ function Query($query_string){
 
 //funzione che si occupa di aprire la connessione con il database e effettuare
 //la modifica di dati presenti all'interno del database
-function UpdateOrInsert_Query($query_string, $operation){
+function UpInDel_Query($query_string, $operation){
   $conn = OpenCon() or die ("Conncetion Failed: " . mysqli_connect_error());
   if($operation=="Update"){
     if(mysqli_query($conn, $query_string)){
@@ -42,9 +42,18 @@ function UpdateOrInsert_Query($query_string, $operation){
   }
   if($operation=="Insert"){
     if(mysqli_query($conn, $query_string)){
-        $updated = "User created successfully! Hurray!";
+        $updated = "Record created successfully!";
     } else {
         $updated = "Error inserting record: " . mysqli_error($conn);
+    }
+    CloseCon($conn);
+    return $updated;
+  }
+  if($operation=="Delete"){
+    if(mysqli_query($conn, $query_string)){
+        $updated = "Record eliminated successfully!";
+    } else {
+        $updated = "Error elminating record: " . mysqli_error($conn);
     }
     CloseCon($conn);
     return $updated;

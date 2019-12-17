@@ -4,6 +4,7 @@
     Modifica le tue informazioni
   </button>
   <button type="button" name="logout" onclick="window.location.href='logout.php'">Logout</button>
+  <button type="button" name="new_deck" onclick="window.location.href='new_deck.php'">Crea un nuovo mazzo</button>
   <!--<form action="logout.php">
     <button type="submit">Logout</button>
   </form> || primo metodo usato, non praticabile
@@ -27,8 +28,8 @@
     <div class="wiki" id="usr_deck_list">
       <?php if($usr_deck!=0){
           foreach ($usr_deck as $key => $value) { ?>
-          <a href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
-            <div class="deck_box">
+          <div class="deck_box" id="deck_box_<?php echo $value["Id"]; ?>">
+              <a href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
               <?php
               if($value["Colore_verde"]) {?>
                 <img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
@@ -43,8 +44,9 @@
               <?php } ?>
               <h1> <?php echo $value["Nome"]; ?> </h1>
               <p> <?php echo $value["Tipo"]; ?> </p>
-            </div>
-          </a>
+            </a>
+          <button type="button" name="delete_use_deck" onclick="delete_deck(<?php echo $value["Id"]; ?>)">Elimina il mazzo</button>
+        </div>
       <?php }
       } else { ?>
       <p>Non sono ancora stati creati mazzi</p>

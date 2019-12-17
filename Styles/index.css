@@ -260,3 +260,32 @@ CSS HEADER
 .registration_frm {
   display: none;
 }
+
+.card_insert_box {
+  display: inline;
+}
+
+/* infinite scroll temp*/
+#infinite-list {
+  /* We need to limit the height and show a scrollbar */
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+
+  /* Optional, only to check that it works with margin/padding */
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid black;
+}
+
+#current_usr_deck {
+  /* We need to limit the height and show a scrollbar */
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+
+  /* Optional, only to check that it works with margin/padding */
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid black;
+}

@@ -12,7 +12,7 @@ if (intval($_GET["page"])) {
 }
 
 //definisco la query per i mazzi
-$query_decks = "SELECT Id, Nome, Autore, Tipo, Colore_verde, Colore_rosso, Colore_blu, Colore_nero, Colore_bianco, Upvote  FROM mazzo";
+$query_decks = "SELECT Id, Nome, Autore, Tipo, Colore_verde, Colore_rosso, Colore_blu, Colore_nero, Colore_bianco  FROM mazzo";
 //effettuo la query sulla tabella dei mazzi per recuperarne le informzioni
 $query_decks_res = Query($query_decks);
 

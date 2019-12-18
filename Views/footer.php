@@ -11,9 +11,14 @@
     </div>
   </div>
   <div class="sez-footer">
-	<ul>
-		<li class="footerTextTitle">Contattaci</li>
-		<li class="fo-item"> <a class="nb-link link" href="contacts.php" xml:lang="en">About us</a> </li>
+  	<ul>
+  		<li class="footerTextTitle">Contattaci</li>
+  		<li class="fo-item"> <a class="nb-link link" href="contacts.php" xml:lang="en">About us</a> </li>
+      <?php if(isset($_SESSION["Username"]) && isset($_SESSION["Admin"])) { ?>
+          <li class="fo-item"> <a class="nb-link link" href="admin_page.php" xml:lang="en">Amministrazione</a> </li>
+      <?php } else {  ?>
+          <li class="fo-item"> <a class="nb-link link" href="login.php" xml:lang="en">Amministrazione</a> </li>
+      <?php } ?>
     </ul>
   </div>
   <div class="sez-footer">

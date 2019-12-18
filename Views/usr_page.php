@@ -3,11 +3,7 @@
   <button class="btn" type="button" name="edit_profile" onclick="show('usr_form')">
     Modifica le tue informazioni
   </button>
-  <button class="btn" type="button" name="logout" onclick="window.location.href='logout.php'">Logout</button>
-  <!--<form action="logout.php">
-    <button type="submit">Logout</button>
-  </form> || primo metodo usato, non praticabile
-  perché poco accessibile-->
+  <button type="button" name="logout" onclick="window.location.href='logout.php'">Logout</button>
   <form class="usr_form hidden" id="usr_form" action="Models/usr_mod_account.php" method="post">
     <fieldset class="box">
       <legend class="frm_title box" for="filter">Modifica i tuoi dati:</legend>

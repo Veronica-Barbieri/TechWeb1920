@@ -1,5 +1,5 @@
 <div class="content">
-<form class="src_form" action="deck_forum.php" method="get"><!-- da implementare la gestione del form -->
+<form class="src_form_deck" action="deck_forum.php" method="get"><!-- da implementare la gestione del form -->
   <fieldset class="src_col1 box">
     <legend class="frm_title box" for="filter">Cerca un mazzo:</legend>
     <div class="src_field_group">
@@ -12,34 +12,34 @@
         <input class="inputArea" type="text" name="nomeautore" value="">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <input id="bianco" type="checkbox" name="bianco" value="1">
+        <label class="cbox_label" for="bianco">
           <img src="Resources/White_Mana.png" alt="Bianco">
         </label>
-        <input type="checkbox" name="bianco" value="Bianco">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <input id="blu" type="checkbox" name="blu" value="1">
+        <label class="cbox_label" for="blu">
           <img src="Resources/Blue_Mana.png" alt="Blu">
         </label>
-        <input type="checkbox" name="blu" value="Blu">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <input id="nero" type="checkbox" name="nero" value="1">
+        <label class="cbox_label" for="nero">
           <img src="Resources/Black_Mana.png" alt="Nero">
         </label>
-        <input type="checkbox" name="nero" value="Nero">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <input id="rosso" type="checkbox" name="rosso" value="1">
+        <label class="cbox_label" for="rosso">
           <img src="Resources/Red_Mana.png" alt="Rosso">
         </label>
-        <input type="checkbox" name="rosso" value="Rosso">
       </div>
       <div class="color_checkbox">
-        <label for="color">
+        <input id="verde" type="checkbox" name="verde" value="1">
+        <label class="cbox_label" for="verde">
           <img src="Resources/Green_Mana.png" alt="Verde">
         </label>
-        <input type="checkbox" name="verde" value="Verde">
       </div>
     </div>
       <div class="src_dropdown_group">
@@ -61,8 +61,8 @@
     <?php foreach ($deck as $key => $value) {
       if ($key >= $disp_deck*($cur_page-1) && $key < $disp_deck*$cur_page) {
         ?>
-        <a class="linkedDeck link"href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
-          <div class="deck_box">
+        <div class="deck_box">
+          <a class="linkedDeck link"href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
             <?php if($value["Colore_verde"]) { ?>
               <img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
             <?php } if($value["Colore_rosso"]) { ?>
@@ -77,8 +77,8 @@
             <h1> <?php echo $value["Nome"]; ?> </h1>
             <p> <?php echo $value["Autore"]; ?> </p>
             <p> <?php echo $value["Tipo"]; ?> </p>
-          </div>
         </a>
+      </div>
     <?php
       }
     } ?>

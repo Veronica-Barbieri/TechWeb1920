@@ -6,11 +6,17 @@ delle carte senza che prema back dal browser -->
   <img class="single_card_img" xml:lang="en" id="Immagine della carta<?php echo $card_info["Nome"];?>" src="<?php echo $card_info["img_path"];?>">
   <div class="desc_card box">
     <ul>
-      <li>Nome carta: <?php echo $card_info["Nome"];?></li>
+      <li>
+        <span class="desc_sez_pre">Nome carta:</span>
+        <span class="desc_sez">
+          <?php echo $card_info["Nome"];?>
+        </span>
+      </li>
       <li><?php
       //controllo i costi delle carte e stampo le immagini che li rappresentano
       if($global_costo!=0) { ?>
-        <p>Color:
+        <p><span class="desc_sez_pre">Color:</span>
+          <span class="desc_sez">
         <?php } if($card_info["Costo_nocolor"]!=0) { ?>
           <img src='Resources/nocost<?php echo $card_info["Costo_nocolor"];?>.png' alt='"<?php echo $card_info["Costo_nocolor"]?> unit&agrave di costo senza colore'>
         <?php  };
@@ -54,23 +60,65 @@ delle carte senza che prema back dal browser -->
             <?php $bi++;
           };
         };
-        ?></p>
+        ?>
+        </span>
+      </p>
       </li>
-      <li>Tipo: <?php echo $card_info["Tipo"];?></li>
+      <li>
+        <span class="desc_sez_pre">Tipo:</span>
+        <span class="desc_sez">
+          <?php echo $card_info["Tipo"];?>
+        </span>
+       </li>
+       <?php
+       if($card_info["ATK"]) { ?>
+         <li>
+           <span class="desc_sez_pre">Valore attacco:</span>
+           <span class="desc_sez">
+             <?php echo $card_info["ATK"];?>
+           </span>
+         </li>
+       <?php } if($card_info["DEF"]) { ?>
+         <li>
+           <span class="desc_sez_pre">Valore difesa:</span>
+           <span class="desc_sez">
+             <?php echo $card_info["DEF"];?>
+           </span>
+         </li>
+       <?php } ?>
       <?php if($card_info["Descrizione"]) { ?>
-        <li>Descrizione: <?php echo $card_info["Descrizione"];?></li>
+        <li>
+          <span class="desc_sez_pre">Descrizione:</span>
+          <span class="desc_sez">
+            <?php echo $card_info["Descrizione"];?>
+          </span>
+         </li>
       <?php } if($card_info["Flavour_text"]) { ?>
-        <li>Flavour text: <?php echo $card_info["Flavour_text"];?></li>
+        <li>
+          <span class="desc_sez_pre">Flavour text:</span>
+          <span class="desc_sez">
+            <?php echo $card_info["Flavour_text"];?>
+          </span>
+        </li>
       <?php } ?>
-      <li>Espansione: <?php echo $card_info["Espansione"];?></li>
-      <li>Rarit&agrave: <?php echo $card_info["Rarita"]; ?></li>
-      <li>Artista immagine: <?php echo $card_info["Artista"];?></li>
-      <?php
-      if($card_info["ATK"]) { ?>
-        <li>Valore attacco: <?php echo $card_info["ATK"];?></li>
-      <?php } if($card_info["DEF"]) { ?>
-        <li>Valore difesa: <?php echo $card_info["DEF"];?></li>
-      <?php } ?>
+      <li>
+        <span class="desc_sez_pre">Espansione:</span>
+        <span class="desc_sez">
+          <?php echo $card_info["Espansione"];?>
+        </span>
+       </li>
+      <li>
+        <span class="desc_sez_pre">Rarit&agrave:</span>
+        <span class="desc_sez">
+          <?php echo $card_info["Rarita"]; ?>
+        </span>
+       </li>
+      <li>
+        <span class="desc_sez_pre">Artista immagine:</span>
+        <span class="desc_sez">
+          <?php echo $card_info["Artista"];?>
+        </span>
+       </li>
     </ul>
   </div>
 </div>

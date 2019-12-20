@@ -61,8 +61,8 @@
     <?php foreach ($deck as $key => $value) {
       if ($key >= $disp_deck*($cur_page-1) && $key < $disp_deck*$cur_page) {
         ?>
-        <div class="deck_box">
           <a class="linkedDeck link"href="single_deck.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"];?>">
+            <div class="deck_box">
             <?php if($value["Colore_verde"]) { ?>
               <img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
             <?php } if($value["Colore_rosso"]) { ?>
@@ -77,8 +77,8 @@
             <h1> <?php echo $value["Nome"]; ?> </h1>
             <p> <?php echo $value["Autore"]; ?> </p>
             <p> <?php echo $value["Tipo"]; ?> </p>
+          </div>
         </a>
-      </div>
     <?php
       }
     } ?>
@@ -86,50 +86,50 @@
 <div class="btn_box">
   <?php if ($num_pages>=2) {
     $_GET["page"] = 1;?>
-    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET);?>">
+    <a class="nav_btn btn" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET);?>">
       <span class="fas fa-angle-double-left"></span>
     </a>
   <?php }
   if ($cur_page>1) {
     $_GET["page"] = $cur_page-1;?>
-    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="nav_btn btn" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <span class="fas fa-angle-left"></span>
     </a>
   <?php }
   if ($cur_page>2) {
     $_GET["page"] = $cur_page-2;?>
-    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="nav_btn btn" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <?php echo $cur_page-2; ?>
     </a>
   <?php }
   if ($cur_page>1) {
     $_GET["page"] = $cur_page-1;?>
-    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="nav_btn btn" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <?php echo $cur_page-1; ?>
     </a>
   <?php } ?>
-  <a class="link" href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
+  <a class="nav_btn btn" href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
   <?php if ($num_pages-$cur_page>=1) {
     $_GET["page"] = $cur_page+1;?>
-    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="nav_btn btn" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <?php echo $cur_page+1; ?>
     </a>
   <?php }
   if ($num_pages-$cur_page>=2) {
     $_GET["page"] = $cur_page+2;?>
-    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="nav_btn btn" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <?php echo $cur_page+2; ?>
     </a>
   <?php }
   if ($num_pages-$cur_page>=1) {
     $_GET["page"] = $cur_page+1;?>
-    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
+    <a class="nav_btn btn" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>">
       <span class="fas fa-angle-right"></span>
     </a>
   <?php }
   if ($num_pages>=2) {
     $_GET["page"] = $num_pages;?>
-    <a class="link" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>"> <span class="fas fa-angle-double-right"></span> </a>
+    <a class="nav_btn btn" href="<?php echo $pagein["Controller"]; ?>?<?php echo http_build_query($_GET); ?>"> <span class="fas fa-angle-double-right"></span> </a>
   <?php } ?>
 </div>
 <?php } else { ?>

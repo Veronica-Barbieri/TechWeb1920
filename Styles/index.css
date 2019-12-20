@@ -107,13 +107,13 @@ CSS HEADER
   color: #fff;
 }
 .menu a, .linkText, .link {
-	color:#deb887;
+	color:#fff;
 }
 .link{
 	text-decoration: none;
 }
 .link:visited,.linkText:visited{
-	color:#d2691e;
+	color:#deb887;
 }
 .link:hover,.linkText:hover,.footerText,.footerTextTitle{
 	color:#FFFFFF;
@@ -430,6 +430,7 @@ CSS HEADER
 .inputArea{
   padding: 0.4em;
   border-radius: 3px;
+  min-width: 21%;
 }
 /**/
 /*Single deck*/
@@ -458,6 +459,8 @@ CSS HEADER
 /**/
 /*bottone*/
 .btn {
+  min-width: 13%;
+  min-height: 2.2em;
   padding: 0.4em;
   font-size: 0.9em;
   border-radius: 3px;
@@ -470,6 +473,14 @@ CSS HEADER
   transition: 0.2s;
 }
 /**/
+
+/*login*/
+.login_frm, .registration_frm{
+  width: 50%;
+  margin: auto;
+}
+/**/
+
 /*user page*/
 .deck_nav{
   width: 68%;

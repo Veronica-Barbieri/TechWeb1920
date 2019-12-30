@@ -8,6 +8,10 @@ html, body{
   margin: auto;
 }
 
+header{
+  border: 1px solid #000;
+}
+
 body{
   border: 1px solid #000;
 }

@@ -16,7 +16,8 @@ nb-logo{
   display: none;
 }
 
-#ham{
+.navbar{
+  display: none;
   width: 35px;
   height: 5px;
   background-color: black;

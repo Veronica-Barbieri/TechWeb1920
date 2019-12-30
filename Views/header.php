@@ -23,6 +23,11 @@
 </head>
 
 <body>
+  <div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
   <div class="header" id="header">
     <div class="nb-col1">
       <a class="nb-logo" href="index.php">

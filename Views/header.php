@@ -13,8 +13,8 @@
                                   mazzo, deck, regole" />
 
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <link rel="stylesheet" href="Styles/index.css" media='all'>
-  <link rel="stylesheet" type="text/css" href="Style/print.css" media="print"/>
+  <!--<link rel="stylesheet" href="Styles/index.css" media='all'>-->
+  <link rel="stylesheet" type="text/css" href="Style/mobile.css" media="all"/>
   <link rel="stylesheet" type="text/css" href='Style/mobile.css' media="handheld,screen"/>
   <link rel="stylesheet" type="text/css" href='Style/mobile.css' media="handheld,screen and (max-width:900px),
   only screen and (max-device-width: 600px)"/>

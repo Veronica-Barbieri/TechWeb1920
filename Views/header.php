@@ -32,6 +32,7 @@
         <i class="fab fa-wizards-of-the-coast" style="font-size: 5em;"></i>
       </a>
       <!-- Rivedere gli href per i nomi delle pagine -->
+
       <ul class="navbar">
         <li class="nb-item"> <a class="nb-link" href="index.php" xml:lang="en">Home</a> </li>
         <li class="nb-item"> <a class="nb-link" href="regole.php">Regole</a> </li>

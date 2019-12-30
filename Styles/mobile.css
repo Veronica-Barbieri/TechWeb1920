@@ -16,6 +16,12 @@ header{
   display: none;
 }
 
+#ham{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
 
 body{
   border: 1px solid #000;

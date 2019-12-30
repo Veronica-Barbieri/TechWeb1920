@@ -23,6 +23,9 @@
 </head>
 
 <body>
+  <div id="ham">
+  <div id="ham">
+  <div id="ham">
   <div class="header" id="header">
     <div class="nb-col1">
       <a class="nb-logo" href="index.php">
@@ -36,7 +39,6 @@
         <li class="nb-item"> <a class="nb-link" href="deck_forum.php" xml:lang="en">Forum</a> </li>
         <li class="nb-item"> <a class="nb-link" href="contacts.php" xml:lang="en">About us</a> </li>
       </ul>
-
     </div>
     <?php if(isset($_SESSION["Username"])) { ?>
       <a class='nb-login' href='usr_page.php'>

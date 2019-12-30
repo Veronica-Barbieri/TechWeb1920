@@ -23,9 +23,9 @@
 </head>
 
 <body>
-  <div id="ham">
-  <div id="ham">
-  <div id="ham">
+  <div id="ham"></div>
+  <div id="ham"></div>
+  <div id="ham"></div>
   <div class="header" id="header">
     <div class="nb-col1">
       <a class="nb-logo" href="index.php">

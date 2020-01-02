@@ -30,7 +30,7 @@
     <span></span>
     <span></span>
     <ul id="menu">
-      <li>Menu</li>
+      <a href="#"><li>Menu</li>
       <a href="index.php"><li>Home</li></a>
       <a href="cardwiki.php"><li>Hot decks</li>
       <a href="cardwiki.php"><li>Collezionale tutte</li>

@@ -30,11 +30,11 @@
     <span></span>
     <span></span>
     <ul id="menu">
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li>About</li></a>
-      <a href="#"><li>Info</li></a>
-      <a href="#"><li>Contact</li></a>
-      <a target="_blank"><li>Show me more</li></a>
+      <a href="index.php"><li>Home</li></a>
+      <a href="regole.php"><li>Regole</li></a>
+      <a href="cardwiki.php"><li>Wiki Carte</li></a>
+      <a href="deck_forum.php"><li>Forum</li></a>
+      <a target="contacts.php" xml:lang="en"><li>About us</li></a>
     </ul>
   </div>
   </nav>
@@ -49,7 +49,7 @@
         <li class="nb-item"> <a class="nb-link" href="index.php" xml:lang="en">Home</a> </li>
         <li class="nb-item"> <a class="nb-link" href="regole.php">Regole</a> </li>
         <li class="nb-item"> <a class="nb-link" href="cardwiki.php">Wiki Carte</a> </li>
-        <li class="nb-item"> <a class="nb-link" href="deck_forum.php" xml:lang="en">Forum</a> </li>
+        <li class="nb-item"> <a class="nb-link" href="deck_forum.php">Forum</a> </li>
         <li class="nb-item"> <a class="nb-link" href="contacts.php" xml:lang="en">About us</a> </li>
       </ul>
     </div>

@@ -27,9 +27,9 @@ header{
 body{
   margin: 0;
   padding: 0;
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
+  background: white;
+  color: black;
+  font-family: sans-serif;
 }
 
 #menuToggle{
@@ -43,13 +43,14 @@ body{
 }
 
 #menuToggle a{
+  text-align: center;
   text-decoration: none;
   color: #232323;
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover{
-  color: tomato;
+  color: #7a5050;
 }
 
 #menuToggle input{
@@ -105,7 +106,7 @@ body{
 
 #menu{
   position: absolute;
-  width: 300px;
+  width: 100%;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -119,7 +120,7 @@ body{
 
 #menu li{
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 2em;
 }
 
 #menuToggle input:checked ~ ul{

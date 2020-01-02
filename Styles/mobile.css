@@ -68,8 +68,8 @@ body{
 
 #menuToggle span{
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 5em;
+  height: 1.2em;
   margin-bottom: 5px;
   position: relative;
   background: #cdcdcd;
@@ -106,10 +106,11 @@ body{
 
 #menu{
   position: absolute;
-  width: 100%;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
+  width: -webkit-fill-available;
+  margin-top: -10em;
+  margin-left: -15em;
+  margin-bottom: -3em;
+  padding-top: 5em;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -119,7 +120,7 @@ body{
 }
 
 #menu li{
-  padding: 1.5em 0;
+  padding: 1.5em;
   font-size: 4em;
 }
 

@@ -39,11 +39,11 @@
       <a href="cardwiki.php"><li>Wiki Carte</li></a>
       <a href="deck_forum.php"><li>Forum</li></a>
       <a href="contacts.php" xml:lang="en"><li>About us</li></a>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
     </ul>
   </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-twitter"></a>
   </nav>
     <div class="header" id="header">
     <div class="nb-col1">

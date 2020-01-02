@@ -23,12 +23,22 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
+  <nav role="navigation">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Info</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a target="_blank"><li>Show me more</li></a>
+    </ul>
   </div>
-  <div class="header" id="header">
+  </nav>
+    <div class="header" id="header">
     <div class="nb-col1">
       <a class="nb-logo" href="index.php">
         <i class="fab fa-wizards-of-the-coast" style="font-size: 5em;"></i>

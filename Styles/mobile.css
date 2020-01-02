@@ -45,7 +45,7 @@ body{
 #menuToggle a{
   text-align: center;
   text-decoration: none;
-  color: #232323;
+  color: black;
   transition: color 0.3s ease;
 }
 
@@ -119,8 +119,8 @@ body{
 }
 
 #menu li{
-  padding: 10px 0;
-  font-size: 2em;
+  padding: 1.5em 0;
+  font-size: 4em;
 }
 
 #menuToggle input:checked ~ ul{

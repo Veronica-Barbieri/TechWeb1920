@@ -34,7 +34,7 @@ body{
 
 #menuToggle{
   display: block;
-  position: relative;
+  position: absolute;
   top: 4em;
   left: 4em;
   z-index: 1;
@@ -105,10 +105,7 @@ body{
 }
 
 #menu{
-  position: absolute;
   width: -webkit-fill-available;
-  margin-bottom: -3em;
-  padding-top: 5em;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;

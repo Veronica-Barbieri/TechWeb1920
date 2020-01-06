@@ -18,6 +18,7 @@
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media="handheld,screen"/>
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media="handheld,screen and (max-width:900px),
   only screen and (max-device-width: 600px)"/>
+  <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media= "max-device-height"/>
 
   <script type="text/javascript" src="Scripts/home.js"></script>
 </head>

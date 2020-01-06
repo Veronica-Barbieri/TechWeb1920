@@ -441,6 +441,7 @@ CSS HEADER
 .deck_cards{
   width: 80%;
   margin: auto;
+  min-width: 16em;
 }
 .deck_card_img{
   display: block;

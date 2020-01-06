@@ -107,8 +107,6 @@ body{
 #menu{
   position: absolute;
   width: -webkit-fill-available;
-  margin-top: -10em;
-  margin-left: -15em;
   margin-bottom: -3em;
   padding-top: 5em;
   background: #ededed;

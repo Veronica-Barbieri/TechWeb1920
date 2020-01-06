@@ -49,8 +49,9 @@
               <?php } ?>
               <h1> <?php echo $value["Nome"]; ?> </h1>
               <p> <?php echo $value["Tipo"]; ?> </p>
-            </div>
-          </a>
+            </a>
+          <button type="button" name="delete_use_deck" onclick="delete_deck(<?php echo $value["Id"]; ?>)">Elimina il mazzo</button>
+        </div>
       <?php }
       } else { ?>
       <p>Non sono ancora stati creati mazzi</p>

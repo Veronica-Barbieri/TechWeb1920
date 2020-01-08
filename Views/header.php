@@ -41,9 +41,9 @@
         <a href="cardwiki.php"><li>Wiki Carte</li></a>
         <a href="deck_forum.php"><li>Forum</li></a>
         <a href="contacts.php" xml:lang="en"><li>About us</li></a>
-        <a href="#" class="fa fa-facebook" id="fb"></a>
-        <a href="#" class="fa fa-twitter" id="tw"></a>
-        <a href="#" class="fa fa-instagram" id="ig"></a>
+        <a href="#" class="fa fa-facebook icon-large" id="fb"></a>
+        <a href="#" class="fa fa-twitter icon-large" id="tw"></a>
+        <a href="#" class="fa fa-instagram icon-large" id="ig"></a>
     </ul>
     </div>
   </nav>

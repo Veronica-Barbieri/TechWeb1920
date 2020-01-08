@@ -32,7 +32,7 @@
         <span></span>
       </input>
     <ul id="menu">
-        <a id="rif" href="#"><li><b>SCOPRI IL MONDO DI MAGIC!</b><i href="#" class="fas fa-hat-wizard"></i></li></a>
+        <a href="#"><li id="rif"><b>SCOPRI IL MONDO DI MAGIC!</b><i href="#" class="fas fa-hat-wizard"></i></li></a>
         <a href="index.php"><li>Home</li></a>
         <a href="cardwiki.php"><li>Hot decks</li>
         <a href="cardwiki.php"><li>Collezionale tutte <i href="#" class="fa fa-fire" id="fi"></i></li>

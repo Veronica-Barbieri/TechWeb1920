@@ -120,7 +120,7 @@ body{
   }
 
   #menu li{
-    padding: 1em;
+    padding: 0.7em;
     font-size: 4em;
   }
 
@@ -154,8 +154,8 @@ body{
 
   .fa-instagram {
     padding: 1em;
-    background: white;
-    color: #c32aa3;
+    background: #c32aa3;
+    color: white;
   }
 
   .fa-question-circle{

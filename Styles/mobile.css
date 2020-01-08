@@ -121,11 +121,16 @@ body{
 
   #menu li{
     padding: 0.7em;
-    font-size: 4em;
+    font-size: 3.9em;
   }
 
   #menuToggle input:checked ~ ul{
     transform: none;
+  }
+
+  li#rif{
+    padding-top: 2em;
+    color: purple;
   }
 
   .fa {

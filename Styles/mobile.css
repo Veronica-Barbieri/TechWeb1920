@@ -141,18 +141,27 @@ body{
   }
 
   .fa-facebook {
+    padding: 1em;
     background: #3B5998;
     color: white;
   }
 
   .fa-twitter {
+    padding: 1em;
     background: #55ACEE;
     color: white;
   }
 
   .fa-instagram {
+    padding: 1em;
     background: white;
-    color: white;
+    color: #c32aa3;
+  }
+
+  .fa-question-circle{
+    padding: 1em;
+    background: white;
+    color: black;
   }
 
   p{

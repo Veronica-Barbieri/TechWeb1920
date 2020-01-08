@@ -41,10 +41,11 @@
         <a href="cardwiki.php"><li>Wiki Carte</li></a>
         <a href="deck_forum.php"><li>Forum</li></a>
         <a href="contacts.php" xml:lang="en"><li>About us</li></a>
-        <i href="#" class="fa fa-facebook" id="fb"></i>
-        <i href="#" class="fa fa-twitter" id="tw"></i>
-        <i href="#" class="fa fa-instagram" id="ig"></i>
-        <i href="#" class="fa fa-question-circle" id="q"></i>
+        <a href="#"><li><i href="#" class="fa fa-facebook" id="fb"></i>
+          <i href="#" class="fa fa-twitter" id="tw"></i>
+          <i href="#" class="fa fa-instagram" id="ig"></i>
+          <i href="#" class="fa fa-question-circle" id="q"></i>
+        </li>
     </ul>
     </div>
   </nav>

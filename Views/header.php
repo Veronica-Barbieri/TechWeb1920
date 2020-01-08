@@ -13,7 +13,7 @@
                                   mazzo, deck, regole" />
 
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!--<link rel="stylesheet" href="Styles/index.css" media='all'>-->
+  <link rel="stylesheet" href="Styles/index.css" media='all'>
   <link rel="stylesheet" type="text/css" href="Styles/mobile.css" media="all"/>
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media="handheld,screen"/>
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media="handheld,screen and (max-width:900px),
@@ -43,10 +43,10 @@
         <a href="contacts.php" xml:lang="en"><li>About us</li></a>
     </ul>
     </div>
-  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <a href="#" class="fa fa-facebook"></a>
   <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-instagram"></a>-->
+  <a href="#" class="fa fa-instagram"></a>
   </nav>
     <div class="header" id="header">
       <h1 id="title">Magic The Gathering</h1>

@@ -44,6 +44,7 @@
         <a href="#" class="fa fa-facebook icon-large" id="fb"></a>
         <a href="#" class="fa fa-twitter icon-large" id="tw"></a>
         <a href="#" class="fa fa-instagram icon-large" id="ig"></a>
+        <i href="#" class="far fa-question-circle"></i>
     </ul>
     </div>
   </nav>

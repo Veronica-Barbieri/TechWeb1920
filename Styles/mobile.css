@@ -25,36 +25,6 @@ header{
 }
 
 body{
-  margin: 0;
-  padding: 0;
-  background: white;
-  * {
-    margin: 0em;
-    padding: 0em;
-  }
-
-  html, body{
-    max-width: 1024px;
-    margin: auto;
-  }
-
-  header{
-    border: 1px solid #000;
-  }
-
-  .nb-logo{
-    display: none;
-  }
-
-  .navbar{
-    display: none;
-  }
-
-  .title{
-    text-aligne: centre;
-  }
-
-  body{
     margin: 0;
     padding: 0;
     background: white;
@@ -150,7 +120,7 @@ body{
   }
 
   #menu li{
-    padding: 1.5em;
+    padding: 1em;
     font-size: 4em;
   }
 
@@ -183,10 +153,6 @@ body{
   .fa-instagram {
     background: white;
     color: white;
-  }
-
-  body{
-    border: 1px solid #000;
   }
 
   footer{

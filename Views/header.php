@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media="handheld,screen and (max-width:900px),
   only screen and (max-device-width: 600px)"/>
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media= "max-device-height"/>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <script type="text/javascript" src="Scripts/home.js"></script>
 </head>
 
@@ -35,20 +35,17 @@
         <a id="rif" href="#"><li>Menu</li>
         <a href="index.php"><li>Home</li></a>
         <a href="cardwiki.php"><li>Hot decks</li>
-        <a href="cardwiki.php"><li>Collezionale tutte</li>
-        <a href="cardwiki.php"><li>Cerca la tua carta</li>
+        <a href="cardwiki.php"><li>Collezionale tutte <i href="#" class="fa fa-fire" id="fi"></i></li>
+        <a href="cardwiki.php"><li>Cerca la tua carta <i href="#" class="fa fa-info-circle" id="in"></i></li>
         <a href="regole.php"><li>Regole</li></a>
         <a href="cardwiki.php"><li>Wiki Carte</li></a>
         <a href="deck_forum.php"><li>Forum</li></a>
         <a href="contacts.php" xml:lang="en"><li>About us</li></a>
+        <a href="#" class="fa fa-facebook" id="fb"></a>
+        <a href="#" class="fa fa-twitter" id="tw"></a>
+        <a href="#" class="fa fa-instagram" id="ig"></a>
     </ul>
     </div>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <a href="#" class="fa fa-facebook" id="fb"></a>
-  <a href="#" class="fa fa-twitter" id="tw"></a>
-  <a href="#" class="fa fa-instagram" id="ig"></a>
-  <i href="#" class="fa fa-fire" id="fi"></i>
-  <i href="#" class="fa fa-info-circle" id="in"></i>
   </nav>
     <div class="header" id="header">
       <h1 id="title">Magic The Gathering</h1>

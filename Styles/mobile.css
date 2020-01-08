@@ -155,6 +155,26 @@ body{
     color: white;
   }
 
+  p{
+    display: none;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  #hot_decks{
+    display: none;
+  }
+
+  .color_container{
+    display: none;
+  }
+
+  .pannelcarte{
+    display: none;
+  }
+
   footer{
     border: 1px solid #000;
   }

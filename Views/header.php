@@ -44,11 +44,11 @@
     </ul>
     </div>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-  <a href="#" class="fa fa-facebook"></a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-instagram"></a>
-  <i href="#" class="fa fa-fire"></i>
-  <i href="#" class="fa fa-info-circle"></i>
+  <a href="#" class="fas fa-facebook"></a>
+  <a href="#" class="fas fa-twitter"></a>
+  <a href="#" class="fas fa-instagram"></a>
+  <i href="#" class="fas fa-fire"></i>
+  <i href="#" class="fas fa-info-circle"></i>
   </nav>
     <div class="header" id="header">
       <h1 id="title">Magic The Gathering</h1>

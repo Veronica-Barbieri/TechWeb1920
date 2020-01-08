@@ -47,6 +47,8 @@
   <a href="#" class="fa fa-facebook"></a>
   <a href="#" class="fa fa-twitter"></a>
   <a href="#" class="fa fa-instagram"></a>
+  <i href="#" class="fa fa-fire"></i>
+  <i href="#" class="fa fa-info-circle"></i>
   </nav>
     <div class="header" id="header">
       <h1 id="title">Magic The Gathering</h1>

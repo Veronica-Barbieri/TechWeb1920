@@ -181,7 +181,7 @@ li#rif{
 }
 
 div#menuToggle{
-  width: 70%;
+  width: 100%;
 }
 
 .fa-user{
@@ -202,10 +202,6 @@ h1#title{
   width: 80%;
   padding-left: 2em;
   padding-right: 0px;
-}
-
-div#header{
-
 }
 
 a.nb-login{

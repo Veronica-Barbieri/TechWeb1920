@@ -64,7 +64,7 @@
       </a>
     <?php } else {  ?>
       <a class='nb-login' href='login.php'></a>
-      <i class="fa fa-user"></i>
+      <i href="login.php"class="fa fa-user"></i>
   <?php } ?>
   </div>
 </body>

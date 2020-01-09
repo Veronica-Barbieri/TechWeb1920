@@ -121,7 +121,7 @@ body{
 
 #menu li{
   padding: 0.7em;
-  font-size: 3.9em;
+  font-size: 3.8em;
 }
 
 #menuToggle input:checked ~ ul{
@@ -131,6 +131,10 @@ body{
 li#rif{
   padding-top: 2em;
   color: purple;
+}
+#title{
+  color:#7a5050;
+  font-size: 4em;
 }
 
 .fa {

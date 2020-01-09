@@ -198,6 +198,10 @@ p{
   display: none;
 }
 
+h1{
+  text-align: center;
+}
+
 h1#title{
   width: 80%;
   padding-left: 2em;
@@ -209,7 +213,14 @@ a.nb-login{
 }
 
 #hot_decks{
-  display: none;
+  position: relative;
+  left: 35%;
+  text-align: center;
+  color: #7a5050;
+}
+
+h1{
+  font-size: 3em;
 }
 
 .color_container{

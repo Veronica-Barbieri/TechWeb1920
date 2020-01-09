@@ -63,8 +63,7 @@
       <i class='fas fa-sign-in-alt' xml:lang='en'><?php echo $_SESSION["Username"] ?></i>
       </a>
     <?php } else {  ?>
-      <a class='nb-login' href='login.php'></a>
-      <i href="login.php"class="fa fa-user">LOG</i>
+      <a class='nb-login' href='login.php'>Login</a>
   <?php } ?>
   </div>
 </body>

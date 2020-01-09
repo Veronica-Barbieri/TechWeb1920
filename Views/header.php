@@ -24,6 +24,8 @@
 </head>
 
 <body>
+  <i class="fa fa-search"></i>
+  <i class="fa fa-user"></i>
   <nav role="navigation">
     <div id="menuToggle">
       <input type="checkbox" />

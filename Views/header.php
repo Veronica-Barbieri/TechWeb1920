@@ -50,7 +50,7 @@
     </div>
   </nav>
     <div class="header" id="header">
-      <h1 id="title">Magic The Gathering <i class="fa fa-search"></i><i href="login.php"class="fa fa-user"></i></h1>
+      <h1 id="title">Magic The Gathering <i class="fa fa-search"></h1>
     </div>
     <div class="nb-col1">
       <a class="nb-logo" href="index.php">
@@ -64,6 +64,7 @@
       </a>
     <?php } else {  ?>
       <a class='nb-login' href='login.php'></a>
+      <i class="fa fa-user"></i>
   <?php } ?>
   </div>
 </body>

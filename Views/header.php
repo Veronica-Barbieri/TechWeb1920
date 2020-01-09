@@ -45,7 +45,7 @@
           <i href="#" class="fa fa-twitter" id="tw"></i>
           <i href="#" class="fa fa-instagram" id="ig"></i>
           <i href="#" class="fa fa-question-circle" id="q"></i>
-        </li>
+        </li></a>
     </ul>
     </div>
   </nav>

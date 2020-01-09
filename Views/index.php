@@ -14,7 +14,7 @@
 	<h1> Hot Decks </h1>
 	<?php foreach ($deck as $num => $value) { ?>
 			<div>
-			<h1> <?php echo $value["Nome"]; ?> </h1>
+			<h1 id="<?php echo $value["Nome"]; ?>"> <?php echo $value["Nome"]; ?> </h1>
 			<?php if($value["Colore_verde"]) { ?>
 				<img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
 			<?php } if($value["Colore_rosso"]) { ?>

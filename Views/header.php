@@ -35,22 +35,22 @@
         <a href="#"><li id="rif"><b>SCOPRI IL MONDO DI MAGIC! </b><i href="#" class="fas fa-hat-wizard"></i></li></a>
         <a href="index.php"><li>Home</li></a>
         <a href="cardwiki.php"><li>Hot decks</li>
-        <a href="cardwiki.php"><li>Collezionale tutte <i href="#" class="fa fa-fire" id="fi"></i></li>
-        <a href="cardwiki.php"><li>Cerca la tua carta <i href="#" class="fa fa-info-circle" id="in"></i></li>
+        <a href="cardwiki.php"><li>Collezionale tutte <i href="#" class="fas fa-fire" id="fi"></i></li>
+        <a href="cardwiki.php"><li>Cerca la tua carta <i href="#" class="fas fa-info-circle" id="in"></i></li>
         <a href="regole.php"><li>Regole</li></a>
         <a href="cardwiki.php"><li>Wiki Carte</li></a>
         <a href="deck_forum.php"><li>Forum</li></a>
         <a href="contacts.php" xml:lang="en"><li>About us</li></a>
         <a href="#"><li><i href="#" class="fa fa-facebook" id="fb"></i>
-          <i href="#" class="fa fa-twitter" id="tw"></i>
-          <i href="#" class="fa fa-instagram" id="ig"></i>
-          <i href="#" class="fa fa-question-circle" id="q"></i>
+          <i href="#" class="fas fa-twitter" id="tw"></i>
+          <i href="#" class="fas fa-instagram" id="ig"></i>
+          <i href="#" class="fas fa-question-circle" id="q"></i>
         </li></a>
     </ul>
     </div>
   </nav>
     <div class="header" id="header">
-      <h1 id="title">Magic The Gathering <i class="fa fa-search"></i></h1>
+      <h1 id="title">Magic The Gathering <i class="fas fa-search"></i></h1>
     </div>
     <div class="nb-col1">
       <a class="nb-logo" href="index.php">

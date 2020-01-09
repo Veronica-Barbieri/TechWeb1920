@@ -66,7 +66,7 @@
       </a>
     <?php } else {  ?>
       <a class='nb-login' href='login.php'>
-      <i class='fas fa-sign-in-alt' xml:lang='en'>Login</i>
+      <i class="fa fa-user"></i>
       </a>
   <?php } ?>
   </div>

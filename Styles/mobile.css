@@ -220,6 +220,10 @@ a.nb-login{
   display: none;
 }
 
+#fb, #ig, #q,#tw{
+  margin-bottom: 1em;
+}
+
 footer{
   border: 1px solid #000;
 }

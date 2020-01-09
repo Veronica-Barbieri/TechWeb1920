@@ -132,12 +132,11 @@ li#rif{
   padding-top: 2em;
   color: purple;
 }
+
 #title{
-  margin-top: -0.5em;
-  margin-left: 2.6em;
   color:#7a5050;
   font-size: 3.7em;
-  text-align: right;
+  text-align: center;
 }
 
 .fa {
@@ -170,7 +169,7 @@ li#rif{
 }
 
 .fa-question-circle{
-  padding: 0.5em;
+  padding: 1em;
   background: white;
   color: black;
   margin-right: -1em;
@@ -178,22 +177,39 @@ li#rif{
 
 .fa-search{
   color: black;
-  padding-left: 0.5em;
-  margin-right: -0.5em;
+
+}
+
+div#menuToggle{
+  width: 70%;
 }
 
 .fa-user{
-  font-size: xx-large;
+  position: relative;
+  left: 40px;
+  bottom: 60px;
+  margin-left: 20px;
+  font-size: -webkit-xxx-large;
   color: black;
-  padding: 0.5em;
+  padding-left: 0.5em;
 }
 
 p{
   display: none;
 }
 
-h1{
-  text-align: center;
+h1#title{
+  width: 80%;
+  padding-left: 2em;
+  padding-right: 0px;
+}
+
+div#header{
+
+}
+
+a.nb-login{
+  width: 0%;
 }
 
 #hot_decks{

@@ -214,14 +214,11 @@ a.nb-login{
 
 #hot_decks{
   position: relative;
-  left: 35%;
+  left: 40%;
   text-align: center;
   color: #7a5050;
 }
 
-h1{
-  font-size: 3em;
-}
 
 .color_container{
   display: none;

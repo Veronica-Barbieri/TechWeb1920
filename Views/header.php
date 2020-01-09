@@ -50,7 +50,7 @@
     </div>
   </nav>
     <div class="header" id="header">
-      <h1 id="title">Magic The Gathering <i class="fa fa-search"></h1>
+      <h1 id="title">Magic The Gathering <i class="fa fa-search"></i></h1>
     </div>
     <div class="nb-col1">
       <a class="nb-logo" href="index.php">

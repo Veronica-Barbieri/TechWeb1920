@@ -50,7 +50,7 @@
     </div>
   </nav>
     <div class="header" id="header">
-      <h1 id="title">Magic The Gathering <i class="fa fa-search"></i></h1>
+      <h1 id="title">Magic The Gathering <i class="fa fa-search"></i><i href="login.php"class="fa fa-user"></i></h1>
     </div>
     <div class="nb-col1">
       <a class="nb-logo" href="index.php">
@@ -63,9 +63,7 @@
       <i class='fas fa-sign-in-alt' xml:lang='en'><?php echo $_SESSION["Username"] ?></i>
       </a>
     <?php } else {  ?>
-      <a class='nb-login' href='login.php'>
-      <i class="fa fa-user"></i>
-      </a>
+      <a class='nb-login' href='login.php'></a>
   <?php } ?>
   </div>
 </body>

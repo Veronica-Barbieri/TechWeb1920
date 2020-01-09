@@ -173,6 +173,14 @@ li#rif{
   color: black;
 }
 
+.fa-search{
+  padding: 1em;
+}
+
+.fa-user{
+  padding: 1em;
+}
+
 p{
   display: none;
 }

@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="Styles/index.css" media='all'>
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media="handheld,screen and (max-width:900px),
   only screen and (max-device-width: 600px)"/>
-  <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media= "max-device-height"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <script type="text/javascript" src="Scripts/home.js"></script>
 </head>

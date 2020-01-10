@@ -5,7 +5,7 @@
 <div class="dropdown">
   <button class="dropbtn">Esplora le regole<i class="fas fa-caret-square-down"></i></button>
   <div class="dropdown-content">
-    <a href="#basi">Le basi del gioco</a>
+    <a href="basi">Le basi del gioco</a>
     <a href="#tipi">Tipi di carte</a>
     <a href="#lanciare">Giocare una carta</a>
     <a href="#combat">Combattimento</a>

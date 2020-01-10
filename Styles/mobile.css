@@ -219,6 +219,15 @@ a.nb-login{
   color: #7a5050;
 }
 
+#intro{
+  display: block;
+  position: relative;
+  left: 20%;
+}
+
+h1#NAV{
+  padding: 1em;
+}
 
 .color_container{
   display: none;

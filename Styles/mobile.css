@@ -156,22 +156,23 @@ li#rif{
   color: white;
 }
 
-.fa-twitter {
+.fa-youtube {
   padding: 1em;
-  background: #55ACEE;
+  background: red;
   color: white;
 }
 
-.fa-instagram {
+.fa-envelope {
+  font-size: 1em;
   padding: 1em;
-  background: #c32aa3;
-  color: white;
+  background: white;
+  color: black;
 }
 
 .fa-question-circle{
   padding: 1em;
-  background: white;
-  color: black;
+  background: black;
+  color: white;
   margin-right: -1em;
 }
 

@@ -26,6 +26,9 @@ a{
 .active{
   display: block;
 }
+.hb_menu{
+  display: none;
+}
 /*--------
 CSS HEADER
 ----------*/

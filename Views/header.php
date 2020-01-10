@@ -23,37 +23,36 @@
   <nav role="navigation">
     <div id="menuToggle">
       <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </input>
+      <span></span>
+      <span></span>
+      <span></span>
+    </input>
     <ul id="menu">
-        <a href="#"><li id="rif"><b>SCOPRI IL MONDO DI MAGIC! </b><i href="#" class="fas fa-hat-wizard"></i></li></a>
-        <a href="index.php"><li>Home</li></a>
-        <a href="cardwiki.php"><li>Hot decks</li>
-        <a href="cardwiki.php"><li>Collezionale tutte <i href="#" class="fas fa-fire" id="fi"></i></li>
-        <a href="cardwiki.php"><li>Cerca la tua carta <i href="#" class="fas fa-info-circle" id="in"></i></li>
-        <a href="regole.php"><li>Regole</li></a>
-        <a href="cardwiki.php"><li>Wiki Carte</li></a>
-        <a href="deck_forum.php"><li>Forum</li></a>
-        <a href="contacts.php" xml:lang="en"><li>About us</li></a>
-        <a href="#"><li>
-          <i href="#" class="fa fa-facebook" id="fb"></i>
-          <i href="#" class="fab fa-twitter" id="tw"></i>
-          <i href="#" class="fab fa-instagram" id="ig"></i>
-          <i href="#" class="fas fa-question-circle" id="q"></i>
-        </li></a>
-    </ul>
+      <a href="#"><li id="rif"><b>SCOPRI IL MONDO DI MAGIC! </b><i href="#" class="fas fa-hat-wizard"></i></li></a>
+      <a href="index.php"><li>Home</li></a>
+      <a href="regole.php"><li>Regole</li></a>
+      <a href="cardwiki.php"><li>Wiki Carte</li></a>
+      <a href="deck_forum.php"><li>Forum</li></a>
+      <a href="contacts.php" xml:lang="en"><li>About us</li></a>
+      <a href="#"><li>
+        <i href="#" class="fa fa-facebook" id="fb"></i>
+        <i href="#" class="fab fa-twitter" id="tw"></i>
+        <i href="#" class="fab fa-instagram" id="ig"></i>
+      </li></a>
+      </ul>
     </div>
   </nav>
-    <div class="header" id="header">
-      <h1 id="title">Magic The Gathering <i class="fas fa-search"></i></h1>
+  <div class="header" id="header">
+    <h1 id="title">Magic The Gathering <i class="fas fa-search"></i></h1>
+  </div>
+  <div class="header dt_menu" id="header">
+    <div class="nb-logo">
+      <img src="Resources/m-logo.png" alt="">
     </div>
     <div class="nb-col1">
-      <a class="nb-logo" href="index.php">
-        <i class="fab fa-wizards-of-the-coast" style="font-size: 5em;"></i>
-      </a>
-      <!-- Rivedere gli href per i nomi delle pagine -->
+      <ul class="navbar">
+        <li class="nb-item"><a class="nb-link" href="index.php" xml:lang="en"><i class="fas fa-home"></i>Home</a></li><li class="nb-item"><a class="nb-link" href="regole.php"><i class="fas fa-scroll"></i>Regole</a></li><li class="nb-item"><a class="nb-link" href="cardwiki.php"><i class="fas fa-hat-wizard"></i>Wiki Carte</a></li><li class="nb-item"><a class="nb-link" href="deck_forum.php" xml:lang="en"><i class="fas fa-archive"></i>Forum</a></li><li class="nb-item"><a class="nb-link" href="contacts.php" xml:lang="en"><i class="fas fa-users"></i>About us</a></li>
+      </ul>
     </div>
     <?php if(isset($_SESSION["Username"])) { ?>
       <?php if(isset($_SESSION["Admin"])){ ?>

@@ -12,16 +12,16 @@ header{
   border: 1px solid #000;
 }
 
-.nb-logo{
+/*.nb-logo{
   display: none;
-}
+}*/
 
-.navbar{
+.dt_menu{
   display: none;
 }
 
 .title{
-  text-aligne: centre;
+  text-align: center;
 }
 
 body{
@@ -194,9 +194,7 @@ div#menuToggle{
   padding-left: 0.5em;
 }
 
-p{
-  display: none;
-}
+
 
 h1{
   text-align: center;
@@ -248,13 +246,13 @@ a#glossario{
   top: -0.5em;
 }
 
-.color_container{
+/*.color_container{
   display: none;
 }
 
 .pannelcarte{
   display: none;
-}
+}*/
 
 #fb, #ig, #q,#tw{
   margin-bottom: 1em;
@@ -269,17 +267,6 @@ li#basi, li#tipi, li#lanciare, li#combat, li#risolvere{
   line-height: 2em;
   text-align: center;
   font-size: 2em;
-}
-
-h1#basi{
-  display: none;
-  padding-top: 1em;
-}
-
-p#gioco1, p#gioco2{
-  display: none;
-  text-align: center;
-
 }
 
 /* Style The Dropdown Button */
@@ -352,12 +339,10 @@ button.dropbtn{
 }
 
 
-li{
-  display:;
-}
-#h1, h2, h1#tipi, h1#lanciare, h1#lanciare, h1#combat, h1#risolvere, span, img{
+
+/*#h1, h2, h1#tipi, h1#lanciare, h1#lanciare, h1#combat, h1#risolvere, span, img{
   display: none;
-}
+}*/
 
 footer{
   position: absolute;

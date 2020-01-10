@@ -2,9 +2,8 @@
 <p id="intro">Per leggere un glossario di tutti i termini utili </p>
 <a href="https://magicthegathering.fandom.com/it/wiki/Glossario" id="glossario">
   Clicca il link</a>
-<h1> Esplora le regole</a>
 <div class="dropdown">
-  <button class="dropbtn"> Apri <i class="fas fa-caret-square-down"></i></button>
+  <button class="dropbtn">Esplora le regole<i class="fas fa-caret-square-down"></i></button>
   <div class="dropdown-content">
     <a href="regole.php">Le basi del gioco</a>
     <a href="#tipi">Tipi di carte</a>

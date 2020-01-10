@@ -12,8 +12,7 @@
     <a href="#risolvere">Rispondere e usare la pila</a>
   </div>
 </div>
-<div id="basi">
-  <h1>Le basi del gioco</h1>
+<h1 id="basi">Le basi del gioco</h1>
 <p id="gioco1">
   Per iniziare una partita, rimescola il tuo mazzo, che viene anche chiamato
   grimorio. Pesca una mano di sette carte e conta le terre. Puoi controllare la
@@ -26,7 +25,6 @@
   oppure carta e penna). Riduci a 0 i punti vita del tuo avversario e vincerai
   la partita!
  </p>
-</div>
 <h1 id="tipi">Tipi di carte</h1>
 <ul>
   <li>

@@ -6,14 +6,15 @@
 <div class="dropdown">
   <button class="dropbtn">Mostra le regole <i class="fas fa-caret-square-down"></i></button>
   <div class="dropdown-content">
-    <a href="basi">Le basi del gioco</a>
+    <a href="#basi">Le basi del gioco</a>
     <a href="#tipi">Tipi di carte</a>
     <a href="#lanciare">Giocare una carta</a>
     <a href="#combat">Combattimento</a>
     <a href="#risolvere">Rispondere e usare la pila</a>
   </div>
 </div>
-<h1 id="basi">Le basi del gioco</h1>
+<div id="basi">
+  <h1>Le basi del gioco</h1>
 <p id="gioco1">
   Per iniziare una partita, rimescola il tuo mazzo, che viene anche chiamato
   grimorio. Pesca una mano di sette carte e conta le terre. Puoi controllare la
@@ -26,6 +27,7 @@
   oppure carta e penna). Riduci a 0 i punti vita del tuo avversario e vincerai
   la partita!
  </p>
+</div>
 <h1 id="tipi">Tipi di carte</h1>
 <ul>
   <li>

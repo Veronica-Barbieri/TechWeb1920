@@ -13,7 +13,7 @@
     <a href="#risolvere">Rispondere e usare la pila</a>
   </div>
 </div>
-<div id="basi">
+<a href="basi" id="basi">
   <h1>Le basi del gioco</h1>
 <p id="gioco1">
   Per iniziare una partita, rimescola il tuo mazzo, che viene anche chiamato
@@ -27,7 +27,7 @@
   oppure carta e penna). Riduci a 0 i punti vita del tuo avversario e vincerai
   la partita!
  </p>
-</div>
+</a>
 <h1 id="tipi">Tipi di carte</h1>
 <ul>
   <li>

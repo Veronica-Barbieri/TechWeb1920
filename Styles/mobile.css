@@ -225,20 +225,27 @@ a.nb-login{
   left: 10%;
 }
 
+h1{
+  font-size: 3em;
+}
+
 h1#NAV{
   padding: 1em;
 }
 
 p#intro{
   padding: 1em;
+  font-size: 2.2em;
+  position: relative;
+  left: 4em;
 }
 
 a#glossario{
-  padding: 1em;
   color: darkred;
-  font-size: 2em;
+  font-size: 3em;
   position: relative;
   left: 35%;
+  top: -1em;
 }
 
 .color_container{
@@ -333,9 +340,6 @@ div.dropdown{
 
 }
 
-button.dropbtn{
-  position: relative;
-}
 
 li{
   display: none;
@@ -346,5 +350,7 @@ h1#tipi, h2#tipi_terra, h2#atk, h2#def, h1#lanciare, h1#combat, h1#risolvere{
 }
 
 footer{
+  position: absolute;
+  bottom: -30px;
   border: 1px solid #000;
 }

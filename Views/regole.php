@@ -3,7 +3,7 @@
 <a href="https://magicthegathering.fandom.com/it/wiki/Glossario" id="glossario">
   CLICCA QUI!
 </a>
-<h1>Naviga le regole</h1>
+<h1 id="NAV">Naviga le regole</h1>
 <ul class="menu" id="menu_regole">
   <li> <a href="#basi">Le basi del gioco</a> </li>
   <li> <a href="#tipi">Tipi di carte</a>

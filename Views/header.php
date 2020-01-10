@@ -13,6 +13,7 @@
                                   mazzo, deck, regole" />
 
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="Styles/index.css" media='all'>
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media="handheld,screen and (max-width:900px),
   only screen and (max-device-width: 600px)"/>
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media= "max-device-height"/>

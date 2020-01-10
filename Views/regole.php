@@ -4,35 +4,15 @@
   CLICCA QUI!
 </a>
 <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
+  <button class="dropbtn">Naviga le regole</button>
   <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="#basi">Le basi del gioco</a>
+    <a href="#tipi">Tipi di carte</a>
+    <a href="#lanciare">Giocare una carta</a>
+    <a href="#combat">Combattimento</a>
+    <a href="#risolvere">Rispondere e usare la pila</a>
   </div>
 </div>
-<h1 id="NAV">Naviga le regole</h1>
-<ul class="menu" id="menu_regole">
-  <li id="basi"> <a href="#basi">Le basi del gioco</a> </li>
-  <li id="tipi"> <a href="#tipi">Tipi di carte</a>
-    <ul>
-      <li id="terra"> <a href="#tipi_terra">Terre</a> </li>
-      <li id="magie"> <a href="#tipi_magie">Magie</a> </li>
-      <li id="creature"> <a href="#tipi_creature">Creature</a> </li>
-      <li id="inc"> <a href="#tipi_inc">Artefatti e Incantesimi</a> </li>
-      <li id="streg"> <a href="#tipi_streg">Stregonerie e istantanei</a> </li>
-      <li id="plane"> <a href="#tipi_planeswalker">Planeswalker</a> </li>
-    </ul>
-  </li>
-  <li id="lanciare"> <a href="#lanciare">Giocare una carta</a> </li>
-  <li id="combat"> <a href="#combat">Combattimento</a>
-    <ul>
-      <li id="atk"> <a href="#atk">Attaccare</a> </li>
-      <li id="def"> <a href="#def">Bloccare</a> </li>
-    </ul>
-  </li>
-  <li id="risolvere"> <a href="#risolvere">Rispondere e usare la pila</a> </li>
-</ul>
 <h1 id="basi">Le basi del gioco</h1>
 <p id="gioco1">
   Per iniziare una partita, rimescola il tuo mazzo, che viene anche chiamato

@@ -265,12 +265,14 @@ li#basi, li#tipi, li#lanciare, li#combat, li#risolvere{
 }
 
 h1#basi{
+  display: none;
   padding-top: 1em;
 }
 
-#gioco1{
+p#gioco1, p#gioco2{
+  display: none;
   text-align: center;
-  display: block;
+
 }
 
 /* Style The Dropdown Button */
@@ -288,6 +290,7 @@ h1#basi{
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
+  padding: 2em;
   position: relative;
   top: 2em;
   display: inline-block;
@@ -325,7 +328,22 @@ h1#basi{
   background-color: white;
 }
 
+div.dropdown{
+  position: relative;
 
+}
+
+button.dropbtn{
+  position: relative;
+}
+
+li{
+  display: none;
+}
+
+h1#tipi, h2#tipi_terra, h2#atk, h2#def, h1#lanciare, h1#combat, h1#risolvere{
+  display: none;
+}
 
 footer{
   border: 1px solid #000;

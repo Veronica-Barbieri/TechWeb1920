@@ -3,7 +3,7 @@
 <a href="https://magicthegathering.fandom.com/it/wiki/Glossario" id="glossario">
   Clicca il link</a>
 <div class="dropdown">
-  <button class="dropbtn">Esplora le regole<i class="fas fa-caret-square-down"></i></button>
+  <button class="dropbtn">Esplora le regole <i class="fas fa-caret-square-down"></i></button>
   <div class="dropdown-content">
     <a href="basi">Le basi del gioco</a>
     <a href="#tipi">Tipi di carte</a>

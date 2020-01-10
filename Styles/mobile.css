@@ -222,11 +222,23 @@ a.nb-login{
 #intro{
   display: block;
   position: relative;
-  left: 20%;
+  left: 10%;
 }
 
 h1#NAV{
   padding: 1em;
+}
+
+p#intro{
+  padding: 1em;
+}
+
+a#glossario{
+  padding: 1em;
+  color: darkred;
+  font-size: 2em;
+  position: relative;
+  left: 35%;
 }
 
 .color_container{

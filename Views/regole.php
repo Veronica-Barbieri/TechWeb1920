@@ -1,8 +1,7 @@
 <h1>Glossario</h1>
 <p id="intro">Per leggere un glossario di tutti i termini utili </p>
 <a href="https://magicthegathering.fandom.com/it/wiki/Glossario" id="glossario">
-  CLICCA QUI!
-</a>
+  Clicca il link</a>
 <div class="dropdown">
   <button class="dropbtn">Mostra le regole <i class="fas fa-caret-square-down"></i></button>
   <div class="dropdown-content">

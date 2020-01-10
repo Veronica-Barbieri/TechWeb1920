@@ -13,7 +13,7 @@
     <a href="#risolvere">Rispondere e usare la pila</a>
   </div>
 </div>
-<a href="basi" id="basi">
+<a id="basi">
   <h1>Le basi del gioco</h1>
 <p id="gioco1">
   Per iniziare una partita, rimescola il tuo mazzo, che viene anche chiamato

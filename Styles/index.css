@@ -1,101 +1,537 @@
-* {
+/* GENERAL */
+*{
   margin: 0em;
   padding: 0em;
 }
-a {
-  text-decoration: none;
+html{
+  height: 100%;
 }
-.header {
+body{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+.fas {
+  padding: 0 0.4em;
+  font-size: 1em;
+}
+.hidden{
+  display: none;
+}
+.active{
+  display: block;
+}
+/*--------
+CSS HEADER
+----------*/
+.header{
   width: 100%;
+  text-align: center;
+  background-color: #383838;
+  box-shadow: inset 0px -2px 31px 0.1em black;
+  border-bottom: 1px solid #fff8dc59
 }
-.nb-col1 {
+
+.nb-col1, .nb-login, .nb-logo, .nb-item{
   display: inline-block;
-  width: 80%;
 }
-.nb-logo , .nb-login{
-  display: inline-block;
+.nb-logo{
   text-align: left;
-  width: 19%
+  vertical-align: middle;
+  padding: 1.1em;
 }
-.nb-logo {
-  text-align: left;
+.nb-logo img{
+  width: 4em;
+}
+.nb-col1{
+  width: 79%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
 }
 .nb-login{
   text-align: right;
+  font-size: 1.2em;
+  vertical-align: middle;
+  max-width: 6em;
 }
-.navbar {
+.nb-item{
+  padding: 0.7em 0em;
+  border-right: 2px solid #d2691e;
+}
+.nb-item: first-child{
+  border-left: 2px solid #d2691e;
+}
+.nb-item:hover{
+  background-color: #d2691e;
+  transition: 0.3s;
+}
+.nb-login:hover{
+  background-color: #d2691e;
+  transition: 0.3s;
+}
+.nb-link{
+  padding: 0.7em 2em;
+  font-size: 1.2em;
+  color: #fff8dc;
+}
+/*end header*/
+.color_container_box{
+  margin-top: 1.2em;
+  padding: 1em 0.5em 1em 0.5em;
+  min-width: 50%;
+  background-color: #fff8dc1f;
+  vertical-align: top;
+}
+#hot_decks{
+  padding: 0.6em;
+  margin: 1.2em 3em 0em 0em;
+  min-height: 27em;
+  width: 20%;
   display: inline-block;
+  min-width: 14.9em;
+  background-color: #fff8dc1f;
+}
+.content,.footer,.manaButton{
+  background-color:#383838;
+}
+.content{
+  min-height: calc(100% - 22.9em);
   text-align: center;
-  width: 80%;
+  padding: 1.5em 4em 1.5em 4em;
+  color: #fff;
 }
-.nb-item {
-  display: inline-block;
-  margin: 0em 2em;
+.menu a, .linkText, .link {
+	color:#fff;
+}
+.link{
+	text-decoration: none;
+}
+.link:visited,.linkText:visited{
+	color:#deb887;
+}
+.link:hover,.linkText:hover,.footerText,.footerTextTitle{
+	color:#FFFFFF;
+}
+.listaMana,.content fieldset,.content h2,.content h3,#form ul li{
+	color:#fff8dc;
+}
+.card_img{
+	width: 12em;
+  border-radius: 11px;
+}
+.card_type{
+	margin-top: 0.5em;
+  border-bottom: 1px solid #fff8dc59;
+}
+.box{
+  box-shadow: 0 0 15px #000;
+  border-radius: 4px;
+  border: 1px solid #fff8dc59;
 }
 
-ul {
-  list-style-type: none;
+/*******************/
+.src_col1{
+    width: 100%;
 }
-
-.singlepannel{
-  display: none;
-  width: 100%;
+.content fieldset > .content input {
+    display: inline-block;
+    margin: 0.5em;
 }
-.carta{
-  display: inline-block;
-  width: 30%;
+.frm_title{
+  padding: 0.3em;
+  margin-left: 0.8em;
+  margin-bottom: 0.3em;
+  font-size: 1.8em;
+  color:#fff8dc;
+  background-color: #383838;
+  border: 1px solid #fff8dc4a;
+  border-radius: 3px;
 }
-.active {
-  display: block;
+/*******************/
+.inline_el, .color_checkbox, .src_col1, .card_type ul li {
+	display: inline-block;
 }
-
-#hot_decks {
-  display: inline-block;
+.src_dropdown {
+	display: block;
+	width: 50%;
+	margin: auto;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
-/*Stile wiki carte*/
-.wiki_nav {
-  text-align: center;
+.color_checkbox{
+	margin: 0.5em;
+  position: relative;
+}
+.color_checkbox input{
+  height: 40px;
+   left: 0;
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   width: 40px;
+}
+.cbox_label::before{
+  border: 2px solid;
+    content: "";
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+.cbox_label::after{
+  content: "";
+    border: 4px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    height: 20px;
+    left: 14px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    transform: rotate(45deg);
+    transition: opacity 0.2s ease-in-out;
+    width: 12px;
+}
+.color_checkbox input:checked + label::after {
+    opacity: 1;
+}
+.cont_form{
+  width: 37%;
   margin: auto;
-  width: 80%;
+	display: block;
 }
-.wiki {
-  border: 1px solid #000;
+.simpleText,.content label{
+	margin: 0.5em;
+	display: block;
+}
+.formButton{
+	display: block;
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.content h2,.content h3,#form ul li{
+	padding-bottom: 0.5em;
+}
+.content h2,.content h3{
+	margin-top: 0.5em;
+}
+.manaButton{
+	border: solid black;
+	padding: 0.5em 2em 0.2em 2em;
+	cursor: pointer;
+  border-radius: 8px;
+}
+.manaButton:hover{
+  background-color: #fff8dc1f;
+}
+.carta,.usr_intro{
+	padding: 0.6em;
+}
+#caratteristiche h1{
+	color:#fff8dc;
+	font-size: 2em;
+	margin-bottom: 0.5em;
 }
 .card_box {
   display: inline-block;
-  margin: 0.5em
+  padding: 0.5em 1em 0.5em 1em;
 }
-fieldset {
-  margin-bottom: 1em;
+.card_box:hover {
+    background-color: #fff8dc2e;
+    border-radius: 12px;
+    transition: 0.4s;
 }
-legend {
-  font-size: 1.5em;
-}
-.color_checkbox, .src_col1, .src_col2 {
+.wiki_nav {
+  width: 72%;
   display: inline-block;
 }
-.src_col1, .src_col2 {
-  width: 49%;
+.nav_btn{
+  min-width: 3em;
+  display: inline-block;
+  margin: 0.3em;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #d2691e;
 }
-.src_dropdown {
-  display: block;
-  width: 40%;
+.nav_btn:hover{
+  color: #fff8dc;
 }
-.color_checkbox img, .color_checkbox input, .src_col1, .src_col2 {
+
+.src_form{
+  margin-left: 2em;
+  position: absolute;
+  left: 0;
+}
+
+.src_form_deck,.src_form_wiki{
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2%;
+}
+.deck_box{
+  display: inline-block;
+  width: 44%;
+  min-height: 9em;
   vertical-align: middle;
+  margin: 0.5%;
+  padding: 0.5em;
+  border: 1px solid #fff8dc59;
+  border-radius: 3px;
 }
-.src_dropdown, .color_checkbox, .input {
-  margin: 0.5em;
+.deck_box:hover{
+  background-color: #fff8dc2e;
+  transition: 0.3s;
 }
-.current_page {
-  border: 1px solid #000;
+.formButton{
+	display: inline-block;
+	margin: 1em 2em 1em 2em;
+}
+.deck_box .Title{
+	font-size: 2em;
 }
 
-/*style pagina user*/
-.hidden {
-  display: none;
+.card_title{
+	font-size: 1.1em;
+  padding-top: 0.5em
+}
+.manaButton:focus{
+	background-color:#fff8dc;
+}
+/*regole*/
+.glossario{
+  position: relative;
+  padding-bottom: 1.5em;
+}
+.menu_regole_wrp{
+  width: 18%;
+  min-width: 13em;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3%;
+  text-align: left;
+}
+.menu {
+  padding: 0.5em;
+}
+.sub_list{
+  padding-left: 1em;
+  font-style: italic;
+}
+.sub_list li{
+  padding: 0.1em;
+}
+.sub_list li:hover, .regole_main_title:hover{
+  background-color: #fff8dc59;
+  border-radius: 3px;
+}
+.regole_main_title{
+  font-size: 1.2em;
+  margin: 0.3em 0 0.3em 0;
+  border-bottom: 1px solid #fff8dc59;
+}
+.content_regole{
+  width: 63%;
+  display: inline-block;
+  border-left: 1px solid #fff8dc59;
+  padding-left: 1.5em;
+  text-align: left;
+}
+.sez_title{
+  text-align: center;
+  color: #deb887;
+}
+.regole_mana{
+  display: inline-block;
+  padding: 0.5em;
+}
+/**/
+/*deck forum*/
+#deck_list{
+  margin-top: 1.2em;
+}
+@media screen and (max-width: 900px) {
+  .src_form_deck,.wiki_nav,.src_form_wiki{
+    width: 100%;
+  }
+  .card_box{
+    width: 40%;
+    min-width: 12em;
+  }
+  .wiki_nav, .deck_nav{
+    padding-top: 1em;
+  }
+  .deck_nav{
+    width: 100%;
+    min-width: 16em;
+  }
+  .deck_box{
+    width: 100%;
+    min-width: 15em;
+    margin: 0 0 0.5em 0;
+  }
+  .src_form_deck{
+    margin: 0;
+  }
+  .glossario{
+    padding: 0;
+  }
+  .content_regole{
+    width: 100%;
+    border-left: none;
+    padding: 1em 0.5em 0 0.5em;
+  }
+}
+/**/
+/*single card*/
+.desc_card{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1em;
+  width: 56%;
+  text-align: left;
+}
+.desc_card ul li{
+  padding: 0.5em;
+  display: block;
+  margin: 0.2em;
+}
+.desc_sez_pre{
+  min-width: 18%;
+  display: inline-block;
+  padding: 0.2em;
+  color: #fff8dc;
+  background-color: #fff8dc1c;
+  font-weight: bold;
+}
+.desc_sez{
+  padding: 0.2em;
+}
+.single_card_img{
+  width: 15em;
+  border-radius: 11px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4%;
+  box-shadow: 0 0 2em #000;
+  border: 1px solid #fff8dc59;
+}
+/**/
+/*contatti / about us*/
+.inputArea{
+  padding: 0.4em;
+  border-radius: 3px;
+  min-width: 21%;
+}
+.inputArea:hover{
+  background-color: #afafaf;
+  transition: 0.3s;
+}
+/**/
+/*Single deck*/
+.deck_cards{
+  width: 80%;
+  margin: auto;
+  min-width: 16em;
+}
+.deck_card_img{
+  display: block;
+  margin-top: -1em;
+}
+.num_card{
+  box-shadow: 0 0 15px black;
+  vertical-align: baseline;
+  width: 1.7em;
+  border-radius: 5px;
+  height: 1.7em;
+  color: #000;
+  transform: translateX(5em) translateY(1em);
+  background-color: #fff8dc;
+}
+.fa-square {
+  font-size: 2.2em;
+  transform: translatey(-3px) translateX(-2px);
+}
+/**/
+/*bottone*/
+.btn {
+  min-width: 13%;
+  padding: 0.4em;
+  font-size: 1em;
+  border-radius: 3px;
+  background-color: #fff8dc;
+  border: none;
+  box-shadow: 0 0 5px black;
+}
+.btn:hover {
+  background-color: #d2691e;
+  transition: 0.2s;
+}
+/**/
+
+/*login*/
+.login_frm, .registration_frm{
+  width: 50%;
+  margin: auto;
+}
+/**/
+
+/*user page*/
+.deck_nav{
+  width: 68%;
+  display: inline-block;
+}
+/**/
+/* footer */
+.footer{
+  padding: 0.6em;
+	vertical-align: bottom;
+	text-align: center;
+  box-shadow: inset 0px -2px 31px 0.1em black;
+  border-top: 1px solid #fff8dc59;
+}
+.footerTextTitle{
+	margin-bottom: 10%;
+}
+.sez-footer {
+  display: inline-block;
+	padding: 2em;
 }
 
-.registration_frm {
-  display: none;
+.card_insert_box {
+  display: inline;
+}
+
+/* infinite scroll temp*/
+#infinite-list {
+  /* We need to limit the height and show a scrollbar */
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+
+  /* Optional, only to check that it works with margin/padding */
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid black;
+}
+
+#current_usr_deck {
+  /* We need to limit the height and show a scrollbar */
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+
+  /* Optional, only to check that it works with margin/padding */
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid black;
 }

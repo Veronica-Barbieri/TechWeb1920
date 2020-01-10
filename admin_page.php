@@ -1,7 +1,8 @@
 <?php
+/*CONTROLLER*/
   $pagein = array(
     'Namepage' => 'Il tuo account',
-    'Controller' => 'usr_page.php'
+    'Controller' => 'admin_page.php'
   );
 
   session_start();
@@ -11,11 +12,10 @@
     exit;
   }
 
-  $disp_deck = 3;
   //error_reporting (E_ALL);
   require_once ("Views/header.php");
-  require_once ("Models/usr_page.php");
-  require_once ("Views/usr_page.php");
+  require_once ("Models/admin_page.php");
+  require_once ("Views/admin_page.php");
   require_once ("Views/footer.php");
 
- ?>
+?>

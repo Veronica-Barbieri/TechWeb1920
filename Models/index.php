@@ -51,7 +51,7 @@ $trisample = array($Verde[0], $Rosso[0], $Blu[0], $Nero[0], $Bianco[0]);
 
 /*----------------------------------------------------------------------------------------*/
 /*Gestione dei mazzi*/
-$q_4decks = "SELECT Id, Nome, Autore, Tipo, Colore_verde, Colore_rosso, Colore_blu, Colore_nero, Colore_bianco, Upvote  FROM mazzo";
+$q_4decks = "SELECT Id, Nome, Autore, Tipo, Colore_verde, Colore_rosso, Colore_blu, Colore_nero, Colore_bianco  FROM mazzo";
 
 $deck_general = Query($q_4decks);
 
@@ -60,4 +60,10 @@ while ($row_deck = mysqli_fetch_assoc($deck_general)){
 }
 
 $deck = array($all_decks[0], $all_decks[1], $all_decks[2]);
+
+$Colori = array('Mana Verde','Mana Rosso','Mana Blu','Mana Nero','Mana Bianco');
+
+$ManaColors = array ('Green_Mana.png','Red_Mana.png','Blue_Mana.png','Black_Mana.png','White_Mana.png')
+
+
 ?>

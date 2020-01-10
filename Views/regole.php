@@ -4,7 +4,7 @@
   CLICCA QUI!
 </a>
 <div class="dropdown">
-  <button class="dropbtn">Mostra le regole</button>
+  <button class="dropbtn">Mostra le regole <i class="fas fa-caret-square-down"></i></button>
   <div class="dropdown-content">
     <a href="#basi">Le basi del gioco</a>
     <a href="#tipi">Tipi di carte</a>

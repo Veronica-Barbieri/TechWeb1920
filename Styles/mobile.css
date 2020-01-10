@@ -244,7 +244,7 @@ a#glossario{
   color: darkred;
   font-size: 3em;
   position: relative;
-  left: 35%;
+  left: 40%;
   top: -0.5em;
 }
 
@@ -286,11 +286,10 @@ p#gioco1, p#gioco2{
 .dropbtn {
   position: relative;
   top: 2em;
-  left: -2em;
   color: black;
   padding: 0px;
   background-color: white;
-  font-size: 3.6em;
+  font-size: 3em;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -348,7 +347,7 @@ div.dropdown{
 button.dropbtn{
   position: relative;
   top: -0.3em;
-  left: -60px;
+  left: 1em;
 }
 
 

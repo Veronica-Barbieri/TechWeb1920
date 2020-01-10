@@ -1,6 +1,7 @@
 <h1>Glossario</h1>
+Per leggere un glossario di tutti i termini utili,
 <a href="https://magicthegathering.fandom.com/it/wiki/Glossario" id="glossario">
-  Per leggere un glossario di tutti i termini utili, CLICCA QUI!
+  CLICCA QUI!
 </a>
 <h1>Naviga le regole</h1>
 <ul class="menu" id="menu_regole">

@@ -286,11 +286,12 @@ p#gioco1, p#gioco2{
 .dropbtn {
   position: relative;
   top: 2em;
-  left: -30px;
+  left: -2em;
   color: black;
   padding: 0px;
   background-color: white;
-  font-size: 3em;
+  font-size: 3.6em;
+  font-weight: bold;
   border: none;
   cursor: pointer;
 }

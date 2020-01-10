@@ -287,7 +287,7 @@ p#gioco1, p#gioco2{
   position: relative;
   top: 2em;
   left: -30px;
-  color: darkred;
+  color: black;
   padding: 0px;
   background-color: white;
   font-size: 3em;
@@ -336,8 +336,15 @@ p#gioco1, p#gioco2{
 }
 
 div.dropdown{
+  font-size: 1em;
   position: relative;
+  left: -10px;
+}
 
+button.dropbtn{
+  position: relative;
+  top: -0.3em;
+  left: -10px;
 }
 
 

@@ -40,7 +40,7 @@
         <a href="contacts.php" xml:lang="en"><li>About us</li></a>
         <a href="#"><li>
           <i href="#" class="fa fa-facebook" id="fb"></i>
-          <i href="#" class="fab fa-envelope" id="en"></i>
+          <i href="#" class="far fa-envelope" id="en"></i>
           <i href="#" class="fab fa-youtube" id="yt"></i>
           <i href="#" class="fas fa-question-circle" id="q"></i>
         </li></a>

@@ -3,6 +3,14 @@
 <a href="https://magicthegathering.fandom.com/it/wiki/Glossario" id="glossario">
   CLICCA QUI!
 </a>
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
 <h1 id="NAV">Naviga le regole</h1>
 <ul class="menu" id="menu_regole">
   <li id="basi"> <a href="#basi">Le basi del gioco</a> </li>

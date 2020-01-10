@@ -20,7 +20,7 @@
   <script defer type="text/javascript" src="Scripts/new_deck.js"></script>
 </head>
 <body>
-  <nav role="navigation">
+  <nav class="navigation" role="navigation">
     <div id="menuToggle">
       <input type="checkbox" />
       <span></span>
@@ -42,8 +42,8 @@
       </ul>
     </div>
   </nav>
-  <div class="header" id="header">
-    <h1 id="title">Magic The Gathering <i class="fas fa-search"></i></h1>
+  <div class="header hb_header" id="header">
+    <h1 id="title">Magic The Gathering</h1>
     <?php if(isset($_SESSION["Username"])) { ?>
       <?php if(isset($_SESSION["Admin"])){ ?>
       <a class='nb-login nb-link' href='admin_page.php'>

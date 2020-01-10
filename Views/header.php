@@ -44,6 +44,21 @@
   </nav>
   <div class="header" id="header">
     <h1 id="title">Magic The Gathering <i class="fas fa-search"></i></h1>
+    <?php if(isset($_SESSION["Username"])) { ?>
+      <?php if(isset($_SESSION["Admin"])){ ?>
+      <a class='nb-login nb-link' href='admin_page.php'>
+      <?php } else {?>
+        <a class='nb-login nb-link' href='usr_page.php'>
+      <?php } ?>
+      <i class='fas fa-sign-in-alt' xml:lang='en'></i>
+      <?php echo $_SESSION["Username"] ?>
+      </a>
+    <?php } else {  ?>
+      <a class='nb-login nb-link' href='login.php'>
+      <i class='fas fa-sign-in-alt' xml:lang='en'></i>
+      Login
+      </a>
+  <?php } ?>
   </div>
   <div class="header dt_menu" id="header">
     <div class="nb-logo">

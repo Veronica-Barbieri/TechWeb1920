@@ -1,5 +1,5 @@
 <h1>Glossario</h1>
-<h2>Per leggere un glossario di tutti i termini utili <h2>
+<p id="intro">Per leggere un glossario di tutti i termini utili </p>
 <a href="https://magicthegathering.fandom.com/it/wiki/Glossario" id="glossario">
   CLICCA QUI!
 </a>

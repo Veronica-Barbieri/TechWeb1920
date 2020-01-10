@@ -26,13 +26,13 @@
   <li id="risolvere"> <a href="#risolvere">Rispondere e usare la pila</a> </li>
 </ul>
 <h1 id="basi">Le basi del gioco</h1>
-<p>
+<p id="gioco1">
   Per iniziare una partita, rimescola il tuo mazzo, che viene anche chiamato
   grimorio. Pesca una mano di sette carte e conta le terre. Puoi controllare la
   riga di testo subito sotto l’illustrazione di una carta per capire di che tipo
   è.
 </p>
-<p>
+<p id="gioco2">
   Tu e il tuo avversario cominciate la partita con 20 punti vita ciascuno,
   che dovrete entrambi annotare in qualche modo (ad esempio, usando un dado
   oppure carta e penna). Riduci a 0 i punti vita del tuo avversario e vincerai

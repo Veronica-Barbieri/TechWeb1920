@@ -307,7 +307,7 @@ p#gioco1, p#gioco2{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: lightgrey;
+  background-color: lightgray;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -349,10 +349,9 @@ button.dropbtn{
 
 
 li{
-  display: none;
+  display:;
 }
-
-h1#tipi, h2#tipi_terra, h2#atk, h2#def, h1#lanciare, h1#combat, h1#risolvere{
+#h1, h2, h1#tipi, h1#lanciare, h1#lanciare, h1#combat, h1#risolvere, span, img{
   display: none;
 }
 

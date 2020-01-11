@@ -12,16 +12,19 @@ header{
   border: 1px solid #000;
 }
 
-.nb-logo{
+/*.nb-logo{
+  display: none;
+}*/
+
+.dt_menu{
   display: none;
 }
-
-.navbar{
-  display: none;
+.navigation, .hb_header{
+  display: block;
 }
 
 .title{
-  text-aligne: centre;
+  text-align: center;
 }
 
 body{
@@ -34,9 +37,9 @@ body{
 
 #menuToggle{
   display: block;
-  position: relative;
-  top: 4em;
-  left: 4em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
@@ -135,7 +138,7 @@ li#rif{
 
 #title{
   color:#7a5050;
-  font-size: 3.7em;
+  font-size: 2.7em;
   text-align: center;
 }
 
@@ -195,18 +198,14 @@ div#menuToggle{
   padding-left: 0.5em;
 }
 
-p{
-  display: none;
-}
+
 
 h1{
   text-align: center;
 }
 
 h1#title{
-  width: 80%;
-  padding-left: 2em;
-  padding-right: 0px;
+  padding-left: 2.5em;
 }
 
 a.nb-login{
@@ -249,13 +248,13 @@ a#glossario{
   top: -0.5em;
 }
 
-.color_container{
+/*.color_container{
   display: none;
 }
 
 .pannelcarte{
   display: none;
-}
+}*/
 
 #fb, #ig, #q,#tw{
   margin-bottom: 1em;
@@ -270,17 +269,6 @@ li#basi, li#tipi, li#lanciare, li#combat, li#risolvere{
   line-height: 2em;
   text-align: center;
   font-size: 2em;
-}
-
-h1#basi{
-  display: none;
-  padding-top: 1em;
-}
-
-p#gioco1, p#gioco2{
-  display: none;
-  text-align: center;
-
 }
 
 /* Style The Dropdown Button */
@@ -352,12 +340,10 @@ button.dropbtn{
 }
 
 
-li{
-  display:;
-}
-#h1, h2, h1#tipi, h1#lanciare, h1#lanciare, h1#combat, h1#risolvere, span, img{
+
+/*#h1, h2, h1#tipi, h1#lanciare, h1#lanciare, h1#combat, h1#risolvere, span, img{
   display: none;
-}
+}*/
 
 footer{
   position: absolute;

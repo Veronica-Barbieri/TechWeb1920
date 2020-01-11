@@ -34,8 +34,8 @@
     if($data["usrname"]!="")
       $_SESSION["Username"] = $data["usrname"];
 
-    $errors_users = UpdateOrInsert_Query($u4_users, "Update");
-    $errors_mazzo = UpdateOrInsert_Query($u4_mazzo, "Update");
+    $errors_users = UpInDel_Query($u4_users, "Update");
+    $errors_mazzo = UpInDel_Query($u4_mazzo, "Update");
 
     header("Location: ../usr_page.php");
   } else {

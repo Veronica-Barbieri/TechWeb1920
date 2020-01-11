@@ -37,7 +37,7 @@ CSS HEADER
   text-align: center;
   background-color: #383838;
   box-shadow: inset 0px -2px 31px 0.1em black;
-  border-bottom: 1px solid #fff8dc59
+  border-bottom: 1px solid #fff8dc59;
 }
 
 .nb-col1, .nb-login, .nb-logo, .nb-item{

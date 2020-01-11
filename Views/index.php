@@ -1,13 +1,19 @@
 <div class="content">
 	<div class="pres_text" id="index_pres">
-		<h1> Insegui nuove sfide! </h1>
-		<p class="simpleText"> Benvenuto nel mondo di <span xml:lang="en"> Magic: The Gathering </span>, il gioco di carte collezionabili di maggior successo al mondo. Stai per scoprire i motivi che spingono
-			milioni di persone in tutto il pianeta a giocare a Magic: profondità strategica, mondi fantastici, personaggi carismatici e una community globale.
-			Esistono migliaia di carte tra cui scegliere: da dove iniziare? Ogni giocatore deve possedere un mazzo contenente almeno 60 carte e un intropack è
-			un ottimo modo per procurarsene uno. Gli intro pack ti forniscono tutto il necessario per iniziare a giocare: un mazzo di 60 carte, pronto per
-			essere usato, pieno di creature, terre e altre magie. Troverai anche due buste da 15 carte che potrai sfruttare per personalizzare il tuo mazzo.
-			In alternativa, puoi sempre registrarti sul sito di <span xml:lang="en"> Magic: The Gathering Arena </span> e scaricare una versione digitale del gioco,
-			ottenendo i mazzi di base gratuitamente e lanciandoti in una sfida contro giocatori da tutto il mondo.
+		<h1> Insegui nuove sfide! <i class="fas fa-trophy"></i></i></h1>
+		<p class="simpleText">
+			<p id="primo"> Benvenuto nel mondo di <span class="magic" xml:lang="en"> Magic: The Gathering </span>, il gioco di carte collezionabili di maggior successo al mondo!
+			<span>Stai per scoprire i motivi che spingono milioni di persone in tutto il pianeta a giocare a Magic: profondità strategica, mondi fantastici, personaggi carismatici e una community globale.</span>
+
+			<h2>Esistono migliaia di carte* tra cui scegliere: da dove iniziare?</h2>
+			<p id="secondo">Ogni giocatore deve possedere un mazzo contenente almeno 60 carte e un intropack è un ottimo modo per procurarsene uno.</p>
+
+			<h2>Cos'è un intropack?</h2>
+			<p id="terzo">Gli intro pack ti forniscono tutto il necessario per iniziare a giocare: un mazzo di 60 carte, pronto per essere usato, pieno di creature, terre e altre magie.
+			<span>Troverai anche due buste da 15 carte che potrai sfruttare per personalizzare il tuo mazzo.</span></p>
+
+			<p id="alt">*In alternativa, puoi sempre registrarti sul sito di <span class="magic" xml:lang="en"> Magic: The Gathering Arena </span> e scaricare una versione digitale del gioco,
+			<span>ottenendo i mazzi di base gratuitamente e lanciandoti in una sfida contro giocatori da tutto il mondo.<span></p>
 		</p>
 	</div>
 	<div class="box inline_el" id="hot_decks">

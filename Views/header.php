@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media="handheld,screen and (max-width:900px),
   only screen and (max-device-width: 600px)"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script type="text/javascript" src="Scripts/home.js"></script>
   <script defer type="text/javascript" src="Scripts/new_deck.js"></script>
 </head>
@@ -36,12 +37,16 @@
       <a href="contacts.php" xml:lang="en"><li>About us</li></a>
       <a href="#"><li>
         <i href="#" class="fa fa-facebook" id="fb"></i>
-        <i href="#" class="fab fa-twitter" id="tw"></i>
-        <i href="#" class="fab fa-instagram" id="ig"></i>
+        <i href="#" class="fab fa-youtube" id="yt"></i>
+        <i href="#" class="fas fa-envelope" id="en"></i>
+        <i href="#" class="fa fa-question" id="q"></i>
       </li></a>
       </ul>
     </div>
   </nav>
+  <form action="">
+    <input type="search"><i class="fa fa-search"></i>
+  </form>
   <div class="header hb_header" id="header">
     <h1 id="title">Magic The Gathering</h1>
     <?php if(isset($_SESSION["Username"])) { ?>
@@ -50,13 +55,12 @@
       <?php } else {?>
         <a class='nb-login nb-link' href='usr_page.php'>
       <?php } ?>
-      <i class='fas fa-sign-in-alt' xml:lang='en'></i>
+      <i class="fas fa-user" xml:lang='en'></i>
       <?php echo $_SESSION["Username"] ?>
       </a>
     <?php } else {  ?>
       <a class='nb-login nb-link' href='login.php'>
-      <i class='fas fa-sign-in-alt' xml:lang='en'></i>
-      Login
+      <i class="fas fa-user" xml:lang='en'></i>
       </a>
   <?php } ?>
   </div>

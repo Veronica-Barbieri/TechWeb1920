@@ -272,15 +272,7 @@ i.fas.fa-user::after{
 
 #hot_decks{
   position: relative;
-  left: 40%;
   text-align: center;
-  color: #7a5050;
-}
-
-#intro{
-  display: block;
-  position: relative;
-  left: 10%;
 }
 
 h1#NAV{

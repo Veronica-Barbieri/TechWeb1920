@@ -82,8 +82,37 @@ INSERT INTO `carta` (`Id`, `Nome`, `Colore`, `Costo_verde`, `Costo_rosso`, `Cost
 (26, "Escavazione Aggressiva","Rosso",0,1,0,0,0,3,"Incantesimo","You can't play lands.Sacrifice a land: Draw two cards. Activate this ability only once each turn.",NULL,"Set Base 2015","Rara","Franz Vohwinkel",NULL,NULL,"Resources/carta26.png"),
 (27, "Ajani l'Incrollabile","Bianco",0,0,0,1,0,3,"Planeswalker","+1: Until end of turn, up to one target creature gets +1/+1 and gains first strike, vigilance, and lifelink. −2: Put a +1/+1 counter on each creature you control and a loyalty counter on each other planeswalker you control. −7: You get an emblem with If a source would deal damage to you or a planeswalker you control, prevent all but 1 of that damage.",NULL,"Set Base 2015","Mitica Rara","Chris Rahn",NULL,NULL,"Resources/carta27.png"),
 (28, "Compagno di Ajani","Bianco",0,0,0,1,0,1,"Creatura","Whenever you gain life, put a +1/+1 counter on Ajani's Pridemate.","Quando uno di noi ha successo, l'intero branco ha successo. -Jazal Criniera D'Oro","Set Base 2015","Non comune","Svetlin Velinov",2,2,"Resources/carta28.png"),
-(29, "Cercasangue di Altac","Rosso",0,1,0,0,0,1,"Creatura","Whenever a creature an opponent controls dies, Altac Bloodseeker gets +2/+0 and gains first strike and haste until end of turn. (It deals combat damage before creatures without first strike, and it can attack and Tap as soon as it comes under your control.)",NULL,"Set Base 2015","Non Comune","Cynthia Sheppard",2,1,"Resources/carta29.png");
-
+(29, "Cercasangue di Altac","Rosso",0,1,0,0,0,1,"Creatura","Whenever a creature an opponent controls dies, Altac Bloodseeker gets +2/+0 and gains first strike and haste until end of turn. (It deals combat damage before creatures without first strike, and it can attack and Tap as soon as it comes under your control.)",NULL,"Set Base 2015","Non Comune","Cynthia Sheppard",2,1,"Resources/carta29.png"),
+(30, "Resistenza Anomala","Nero",0,0,0,0,1,1,"Istantanea","Until end of turn, target creature gets +2/+0 and gains When this creature dies, return it to the battlefield tapped under its owner's control.","Quando la speranza viene meno, la tenacia prende il sopravvento.","Set Base 2019","Comune","Tomasz Jedruszek",NULL,NULL,"Resources/carta30.png"),
+(31, "Atto di Tradimento","Rosso",0,1,0,0,0,2,"Stregoneria","Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. (It can attack and Tap this turn.)","Apprese una tragica lezione quel giorno: anche i più puri possono essere corrotti quando le emozioni del cuore vengono distorte.","Set Base 2019","Comune","Eric Deschamps",NULL,NULL,"Resources/carta31.png"),
+(32, "Egida dei Cieli","Bianco",0,0,0,1,0,1,"Istantanea","Target creature gets +1/+7 until end of turn.","La forza interiore resta celata, affiorando solo nel momento in cui è indispensabile.","Set Base 2017","Non Comune","Anthony Palumbo",NULL,NULL,"Resources/carta32.png"),
+(33, "Ingegnera Aerea","Bianco e Blu",0,0,1,1,0,2,"Ceratura","As long as you control an artifact, Aerial Engineer gets +2/+0 and has flying.","I migliori nel loro campo conoscono ogni bullone del proprio mezzo, da prua a poppa.","Set Base 2015","Non Comune","Zoltan Boros",2,4,"Resources/carta33.png"),
+(34, "Tunnel d'Etere","Blu",0,0,1,0,0,1,"Incantesimo","Enchant creature Enchanted creature gets +1/+0 and can't be blocked.","Se non riesci a trovare una via d'uscita, creane una.","Set Base 2014","Non Comune","Lucas Graciano",NULL,NULL,"Resources/carta34.png"),
+(35, "Artefice dello Scudo Etereo","Bianco",0,0,0,1,0,3,"Creatura","At the beginning of combat on your turn, target artifact creature you control gets +2/+2 and gains indestructible until end of turn. (Damage and effects that say destroy don't destroy it.)","In genere i fabbri lavorano il metallo, ma c'è chi preferisce materiali più delicati.","Set Base 2019","Non Comune","Izzy",3,3,"Resources/carta35.png"),
+(36, "Mammut Aggressivo","Verde",3,0,0,0,0,3,"Creatura","rample (This creature can deal excess combat damage to the player or planeswalker it's attacking.)
+Other creatures you control have trample","Avvicinati da dietro. Così, se carica, non ti ritroverai davanti alla sua furia. —Vivien Reid","Set Base 2019","Rara","Filip Burburan",8,8,"Resources/carta36.png"),
+(37, "Elementale dell'Aria","Blu",0,0,2,0,0,3,"Creatura","Flying","All'avvicinarsi della nave, il totem di giada si innalzò nel cielo. Il suo potere riverberò nell'aria e i suoi occhi di pietra brillarono crepitando. Il respiro del mondo sibilò attraverso di esso e un vento di tempesta prese vita.","Set Base 2019","Non Comune","Tomasz Jedruszek",4,4,"Resources/carta37.png"),
+(38, "Ajani, Avversario dei Tiranni","Bianco",0,0,0,2,0,2,"Planeswalker","
++1: Put a +1/+1 counter on each of up to two target creatures.
+−2: Return target creature card with converted mana cost 2 or less from your graveyard to the battlefield.
+−7: You get an emblem with: At the beginning of your end step, create three 1/1 white Cat creature tokens with lifelink.",NULL,"Set Base 2019","Mitica Rara","Victor Adame Minguez",NULL,NULL,"Resources/carta38.png"),
+(39, "Influenza di Ajani","Bianco",0,0,0,2,0,2,"Stregoneria","Put two +1/+1 counters on target creature.
+Look at the top five cards of your library. You may reveal a white card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",NULL,"Set Base 2019","Rara","Sidharth Chaturvedi",NULL,NULL,"Resources/carta39.png"),
+(40, "Ultima Resistenza di Ajani","Bianco",0,0,0,2,0,2,"Incantesimo","
+Whenever a creature or planeswalker you control dies, you may sacrifice Ajani's Last Stand. If you do, create a 4/4 white Avatar creature token with flying.
+When a spell or ability an opponent controls causes you to discard this card, if you control a Plains, create a 4/4 white Avatar creature token with flying.",NULL,"Set Base 2019","Rara","Slawomir Maniak",NULL,NULL,"Resources/carta40.png"),
+(41, "Compagno di Ajani","Bianco",0,0,0,1,0,1,"Creatura","Whenever you gain life, put a +1/+1 counter on Ajani's Pridemate.","Quando uno di noi ha successo, l'intero branco ha successo. —Jazal Criniera D'Oro","Set Base 2019","Non Comune","Svetlin Velinov",2,2,"Resources/carta41.png"),
+(42, "Luna Alpina","Rosso",0,1,0,0,0,0,"Incantesimo","
+As Alpine Moon enters the battlefield, choose a nonbasic land card name.
+Lands your opponents control with the chosen name lose all land types and abilities, and they gain :Tap: Add one mana of any color.","Un fenomeno raro e affascinante.
+—Tamiyo","Set Base 2019","Rara","Alayna Danner",NULL,NULL,"Resources/carta42.png"),
+(43, "Amuleto della Salvaguardia","Blu",0,0,0,0,0,2,"Artefatto","
+Whenever you become the target of a spell or ability an opponent controls, counter that spell or ability unless its controller pays 1.
+Creature tokens get -1/-0.","Che sia magico, benedetto dalla fortuna o semplicemente antico, è venerato e ciò gli conferisce potere.","Set Base 2019","Rara","Aaron Miller",NULL,NULL,"Resources/carta43.png"),
+(44, "Angelo dell'Alba","Bianco",0,0,0,1,0,4,"Creatura","
+Flying
+When Angel of the Dawn enters the battlefield, creatures you control get +1/+1 and gain vigilance until end of turn. (Attacking doesn't cause them to tap.)","
+Canta per tutti coloro che sono stati messi a tacere.","Set Base 2019","Comune","Livia Prima",3,3,"Resources/carta44.png");
 -- --------------------------------------------------------
 
 --

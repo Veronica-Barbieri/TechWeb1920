@@ -22,7 +22,7 @@ if($user_name==$name_result){
   header("Location: ../login.php");
 } else {
   $i4_newuser = "INSERT INTO user (Username, Pwd, Email) VALUES ('$user_name', '$pwd', '$mail')";
-  $new_user_errors=UpdateOrInsert_Query($i4_newuser, "Insert");
+  $new_user_errors=UpInDel_Query($i4_newuser, "Insert");
   header("Location: ../login.php");
 }
 ?>

@@ -206,15 +206,15 @@ CREATE TABLE `mazzo` (
 -- Dump dei dati per la tabella `mazzo`
 --
 
-INSERT INTO `mazzo` (`Id`, `Nome`, `Autore`, `Tipo`, `Colore_rosso`, `Colore_verde`, `Colore_blu`, `Colore_nero`, `Colore_bianco`, `Upvote`) VALUES
-(1, 'Aggro 1', 'giacomo', 'Aggro', 0, 0, 1, 0, 0, 0),
-(2, 'Control 1', 'giacomo', 'Control', 0, 0, 1, 1, 0, 0),
+INSERT INTO `mazzo` (`Id`, `Nome`, `Autore`, `Tipo`, `Colore_rosso`, `Colore_verde`, `Colore_blu`, `Colore_nero`, `Colore_bianco`) VALUES
+(1, 'Aggro 1', 'usr1', 'Aggro', 0, 0, 1, 0, 0),
+(2, 'Control 1', 'usr1', 'Control', 0, 0, 1, 1, 0),
 (3, 'Primo mazzo', 'usr2', 'Misto', 0, 1, 1, 0, 0, 0),
-(4, 'Mono Black Control', 'usr3', 'Mono Black', 0, 0, 0, 1, 0, 0),
-(5, 'Mono White Angels', 'usr2', 'Mono White', 0, 0, 0, 0, 1, 0),
-(6, 'Grixis Mill', 'usr2', 'Mill', 1, 0, 1, 1, 0, 0),
-(7, 'Elves', 'giacomo', 'Mono Green', 0, 1, 0, 0, 0, 0),
-(8, 'Mazeura\'s Nightmares', 'usr2', 'Mono Black Sacrifice', 0, 0, 0, 1, 0, 0);
+(4, 'Mono Black Control', 'usr3', 'Mono Black', 0, 0, 0, 1, 0),
+(5, 'Mono White Angels', 'usr2', 'Mono White', 0, 0, 0, 0, 1),
+(6, 'Grixis Mill', 'usr2', 'Mill', 1, 0, 1, 1, 0),
+(7, 'Elves', 'usr1', 'Mono Green', 0, 1, 0, 0, 0),
+(8, 'Mazeura\'s Nightmares', 'usr2', 'Mono Black Sacrifice', 0, 0, 0, 1, 0);
 
 -- --------------------------------------------------------
 

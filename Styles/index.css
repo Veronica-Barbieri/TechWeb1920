@@ -1,3 +1,4 @@
+/* GENERAL */
 *{
   margin: 0em;
   padding: 0em;
@@ -6,7 +7,7 @@ html{
   height: 100%;
 }
 body{
-  min-height: 100%;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 ul{
@@ -23,7 +24,7 @@ a{
   display: none;
 }
 .active{
-  display:block;
+  display: block;
 }
 /*--------
 CSS HEADER
@@ -57,6 +58,7 @@ CSS HEADER
   text-align: right;
   font-size: 1.2em;
   vertical-align: middle;
+  max-width: 6em;
 }
 .nb-item{
   padding: 0.7em 0em;
@@ -99,24 +101,24 @@ CSS HEADER
   background-color:#383838;
 }
 .content{
-  min-height: 27.4em;
+  min-height: calc(100% - 22.9em);
   text-align: center;
   padding: 1.5em 4em 1.5em 4em;
   color: #fff;
 }
 .menu a, .linkText, .link {
-	color:#deb887;
+	color:#fff;
 }
 .link{
 	text-decoration: none;
 }
 .link:visited,.linkText:visited{
-	color:#7B3F00;
+	color:#deb887;
 }
 .link:hover,.linkText:hover,.footerText,.footerTextTitle{
 	color:#FFFFFF;
 }
-.listaMana,.content fieldset,.content h1,.content h2,.content h3,#form ul li{
+.listaMana,.content fieldset,.content h2,.content h3,#form ul li{
 	color:#fff8dc;
 }
 .card_img{
@@ -164,6 +166,41 @@ CSS HEADER
 }
 .color_checkbox{
 	margin: 0.5em;
+  position: relative;
+}
+.color_checkbox input{
+  height: 40px;
+   left: 0;
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   width: 40px;
+}
+.cbox_label::before{
+  border: 2px solid;
+    content: "";
+    height: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 40px;
+}
+.cbox_label::after{
+  content: "";
+    border: 4px solid #fff;
+    border-left: 0;
+    border-top: 0;
+    height: 20px;
+    left: 14px;
+    opacity: 0;
+    position: absolute;
+    top: 6px;
+    transform: rotate(45deg);
+    transition: opacity 0.2s ease-in-out;
+    width: 12px;
+}
+.color_checkbox input:checked + label::after {
+    opacity: 1;
 }
 .cont_form{
   width: 37%;
@@ -180,12 +217,8 @@ CSS HEADER
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
-#caratteristiche li{
-	padding-left: 8em;
-	padding-right: 8em;
-	color:#FFFFFF;
-}
-.content h1,.content h2,.content h3,#form ul li{
+
+.content h2,.content h3,#form ul li{
 	padding-bottom: 0.5em;
 }
 .content h2,.content h3{
@@ -200,16 +233,13 @@ CSS HEADER
 .manaButton:hover{
   background-color: #fff8dc1f;
 }
-.carta{
+.carta,.usr_intro{
 	padding: 0.6em;
 }
 #caratteristiche h1{
 	color:#fff8dc;
 	font-size: 2em;
 	margin-bottom: 0.5em;
-}
-#caratteristiche ul{
-	margin-bottom: 2em;
 }
 .card_box {
   display: inline-block;
@@ -221,8 +251,19 @@ CSS HEADER
     transition: 0.4s;
 }
 .wiki_nav {
-  width: 66%;
-  margin-left: 25em;
+  width: 72%;
+  display: inline-block;
+}
+.nav_btn{
+  min-width: 3em;
+  display: inline-block;
+  margin: 0.3em;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #d2691e;
+}
+.nav_btn:hover{
+  color: #fff8dc;
 }
 
 .src_form{
@@ -230,14 +271,26 @@ CSS HEADER
   position: absolute;
   left: 0;
 }
+
+.src_form_deck,.src_form_wiki{
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2%;
+}
 .deck_box{
-	display: block;
+  display: inline-block;
+  width: 44%;
+  min-height: 9em;
+  vertical-align: middle;
+  margin: 0.5%;
+  padding: 0.5em;
   border: 1px solid #fff8dc59;
-  margin-bottom: 1em;
   border-radius: 3px;
 }
 .deck_box:hover{
   background-color: #fff8dc2e;
+  transition: 0.3s;
 }
 .formButton{
 	display: inline-block;
@@ -246,7 +299,6 @@ CSS HEADER
 .deck_box .Title{
 	font-size: 2em;
 }
-
 
 .card_title{
 	font-size: 1.1em;
@@ -258,59 +310,138 @@ CSS HEADER
 /*regole*/
 .glossario{
   position: relative;
+  padding-bottom: 1.5em;
+}
+.menu_regole_wrp{
+  width: 18%;
+  min-width: 13em;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 3%;
+  text-align: left;
 }
 .menu {
-  position: absolute;
   padding: 0.5em;
-  width: 12%;
-  display: inline-block;
+}
+.sub_list{
+  padding-left: 1em;
+  font-style: italic;
+}
+.sub_list li{
+  padding: 0.1em;
+}
+.sub_list li:hover, .regole_main_title:hover{
+  background-color: #fff8dc59;
+  border-radius: 3px;
+}
+.regole_main_title{
+  font-size: 1.2em;
+  margin: 0.3em 0 0.3em 0;
+  border-bottom: 1px solid #fff8dc59;
 }
 .content_regole{
-  margin-left: 18em;
-  width: 70%;
+  width: 63%;
   display: inline-block;
   border-left: 1px solid #fff8dc59;
-  padding: 0 3.5em 0 3.5em;
+  padding-left: 1.5em;
+  text-align: left;
+}
+.sez_title{
+  text-align: center;
+  color: #deb887;
+}
+.regole_mana{
+  display: inline-block;
+  padding: 0.5em;
 }
 /**/
-
 /*deck forum*/
 #deck_list{
   margin-top: 1.2em;
 }
+@media screen and (max-width: 900px) {
+  .src_form_deck,.wiki_nav,.src_form_wiki{
+    width: 100%;
+  }
+  .card_box{
+    width: 40%;
+    min-width: 12em;
+  }
+  .wiki_nav, .deck_nav{
+    padding-top: 1em;
+  }
+  .deck_nav{
+    width: 100%;
+    min-width: 16em;
+  }
+  .deck_box{
+    width: 100%;
+    min-width: 15em;
+    margin: 0 0 0.5em 0;
+  }
+  .src_form_deck{
+    margin: 0;
+  }
+  .glossario{
+    padding: 0;
+  }
+  .content_regole{
+    width: 100%;
+    border-left: none;
+    padding: 1em 0.5em 0 0.5em;
+  }
+}
 /**/
-
 /*single card*/
 .desc_card{
   display: inline-block;
-  min-height: 22em;
   vertical-align: middle;
-  padding: 1em 0 0 0;
-  width: 30%;
+  padding: 1em;
+  width: 56%;
+  text-align: left;
 }
-
+.desc_card ul li{
+  padding: 0.5em;
+  display: block;
+  margin: 0.2em;
+}
+.desc_sez_pre{
+  min-width: 18%;
+  display: inline-block;
+  padding: 0.2em;
+  color: #fff8dc;
+  background-color: #fff8dc1c;
+  font-weight: bold;
+}
+.desc_sez{
+  padding: 0.2em;
+}
 .single_card_img{
   width: 15em;
   border-radius: 11px;
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 4em;
+  vertical-align: top;
+  margin-right: 4%;
   box-shadow: 0 0 2em #000;
   border: 1px solid #fff8dc59;
 }
 /**/
-
 /*contatti / about us*/
 .inputArea{
   padding: 0.4em;
   border-radius: 3px;
+  min-width: 21%;
+}
+.inputArea:hover{
+  background-color: #afafaf;
+  transition: 0.3s;
 }
 /**/
-
 /*Single deck*/
 .deck_cards{
   width: 80%;
   margin: auto;
+  min-width: 16em;
 }
 .deck_card_img{
   display: block;
@@ -331,11 +462,11 @@ CSS HEADER
   transform: translatey(-3px) translateX(-2px);
 }
 /**/
-
 /*bottone*/
 .btn {
+  min-width: 13%;
   padding: 0.4em;
-  font-size: 0.9em;
+  font-size: 1em;
   border-radius: 3px;
   background-color: #fff8dc;
   border: none;
@@ -347,16 +478,22 @@ CSS HEADER
 }
 /**/
 
-/*user page*/
-.deck_nav{
-  width: 66%;
+/*login*/
+.login_frm, .registration_frm{
+  width: 50%;
   margin: auto;
 }
 /**/
 
+/*user page*/
+.deck_nav{
+  width: 68%;
+  display: inline-block;
+}
+/**/
 /* footer */
 .footer{
-    padding: 0.6em;
+  padding: 0.6em;
 	vertical-align: bottom;
 	text-align: center;
   box-shadow: inset 0px -2px 31px 0.1em black;
@@ -366,6 +503,35 @@ CSS HEADER
 	margin-bottom: 10%;
 }
 .sez-footer {
-    display: inline-block;
+  display: inline-block;
 	padding: 2em;
+}
+
+.card_insert_box {
+  display: inline;
+}
+
+/* infinite scroll temp*/
+#infinite-list {
+  /* We need to limit the height and show a scrollbar */
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+
+  /* Optional, only to check that it works with margin/padding */
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid black;
+}
+
+#current_usr_deck {
+  /* We need to limit the height and show a scrollbar */
+  width: 400px;
+  height: 400px;
+  overflow: auto;
+
+  /* Optional, only to check that it works with margin/padding */
+  margin: 20px;
+  padding: 20px;
+  border: 10px solid black;
 }

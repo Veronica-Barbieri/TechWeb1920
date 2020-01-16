@@ -1,24 +1,28 @@
 <div class="content">
-<h1>Glossario</h1>
-<a class="externalLink link" href="https://magicthegathering.fandom.com/it/wiki/Glossario">
-  Per leggere un glossario di tutti i termini utili, CLICCA QUI!
-</a>
-<h2>Naviga le regole</h2>
-<ul class="menu box" id="menu_regole">
-  <li> <a href="#basi">Le basi del gioco</a> </li>
-  <li> <a href="#tipi">Tipi di carte</a>
-    <ul>
-      <li> <a href="#tipi_terra">Terre</a> </li>
-      <li> <a href="#tipi_magie">Magie</a> </li>
-      <li> <a href="#tipi_creature">Creature</a> </li>
-      <li> <a href="#tipi_inc">Artefatti e Incantesimi</a> </li>
-      <li> <a href="#tipi_streg">Stregonerie e istantanei</a> </li>
-      <li> <a href="#tipi_planeswalker">Planeswalker</a> </li>
+  <div class="glossario">
+    <h1>Glossario</h1>
+    <a class="externalLink link" href="https://magicthegathering.fandom.com/it/wiki/Glossario">
+      Per leggere un glossario di tutti i termini utili, CLICCA QUI!
+    </a>
+  </div>
+<div class="menu_regole_wrp">
+  <h2>Naviga le regole</h2>
+  <ul class="menu box" id="menu_regole">
+    <li> <a class="regole_main_title" href="#basi">Le basi del gioco</a> </li>
+    <li> <a class="regole_main_title" href="#tipi">Tipi di carte</a>
+      <ul class="sub_list">
+        <li> <a href="#tipi_terra">Terre</a> </li>
+        <li> <a href="#tipi_magie">Magie</a> </li>
+        <li> <a href="#tipi_creature">Creature</a> </li>
+        <li> <a href="#tipi_inc">Artefatti e Incantesimi</a> </li>
+        <li> <a href="#tipi_streg">Stregonerie e istantanei</a> </li>
+        <li> <a href="#tipi_planeswalker">Planeswalker</a> </li>
+      </ul>
+    </li>
+    <li> <a class="regole_main_title" href="#lanciare">Giocare una carta</a> </li>
+    <li> <a class="regole_main_title" href="#combat">Combattimento</a>
     </ul>
-  </li>
-  <li> <a href="#lanciare">Giocare una carta</a> </li>
-  <li> <a href="#combat">Combattimento</a>
-</ul>
+</div>
   <div class="content_regole">
     <h1 class="sez_title" id="basi">Le basi del gioco</h1>
     <p class="simpleText">
@@ -50,11 +54,11 @@
           cinque colori
         </p>
         <ul class="simpleText">
-          <li> <span>Pianura</span> <img src="Resources/White_Mana.png" alt="Bianco"> </li>
-          <li> <span>Isola</span> <img src="Resources/Blue_Mana.png" alt="Bianco"> </li>
-          <li> <span>Palude</span> <img src="Resources/Black_Mana.png" alt="Bianco"> </li>
-          <li> <span>Montagna</span> <img src="Resources/Red_Mana.png" alt="Bianco"> </li>
-          <li> <span>Foresta</span> <img src="Resources/Green_Mana.png" alt="Bianco"> </li>
+          <li class="regole_mana box"> <span>Pianura</span> <img src="Resources/White_Mana.png" alt="Bianco"> </li>
+          <li class="regole_mana box"> <span>Isola</span> <img src="Resources/Blue_Mana.png" alt="Bianco"> </li>
+          <li class="regole_mana box"> <span>Palude</span> <img src="Resources/Black_Mana.png" alt="Bianco"> </li>
+          <li class="regole_mana box"> <span>Montagna</span> <img src="Resources/Red_Mana.png" alt="Bianco"> </li>
+          <li class="regole_mana box"> <span>Foresta</span> <img src="Resources/Green_Mana.png" alt="Bianco"> </li>
         </ul>
       </li>
       <li>

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link rel="stylesheet" href="Styles/index.css">
   <script type="text/javascript" src="Scripts/home.js"></script>
-  <script type="text/javascript" src="Scripts/new_deck.js"></script>
+  <script defer type="text/javascript" src="Scripts/new_deck.js"></script>
 </head>
 <body>
   <div class="header" id="header">

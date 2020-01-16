@@ -1,10 +1,10 @@
 <div class="card_insert" id="card_insert">
   <div class="card_insert_box" id="card_insert_basicmana">
-    <button type="button" name="BasicGreen" onclick="num_card_popup(1,'Terreno verde')"> <img src="Resources/Green_Mana.png" alt="Verde"> </button>
-    <button type="button" name="BasicBlue" onclick="num_card_popup(8,'Terreno blu')"> <img src="Resources/Blue_Mana.png" alt="Blu"> </button>
-    <button type="button" name="BasicRed" onclick="num_card_popup(0,'Terreno rosso')"> <img src="Resources/Red_Mana.png" alt="Rosso"> </button>
-    <button type="button" name="BasicWhite" onclick="num_card_popup(0,'Terreno bianco')"> <img src="Resources/White_Mana.png" alt="Bianco"> </button>
-    <button type="button" name="BasicBlack" onclick="num_card_popup(9,'Terreno nero')"> <img src="Resources/Black_Mana.png" alt="Nero"> </button>
+    <button type="button" name="BasicGreen" onclick="num_card_popup(1,'Mana verde')"> <img src="Resources/Green_Mana.png" alt="Verde"> </button>
+    <button type="button" name="BasicBlue" onclick="num_card_popup(8,'Mana blu')"> <img src="Resources/Blue_Mana.png" alt="Blu"> </button>
+    <button type="button" name="BasicRed" onclick="num_card_popup(0,'Mana rosso')"> <img src="Resources/Red_Mana.png" alt="Rosso"> </button>
+    <button type="button" name="BasicWhite" onclick="num_card_popup(0,'Mana bianco')"> <img src="Resources/White_Mana.png" alt="Bianco"> </button>
+    <button type="button" name="BasicBlack" onclick="num_card_popup(9,'Mana nero')"> <img src="Resources/Black_Mana.png" alt="Nero"> </button>
   </div>
   <div class="card_insert_box" id="card_insert_db">
     <div class="filters">
@@ -32,7 +32,6 @@
       <label for="type">Tipo</label>
   	<input class="inputArea" type="text" name="type" required>
     <input class="formButton" id="deck_submit_button" type="submit" name="deck_input" value="Salva">
-
     <div class="color_checkbox">
       <label class="in_label" for="color">
         <img src="Resources/White_Mana.png" alt="Bianco">

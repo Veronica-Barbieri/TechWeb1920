@@ -5,6 +5,7 @@
       Modifica le tue informazioni
     </button>
     <button class="btn" type="button" name="logout" onclick="window.location.href='logout.php'">Logout</button>
+    <button class="btn" type="button" name="new_deck" onclick="window.location.href='new_deck.php'">Crea un nuovo mazzo</button>
     <form class="usr_form hidden" id="usr_form" action="Models/usr_mod_account.php" method="post">
       <fieldset class="box">
         <legend class="frm_title box" for="filter">Modifica i tuoi dati:</legend>

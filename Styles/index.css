@@ -27,6 +27,29 @@ a{
   display: block;
 }
 /*--------
+BACK TO TOP BUTTON
+----------*/
+#totop {
+  display: none;
+  position: fixed;
+  bottom: 0.4em;
+  right: 0.5em;
+  z-index: 99;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  background-color: #ff7818;
+  color: #000;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#totop:hover {
+  background-color: #fff8dc;
+}
+/*----------*/
+/*--------
 CSS HEADER
 ----------*/
 .header{

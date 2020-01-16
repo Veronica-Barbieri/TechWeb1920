@@ -17,6 +17,7 @@
   <script defer type="text/javascript" src="Scripts/new_deck.js"></script>
 </head>
 <body>
+  <button onclick="topFunction()" id="totop" title="Go to top"><span xml:lang="eng">Back to Top</span></button>
   <div class="header" id="header">
     <div class="nb-logo">
       <img src="Resources/m-logo.png" alt="">
@@ -42,3 +43,20 @@
       </a>
   <?php } ?>
   </div>
+  <script>
+  var mybutton = document.getElementById("totop");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>

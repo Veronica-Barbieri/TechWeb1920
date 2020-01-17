@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title xml:lang="en"><?php echo $pagein['Namepage']; ?> - MTG Deck Builder</title>
   <meta name="title" content="Magic the Gathering - Costruttore di mazzi e wiki" />
   <meta name="description" content="Costruttore ed organizzatore di mazzi per il gioco di carte Magic the Gathering" />

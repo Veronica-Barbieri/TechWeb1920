@@ -71,8 +71,8 @@ body{
 
 #menuToggle span{
   display: block;
-  width: 5em;
-  height: 1.2em;
+  width: 3em;
+  height: 0.5em;
   margin-bottom: 5px;
   position: relative;
   background: lightgrey;
@@ -189,13 +189,10 @@ div#menuToggle{
 }
 
 .fa-user{
-  position: relative;
-  left: 40px;
-  bottom: 60px;
-  margin-left: 20px;
-  font-size: -webkit-xxx-large;
+  position: absolute;
+  right: 0em;
+  top: 0em;
   color: black;
-  padding-left: 0.5em;
 }
 
 p.simpleText{
@@ -220,8 +217,9 @@ p#alt{
 }
 
 a.nb-login.nb-link{
-  width: 1em;
+  width: 3em;
   height: 3em;
+  padding: 1px;
   position: absolute;
   right: 0em;
   top: 0em;
@@ -229,13 +227,16 @@ a.nb-login.nb-link{
 
 h1{
   padding: 0.5em;
-  font-size: 3em;
+  font-size: 1em;
   color: #d2691e;
   text-align: center;
 }
 
 h1#title{
-  padding-left: 2.5em;
+  position: relative;
+  top: 0em;
+  font-size: 1em;
+  text-align: center;
 }
 
 a.nb-login{
@@ -243,9 +244,10 @@ a.nb-login{
 }
 
 .fa-user{
+  font-size: 2em;
   position: absolute;
-  top: 1em;
-  right: 2em;
+  top: 0.9em;
+  right: -0.3em;
 }
 
 i.fas.fa-user{
@@ -256,8 +258,8 @@ i.fas.fa-user::before{
   width: 1em;
   height: 1em;
   position: absolute;
-  right: 1em;
-  top: -0.5em;
+  right: 0.5em;
+  top: -0.7em;
   color: black;
   cursor: pointer;
 }

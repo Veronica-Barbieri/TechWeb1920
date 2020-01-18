@@ -54,7 +54,7 @@ CREATE TABLE `carta` (
 --
 
 INSERT INTO `carta` (`Id`, `Nome`, `Colore`, `Costo_verde`, `Costo_rosso`, `Costo_blu`, `Costo_bianco`, `Costo_nero`, `Costo_nocolor`, `Tipo`, `Descrizione`, `Flavour_text`, `Espansione`, `Rarita`, `Artista`, `DEF`, `ATK`, `Img_path`) VALUES
-(1, 'Time Sieve', 'Blu', 0, 0, 1, 0, 1, 0, 'Artefatto', 'Sacrifice five artifacts: Take an extra turn\n  after this one.', '\"Prego di non essere mai considerata vecchia o inutile\" -- Sharuum Egemone', 'Alara Reborn', 'Rara', 'Franz', NULL, NULL, 'Resources/carta1.jpg'),
+(1, 'Time Sieve', 'Blu', 0, 0, 1, 0, 1, 0, 'Artefatto', 'Sacrifice five artifacts: Take an extra turn\n  after this one.', '\"Prego di non essere mai considerata vecchia o inutile\" -- Sharuum Egemone', 'Alara Reborn', 'Rara', 'Franz', NULL, NULL, 'Resources/carta20.jpg'),
 (2, 'Forest', 'Verde', NULL, NULL, NULL, NULL, NULL, NULL, 'Terra', NULL, NULL, 'Duel Decks', 'Terra', 'John Avon', NULL, NULL, 'Resources/carta4.jpeg'),
 (3, 'Magmaw', 'Rosso', 0, 2, 0, 0, 0, 3, 'Creatura', 'Sacrifice a nonland permanent:\n  Magmaw deals 1 damage to any target.', '\"The purpose of existence is simple:\n  everything is fuel for the magmaw.\" —Jaji, magmaw worshipper', 'Rise of the Eldrazi', 'Rara', 'Karl Kopinski', 4, 4, 'Resources/carta5.jpeg'),
 (4, 'Plant Elemental', 'Verde', 1, 0, 0, 0, 0, 1, 'Creatura', 'When Plant\n  Elemental enters the battlefield, sacrifice it unless you sacrifice a Forest.', NULL, 'Portal', 'Non comune', 'Ted Naifeh', 4, 3, 'Resources/carta6.jpeg'),
@@ -207,14 +207,14 @@ CREATE TABLE `mazzo` (
 --
 
 INSERT INTO `mazzo` (`Id`, `Nome`, `Autore`, `Tipo`, `Colore_rosso`, `Colore_verde`, `Colore_blu`, `Colore_nero`, `Colore_bianco`) VALUES
-(1, 'Aggro 1', 'usr1', 'Aggro', 0, 0, 1, 0, 0),
-(2, 'Control 1', 'usr1', 'Control', 0, 0, 1, 1, 0),
-(3, 'Primo mazzo', 'usr2', 'Misto', 0, 1, 1, 0, 0, 0),
+(1, 'Aggro 1', 'user', 'Aggro', 0, 0, 1, 0, 0),
+(2, 'Control 1', 'user', 'Control', 0, 0, 1, 1, 0),
+(3, 'Primo mazzo', 'usr2', 'Misto', 0, 1, 1, 0, 0),
 (4, 'Mono Black Control', 'usr3', 'Mono Black', 0, 0, 0, 1, 0),
 (5, 'Mono White Angels', 'usr2', 'Mono White', 0, 0, 0, 0, 1),
-(6, 'Grixis Mill', 'usr2', 'Mill', 1, 0, 1, 1, 0),
-(7, 'Elves', 'usr1', 'Mono Green', 0, 1, 0, 0, 0),
-(8, 'Mazeura\'s Nightmares', 'usr2', 'Mono Black Sacrifice', 0, 0, 0, 1, 0);
+(6, 'Grixis Mill', 'user', 'Mill', 1, 0, 1, 1, 0),
+(7, 'Elves', 'veronicausr', 'Mono Green', 0, 1, 0, 0, 0),
+(8, 'Mazeura\'s Nightmares', 'user', 'Mono Black Sacrifice', 0, 0, 0, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -235,6 +235,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`Username`, `Pwd`, `Email`, `Admin`) VALUES
 ('usr1', '618fbd94eef8c715da619a6f77b746d59ad599e48f8296580ba851151610ef9c', 'ciccio.pasticcio@gmail.com', 0),
+('user', '04f8996da763b7a969b1028ee3007569eaf3a635486ddab211d512c85b9df8fb', 'ciccio.pasticcio@gmail.com', 0),
+('admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'admin@gmail.com', 1),
 ('usr2', 'db2a60410d32e19766d6205a5011e0e25ac1f16744b8185a530b50af91951dcb', 'paolo@rossi.com', 0),
 ('usr3', '42c132b447f5fbcf548054b0ef541e1033cf87620270e07a18e7bc4708bf39e5', 'magic.lol@gmail.com', 0),
 ('amm1', 'cdd76addd13ae0b93c363b5202f17cb4c0843a68e80c5cea5f21d8b15e642f2c', 'amministratore1@gmail.com', 0),

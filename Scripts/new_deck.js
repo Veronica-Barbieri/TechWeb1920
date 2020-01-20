@@ -5,7 +5,7 @@
 function num_card_popup(id,nome) {
   var ris;
   var num = prompt("Scrivi la molteplicità di questa carta:","0");
-  if (num == 0 || num =="" || num>2) {
+  if (num == 0 || num =="") {
     window.alert('Dati errati');
   } else {
     ris = [id,nome,num];
@@ -48,7 +48,7 @@ function delete_deck(id) {
   del.open("GET", "Models/remove_user_deck.php?id="+id, true);
   del.send();
   var deleting = document.createElement("p");
-  deleting.innerHTML = "Eliminazione in corso";
+  deleting.innerHTML = "Eliminazione in corso <i class=\"fas fa-spinner fa-spin\"></i>";
   document.getElementById("deck_box_"+id).appendChild(deleting);
 }
 
@@ -70,10 +70,10 @@ function add_card_list(card, id) {
 }
 
 // aggiungo 5 carte
-var cardId = 0;
-var cardInDB = 20;
+var cardId = 1;
+var cardInDB = 43;
 
-if(window.location.pathname=="/TechWeb1920/new_deck.php"){
+if(window.location.pathname=="/edsa-TechWeb1920/new_deck.php"){
   var listElm = document.querySelector('#infinite-list');
 }
 
@@ -83,10 +83,11 @@ var loadMore = function() {
     add_card_list(item, cardId);
     cardId++;
     listElm.appendChild(item);
+    item.classList.add("card_box");
   }
 }
 
-if(window.location.pathname=="/TechWeb1920/new_deck.php"){
+if(window.location.pathname=="/edsa-TechWeb1920/new_deck.php"){
 // Controllo quando ho raggiunto la fine della scrollbar
   listElm.addEventListener('scroll', function() {
     if (listElm.scrollTop + listElm.clientHeight >= listElm.scrollHeight) {
@@ -96,6 +97,6 @@ if(window.location.pathname=="/TechWeb1920/new_deck.php"){
 }
 
 // Carico degli elementi appena viene caricata la pagina
-if(window.location.pathname=="/TechWeb1920/new_deck.php"){
+if(window.location.pathname=="/edsa-TechWeb1920/new_deck.php"){
   loadMore();
 }

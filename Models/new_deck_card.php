@@ -9,15 +9,13 @@ $id = $_GET["id"];
 $nome = $_GET["nome"];
 $num = $_GET["num"];
 
-$q4_cards = "SELECT Id, Nome, Img_path, Tipo, Costo_bianco, Costo_nero, Costo_rosso, Costo_verde, Costo_blu, Costo_nocolor FROM carta";
-
+$q4_cards = "SELECT Id, Nome, Img_path, Tipo, Costo_bianco, Costo_nero, Costo_rosso, Costo_verde, Costo_blu, Costo_nocolor FROM carta WHERE Id='$id'";
 $card_general = Query($q4_cards);
-
-while ($row_card = mysqli_fetch_assoc($card_general)) {
-  $cards[] = $row_card;
+$card_to_show = mysqli_fetch_assoc($card_general);
+/*while ($card_to_show = mysqli_fetch_assoc($card_general);/*) {
+    $card_to_show[] = $row_card;
 }
-
-$card_to_show = $cards[$id];
+$card_to_show = $cards[$id];*/
 $global_costo = $card_to_show["Costo_verde"]+$card_to_show["Costo_rosso"]+$card_to_show["Costo_blu"]+$card_to_show["Costo_nero"]+$card_to_show["Costo_bianco"]+$card_to_show["Costo_nocolor"];
 
 for($i=0; $i<$num; $i++){
@@ -25,14 +23,14 @@ array_push($_SESSION["deck"], $id);
 }
 ?>
 
-<ul id="info_card_<?php echo $nome; ?>">
+<ul class="card_box" id="info_card_<?php echo $nome;?>">
   <li><h1><?php echo $nome ?></h1></li>
   <li><p>Quantità: <?php echo $num ?></p></li>
   <li>
     <p><?php
     //controllo i costi delle carte e stampo le immagini che li rappresentano
       if($global_costo!=0) { ?>
-        <p>Color:
+        <p>Costo:
         <?php } if($card_to_show["Costo_nocolor"]!=0) { ?>
           <img src='Resources/nocost<?php echo $card_to_show["Costo_nocolor"];?>.png' alt='"<?php echo $card_to_show["Costo_nocolor"]?> unit&agrave di costo senza colore'>
         <?php  };
@@ -80,6 +78,6 @@ array_push($_SESSION["deck"], $id);
   </li>
   <li><img class="card_img" xml:lang="en" id="Immagine della carta<?php echo $card_to_show["Nome"];?>" src="<?php echo $card_to_show["Img_path"];?>"></li>
   <li>
-    <button type="button" name="delete" onclick="remove_card_deck('info_card_<?php echo $nome;?>', <?php echo $id;?>)">Elimina dal mazzo</button>
+    <button class="btn" type="button" name="delete" onclick="remove_card_deck('info_card_<?php echo $nome;?>', '<?php echo $id;?>')">Elimina dal mazzo</button>
   </li>
 </ul>

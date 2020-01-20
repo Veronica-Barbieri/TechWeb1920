@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
   <title xml:lang="en"><?php echo $pagein['Namepage']; ?> - MTG Deck Builder</title>
   <meta name="title" content="Magic the Gathering - Costruttore di mazzi e wiki" />
@@ -11,16 +11,18 @@
   <meta name="author" content="" />
   <meta name="keywords" content="gioco, carte, Magic the Gathering, MTG,
                                   mazzo, deck, regole" />
-  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <link rel="stylesheet" href="Styles/index.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css" />
+  <link rel="stylesheet" href="Styles/index.css" />
   <script type="text/javascript" src="Scripts/home.js"></script>
-  <script defer type="text/javascript" src="Scripts/new_deck.js"></script>
+  <script defer="defer" type="text/javascript" src="Scripts/new_deck.js"></script>
 </head>
 <body onload="enableTop()">
-  <button onclick="topFunction()" id="totop" title="Go to top"><span xml:lang="eng">Back to Top</span></button>
+  <div class="">
+    <button onclick="topFunction()" id="totop" title="Go to top"><span xml:lang="eng">Back to Top</span></button>
+  </div>
   <div class="header" id="header">
     <div class="nb-logo">
-      <img src="Resources/m-logo.png" alt="">
+      <img src="Resources/m-logo.png" alt="" />
     </div>
     <div class="nb-col1">
       <ul class="navbar">
@@ -29,15 +31,15 @@
     </div>
     <?php if(isset($_SESSION["Username"])) { ?>
       <?php if(isset($_SESSION["Admin"])){ ?>
-      <a class='nb-login nb-link' href='admin_page.php'>
+      <a class='nb-login' href='admin_page.php'>
       <?php } else {?>
-        <a class='nb-login nb-link' href='usr_page.php'>
+        <a class='nb-login' href='usr_page.php'>
       <?php } ?>
       <i class='fas fa-sign-in-alt' xml:lang='en'></i>
       <?php echo $_SESSION["Username"] ?>
       </a>
     <?php } else {  ?>
-      <a class='nb-login nb-link' href='login.php'>
+      <a class='nb-login' href='login.php'>
       <i class='fas fa-sign-in-alt' xml:lang='en'></i>
       Login
       </a>

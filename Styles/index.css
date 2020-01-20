@@ -26,6 +26,13 @@ a{
 .active{
   display: block;
 }
+.title{
+  text-transform: uppercase;
+}
+.main_title{
+  margin-bottom: 1em;
+}
+
 /*--------
 BACK TO TOP BUTTON
 ----------*/
@@ -78,30 +85,31 @@ CSS HEADER
   vertical-align: middle;
 }
 .nb-login{
-  text-align: right;
-  font-size: 1.2em;
   vertical-align: middle;
   max-width: 6em;
+  padding: 0.7em 0.5em;
+  font-size: 1.4em;
+  color: #fff8dc;
+  border-radius: 3px;
 }
 .nb-item{
-  padding: 0.7em 0em;
-  border-right: 2px solid #d2691e;
+  padding: 0em 0.2em;
+  border-right: 1px solid #d2691e;;
 }
-.nb-item: first-child{
-  border-left: 2px solid #d2691e;
+.nb-item:first-child {
+  border-left: 1px solid #d2691e;
 }
-.nb-item:hover{
-  background-color: #d2691e;
-  transition: 0.3s;
-}
-.nb-login:hover{
+.nb-item:hover, .nb-login:hover{
   background-color: #d2691e;
   transition: 0.3s;
 }
 .nb-link{
-  padding: 0.7em 2em;
-  font-size: 1.2em;
+  padding: 0.7em 0.4em;
+  font-size: 1.3em;
   color: #fff8dc;
+  display: block;
+  margin: auto;
+  height: 1.5em;
 }
 /*end header*/
 .color_container_box{
@@ -169,15 +177,15 @@ CSS HEADER
 .frm_title{
   padding: 0.3em;
   margin-left: 0.8em;
+  margin-right: 0.8em;
   margin-bottom: 0.3em;
-  font-size: 1.8em;
+  font-size: 1.6em;
   color:#fff8dc;
   background-color: #383838;
-  border: 1px solid #fff8dc4a;
   border-radius: 3px;
 }
 /*******************/
-.inline_el, .color_checkbox, .src_col1, .card_type ul li {
+.inline_el, .src_col1, .card_type ul li {
 	display: inline-block;
 }
 .src_dropdown {
@@ -187,60 +195,69 @@ CSS HEADER
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
-.color_checkbox{
-	margin: 0.5em;
-  position: relative;
+
+.color_checkbox {
+  position: absolute;
+  opacity: 0;
 }
-.color_checkbox input{
-  height: 40px;
-   left: 0;
-   opacity: 0;
-   position: absolute;
-   top: 0;
-   width: 40px;
+.color_checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+.color_checkbox + label::before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
 }
-.cbox_label::before{
-  border: 2px solid;
-    content: "";
-    height: 40px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 40px;
+.color_checkbox:hover + label::before {
+  background: #fff8dc;
 }
-.cbox_label::after{
-  content: "";
-    border: 4px solid #fff;
-    border-left: 0;
-    border-top: 0;
-    height: 20px;
-    left: 14px;
-    opacity: 0;
-    position: absolute;
-    top: 6px;
-    transform: rotate(45deg);
-    transition: opacity 0.2s ease-in-out;
-    width: 12px;
+.color_checkbox:focus + label::before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
-.color_checkbox input:checked + label::after {
-    opacity: 1;
+.color_checkbox:checked + label::before {
+  background: #d2691e;
+}
+.color_checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.color_checkbox:disabled + label::before {
+  box-shadow: none;
+  background: #ddd;
+}
+.color_checkbox:checked + label::after {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 4px;
+  height: 4px;
+  box-shadow:
+    2px 0 0 #000,
+    4px 0 0 #000,
+    4px -2px 0 #000,
+    4px -4px 0 #000,
+    4px -6px 0 #000,
+    4px -8px 0 #000;
+  transform: translateX(-57px) translateY(22px) rotate(45deg);
 }
 .cont_form{
   width: 37%;
   margin: auto;
 	display: block;
 }
+.simpleText{
+  font-size: 1.3em;
+}
 .simpleText,.content label{
 	margin: 0.5em;
 	display: block;
 }
-.formButton{
-	display: block;
-	margin: auto;
-	margin-top: 2em;
-	margin-bottom: 2em;
-}
-
 .content h2,.content h3,#form ul li{
 	padding-bottom: 0.5em;
 }
@@ -256,7 +273,7 @@ CSS HEADER
 .manaButton:hover{
   background-color: #fff8dc1f;
 }
-.carta,.usr_intro{
+.carta{
 	padding: 0.6em;
 }
 #caratteristiche h1{
@@ -288,13 +305,11 @@ CSS HEADER
 .nav_btn:hover{
   color: #fff8dc;
 }
-
 .src_form{
   margin-left: 2em;
   position: absolute;
   left: 0;
 }
-
 .src_form_deck,.src_form_wiki{
   width: 24%;
   display: inline-block;
@@ -322,7 +337,6 @@ CSS HEADER
 .deck_box .Title{
 	font-size: 2em;
 }
-
 .card_title{
 	font-size: 1.1em;
   padding-top: 0.5em
@@ -381,38 +395,6 @@ CSS HEADER
 /*deck forum*/
 #deck_list{
   margin-top: 1.2em;
-}
-@media screen and (max-width: 900px) {
-  .src_form_deck,.wiki_nav,.src_form_wiki{
-    width: 100%;
-  }
-  .card_box{
-    width: 40%;
-    min-width: 12em;
-  }
-  .wiki_nav, .deck_nav{
-    padding-top: 1em;
-  }
-  .deck_nav{
-    width: 100%;
-    min-width: 16em;
-  }
-  .deck_box{
-    width: 100%;
-    min-width: 15em;
-    margin: 0 0 0.5em 0;
-  }
-  .src_form_deck{
-    margin: 0;
-  }
-  .glossario{
-    padding: 0;
-  }
-  .content_regole{
-    width: 100%;
-    border-left: none;
-    padding: 1em 0.5em 0 0.5em;
-  }
 }
 /**/
 /*single card*/
@@ -489,6 +471,7 @@ CSS HEADER
 .btn {
   min-width: 13%;
   padding: 0.4em;
+  margin: 0.4em;
   font-size: 1em;
   border-radius: 3px;
   background-color: #fff8dc;
@@ -500,18 +483,78 @@ CSS HEADER
   transition: 0.2s;
 }
 /**/
-
 /*login*/
 .login_frm, .registration_frm{
   width: 50%;
   margin: auto;
 }
 /**/
-
 /*user page*/
 .deck_nav{
   width: 68%;
   display: inline-block;
+}
+.usr_intro,.admin_intro{
+	padding: 0.6em;
+}
+/**/
+/*admin page*/
+.admin_intro{
+  display: inline-block;
+}
+.stats{
+  margin-top: 1em;
+  border-top: 1px solid #fff8dc59;
+  padding: 1em 0;
+}
+.ad_stat{
+  color: #fff8dc;
+  display: inline-block;
+  width: 22%;
+  margin: 0.2em 0;
+  padding: 0.5em;
+  min-height: 3.5em;
+  min-width: 5em;
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+.ad_stat:hover{
+  background-color: #fff8dc59;
+  color: #000;
+}
+.ad_stat:hover::after{
+  content: 'Clicca per espandere';
+  position: absolute;
+  background: white;
+  width: 6em;
+  height: 2.5em;
+  font-size: 0.8em;
+  border-radius: 4px;
+  transform: translateX(-3em) translateY(0.2em);
+  color: #000;
+}
+.admin_form{
+  margin-top: 1em;
+}
+#new_db_card {
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+}
+#new_db_card fieldset{
+  border: none;
+}
+.new_card_fl{
+  display: inline-block;
+  border: none;
+  vertical-align: top;
+}
+.new_card_fl legend{
+  border-bottom: 1px solid #fff8dc59;
+}
+.nc_btn{
+  display: block;
+  margin: 2em auto;
 }
 /**/
 /* footer */
@@ -529,32 +572,88 @@ CSS HEADER
   display: inline-block;
 	padding: 2em;
 }
-
 .card_insert_box {
-  display: inline;
+  display: block;
+  min-width: 24em;
+  padding: 1.5em 0;
+  border-bottom: 1px solid #fff8dc5e;
 }
-
+#current_usr_deck{
+  width: 60%;
+  display: inline-block;
+  margin-right: 1.5em;
+  margin-bottom: 4.5em;
+}
+#new_deck_form{
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+#deck_submit_button{
+  font-weight: bold;
+  height: 3em;
+  font-size: 1.2em;
+}
 /* infinite scroll temp*/
-#infinite-list {
-  /* We need to limit the height and show a scrollbar */
-  width: 400px;
-  height: 400px;
+.new_deck_sez{
+  width: 80%;
+  height: 30em;
   overflow: auto;
-
-  /* Optional, only to check that it works with margin/padding */
-  margin: 20px;
-  padding: 20px;
-  border: 10px solid black;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  border: 2px solid black;
+}
+#infinite-list{
+  width: 61%;
+}
+#infinite-list ul{
+  width: 15em;
 }
 
-#current_usr_deck {
-  /* We need to limit the height and show a scrollbar */
-  width: 400px;
-  height: 400px;
-  overflow: auto;
+@media screen and (max-width: 900px) {
+  .src_form_deck,.wiki_nav,.src_form_wiki,#new_deck_form, #current_usr_deck{
+    width: 100%;
+  }
+  .card_box{
+    width: 40%;
+    min-width: 12em;
+  }
+  .wiki_nav, .deck_nav{
+    padding-top: 1em;
+  }
+  .deck_nav{
+    width: 100%;
+    min-width: 16em;
+  }
+  .deck_box{
+    width: 100%;
+    min-width: 15em;
+    margin: 0 0 0.5em 0;
+  }
+  .src_form_deck{
+    margin: 0;
+  }
+  .glossario{
+    padding: 0;
+  }
+  .content_regole,#new_db_card{
+    width: 100%;
+    border-left: none;
+    padding: 1em 0.5em 0 0.5em;
+  }
 
-  /* Optional, only to check that it works with margin/padding */
-  margin: 20px;
-  padding: 20px;
-  border: 10px solid black;
+  .nb-logo, .nb-item {
+    display: block;
+    text-align: center;
+  }
+  .nb-col1{
+    display: block;
+    border: none;
+  }
+  .nb-item {
+    border: 1px solid #d2691e;
+  border-radius: 3px;
+  margin: 0.5em auto;
+  width: 50%;
+  }
 }

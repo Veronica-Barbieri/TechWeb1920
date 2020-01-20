@@ -9,170 +9,170 @@
     ordinando l'output in modo che le carte siano divise per tipologia-->
     <?php if($tipo_in_mazzo["Artefatto"]==true) { ?>
       <div class='card_type'>
-      <h1>Artefatti</h1>
-      <ul>
+        <h1>Artefatti</h1>
+        <ul>
     <?php foreach ($cards_in_deck as $key => $value) {
         if ($value["Tipo"] == "Artefatto") {  ?>
-          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'>
-            <li class="card_box sd_cardbox">
+          <li class="card_box sd_cardbox">
+          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
               <p class="card_title"><?php echo $value["Nome"];?></p>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
               </span>
-              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'>
-            </li>
+              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta' />
           </a>
+        </li>
           <?php } ?>
-        </ul>
         <?php } ?>
+        </ul>
       </div>
     <?php } ?>
     <?php if($tipo_in_mazzo["Creatura"]==true) { ?>
       <div class='card_type'>
-      <h1>Creature</h1>
-      <ul>
+        <h1>Creature</h1>
+        <ul>
     <?php foreach ($cards_in_deck as $key => $value) {
         if ($value["Tipo"] == "Creatura") {  ?>
-          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'>
-            <li class="card_box sd_cardbox">
+          <li class="card_box sd_cardbox">
+          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
               <p class="card_title"><?php echo $value["Nome"];?></p>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
               </span>
-              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'>
-            </li>
+              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta' />
           </a>
+        </li>
           <?php } ?>
-        </ul>
         <?php } ?>
+        </ul>
       </div>
     <?php } ?>
     <?php if($tipo_in_mazzo["Incantesimo"]==true) { ?>
       <div class='card_type'>
-      <h1>Incantesimi</h1>
-      <ul>
+        <h1>Incantesimi</h1>
+        <ul>
     <?php foreach ($cards_in_deck as $key => $value) {
         if ($value["Tipo"] == "Incantesimo") {  ?>
-          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'>
-            <li class="card_box sd_cardbox">
+          <li class="card_box sd_cardbox">
+            <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
               <p class="card_title"><?php echo $value["Nome"];?></p>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
               </span>
-              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'>
-            </li>
-          </a>
+              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta' />
+            </a>
+          </li>
           <?php } ?>
-        </ul>
         <?php } ?>
+        </ul>
       </div>
     <?php } ?>
     <?php if($tipo_in_mazzo["Istantanea"]==true) { ?>
       <div class='card_type'>
-      <h1>Istantanee</h1>
-      <ul>
+        <h1>Istantanee</h1>
+        <ul>
     <?php foreach ($cards_in_deck as $key => $value) {
         if ($value["Tipo"] == "Artefatto") {  ?>
-          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'>
-            <li class="card_box sd_cardbox">
+          <li class="card_box sd_cardbox">
+            <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
               <p class="card_title"><?php echo $value["Nome"];?></p>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
               </span>
-              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'>
-            </li>
-          </a>
+              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta' />
+            </a>
+          </li>
           <?php } ?>
-        </ul>
         <?php } ?>
+        </ul>
       </div>
     <?php } ?>
     <?php if($tipo_in_mazzo["Planeswalker"]==true) { ?>
       <div class='card_type'>
-      <h1>Planeswalker</h1>
-      <ul>
+        <h1>Planeswalker</h1>
+        <ul>
     <?php foreach ($cards_in_deck as $key => $value) {
         if ($value["Tipo"] == "Planeswalker") {  ?>
-          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'>
-            <li class="card_box sd_cardbox">
+          <li class="card_box sd_cardbox">
+            <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
               <p class="card_title"><?php echo $value["Nome"];?></p>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
               </span>
-              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'>
-            </li>
-          </a>
+              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta' />
+            </a>
+          </li>
           <?php } ?>
-        </ul>
         <?php } ?>
+        </ul>
       </div>
     <?php } ?>
     <?php if($tipo_in_mazzo["Stregoneria"]==true) { ?>
       <div class='card_type'>
-      <h1>Stregonerie</h1>
-      <ul>
+        <h1>Stregonerie</h1>
+        <ul>
     <?php foreach ($cards_in_deck as $key => $value) {
         if ($value["Tipo"] == "Stregoneria") {  ?>
-          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'>
-            <li class="card_box sd_cardbox">
+          <li class="card_box sd_cardbox">
+            <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
               <p class="card_title"><?php echo $value["Nome"];?></p>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
               </span>
-              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'>
-            </li>
-          </a>
+              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta' />
+            </a>
+          </li>
           <?php } ?>
-        </ul>
         <?php } ?>
+        </ul>
       </div>
     <?php } ?>
     <?php if($tipo_in_mazzo["Terra"]==true) { ?>
       <div class='card_type'>
-      <h1>Terre</h1>
-      <ul>
+        <h1>Terre</h1>
+        <ul>
     <?php foreach ($cards_in_deck as $key => $value) {
         if ($value["Tipo"] == "Terra") {  ?>
-          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'>
-            <li class="card_box sd_cardbox">
+          <li class="card_box sd_cardbox">
+            <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
               <p class="card_title"><?php echo $value["Nome"];?></p>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
               </span>
-              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'>
-            </li>
-          </a>
+              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta' />
+            </a>
+          </li>
           <?php } ?>
-        </ul>
         <?php } ?>
+        </ul>
       </div>
     <?php } ?>
     <?php if($tipo_in_mazzo["Tribale"]==true) { ?>
       <div class='card_type'>
-      <h1>Tribali</h1>
-      <ul>
+        <h1>Tribali</h1>
+        <ul>
     <?php foreach ($cards_in_deck as $key => $value) {
         if ($value["Tipo"] == "Tribale") {  ?>
-          <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&name=<?php echo $value["Nome"]?>'>
-            <li class="card_box sd_cardbox">
+          <li class="card_box sd_cardbox">
+            <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
               <p class="card_title"><?php echo $value["Nome"];?></p>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
               </span>
-              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta'>
-            </li>
-          </a>
+              <img class="card_img deck_card_img" src="<?php echo $value["Img_path"];?>" alt='immagine carta' />
+            </a>
+          </li>
           <?php } ?>
-        </ul>
         <?php } ?>
+        </ul>
       </div>
     <?php } ?>
   </div>

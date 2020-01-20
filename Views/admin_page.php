@@ -23,7 +23,7 @@
         </div>
         <div class="form_sez">
           <input class="formButton btn" type="submit" name="save" value="Salva" />
-          <input class="formButton btn" type="reset" name="cancel" value="Annulla" onclick="show_and_hide('usr_form_btn','usr_form')" />
+          <input class="formButton btn" type="reset" name="cancel" value="Annulla" onclick="show_and_hide('ad_form_btn','admin_form')" />
           <input class="formButton btn" type="reset" name="reset" value="Resetta i campi" />
         </div>
       </fieldset>

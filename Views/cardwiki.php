@@ -1,47 +1,47 @@
 <div class="content">
 <form class="src_form_wiki" action="cardwiki.php" method="get"><!-- da implementare la gestione del form -->
-  <fieldset class="src_col1 box">
-    <legend class="frm_title box" for="filter">Cerca la tua carta:</legend>
+  <fieldset class="src_col1 box" id="card_search1">
+    <legend class="frm_title box">Cerca la tua carta:</legend>
     <div class="src_field_group">
-      <div class="in_label" class="input">
-        <label class="in_label">Nome della carta</label>
-        <input class="inputArea" type="text" name="nomecarta" value="">
+      <div class="in_label">
+        <label class="in_label" for="nomecarta">Nome della carta</label>
+        <input class="inputArea" id="nomecarta" type="text" name="nomecarta" value="" />
       </div>
-      <div class="color_checkbox">
-        <input id="bianco" type="checkbox" name="bianco" value="1">
-        <label class="cbox_label" for="bianco">
-          <img src="Resources/White_Mana.png" alt="Bianco">
+      <div>
+        <input class="color_checkbox" id="white_chbox" type="checkbox" name="bianco" value="1" />
+        <label class="cbox_label" for="white_chbox">
+          <img src="Resources/White_Mana.png" alt="Bianco" />
         </label>
       </div>
-      <div class="color_checkbox">
-        <input id="blu" type="checkbox" name="blu" value="1">
-        <label class="cbox_label" for="blu">
-          <img src="Resources/Blue_Mana.png" alt="Blu">
+      <div>
+        <input class="color_checkbox" id="blue_chbox" type="checkbox" name="blu" value="1" />
+        <label class="cbox_label" for="blue_chbox">
+          <img src="Resources/Blue_Mana.png" alt="Blu" />
         </label>
       </div>
-      <div class="color_checkbox">
-        <input id="nero" type="checkbox" name="nero" value="1">
-        <label class="cbox_label" for="nero">
-          <img src="Resources/Black_Mana.png" alt="Nero">
+      <div>
+        <input class="color_checkbox" id="black_chbox" type="checkbox" name="nero" value="1" />
+        <label class="cbox_label" for="black_chbox">
+          <img src="Resources/Black_Mana.png" alt="Nero" />
         </label>
       </div>
-      <div class="color_checkbox">
-        <input id="rosso" type="checkbox" name="rosso" value="1">
-        <label class="cbox_label" for="rosso">
-          <img src="Resources/Red_Mana.png" alt="Rosso">
+      <div>
+        <input class="color_checkbox" id="red_chbox" type="checkbox" name="rosso" value="1" />
+        <label class="cbox_label" for="red_chbox">
+          <img src="Resources/Red_Mana.png" alt="Rosso" />
         </label>
       </div>
-      <div class="color_checkbox">
-        <input id="verde" type="checkbox" name="verde" value="1">
-        <label class="cbox_label" for="verde">
-          <img src="Resources/Green_Mana.png" alt="Verde">
+      <div>
+        <input class="color_checkbox" id="green_chbox" type="checkbox" name="verde" value="1" />
+        <label class="cbox_label" for="green_chbox">
+          <img src="Resources/Green_Mana.png" alt="Verde" />
         </label>
       </div>
     </div>
     <div class="src_field_group">
       <div class="src_dropdown_group">
-        <label class="in_label" class="dropdown_text" for="order">Espansione:</label>
-        <select class="src_dropdown" name="set">
+        <label class="in_label" for="set">Espansione:</label>
+        <select class="src_dropdown" id="set" name="set">
             <option value="None">Nessuna scelta</option>
             <optgroup label="Core Sets">
               <option value="Set Base 2020">Set Base 2020</option>
@@ -63,8 +63,8 @@
           </select>
     </div>
     <div class="src_dropdown_group">
-      <label class="in_label" class="dropdown_text" for="order">Tipo di carta:</label>
-      <select class="src_dropdown" name="tipo">
+      <label class="in_label" for="tipo">Tipo di carta:</label>
+      <select class="src_dropdown" id="tipo" name="tipo">
         <option value="None">Nessuna scelta</option>
         <option value="Artefatto">Artefatto</option>
         <option value="Creatura">Creatura</option>
@@ -77,8 +77,8 @@
       </select>
     </div>
   </div>
-  <input class="formButton btn" type="submit" name="search_input" value="Cerca">
-  <input class="formButton btn" type="reset" name="reset" value="Resetta la ricerca">
+  <input class="formButton btn" type="submit" name="search_input" value="Cerca" />
+  <input class="formButton btn" type="reset" name="reset" value="Resetta la ricerca" />
   </fieldset>
 </form>
 <div class="wiki_nav">
@@ -87,9 +87,9 @@
       <?php foreach ($cards as $key => $value) {
         if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {?>
           <div class="card_box">
-          <a class="cardLink link" href="single_card.php?id=<?php echo $value["Id"] ?>&name=<?php echo $value["Nome"] ?>">
+          <a class="cardLink link" href="single_card.php?id=<?php echo $value["Id"] ?>&amp;name=<?php echo $value["Nome"] ?>">
             <p class="card_title"><?php echo $value["Nome"]; ?></p>
-            <img class="card_img" src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>">
+            <img class="card_img" src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>" />
           </a>
           </div>
       <?php
@@ -113,7 +113,7 @@
         $_GET["page"] = $cur_page-1;?>
         <a class="nav_btn btn" href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page-1; ?></a>
       <?php } ?>
-      <a class="nav_btn btn" href="#wiki" class="current_page"><?php echo $cur_page; ?></a>
+      <a class="nav_btn btn current_page" href="#wiki"><?php echo $cur_page; ?></a>
       <?php if ($num_pages-$cur_page>=1) {
         $_GET["page"] = $cur_page+1;?>
         <a class="nav_btn btn" href="cardwiki.php?<?php echo http_build_query($_GET);?>"><?php echo $cur_page+1; ?></a>

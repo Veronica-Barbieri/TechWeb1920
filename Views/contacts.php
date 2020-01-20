@@ -11,16 +11,16 @@
 	<fieldset class="box">
 		<legend class="frm_title box">Contattaci</legend>
 		<label for="nome">Nome:</label>
-		<input class="inputArea"type="text" name="nome">
+		<input class="inputArea" id="nome" type="text" name="nome" />
 		<label for="cognome">Cognome:</label>
-		<input class="inputArea" type="text" name="cognome">
-		<label for="e-mail">E-mail:</label>
-		<input class="inputArea" type="email" name="email">
+		<input class="inputArea" id="cognome" type="text" name="cognome" />
+		<label for="email">E-mail:</label>
+		<input class="inputArea" id="email" type="email" name="email" />
 		<label for="oggetto">Oggetto:</label>
-		<input class="inputArea" type="text" name="oggetto">
+		<input class="inputArea" id="oggetto" type="text" name="oggetto" />
 		<label for="commento">Commento:</label>
-		<textarea class="inputArea" rows="6" cols="40" input type="text" name="testo"></textarea>
-		<input class="formButton btn" type="submit" name="contacts_input" value="Invia il tuo commento">
+		<textarea class="inputArea" id="commento" rows="6" cols="40" name="testo"></textarea>
+		<input class="formButton btn" type="submit" name="contacts_input" value="Invia il tuo commento" />
 	</fieldset>
 		</form>
 </div>

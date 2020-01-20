@@ -16,15 +16,15 @@
 			<div class="single_hot_deck">
 				<h2> <?php echo $value["Nome"]; ?> </h2>
 				<?php if($value["Colore_verde"]) { ?>
-					<img src='Resources/Green_Mana.png' alt='colore mazzo verde'>
+					<img src='Resources/Green_Mana.png' alt='colore mazzo verde' />
 				<?php } if($value["Colore_rosso"]) { ?>
-					<img src='Resources/Red_Mana.png' alt='colore mazzo rosso'>
+					<img src='Resources/Red_Mana.png' alt='colore mazzo rosso' />
 				<?php } if($value["Colore_blu"]) { ?>
-					<img src='Resources/Blue_Mana.png' alt='colore mazzo blu'>
+					<img src='Resources/Blue_Mana.png' alt='colore mazzo blu' />
 				<?php } if($value["Colore_nero"]) { ?>
-					<img src='Resources/Black_Mana.png' alt='colore mazzo nero'>
+					<img src='Resources/Black_Mana.png' alt='colore mazzo nero' />
 				<?php } if($value["Colore_bianco"]) { ?>
-					<img src='Resources/White_Mana.png' alt='colore mazzo bianco'>
+					<img src='Resources/White_Mana.png' alt='colore mazzo bianco' />
 				<?php } ?>
 				<p class="simpleText"> <?php echo $value["Autore"]; ?> </p>
 				<p class="simpleText"> <?php echo $value["Tipo"]; ?> </p>
@@ -36,8 +36,8 @@
 		<div class="color_container">
 			<div class="color_btn_box">
 				<?php foreach ($trisample as $key => $value) { ?>
-					<button class="manaButton" type="button" name="button<?php echo $Colori["$key"]; ?>" onclick="changeCards('pannel<?php echo $key; ?>')" alt="<?php echo $Colori["$key"]; ?>">
-						<img src="Resources/<?php echo $ManaColors["$key"]; ?>" alt="<?php echo $Colori[$key]; ?>">
+					<button class="manaButton" type="button" name="button<?php echo $Colori["$key"]; ?>" onclick="changeCards('pannel<?php echo $key; ?>')">
+						<img src="Resources/<?php echo $ManaColors["$key"]; ?>" alt="<?php echo $Colori[$key]; ?>" />
 					</button>
 				<?php } ?>
 			</div>
@@ -47,7 +47,7 @@
 						<?php foreach ($pannel as $card) { ?>
 							<div class="carta inline_el">
 								<h1 class="card_title"><?php echo $card["Nome"];?></h1>
-								<img class="card_img" src="<?php echo $card["Img_path"];?>" alt="<?php echo $card["Id"];?>">
+								<img class="card_img" src="<?php echo $card["Img_path"];?>" alt="<?php echo $card["Id"];?>" />
 							</div>
 						<?php } ?>
 					</div>

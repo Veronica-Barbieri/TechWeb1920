@@ -20,7 +20,7 @@
       </ul>
     </li>
     <li> <a class="regole_main_title" href="#lanciare">Giocare una carta</a> </li>
-    <li> <a class="regole_main_title" href="#combat">Combattimento</a>
+    <li> <a class="regole_main_title" href="#combat">Combattimento</a> </li>
     </ul>
 </div>
   <div class="content_regole">
@@ -54,11 +54,11 @@
           cinque colori
         </p>
         <ul class="simpleText">
-          <li class="regole_mana box"> <span>Pianura</span> <img src="Resources/White_Mana.png" alt="Bianco"> </li>
-          <li class="regole_mana box"> <span>Isola</span> <img src="Resources/Blue_Mana.png" alt="Bianco"> </li>
-          <li class="regole_mana box"> <span>Palude</span> <img src="Resources/Black_Mana.png" alt="Bianco"> </li>
-          <li class="regole_mana box"> <span>Montagna</span> <img src="Resources/Red_Mana.png" alt="Bianco"> </li>
-          <li class="regole_mana box"> <span>Foresta</span> <img src="Resources/Green_Mana.png" alt="Bianco"> </li>
+          <li class="regole_mana box"> <span>Pianura</span> <img src="Resources/White_Mana.png" alt="Bianco" /> </li>
+          <li class="regole_mana box"> <span>Isola</span> <img src="Resources/Blue_Mana.png" alt="Bianco" /> </li>
+          <li class="regole_mana box"> <span>Palude</span> <img src="Resources/Black_Mana.png" alt="Bianco" /> </li>
+          <li class="regole_mana box"> <span>Montagna</span> <img src="Resources/Red_Mana.png" alt="Bianco" /> </li>
+          <li class="regole_mana box"> <span>Foresta</span> <img src="Resources/Green_Mana.png" alt="Bianco" /> </li>
         </ul>
       </li>
       <li>
@@ -107,7 +107,7 @@
           I planeswalker sono alleati potenti a cui puoi fare appello affinché
           combattano al tuo fianco. Per scoprire maggiori informazioni sui
           planeswalker, visita la pagina sulle
-          <a href="https://magic.wizards.com/it/game-info/story/planeswalkers/how-planeswalker-cards-work">
+          <a class="linkText" href="https://magic.wizards.com/it/game-info/story/planeswalkers/how-planeswalker-cards-work">
             Regole delle carte Planeswalker
           </a>
         </p>
@@ -119,8 +119,8 @@
       a destra. Questo costo è composto da simboli che specificano quale tipo di
       mana devi spendere per lanciare quella magia. Devi pagare il mana rappresentato
       da ognuno di questi simboli per poter lanciare una carta. Prendiamo un esempio, se su
-      una carta trovo due simboli <img src="Resources/Red_Mana.png" alt="Rosso"> e un
-      simbolo "4" grigio, il simbolo <img src="Resources/Red_Mana.png" alt="Rosso"> significa un mana rosso.
+      una carta trovo due simboli <img src="Resources/Red_Mana.png" alt="Rosso" /> e un
+      simbolo "4" grigio, il simbolo <img src="Resources/Red_Mana.png" alt="Rosso" /> significa un mana rosso.
       Il simbolo "4" grigio significa quattro mana di qualsiasi tipo. Quindi, questo costo
       deve essere pagato con due mana rossi e quattro mana di qualsiasi tipo.
     </p>

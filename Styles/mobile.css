@@ -31,9 +31,6 @@ h1#title{
   font-size: 1.5em;
 }
 
-body{
-}
-
 #menuToggle{
   display: block;
   position: absolute;
@@ -465,8 +462,68 @@ div.content{
   padding: 1em;
 }
 
+div#hot_decks.box.inline_el{
+  position: relative;
+  top: 1em;
+  margin: 0px;
+  width: 90%;
+}
+
+div#card_panel.color_container_box.inline_el.box{
+  position: relative;
+  top: 1.5em;
+  margin: 0px;
+  width: 90%;
+  padding: 1em;
+
+}
+
+div.single_hot_deck{
+  padding-bottom: 1em;
+}
+
+button.manaButton{
+  padding: 1em;
+}
+
+div.color_btn_box{
+
+}
+
+div.sez-footer{
+  position: relative;
+  left: 2em;
+  padding: 0px;
+}
+
+li.footerTextTitle{
+  margin-top: 1em;
+}
+
+li.footerText{
+  color: lightgray;
+  font-style: italic;
+}
+
+a.nb-link.link{
+  display: none;
+}
+
+ul.pg-nav{
+  display: none;
+}
+
+div.content{
+  font-size: 1em;
+}
+
+div.footer{
+  position: relative;
+  text-align: center;
+}
+
 footer{
-  position: absolute;
+  position: relative;
   bottom: -30px;
   border: 1px solid #000;
 }

@@ -17,7 +17,7 @@
 		</p>
 	</div>
 	<div class="box inline_el" id="hot_decks">
-		<h1> Hot Decks </h1>
+		<h1 id="decks"> Hot Decks </h1>
 		<?php foreach ($deck as $num => $value) { ?>
 			<div class="single_hot_deck">
 				<h2> <?php echo $value["Nome"]; ?> </h2>
@@ -38,7 +38,7 @@
 		<?php } ?>
 	</div>
 	<div class="color_container_box inline_el box" id="card_panel">
-		<h1>Collezionale tutte!</h1>
+		<h1 id="colleziona">Collezionale tutte!</h1>
 		<div class="color_container">
 			<div class="color_btn_box">
 				<?php foreach ($trisample as $key => $value) { ?>

@@ -44,9 +44,6 @@
       </ul>
     </div>
   </nav>
-  <form action="">
-    <input type="search"><i class="fa fa-search"></i>
-  </form>
   <div class="header hb_header" id="header">
     <h1 id="title">Magic The Gathering</h1>
     <?php if(isset($_SESSION["Username"])) { ?>

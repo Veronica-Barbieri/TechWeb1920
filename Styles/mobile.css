@@ -539,7 +539,7 @@ li.footerTextTitle_1{
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: red; /* Set a background color */
-  color: white; /* Text color */
+  color: yellow; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */

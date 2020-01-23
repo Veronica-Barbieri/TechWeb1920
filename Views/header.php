@@ -21,7 +21,7 @@
   <script defer type="text/javascript" src="Scripts/new_deck.js"></script>
 </head>
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
   <script>
   //Get the button
   var mybutton = document.getElementById("myBtn");

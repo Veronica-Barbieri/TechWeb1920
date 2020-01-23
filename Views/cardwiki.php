@@ -10,31 +10,31 @@
       <div class="color_checkbox">
         <input id="bianco" type="checkbox" name="bianco" value="1">
         <label class="cbox_label" for="bianco">
-          <img src="Resources/White_Mana.png" alt="Bianco">
+          <img class="wiki" src="Resources/White_Mana.png" alt="Bianco">
         </label>
       </div>
       <div class="color_checkbox">
         <input id="blu" type="checkbox" name="blu" value="1">
         <label class="cbox_label" for="blu">
-          <img src="Resources/Blue_Mana.png" alt="Blu">
+          <img class="wiki" src="Resources/Blue_Mana.png" alt="Blu">
         </label>
       </div>
       <div class="color_checkbox">
         <input id="nero" type="checkbox" name="nero" value="1">
         <label class="cbox_label" for="nero">
-          <img src="Resources/Black_Mana.png" alt="Nero">
+          <img class="wiki" src="Resources/Black_Mana.png" alt="Nero">
         </label>
       </div>
       <div class="color_checkbox">
         <input id="rosso" type="checkbox" name="rosso" value="1">
         <label class="cbox_label" for="rosso">
-          <img src="Resources/Red_Mana.png" alt="Rosso">
+          <img class="wiki" src="Resources/Red_Mana.png" alt="Rosso">
         </label>
       </div>
       <div class="color_checkbox">
         <input id="verde" type="checkbox" name="verde" value="1">
         <label class="cbox_label" for="verde">
-          <img src="Resources/Green_Mana.png" alt="Verde">
+          <img class="wiki" src="Resources/Green_Mana.png" alt="Verde">
         </label>
       </div>
     </div>

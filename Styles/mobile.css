@@ -8,6 +8,10 @@ html, body{
   margin: auto;
 }
 
+body{
+  position: absolute;
+}
+
 header{
   border: 1px solid #000;
 }
@@ -1041,6 +1045,7 @@ div.content{
 
 div.footer{
   position: relative;
+
   text-align: center;
 }
 
@@ -1075,8 +1080,111 @@ i.fas.fa-chevron-up{
   padding: 0px;
 }
 
-footer{
+input.formButton.btn{
   position: relative;
-  bottom: -30px;
+  margin: 1em;
+  width: 80%;
+}
+
+fieldset.box{
+  position: relative;
+  left:-6em;
+}
+
+form.cont_form{
+  display: inline;
+  position: relative;
+  left: 6em;
+}
+
+input.inputArea{
+  display: inline;
+  position: relative;
+  width: 80%;
+  height: 1.5em;
+}
+
+textarea.inputArea{
+  width: 80%;
+}
+
+legend.frm_title.box{
+  font-size: 1.5em;
+}
+
+a.externalLink.link{
+  text-decoration: underline;
+}
+
+footer{
+  position: absolute;
   border: 1px solid #000;
+}
+
+h2#reg{
+  font-size: 1em;
+  text-align: center;
+}
+
+ul#menu_regole.menu.box{
+  margin-top: 1em;
+  text-align: center;
+}
+
+h2#tipi_terra, h2#tipi_magie, h2#tipi_creature, h2#tipi_inc, h2#tipi_streg, h2#tipi_planeswalker, h2#combat, h3#atk, h3#def, h2#risolvere{
+  text-align: center;
+  margin: 0px;
+  font-size: 1.2em;
+  padding: 0px;
+}
+
+h2#tipi_magie{
+  margin-top: 1em;
+}
+
+li.regole_mana.box{
+  height: 5%;
+  margin: 0.2em;
+  font-size: 1em;
+  padding-top: 0px;
+}
+
+img{
+  position: relative;
+  top: 0.5em;
+}
+
+ul.simpleText{
+  padding-top: 1em;
+  text-align: center;
+  position: relative;
+  margin: 0px;
+}
+
+a#Planeswalker{
+  color: #DEB887;
+  text-decoration: underline;
+}
+
+h1#basi.sez_title, p.simpleText{
+
+}
+
+div.card_box, div.btn_box{
+  display: none;
+}
+
+fieldset.src_col1.box{
+  position: relative;
+  left: 0.5em;
+  top: -20em;
+}
+
+div.footer{
+  position: relative;
+  bottom: 0px;
+}
+
+div.content{
+  height: 100%;
 }

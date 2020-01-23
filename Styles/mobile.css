@@ -692,3 +692,24 @@ ul#menu{
   padding: 3em;
   padding-bottom: 30em;
 }
+
+fieldset.src_col1.box{
+  position: relative;
+  display: block;
+  float: top;
+  margin-top: 25em;
+  margin-left: -1em;
+  width: 80%;
+  heigth: max-content;
+  padding: 3em;
+}
+
+div.deck_box{
+  position: relative;
+  display: block;
+  width: 20%;
+}
+
+.deck_nav{
+  padding-top: 40em;
+}

@@ -141,10 +141,10 @@ b{
 
 li#rif{
   position: relative;
-  left: 1em;
+  left: 2px;
   right: 1em;
   display: block;
-  text-align: center;
+  text-align: left;
   color: purple;
 }
 
@@ -564,6 +564,7 @@ input.formButton.btn{
 fieldset.box{
   position: relative;
   left:-6em;
+  margin: 0px;
 }
 
 form.cont_form{
@@ -656,6 +657,7 @@ fieldset.src_col1.box{
 }
 
 div.footer{
+  width: 100%;
 }
 
 div.content_regole{
@@ -682,7 +684,7 @@ h1#title{
 }
 
 ul#menu{
-  position: static;
+  position: fixed;
   width: 100%;
   height: max-content;
   padding: 3em;
@@ -708,4 +710,14 @@ div.deck_box{
 
 .deck_nav{
   padding-top: 40em;
+}
+
+i#fb.fab.fa-facebook-f, i#q.fa.fa-question{
+  width: 20px;
+}
+
+form.cont_form{
+  background-color: transparent;
+  border: transparent;
+  margin: 0px;
 }

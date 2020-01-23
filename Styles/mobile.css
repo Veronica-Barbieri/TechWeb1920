@@ -1,4 +1,4 @@
-* {
+* {* {
   margin: 0em;
   padding: 0em;
 }
@@ -466,7 +466,7 @@ div#hot_decks.box.inline_el{
   position: relative;
   top: 1em;
   margin: 0px;
-  width: 90%;
+  width: 94%;
 }
 
 div#card_panel.color_container_box.inline_el.box{
@@ -520,6 +520,34 @@ div.content{
 div.footer{
   position: relative;
   text-align: center;
+}
+
+h1#decks, h1#colleziona{
+  color: white;
+}
+
+li.footerTextTitle_1{
+  display: none;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 
 footer{

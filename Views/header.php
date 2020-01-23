@@ -21,6 +21,7 @@
   <script defer type="text/javascript" src="Scripts/new_deck.js"></script>
 </head>
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <nav class="navigation" role="navigation">
     <div id="menuToggle">
       <input type="checkbox" />

@@ -55,10 +55,10 @@
         </p>
         <ul class="simpleText">
           <li class="regole_mana box"> <span>Pianura</span> <img src="Resources/White_Mana.png" alt="Bianco"> </li>
-          <li class="regole_mana box"> <span>Isola</span> <img src="Resources/Blue_Mana.png" alt="Bianco"> </li>
-          <li class="regole_mana box"> <span>Palude</span> <img src="Resources/Black_Mana.png" alt="Bianco"> </li>
-          <li class="regole_mana box" class="m"> <span>Montagna</span> <img src="Resources/Red_Mana.png" alt="Bianco"> </li>
-          <li class="regole_mana box" class="m"> <span>Foresta</span> <img src="Resources/Green_Mana.png" alt="Bianco"> </li>
+          <li class="regole_mana box"> <span>Isola</span> <img src="Resources/Blue_Mana.png" alt="Blu"> </li>
+          <li class="regole_mana box"> <span>Palude</span> <img src="Resources/Black_Mana.png" alt="Nero"> </li>
+          <li class="regole_mana box" class="m"> <span>Montagna</span> <img src="Resources/Red_Mana.png" alt="Rosso"> </li>
+          <li class="regole_mana box" class="m"> <span>Foresta</span> <img src="Resources/Green_Mana.png" alt="Verde"> </li>
         </ul>
       </li>
       <li>

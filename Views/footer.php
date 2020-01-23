@@ -2,7 +2,7 @@
   <div class="sez-footer">
     <div class="explore">
       <ul class="pg-nav">
-		<li class="footerTextTitle">Esplora</li>
+		     <li class="footerTextTitle">Esplora</li>
         <li class="fo-item"> <a class="nb-link link" href="index.php" xml:lang="en">Home</a> </li>
         <li class="fo-item"> <a class="nb-link link" href="regole.php">Regole</a> </li>
         <li class="fo-item"> <a class="nb-link link" href="cardwiki.php">Wiki Carte</a> </li>
@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="sez-footer">
-  	<ul>
+  	<ul id="ns">
   		<li class="footerTextTitle_1">Contattaci</li>
   		<li class="fo-item"> <a class="nb-link link" href="contacts.php" xml:lang="en">About us</a> </li>
       <?php if(isset($_SESSION["Username"]) && isset($_SESSION["Admin"])) { ?>

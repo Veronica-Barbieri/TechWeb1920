@@ -1,3 +1,25 @@
-header{
-  
+*, body{
+  font-size: 12pt;
+  text-decoration-color: black;
+  color: black;
+}
+
+.nb-logo img{
+  width: 4em;
+}
+
+.nb-login, .nb-col1, .nb-item, .nb-link{
+  display: none;
+}
+
+.menu_regole_wrp, .glossario{
+  display: none;
+}
+
+#ns, .pg-nav, .src_form_wiki, .src_form_deck{
+  display: none;
+}
+
+.wiki_nav, .deck_nav{
+  display: inline;
 }

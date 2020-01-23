@@ -13,6 +13,7 @@
                                   mazzo, deck, regole" />
   <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link rel="stylesheet" href="Styles/index.css" media='all'>
+  <link rel="stylesheet" type="text/css" href="Styles/print.css" media="print">
   <link rel="stylesheet" type="text/css" href='Styles/mobile.css' media="handheld,screen and (max-width:900px),
   only screen and (max-device-width: 600px)"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -65,7 +66,7 @@ function scrollFunction() {
       </ul>
     </div>
   </nav>
-  <div class="header hb_header" id="header">
+  <div class="header hb_header" id="header_1">
     <h1 id="title">Magic The Gathering</h1>
     <?php if(isset($_SESSION["Username"])) { ?>
       <?php if(isset($_SESSION["Admin"])){ ?>
@@ -82,7 +83,7 @@ function scrollFunction() {
       </a>
   <?php } ?>
   </div>
-  <div class="header dt_menu" id="header">
+  <div class="header dt_menu" id="header_2">
     <div class="nb-logo">
       <img src="Resources/m-logo.png" alt="">
     </div>

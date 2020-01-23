@@ -165,7 +165,7 @@ li#rif{
   opacity: 0.7;
 }
 
-.fa-facebook{
+.fa-facebook-f{
   padding: 1em;
   background: #3B5998;
   color: white;
@@ -188,7 +188,6 @@ li#rif{
   padding: 1em;
   background: black;
   color: white;
-  margin-right: -1em;
 }
 
 .fa-search{

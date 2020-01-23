@@ -57,7 +57,7 @@ function scrollFunction() {
       <a href="deck_forum.php"><li>Forum</li></a>
       <a href="contacts.php" xml:lang="en"><li>About us</li></a>
       <a href="#"><li>
-        <i href="#" class="fa fa-facebook" id="fb"></i>
+        <i href="#" class="fab fa-facebook-f" id="fb"></i>
         <i href="#" class="fab fa-youtube" id="yt"></i>
         <i href="#" class="fas fa-envelope" id="en"></i>
         <i href="#" class="fa fa-question" id="q"></i>

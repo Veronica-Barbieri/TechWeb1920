@@ -1,4 +1,3 @@
-<!-- VIEW -->
 <div class="content">
   <h1 class="main_title">Pannello Amministrazione</h1>
   <div class="admin_intro box">

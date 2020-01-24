@@ -16,6 +16,9 @@
       </div>
       <ul class="wiki new_deck_sez box" id="infinite-list">
       </ul>
+      <div class="hidden"  id="infinite-spin">
+        <i class="fas fa-spinner fa-spin"></i>
+      </div>
     </div>
     <div class="card_insert_box">
       <h1 class="title" id="current_usr_deck_title">Il tuo mazzo fino ad ora</h1>
@@ -70,3 +73,17 @@
     </div>
     </div>
 </div>
+<script type="text/javascript" src="Scripts/home.js"></script>
+<script type="text/javascript" src="Scripts/new_deck.js"></script>
+<script >
+  var listElm = document.getElementById('infinite-list');
+  var loadcard=0;
+  var limitcard=5;
+  listElm.addEventListener('scroll', function() {
+    if (listElm.scrollTop + listElm.clientHeight >= listElm.scrollHeight) {
+      loadMoar(loadcard, limitcard, listElm);
+      loadcard+=limitcard;
+    }
+  });
+    loadMoar(loadcard, limitcard, listElm);
+</script>

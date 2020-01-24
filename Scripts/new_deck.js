@@ -4,13 +4,16 @@
 
 function num_card_popup(id,nome) {
   var ris;
-  var num = prompt("Scrivi la molteplicità di questa carta:","0");
-  if (num == 0 || num =="") {
+  var num =prompt("Scrivi la molteplicità di questa carta:","0");
+  var pnum = parseInt(num, 10);
+  if ((pnum == 0 || isNaN(pnum)) && num!=null) {
     window.alert('Dati errati');
+  } else if (num == null){
+    return;
   } else {
     ris = [id,nome,num];
+    add_card_deck(ris);
   }
-  add_card_deck(ris);
 }
 
 function add_card_deck(data_array) {
@@ -58,45 +61,16 @@ function delete_deck(id) {
 
 //funzione che crea un nuovo ul a partire da un id passatigli in POST
 
-function add_card_list(card, id) {
+function loadMoar(init, limit, listElm) {
+  document.getElementById("infinite-spin").className = "active";
   var req = new XMLHttpRequest();
   req.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      card.innerHTML += this.responseText;
+      document.getElementById("infinite-spin").className = "hidden";
+      var toInsert = this.responseText;
+      listElm.innerHTML += toInsert;
     }
   };
-  req.open("GET", "Models/new_list_card.php?id="+id, true);
+  req.open("GET", "Models/new_list_card.php?init="+init+"&limit="+limit, true);
   req.send();
-}
-
-// aggiungo 5 carte
-var cardId = 1;
-var cardInDB = 43;
-
-if(window.location.pathname=="/edsa-TechWeb1920/new_deck.php"){
-  var listElm = document.querySelector('#infinite-list');
-}
-
-var loadMore = function() {
-  for (var i = 0; i < 5 && cardId < cardInDB; i++) {
-    var item = document.createElement('ul');
-    add_card_list(item, cardId);
-    cardId++;
-    listElm.appendChild(item);
-    item.classList.add("card_box");
-  }
-}
-
-if(window.location.pathname=="/edsa-TechWeb1920/new_deck.php"){
-// Controllo quando ho raggiunto la fine della scrollbar
-  listElm.addEventListener('scroll', function() {
-    if (listElm.scrollTop + listElm.clientHeight >= listElm.scrollHeight) {
-      loadMore();
-    }
-  });
-}
-
-// Carico degli elementi appena viene caricata la pagina
-if(window.location.pathname=="/edsa-TechWeb1920/new_deck.php"){
-  loadMore();
 }

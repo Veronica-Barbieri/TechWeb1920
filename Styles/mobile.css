@@ -2,36 +2,70 @@
   margin: 0em;
   padding: 0em;
 }
-
 html, body, .content{
   max-width: 1024px;
   margin: auto;
 }
-
 body{
   position: absolute;
 }
-
-/*title header*/
-
+/*contenuto*/
+div.content{
+  position: relative;
+  height: max-content;
+  width: 100%;
+  padding: 2em;
+  padding-bottom: 0em;
+}
+/*h1*/
+h1{
+  padding: 0.5em;
+  font-size: 1.5em;
+  color: grey;
+  text-align: center;
+}
+/*title h1*/
 h1#title{
   padding-top: 0.8em;
   padding-left: 1.5em;
   text-align: center;
   font-size: 1.5em;
+  width: 100%;
+  padding-right: 1.2em;
+  text-align: center;
+  background-color: #383838;
+  box-shadow: inset 0px -2px 31px 0.1em black;
+  border-bottom: 1px solid #fff8dc59;
 }
-
+/*h2*/
+h2{
+  padding-top: 1em;
+  font-size: 1em;
+}
+h2#tipi_terra, h2#tipi_magie, h2#tipi_creature, h2#tipi_inc, h2#tipi_streg, h2#tipi_planeswalker, h2#combat, h3#atk, h3#def, h2#risolvere{
+  text-align: center;
+  margin: 0px;
+  font-size: 1.2em;
+  padding: 0px;
+}
+h2#reg{
+  font-size: 1em;
+  text-align: center;
+}
+h2#tipi_magie{
+  margin-top: 1em;
+}
 /*titoli*/
 #title{
   color:#7a5050;
   font-size: 2.7em;
   text-align: center;
 }
-
+/*header*/
 .hb_header{
   display: block;
 }
-
+/*no menu in home*/
 .dt_menu{
   display: none;
 }
@@ -41,7 +75,7 @@ h1#title{
   display: block;
 }
 
-/*menuToggle*/
+/*menuToggle script*/
 #menuToggle{
   display: block;
   position: absolute;
@@ -121,9 +155,8 @@ h1#title{
 div#menuToggle{
   width: 100%;
 }
-
+/*fine menuToggle*/
 /*menu*/
-
 #menu{
   position: relative;
   width: 100%;
@@ -139,7 +172,7 @@ div#menuToggle{
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
+/*lista menu*/
 #menu li{
   position: relative;
   top: 5em;
@@ -147,7 +180,7 @@ div#menuToggle{
   font-size: 1.5em;
   text-align: center;
 }
-
+/*primo elem lista menu*/
 li#rif{
   position: relative;
   left: 2px;
@@ -156,14 +189,19 @@ li#rif{
   text-align: left;
   color: purple;
 }
-
-/*cos'e' b*/
-
+/*Titolo in menu*/
 b{
   font-size: 1em;
 }
-
-/*torna in cima*/
+/*lista menu*/
+ul#menu{
+  position: fixed;
+  width: 100%;
+  height: max-content;
+  padding: 3em;
+  padding-bottom: 30em;
+}
+/*torna all'inizio pagina*/
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -186,53 +224,52 @@ b{
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+/*fine torna all'inizio pagina*/
 
 /*icone facebook, youtube, mail, search, question*/
 #fb, #yt, #q,#en{
   margin-bottom: 1em;
 }
-
+i#fb.fab.fa-facebook-f, i#q.fa.fa-question{
+  width: 20px;
+}
+i.fas.fa-chevron-up{
+  padding: 0px;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
   width: 50px;
   text-decoration: none;
 }
-
 .fa:hover {
   opacity: 0.7;
 }
-
 .fa-facebook-f{
   padding: 1em;
   background: #3B5998;
   color: white;
 }
-
 .fa-youtube {
   padding: 1em;
   background: red;
   color: white;
 }
-
 .fa-envelope{
   font-size: 1em;
   padding: 1em;
   background: white;
   color: black;
 }
-
 .fa-question{
   padding: 1em;
   background: black;
   color: white;
 }
-
 .fa-search{
   color: black;
 
 }
-
 .fa-user{
   font-size: 2em;
   position: absolute;
@@ -240,11 +277,9 @@ b{
   right: -0.3em;
   color: black;
 }
-
 i.fas.fa-user{
   color: black;
 }
-
 i.fas.fa-user::before{
   width: 1em;
   height: 1em;
@@ -254,7 +289,6 @@ i.fas.fa-user::before{
   color: black;
   cursor: pointer;
 }
-
 i.fas.fa-user::after{
   position: absolute;
   right: -0.5em;
@@ -262,29 +296,28 @@ i.fas.fa-user::after{
   color: white;
   cursor: pointer;
 }
-
+/*fine icone*/
 /*text*/
 p.simpleText{
   line-height: 1em;
   font-style: italic;
 }
-
+/*paragrafi home*/
 p#primo, p#secondo, p#terzo, p#alt{
   size: 1em;
   color: lightgray;
   font-style: italic;
 }
-
 p#alt{
   padding-top: 1em;
   font-size: 0.8em;
 }
-
+/*span in home*/
 .magic{
   font-style: normal;
   color: #7a5050;
 }
-
+/*login*/
 a.nb-login.nb-link{
   width: 3em;
   height: 2em;
@@ -293,133 +326,32 @@ a.nb-login.nb-link{
   right: -2em;
   top: 0em;
 }
-
-h1{
-  padding: 0.5em;
-  font-size: 1.5em;
-  color: grey;
-  text-align: center;
-}
-
 a.nb-login{
   width: 0%;
 }
-
+/*hot decks in home*/
 #hot_decks{
   position: relative;
   text-align: center;
 }
-
-h1#NAV{
-  padding: 1em;
-}
-
+/*cos'è*/
 p#intro{
   text-align:center;
   font-size: 2.2em;
   position: relative;
   left: 1em;
 }
-
-h2{
-  padding-top: 1em;
-  font-size: 1em;
-}
-
-a#glossario{
+/*sistemare se link già visitato*/
+a.externalLink.link a:hover{
   color: darkred;
-  font-size: 3em;
-  position: relative;
-  left: 40%;
-  top: -0.5em;
 }
-
-a{
-  color: darkred;
-  font-size: 1em;
-}
-
+/*paragrafi regole*/
 li#basi, li#tipi, li#lanciare, li#combat, li#risolvere{
   line-height: 2em;
   text-align: center;
   font-size: 2em;
 }
-
-/*div.dropdown{
-  font-size: 1em;
-  position: relative;
-  left: -10px;
-}
-
-button.dropbtn{
-  position: relative;
-  top: -0.3em;
-  left: 1em;
-}*/
-
-form{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    transition: all 1s;
-    width: 50px;
-    height: 50px;
-    background: white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid white;
-    padding: 5px;
-}
-
-input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;;
-    height: 42.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: none;
-    font-size: 1em;
-    border-radius: 20px;
-    padding: 0 20px;
-}
-
-.search{
-    box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    color: #07051a;
-    text-align: center;
-    font-size: 1.2em;
-    transition: all 1s;
-}
-
-form:hover{
-    width: 200px;
-    cursor: pointer;
-}
-
-form:hover input{
-    display: block;
-}
-
-form:hover .search{
-    background: #07051a;
-    color: white;
-}
-
-div.content{
-  padding: 1em;
-}
-
+/*box in decks*/
 div#hot_decks.box.inline_el{
   position: relative;
   top: 1em;
@@ -427,7 +359,6 @@ div#hot_decks.box.inline_el{
   width: 90%;
   background-color: #383838;
 }
-
 div#card_panel.color_container_box.inline_el.box{
   position: relative;
   top: 1.5em;
@@ -436,24 +367,17 @@ div#card_panel.color_container_box.inline_el.box{
   padding: 1em;
   background-color: #383838;
 }
-
 div.single_hot_deck{
   padding-bottom: 1em;
 }
-
 button.manaButton{
   padding: 1em;
 }
-
-div.color_btn_box{
-
-}
-
-div.sez-footer{
+img{
   position: relative;
-  padding: 0px;
+  top: 0.5em;
 }
-
+/*sezione footer*/
 li.footerTextTitle{
   margin-top: 1em;
 }
@@ -462,20 +386,20 @@ li.footerText{
   color: lightgray;
   font-style: italic;
 }
-
-a.nb-link.link{
+footer{
+  position: absolute;
+  border: 1px solid #000;
+}
+/*info footer da non mostrare*/
+a.nb-link.link, ul.pg-nav{
   display: none;
 }
-
-ul.pg-nav{
-  display: none;
+div.sez-footer{
+  position: relative;
+  padding: 0px;
 }
-
-div.content{
-  font-size: 1em;
-}
-
 div.footer{
+  width: 100%;
   position: relative;
   text-align: center;
 }
@@ -483,10 +407,7 @@ div.footer{
 li.footerTextTitle_1{
   display: none;
 }
-
-i.fas.fa-chevron-up{
-  padding: 0px;
-}
+/*fine sezione footer*/
 
 input.formButton.btn{
   position: relative;
@@ -525,42 +446,18 @@ a.externalLink.link{
   text-decoration: underline;
 }
 
-footer{
-  position: absolute;
-  border: 1px solid #000;
-}
-
-h2#reg{
-  font-size: 1em;
-  text-align: center;
-}
 
 ul#menu_regole.menu.box{
   margin-top: 1em;
   text-align: center;
 }
 
-h2#tipi_terra, h2#tipi_magie, h2#tipi_creature, h2#tipi_inc, h2#tipi_streg, h2#tipi_planeswalker, h2#combat, h3#atk, h3#def, h2#risolvere{
-  text-align: center;
-  margin: 0px;
-  font-size: 1.2em;
-  padding: 0px;
-}
-
-h2#tipi_magie{
-  margin-top: 1em;
-}
 
 li.regole_mana.box{
   height: 5%;
   margin: 0.2em;
   font-size: 1em;
   padding-top: 0px;
-}
-
-img{
-  position: relative;
-  top: 0.5em;
 }
 
 ul.simpleText{
@@ -575,10 +472,6 @@ a#Planeswalker{
   text-decoration: underline;
 }
 
-h1#basi.sez_title, p.simpleText{
-
-}
-
 div.card_box, div.btn_box{
   display: none;
 }
@@ -589,39 +482,10 @@ fieldset.src_col1.box{
   top: -20em;
 }
 
-div.footer{
-  width: 100%;
-}
-
 div.content_regole{
   position: relative;
   margin-top: 4em;
   left: -0.5em;
-}
-
-div.content{
-  position: relative;
-  height: max-content;
-  width: 100%;
-  padding: 2em;
-  padding-bottom: 0em;
-}
-
-h1#title{
-  width: 100%;
-  padding-right: 1.2em;
-  text-align: center;
-  background-color: #383838;
-  box-shadow: inset 0px -2px 31px 0.1em black;
-  border-bottom: 1px solid #fff8dc59;
-}
-
-ul#menu{
-  position: fixed;
-  width: 100%;
-  height: max-content;
-  padding: 3em;
-  padding-bottom: 30em;
 }
 
 fieldset.src_col1.box{
@@ -643,10 +507,6 @@ div.deck_box{
 
 .deck_nav{
   padding-top: 40em;
-}
-
-i#fb.fab.fa-facebook-f, i#q.fa.fa-question{
-  width: 20px;
 }
 
 form.cont_form{

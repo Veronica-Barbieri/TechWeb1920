@@ -1,4 +1,7 @@
 <div class="content">
+  <?php if (isset($_GET["error"]) && !empty($_GET["error"])): ?>
+    <p class="error"><?php echo $_GET["error"]; ?></p>
+  <?php endif; ?>
   <div class="card_insert" id="card_insert">
     <div class="card_insert_box" id="card_insert_basicmana">
       <h1 class="title">Terre base</h1>
@@ -81,8 +84,8 @@
   var limitcard=5;
   listElm.addEventListener('scroll', function() {
     if (listElm.scrollTop + listElm.clientHeight >= listElm.scrollHeight) {
-      loadMoar(loadcard, limitcard, listElm);
       loadcard+=limitcard;
+      loadMoar(loadcard, limitcard, listElm);
     }
   });
     loadMoar(loadcard, limitcard, listElm);

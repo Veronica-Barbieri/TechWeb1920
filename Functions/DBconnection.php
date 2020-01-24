@@ -7,8 +7,12 @@ function OpenCon() {
   $dbpass = "";
   $db = "techweb";
 
-  $conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed:- %s/n"). $conn -> error;
+  $conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
 
+  if($conn->connect_error){
+    die('Connect Error (' . $mysqli->connect_errno . ') '
+            . $mysqli->connect_error);
+  }
   return $conn;
 }
 

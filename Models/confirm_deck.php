@@ -54,18 +54,17 @@ if(count($cards_to_save)==0){
 
   $deck_insert_result = UpInDel_Query($i4_new_deck, "Insert");
 
-  $q4_new_deck_id = Query("SELECT max(id) FROM mazzo");
+  $q4_new_deck_id = Query("SELECT max(id) AS id FROM mazzo");
 
   $new_deck_id = mysqli_fetch_assoc($q4_new_deck_id);
 
-  $i4_new_carte_in_mazzo = "INSERT INTO carte_in_mazzo (Id_mazzo, Id_carta, Q_ta) VALUES ";
 
   foreach ($cards_to_save as $key => $value) {
-    $index = $key;
-    $index++;
-    $inmazzo_insert_result[] = UpInDel_Query($i4_new_carte_in_mazzo."('{$new_deck_id["max(id)"]}', '$index', '$value')", "Insert");
-  }
+    $i4_new_carte_in_mazzo = "INSERT INTO carte_in_mazzo (Id_mazzo, Id_carta, Q_ta) VALUES ";
+    $i4_new_carte_in_mazzo .= "('".$new_deck_id["id"]."','".$key."','".$value."')";
+    $inmazzo_insert_result[] = UpInDel_Query($i4_new_carte_in_mazzo, "Insert");
 
+  }
 
   unset($_SESSION["deck"]);
   header("Location: ../usr_page.php");

@@ -342,8 +342,11 @@ p#intro{
   left: 1em;
 }
 /*sistemare se link già visitato*/
-a.externalLink.link a:hover{
+a.externalLink.link:visited{
   color: darkred;
+}
+a.externalLink.link{
+  text-decoration: underline;
 }
 /*paragrafi regole*/
 li#basi, li#tipi, li#lanciare, li#combat, li#risolvere{
@@ -377,7 +380,104 @@ img{
   position: relative;
   top: 0.5em;
 }
+input.formButton.btn{
+  position: relative;
+  margin: 1em;
+  width: 80%;
+}
+fieldset.box{
+  position: relative;
+  left:-6em;
+  margin: 0px;
+}
+form.cont_form{
+  display: inline;
+  position: relative;
+  left: 6em;
+}
+input.inputArea{
+  display: inline;
+  position: relative;
+  width: 80%;
+  height: 1.5em;
+}
+textarea.inputArea{
+  width: 80%;
+}
+legend.frm_title.box{
+  font-size: 1.5em;
+}
+ul#menu_regole.menu.box{
+  margin-top: 1em;
+  text-align: center;
+}
+li.regole_mana.box{
+  height: 5%;
+  margin: 0.2em;
+  font-size: 1em;
+  padding-top: 0px;
+}
+ul.simpleText{
+  padding-top: 1em;
+  text-align: center;
+  position: relative;
+  margin: 0px;
+}
+a#Planeswalker{
+  color: #DEB887;
+  text-decoration: underline;
+}
+div.card_box, div.btn_box{
+  display: none;
+}
+fieldset.src_col1.box{
+  position: relative;
+  left: 0.5em;
+  top: -20em;
+}
+div.content_regole{
+  position: relative;
+  margin-top: 4em;
+  left: -0.5em;
+}
+fieldset.src_col1.box{
+  position: relative;
+  display: block;
+  float: top;
+  margin-top: 25em;
+  margin-left: -1em;
+  width: 80%;
+  heigth: max-content;
+  padding: 3em;
+}
+div.deck_box{
+  position: relative;
+  display: block;
+  width: 20%;
+}
+.deck_nav{
+  padding-top: 40em;
+}
+form.cont_form{
+  background-color: transparent;
+  border: transparent;
+  margin: 0px;
+}
 /*sezione footer*/
+/*info footer da non mostrare*/
+a.nb-link.link, ul.pg-nav, li.footerTextTitle_1{
+  display: none;
+}
+/*fine footer da non mostrare*/
+div.sez-footer{
+  position: relative;
+  padding: 0px;
+}
+div.footer{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
 li.footerTextTitle{
   margin-top: 1em;
 }
@@ -390,127 +490,4 @@ footer{
   position: absolute;
   border: 1px solid #000;
 }
-/*info footer da non mostrare*/
-a.nb-link.link, ul.pg-nav{
-  display: none;
-}
-div.sez-footer{
-  position: relative;
-  padding: 0px;
-}
-div.footer{
-  width: 100%;
-  position: relative;
-  text-align: center;
-}
-
-li.footerTextTitle_1{
-  display: none;
-}
 /*fine sezione footer*/
-
-input.formButton.btn{
-  position: relative;
-  margin: 1em;
-  width: 80%;
-}
-
-fieldset.box{
-  position: relative;
-  left:-6em;
-  margin: 0px;
-}
-
-form.cont_form{
-  display: inline;
-  position: relative;
-  left: 6em;
-}
-
-input.inputArea{
-  display: inline;
-  position: relative;
-  width: 80%;
-  height: 1.5em;
-}
-
-textarea.inputArea{
-  width: 80%;
-}
-
-legend.frm_title.box{
-  font-size: 1.5em;
-}
-
-a.externalLink.link{
-  text-decoration: underline;
-}
-
-
-ul#menu_regole.menu.box{
-  margin-top: 1em;
-  text-align: center;
-}
-
-
-li.regole_mana.box{
-  height: 5%;
-  margin: 0.2em;
-  font-size: 1em;
-  padding-top: 0px;
-}
-
-ul.simpleText{
-  padding-top: 1em;
-  text-align: center;
-  position: relative;
-  margin: 0px;
-}
-
-a#Planeswalker{
-  color: #DEB887;
-  text-decoration: underline;
-}
-
-div.card_box, div.btn_box{
-  display: none;
-}
-
-fieldset.src_col1.box{
-  position: relative;
-  left: 0.5em;
-  top: -20em;
-}
-
-div.content_regole{
-  position: relative;
-  margin-top: 4em;
-  left: -0.5em;
-}
-
-fieldset.src_col1.box{
-  position: relative;
-  display: block;
-  float: top;
-  margin-top: 25em;
-  margin-left: -1em;
-  width: 80%;
-  heigth: max-content;
-  padding: 3em;
-}
-
-div.deck_box{
-  position: relative;
-  display: block;
-  width: 20%;
-}
-
-.deck_nav{
-  padding-top: 40em;
-}
-
-form.cont_form{
-  background-color: transparent;
-  border: transparent;
-  margin: 0px;
-}

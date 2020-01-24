@@ -4,6 +4,10 @@
   color: black;
 }
 
+#hot_decks{
+  display: inline;
+}
+
 .nb-logo img{
   width: 4em;
 }
@@ -12,7 +16,7 @@
   display: none;
 }
 
-.menu_regole_wrp, .glossario{
+.menu_regole_wrp, .glossario, .navigation{
   display: none;
 }
 

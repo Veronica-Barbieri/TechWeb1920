@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" id="content">
 	<div class="pres_text" id="index_pres">
 		<h1> Insegui nuove sfide! </h1>
 		<p class="simpleText"> Benvenuto nel mondo di <span xml:lang="en"> Magic: The Gathering </span>, il gioco di carte collezionabili di maggior successo al mondo. Stai per scoprire i motivi che spingono

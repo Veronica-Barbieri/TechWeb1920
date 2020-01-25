@@ -17,6 +17,9 @@
   <script defer="defer" type="text/javascript" src="Scripts/new_deck.js"></script>
 </head>
 <body onload="enableTop()">
+  <div id="skip_to_content">
+    <a href="#content" tabindex="1">Salta al contenuto</a>
+  </div>
   <div class="">
     <button onclick="topFunction()" id="totop" title="Go to top"><span xml:lang="eng">Back to Top</span></button>
   </div>

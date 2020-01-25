@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" id="content">
   <div class="deck_about">
     <h1> <?php echo $info_deck["Nome"] ?> </h1>
     <h2> <?php echo $info_deck["Autore"] ?> </h2>

@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" id="content">
 	<div class="pres_text" id="presentation">
 		<h1> Benvenuto giovane avventuriero!</h1>
 		<p class="simpleText"> Vi diamo il benvenuto nella nostra pagina di informazioni riguardanti il nostro sito.

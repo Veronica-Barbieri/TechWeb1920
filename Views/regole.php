@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" id="content">
   <div class="glossario">
     <h1>Glossario</h1>
     <a class="externalLink link" href="https://magicthegathering.fandom.com/it/wiki/Glossario">

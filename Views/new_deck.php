@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" id="content">
   <?php if (isset($_GET["error"]) && !empty($_GET["error"])): ?>
     <p class="error"><?php echo $_GET["error"]; ?></p>
   <?php endif; ?>

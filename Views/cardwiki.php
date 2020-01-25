@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" id="content">
 <form class="src_form_wiki" action="cardwiki.php" method="get"><!-- da implementare la gestione del form -->
   <fieldset class="src_col1 box" id="card_search1">
     <legend class="frm_title box">Cerca la tua carta:</legend>

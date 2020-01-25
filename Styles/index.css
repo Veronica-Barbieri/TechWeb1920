@@ -16,6 +16,11 @@ ul{
 a{
 	text-decoration: none;
 }
+h1{
+  text-shadow: 1px 1px 1px #d2691e;
+  text-decoration: underline;
+  padding-bottom: 0.5em;
+}
 .fas {
   padding: 0 0.4em;
   font-size: 1em;
@@ -31,6 +36,19 @@ a{
 }
 .main_title{
   margin-bottom: 1em;
+}
+/*#skip_to_content{
+  visibility: hidden;
+  height: 0;
+}*/
+#skip_to_content {
+  width: 1px;
+  height: 1px;
+  left: -999px;
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+  z-index: -999;
 }
 .error {
   border: 1px solid #f00;
@@ -572,11 +590,23 @@ CSS HEADER
 }
 .footerTextTitle{
 	margin-bottom: 10%;
+  font-size: 1.3em;
+  text-shadow: 1px 1px 1px #d2691e;
+  text-decoration: underline;
 }
 .sez-footer {
   display: inline-block;
 	padding: 2em;
+  vertical-align: top;
 }
+.fo-item{
+  font-size: 1.2em;
+  color: #fff8dc;
+  display: block;
+  margin: auto;
+  height: 1.5em;
+}
+/**/
 .card_insert_box {
   display: block;
   min-width: 24em;

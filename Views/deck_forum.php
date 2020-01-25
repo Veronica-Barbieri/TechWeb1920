@@ -1,4 +1,4 @@
-<div class="content">
+<div class="content" id="content">
 <form class="src_form_deck" action="deck_forum.php" method="get"><!-- da implementare la gestione del form -->
   <fieldset class="src_col1 box">
     <legend class="frm_title box">Cerca un mazzo:</legend>

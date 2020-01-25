@@ -44,16 +44,13 @@
 </div>
 <script type="text/javascript">
 function login_check() {
-  return true;
+  if (document.forms["login_frm"]["username"].value == "") {
+    alert("Inserire uno username");
+    return false;
+  }
+  if (document.forms["login_frm"]["pwd"].value == "") {
+    alert("Inserire la password");
+    return false;
+  }
 }
 </script>
-<!--
-if (document.forms["login_frm"]["username"].value == "") {
-  alert("Inserire uno username");
-  return false;
-}
-if (document.forms["login_frm"]["pwd"].value == "") {
-  alert("Inserire la password");
-  return false;
-}
--->

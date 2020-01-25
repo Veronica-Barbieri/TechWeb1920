@@ -1,6 +1,6 @@
 <div class="content" id="content">
-  <?php if (isset($_GET["success"]) && !empty($_GET["success"])): ?>
-    <p class="success"><?php echo $_GET["success"]; ?></p>
+  <?php if (isset($_GET["error"]) && !empty($_GET["error"])): ?>
+    <p class="error"><?php echo $errors($_GET["error"]); ?></p>
   <?php endif; ?>
   <div class="usr_intro">
     <h1><?php echo "Benvenuto ".$curr_usr."!";?></h1>

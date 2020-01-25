@@ -25,10 +25,10 @@ if(isset($usr) && $_POST["username"] == $usr["Username"] && hash('sha256', $_POS
   }
 } else {
   if (empty($logging_user) || empty($_POST["pwd"])) {
-    $_GET["error"] = $errors["006"];
+    $_GET["error"] = "I campi Username e Password non possono essere vuoti";
     header("Location: ../login.php?error=".$_GET["error"]);
   }else{
-    $_GET["error"] = $errors["007"];
+    $_GET["error"] = "Username o Password non sono corretti, login fallito";
     header("Location: ../login.php?error=".$_GET["error"]);
   }
 }

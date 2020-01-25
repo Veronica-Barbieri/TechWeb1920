@@ -5,7 +5,7 @@ include "../Functions/DBconnection.php";
 
 session_start();
 
-$logging_user = $_POST['username'];
+$logging_user = $_POST["username"];
 
 $usr_check = "SELECT * FROM user WHERE Username = '$logging_user' ";
 
@@ -24,6 +24,12 @@ if(isset($usr) && $_POST["username"] == $usr["Username"] && hash('sha256', $_POS
     header('Location: ../usr_page.php');
   }
 } else {
-  header('Location: ../login.php'); //ci va un messaggio di errore ritornato)
+  if (empty($logging_user) || empty($_POST["pwd"])) {
+    $_GET["error"] = $errors["006"];
+    header("Location: ../login.php?error=".$_GET["error"]);
+  }else{
+    $_GET["error"] = $errors["007"];
+    header("Location: ../login.php?error=".$_GET["error"]);
+  }
 }
  ?>

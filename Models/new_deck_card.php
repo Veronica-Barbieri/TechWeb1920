@@ -6,16 +6,14 @@ include 'Functions/search.php';
 session_start();
 
 $id = $_GET["id"];
-$nome = $_GET["nome"];
+//$nome = $_GET["nome"];
 $num = $_GET["num"];
 
 $q4_cards = "SELECT Id, Nome, Img_path, Tipo, Costo_bianco, Costo_nero, Costo_rosso, Costo_verde, Costo_blu, Costo_nocolor FROM carta WHERE Id='$id'";
 $card_general = Query($q4_cards);
 $card_to_show = mysqli_fetch_assoc($card_general);
-/*while ($card_to_show = mysqli_fetch_assoc($card_general);/*) {
-    $card_to_show[] = $row_card;
-}
-$card_to_show = $cards[$id];*/
+$nome = $card_to_show["Nome"];
+
 $global_costo = $card_to_show["Costo_verde"]+$card_to_show["Costo_rosso"]+$card_to_show["Costo_blu"]+$card_to_show["Costo_nero"]+$card_to_show["Costo_bianco"]+$card_to_show["Costo_nocolor"];
 
 for($i=0; $i<$num; $i++){

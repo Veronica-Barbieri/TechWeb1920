@@ -2,7 +2,7 @@
 // FUNZIONI PER MODIFICARE IL MAZZO IN CREAZIONE (AGGIUNGERE O ELIMINARE CARTE)
 //-----------------------------------------------------------------------------
 
-function num_card_popup(id,nome) {
+function num_card_popup(id) {
   var ris;
   var num =prompt("Scrivi la molteplicità di questa carta:","0");
   var pnum = parseInt(num, 10);
@@ -11,7 +11,7 @@ function num_card_popup(id,nome) {
   } else if (num == null){
     return;
   } else {
-    ris = [id,nome,num];
+    ris = [id,num];
     add_card_deck(ris);
   }
 }
@@ -24,7 +24,7 @@ function add_card_deck(data_array) {
       this.responseText;
     }
   };
-  xhttp.open("GET", "Models/new_deck_card.php?id="+data_array[0]+"&nome="+data_array[1]+"&num="+data_array[2], true);
+  xhttp.open("GET", "Models/new_deck_card.php?id="+data_array[0]+"&num="+data_array[1], true);
   xhttp.send();
 }
 

@@ -32,6 +32,22 @@ a{
 .main_title{
   margin-bottom: 1em;
 }
+.error {
+  border: 1px solid #f00;
+  border-radius: 4px;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 0.5em;
+  background-color: #ff1c1c4f;
+}
+.success{
+  border: 1px solid #00ff28;
+  border-radius: 4px;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 0.5em;
+  background-color: #98ff1c4f;
+}
 
 /*--------
 BACK TO TOP BUTTON
@@ -520,17 +536,6 @@ CSS HEADER
 }
 .ad_stat:hover{
   background-color: #fff8dc59;
-  color: #000;
-}
-.ad_stat:hover::after{
-  content: 'Clicca per espandere';
-  position: absolute;
-  background: white;
-  width: 6em;
-  height: 2.5em;
-  font-size: 0.8em;
-  border-radius: 4px;
-  transform: translateX(-3em) translateY(0.2em);
   color: #000;
 }
 .admin_form{

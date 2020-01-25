@@ -35,6 +35,4 @@ foreach ($cards as $key => $value) {
 }
 
 echo $html;
-
-
 ?>

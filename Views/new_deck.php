@@ -28,16 +28,16 @@
       <h2 class="simpleText">Qui sotto potrai visualizzare le carte che hai aggiunto fino ad ora e le loro quantità, premi sul tasto "Crea il mazzo" per confermare</h2>
       <div class="new_deck_sez box" id="current_usr_deck">
       </div>
-      <form id="new_deck_form" action="Models/confirm_deck.php" method="get">
+      <form id="new_deck_form" action="Models/confirm_deck.php" onsubmit="return check_deck_form()" method="get">
         <fieldset class="src_col1 box">
           <legend class="frm_title box">I dettagli del tuo mazzo</legend>
           <div class="input">
             <label for="deck_name">Nome</label>
-            <input class="inputArea" id="deck_name" type="text" name="deck_name" required />
+            <input class="inputArea" id="deck_name" type="text" name="deck_name" value="" />
           </div>
           <div class="deck_name">
             <label for="type">Tipo</label>
-            <input class="inputArea" id="type" type="text" name="type" required />
+            <input class="inputArea" id="type" type="text" name="type" value="" />
           </div>
           <h1 class="simpleText">Scegli i colori del mazzo</h1>
           <div>
@@ -78,6 +78,19 @@
 </div>
 <script type="text/javascript" src="Scripts/home.js"></script>
 <script type="text/javascript" src="Scripts/new_deck.js"></script>
+<script type="text/javascript">
+function check_deck_form() {
+  if (document.forms["new_deck_form"]["deck_name"].value == "") {
+    alert("Il campo 'Nome' non puo' essere vuoto");
+    return false;
+  }
+
+  if (document.forms["new_deck_form"]["type"].value == "") {
+    alert("Il campo 'Tipo' non puo' essere vuoto");
+    return false;
+  }
+}
+</script>
 <script >
   var listElm = document.getElementById('infinite-list');
   var loadcard=0;

@@ -5,8 +5,15 @@
     'Controller' => 'admin_page.php'
   );
 
+  $errors = array(
+    '001' => "Il file caricato non è un'immagine, caricare un file \".png\", \".jpg\" o \".jpeg\"",
+    '002' => "Il file caricato esiste già, caricarne uno diverso o cambiarne il nome",
+    '003' => "Il file caricato è troppo pesante",
+    '004' => "Sorry, there was an error uploading your file.",
+    '005' => "Si e' presentato un errore nell'aggiunta della carta",
+    '100' => "Carta aggiunta correttamente"
+  );
   session_start();
-
   if(!isset($_SESSION["Username"])){
     header("HTTP/1.1 401 Unauthorized");
     exit;

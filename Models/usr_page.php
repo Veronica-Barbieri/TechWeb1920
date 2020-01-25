@@ -8,7 +8,6 @@ session_start();
 
 $curr_usr = $_SESSION["Username"];
 //definisco la query per i mazzi
-// N.B.: aggiungere il controllo sul singolo utente
 $query_usr_decks = "SELECT *  FROM mazzo WHERE Autore = '$curr_usr'";
 //effettuo la query sulla tabella dei mazzi per recuperarne le informzioni
 $query_usr_decks_res = Query($query_usr_decks);

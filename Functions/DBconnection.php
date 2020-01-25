@@ -37,7 +37,7 @@ function UpInDel_Query($query_string, $operation){
   $conn = OpenCon() or die ("Conncetion Failed: " . mysqli_connect_error());
   if($operation=="Update"){
     if(mysqli_query($conn, $query_string)){
-        $updated = "Record updated successfully";
+        $updated = "true";
     } else {
         $updated = "Error updating record: " . mysqli_error($conn);
     }
@@ -46,7 +46,7 @@ function UpInDel_Query($query_string, $operation){
   }
   if($operation=="Insert"){
     if(mysqli_query($conn, $query_string)){
-        $updated = "Record created successfully!";
+        $updated = "true";
     } else {
         $updated = "Error inserting record: " . mysqli_error($conn);
     }
@@ -55,7 +55,7 @@ function UpInDel_Query($query_string, $operation){
   }
   if($operation=="Delete"){
     if(mysqli_query($conn, $query_string)){
-        $updated = "Record eliminated successfully!";
+        $updated = "true";
     } else {
         $updated = "Error elminating record: " . mysqli_error($conn);
     }

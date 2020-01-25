@@ -136,9 +136,10 @@
 <script>
 function validForm() { //controlli js per il form di inserimento di una carta
   var x = document.forms["new_db_card"];
-    if (isNaN(x["card_def"].value) || isNaN(x["card_atk"].value) || isNaN(x["nero"].value) ||
-	isNaN(x["blu"].value) || isNaN(x["verde"].value) ||
-	isNaN(x["rosso"].value) || isNaN(x["nocolor"].value))
+    if (isNaN(x["card_def"].value) || isNaN(x["card_atk"].value) ||
+    isNaN(x["bianco"].value) || isNaN(x["nero"].value) ||
+    isNaN(x["blu"].value) || isNaN(x["verde"].value) ||
+    isNaN(x["rosso"].value) || isNaN(x["nocolor"].value))
     {
         alert("Il costo mana di una carta deve essere un numero");
         return false;

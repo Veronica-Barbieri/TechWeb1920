@@ -1,0 +1,493 @@
+* {
+  margin: 0em;
+  padding: 0em;
+}
+html, body, .content{
+  max-width: 1024px;
+  margin: auto;
+}
+body{
+  position: absolute;
+}
+/*contenuto*/
+div.content{
+  position: relative;
+  height: max-content;
+  width: 100%;
+  padding: 2em;
+  padding-bottom: 0em;
+}
+/*h1*/
+h1{
+  padding: 0.5em;
+  font-size: 1.5em;
+  color: grey;
+  text-align: center;
+}
+/*title h1*/
+h1#title{
+  padding-top: 0.8em;
+  padding-left: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
+  width: 100%;
+  padding-right: 1.2em;
+  text-align: center;
+  background-color: #383838;
+  box-shadow: inset 0px -2px 31px 0.1em black;
+  border-bottom: 1px solid #fff8dc59;
+}
+/*h2*/
+h2{
+  padding-top: 1em;
+  font-size: 1em;
+}
+h2#tipi_terra, h2#tipi_magie, h2#tipi_creature, h2#tipi_inc, h2#tipi_streg, h2#tipi_planeswalker, h2#combat, h3#atk, h3#def, h2#risolvere{
+  text-align: center;
+  margin: 0px;
+  font-size: 1.2em;
+  padding: 0px;
+}
+h2#reg{
+  font-size: 1em;
+  text-align: center;
+}
+h2#tipi_magie{
+  margin-top: 1em;
+}
+/*titoli*/
+#title{
+  color:#7a5050;
+  font-size: 2.7em;
+  text-align: center;
+}
+/*header*/
+.hb_header{
+  display: block;
+}
+/*no menu in home*/
+.dt_menu{
+  display: none;
+}
+
+/*navigation*/
+.navigation{
+  display: block;
+}
+
+/*menuToggle script*/
+#menuToggle{
+  display: block;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover{
+  color: #7a5050;
+}
+
+#menuToggle input{
+  display: block;
+  width: 6em;
+  height: 3em;
+  position: absolute;
+  top: -7px;
+  left: -2em;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+  display: block;
+  width: 3em;
+  height: 0.5em;
+  margin-bottom: 5px;
+  position: relative;
+  background: lightgrey;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2){
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menuToggle input:checked ~ ul{
+  transform: none;
+}
+
+div#menuToggle{
+  width: 100%;
+}
+/*fine menuToggle*/
+/*menu*/
+#menu{
+  position: relative;
+  width: 100%;
+  margin-top: -10em;
+  margin-left: -3em;
+  padding-left: 1em;
+  padding-right: 4em;
+  padding-top: 5em;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+/*lista menu*/
+#menu li{
+  position: relative;
+  top: 5em;
+  line-height: 2em;
+  font-size: 1.5em;
+  text-align: center;
+}
+/*primo elem lista menu*/
+li#rif{
+  position: relative;
+  left: 2px;
+  right: 1em;
+  display: block;
+  text-align: left;
+  color: purple;
+}
+/*Titolo in menu*/
+b{
+  font-size: 1em;
+}
+/*lista menu*/
+ul#menu{
+  position: fixed;
+  width: 100%;
+  height: max-content;
+  padding: 3em;
+  padding-bottom: 30em;
+}
+/*torna all'inizio pagina*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 1em; /* Place the button at the bottom of the page */
+  right: 1.5em; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: lightgoldenrodyellow; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  width: 70px;
+  height: 70px;
+  padding: 7px;
+  font-size: 1.5em; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+/*fine torna all'inizio pagina*/
+
+/*icone facebook, youtube, mail, search, question*/
+#fb, #yt, #q,#en{
+  margin-bottom: 1em;
+}
+i#fb.fab.fa-facebook-f, i#q.fa.fa-question{
+  width: 20px;
+}
+i.fas.fa-chevron-up{
+  padding: 0px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook-f{
+  padding: 1em;
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  padding: 1em;
+  background: red;
+  color: white;
+}
+.fa-envelope{
+  font-size: 1em;
+  padding: 1em;
+  background: white;
+  color: black;
+}
+.fa-question{
+  padding: 1em;
+  background: black;
+  color: white;
+}
+.fa-search{
+  color: black;
+
+}
+.fa-user{
+  font-size: 2em;
+  position: absolute;
+  top: 0.9em;
+  right: -0.3em;
+  color: black;
+}
+i.fas.fa-user{
+  color: black;
+}
+i.fas.fa-user::before{
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  right: 0.5em;
+  top: -0.7em;
+  color: black;
+  cursor: pointer;
+}
+i.fas.fa-user::after{
+  position: absolute;
+  right: -0.5em;
+  top: -1em;
+  color: white;
+  cursor: pointer;
+}
+/*fine icone*/
+/*text*/
+p.simpleText{
+  line-height: 1em;
+  font-style: italic;
+}
+/*paragrafi home*/
+p#primo, p#secondo, p#terzo, p#alt{
+  size: 1em;
+  color: lightgray;
+  font-style: italic;
+}
+p#alt{
+  padding-top: 1em;
+  font-size: 0.8em;
+}
+/*span in home*/
+.magic{
+  font-style: normal;
+  color: #7a5050;
+}
+/*login*/
+a.nb-login.nb-link{
+  width: 3em;
+  height: 2em;
+  padding: 1px;
+  position: absolute;
+  right: -2em;
+  top: 0em;
+}
+a.nb-login{
+  width: 0%;
+}
+/*hot decks in home*/
+#hot_decks{
+  position: relative;
+  text-align: center;
+}
+/*cos'è*/
+p#intro{
+  text-align:center;
+  font-size: 2.2em;
+  position: relative;
+  left: 1em;
+}
+/*sistemare se link già visitato*/
+a.externalLink.link:visited{
+  color: darkred;
+}
+a.externalLink.link{
+  text-decoration: underline;
+}
+/*paragrafi regole*/
+li#basi, li#tipi, li#lanciare, li#combat, li#risolvere{
+  line-height: 2em;
+  text-align: center;
+  font-size: 2em;
+}
+/*box in decks*/
+div#hot_decks.box.inline_el{
+  position: relative;
+  top: 1em;
+  margin: 0px;
+  width: 90%;
+  background-color: #383838;
+}
+div#card_panel.color_container_box.inline_el.box{
+  position: relative;
+  top: 1.5em;
+  margin: 0px;
+  width: 90%;
+  padding: 1em;
+  background-color: #383838;
+}
+div.single_hot_deck{
+  padding-bottom: 1em;
+}
+button.manaButton{
+  padding: 1em;
+}
+img{
+  position: relative;
+  top: 0.5em;
+}
+input.formButton.btn{
+  position: relative;
+  margin: 1em;
+  width: 80%;
+}
+fieldset.box{
+  position: relative;
+  left:-6em;
+  margin: 0px;
+}
+form.cont_form{
+  display: inline;
+  position: relative;
+  left: 6em;
+}
+input.inputArea{
+  display: inline;
+  position: relative;
+  width: 80%;
+  height: 1.5em;
+}
+textarea.inputArea{
+  width: 80%;
+}
+legend.frm_title.box{
+  font-size: 1.5em;
+}
+ul#menu_regole.menu.box{
+  margin-top: 1em;
+  text-align: center;
+}
+li.regole_mana.box{
+  height: 5%;
+  margin: 0.2em;
+  font-size: 1em;
+  padding-top: 0px;
+}
+ul.simpleText{
+  padding-top: 1em;
+  text-align: center;
+  position: relative;
+  margin: 0px;
+}
+a#Planeswalker{
+  color: #DEB887;
+  text-decoration: underline;
+}
+div.card_box, div.btn_box{
+  display: none;
+}
+fieldset.src_col1.box{
+  position: relative;
+  left: 0.5em;
+  top: -20em;
+}
+div.content_regole{
+  position: relative;
+  margin-top: 4em;
+  left: -0.5em;
+}
+fieldset.src_col1.box{
+  position: relative;
+  display: block;
+  float: top;
+  margin-top: 25em;
+  margin-left: -1em;
+  width: 80%;
+  heigth: max-content;
+  padding: 3em;
+}
+div.deck_box{
+  position: relative;
+  display: block;
+  width: 20%;
+}
+.deck_nav{
+  padding-top: 40em;
+}
+form.cont_form{
+  background-color: transparent;
+  border: transparent;
+  margin: 0px;
+}
+/*sezione footer*/
+/*info footer da non mostrare*/
+a.nb-link.link, ul.pg-nav, li.footerTextTitle_1{
+  display: none;
+}
+/*fine footer da non mostrare*/
+div.sez-footer{
+  position: relative;
+  padding: 0px;
+}
+div.footer{
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+li.footerTextTitle{
+  margin-top: 1em;
+}
+
+li.footerText{
+  color: lightgray;
+  font-style: italic;
+}
+footer{
+  position: absolute;
+  border: 1px solid #000;
+}
+/*fine sezione footer*/

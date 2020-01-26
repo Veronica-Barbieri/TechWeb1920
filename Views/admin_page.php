@@ -20,7 +20,7 @@
         </div>
         <div class="form_sez">
           <label for="mail">Email</label>
-          <input class="inputArea" id="mail" type="email" name="mail" value="" />
+          <input class="inputArea" id="mail" type="text" name="mail" value="" />
         </div>
         <div class="form_sez">
           <label for="pwd">Password</label>
@@ -133,7 +133,7 @@
     </fieldset>
   </form>
 </div>
-<script>
+<script type="text/javascript">
 function validForm() { //controlli js per il form di inserimento di una carta
   var x = document.forms["new_db_card"];
     if (isNaN(x["card_def"].value) || isNaN(x["card_atk"].value) ||

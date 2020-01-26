@@ -88,7 +88,7 @@
         if ($key >= $disp_card*($cur_page-1) && $key < $disp_card*$cur_page) {?>
           <div class="card_box">
           <a class="cardLink link" href="single_card.php?id=<?php echo $value["Id"] ?>&amp;name=<?php echo $value["Nome"] ?>">
-            <p class="card_title"><?php echo $value["Nome"]; ?></p>
+            <span class="card_title"><?php echo $value["Nome"]; ?></span>
             <img class="card_img" src="<?php echo $value["Img_path"]; ?>" alt="<?php echo $value["Nome"]; ?>" />
           </a>
           </div>

@@ -15,7 +15,7 @@
 		<label for="cognome">Cognome:</label>
 		<input class="inputArea" id="cognome" type="text" name="cognome" />
 		<label for="email">E-mail:</label>
-		<input class="inputArea" id="email" type="email" name="email" />
+		<input class="inputArea" id="email" type="text" name="email" />
 		<label for="oggetto">Oggetto:</label>
 		<input class="inputArea" id="oggetto" type="text" name="oggetto" />
 		<label for="commento">Commento:</label>

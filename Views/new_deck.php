@@ -18,6 +18,7 @@
       <div class="filters">
       </div>
       <ul class="wiki new_deck_sez box" id="infinite-list">
+        <li></li>
       </ul>
       <div class="hidden"  id="infinite-spin">
         <i class="fas fa-spinner fa-spin"></i>
@@ -91,7 +92,7 @@ function check_deck_form() {
   }
 }
 </script>
-<script >
+<script type="text/javascript">
   var listElm = document.getElementById('infinite-list');
   var loadcard=0;
   var limitcard=5;

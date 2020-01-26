@@ -15,7 +15,7 @@
         if ($value["Tipo"] == "Artefatto") {  ?>
           <li class="card_box sd_cardbox">
           <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
-              <p class="card_title"><?php echo $value["Nome"];?></p>
+              <span class="card_title"><?php echo $value["Nome"];?></span>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
@@ -36,7 +36,7 @@
         if ($value["Tipo"] == "Creatura") {  ?>
           <li class="card_box sd_cardbox">
           <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
-              <p class="card_title"><?php echo $value["Nome"];?></p>
+              <span class="card_title"><?php echo $value["Nome"];?></span>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
@@ -57,7 +57,7 @@
         if ($value["Tipo"] == "Incantesimo") {  ?>
           <li class="card_box sd_cardbox">
             <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
-              <p class="card_title"><?php echo $value["Nome"];?></p>
+              <span class="card_title"><?php echo $value["Nome"];?></span>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
@@ -78,7 +78,7 @@
         if ($value["Tipo"] == "Artefatto") {  ?>
           <li class="card_box sd_cardbox">
             <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
-              <p class="card_title"><?php echo $value["Nome"];?></p>
+              <span class="card_title"><?php echo $value["Nome"];?></span>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
@@ -99,7 +99,7 @@
         if ($value["Tipo"] == "Planeswalker") {  ?>
           <li class="card_box sd_cardbox">
             <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
-              <p class="card_title"><?php echo $value["Nome"];?></p>
+              <span class="card_title"><?php echo $value["Nome"];?></span>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
@@ -120,7 +120,7 @@
         if ($value["Tipo"] == "Stregoneria") {  ?>
           <li class="card_box sd_cardbox">
             <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
-              <p class="card_title"><?php echo $value["Nome"];?></p>
+              <span class="card_title"><?php echo $value["Nome"];?></span>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
@@ -141,7 +141,7 @@
         if ($value["Tipo"] == "Terra") {  ?>
           <li class="card_box sd_cardbox">
             <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
-              <p class="card_title"><?php echo $value["Nome"];?></p>
+              <span class="card_title"><?php echo $value["Nome"];?></span>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>
@@ -162,7 +162,7 @@
         if ($value["Tipo"] == "Tribale") {  ?>
           <li class="card_box sd_cardbox">
             <a class="cardLink link" href='single_card.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"]?>'>
-              <p class="card_title"><?php echo $value["Nome"];?></p>
+              <span class="card_title"><?php echo $value["Nome"];?></span>
               <span class="num_card fa-stack">
                 <span class="far fa-square fa-stack-2x"></span>
                 <span class="fa-stack-1x"><?php echo "x".$value["Q_ta"]; ?></span>

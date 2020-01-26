@@ -16,7 +16,7 @@ ul{
 a{
 	text-decoration: none;
 }
-h1{
+h1, .deck_title{
   text-shadow: 1px 1px 1px #d2691e;
   text-decoration: underline;
   padding-bottom: 0.5em;
@@ -353,11 +353,10 @@ CSS HEADER
 .deck_box{
   display: inline-block;
   width: 44%;
-  min-height: 9em;
   vertical-align: middle;
   margin: 0.5%;
-  padding: 0.5em;
-  border: 1px solid #fff8dc59;
+  border: 1px solid
+  #fff8dc59;
   border-radius: 3px;
 }
 .deck_box:hover{
@@ -373,7 +372,8 @@ CSS HEADER
 }
 .card_title{
 	font-size: 1.1em;
-  padding-top: 0.5em
+  padding-top: 0.5em;
+  display: block;
 }
 .manaButton:focus{
 	background-color:#fff8dc;
@@ -429,6 +429,20 @@ CSS HEADER
 /*deck forum*/
 #deck_list{
   margin-top: 1.2em;
+}
+.linkedDeck{
+  display: block;
+  min-height: 10em;
+  padding: 0.5em;
+}
+.linkedDeck span{
+  display: block;
+}
+.deck_title{
+  font-size: 2em;
+}
+.deck_info{
+  font-size: 1.2em;
 }
 /**/
 /*single card*/

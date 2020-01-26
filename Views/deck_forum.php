@@ -60,8 +60,8 @@
     <?php foreach ($deck as $key => $value) {
       if ($key >= $disp_deck*($cur_page-1) && $key < $disp_deck*$cur_page) {
         ?>
-          <a class="linkedDeck link"href="single_deck.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"];?>">
-            <div class="deck_box">
+        <div class="deck_box">
+          <a class="linkedDeck link" href="single_deck.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"];?>">
             <?php if($value["Colore_verde"]) { ?>
               <img src='Resources/Green_Mana.png' alt='colore mazzo verde' />
             <?php } if($value["Colore_rosso"]) { ?>
@@ -73,11 +73,11 @@
             <?php } if($value["Colore_bianco"]) { ?>
               <img src='Resources/White_Mana.png' alt='colore mazzo bianco' />
             <?php } ?>
-            <h1> <?php echo $value["Nome"]; ?> </h1>
-            <p> <?php echo $value["Autore"]; ?> </p>
-            <p> <?php echo $value["Tipo"]; ?> </p>
-          </div>
+            <span class="deck_title"> <?php echo $value["Nome"]; ?> </span>
+            <span class="deck_info"> <?php echo $value["Autore"]; ?> </span>
+            <span class="deck_info"> <?php echo $value["Tipo"]; ?> </span>
         </a>
+      </div>
     <?php
       }
     } ?>

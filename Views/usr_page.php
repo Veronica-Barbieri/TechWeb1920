@@ -18,7 +18,7 @@
         </div>
         <div class="form_sez">
           <label for="mail">Email</label>
-          <input class="inputArea" id="mail" type="email" name="mail" value="" />
+          <input class="inputArea" id="mail" type="text" name="mail" value="" />
         </div>
         <div class="form_sez">
           <label for="pwd">Password</label>
@@ -38,7 +38,7 @@
       <?php if($usr_deck!=0){
           foreach ($usr_deck as $key => $value) { ?>
             <div id="deck_box_<?php echo $value["Id"];?>" class="deck_box">
-              <a class="link" href="single_deck.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"];?>">
+              <a class="linkedDeck link" href="single_deck.php?id=<?php echo $value["Id"];?>&amp;name=<?php echo $value["Nome"];?>">
                 <?php
                 if($value["Colore_verde"]) {?>
                   <img src='Resources/Green_Mana.png' alt='colore mazzo verde' />
@@ -51,8 +51,8 @@
                 <?php } if($value["Colore_bianco"]) { ?>
                   <img src='Resources/White_Mana.png' alt='colore mazzo bianco' />
                 <?php } ?>
-                <h1> <?php echo $value["Nome"]; ?> </h1>
-                <p> <?php echo $value["Tipo"]; ?> </p>
+                <span class="deck_title"> <?php echo $value["Nome"]; ?> </span>
+                <span class="deck_info"> <?php echo $value["Tipo"]; ?> </span>
               </a>
               <button class="btn" type="button" name="delete_use_deck" onclick="delete_deck(<?php echo $value["Id"]; ?>)">Elimina il mazzo</button>
             </div>

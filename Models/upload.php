@@ -45,9 +45,10 @@ $qupload = "INSERT INTO carta
 		(Nome,Colore,Costo_verde,Costo_rosso,Costo_blu,
 		Costo_bianco,Costo_nero,Costo_Nocolor,Tipo,Descrizione,
 		Flavour_text,Espansione,Rarita,Artista,DEF,ATK,Img_path)
-		VALUES ('".$Nome."','".$Colore."','".$Verde."','".$Rosso."','".$Blu."',
-			'".$Bianco."','".$Nero."','".$Nocolor."','".$Tipo."','".$Desc."','".$Fltext."',
-			'".$Exp."','".$Rarita."','".$Artista."','".$Def."','".$Atk."','".$image_path."') ";
+		VALUES ";
+$qupload .= "('".$Nome."','".$Colore."','".$Verde."','".$Rosso."','".$Blu."',
+	'".$Bianco."','".$Nero."','".$Nocolor."','".$Tipo."','".$Desc."','".$Fltext."',
+	'".$Exp."','".$Rarita."','".$Artista."',".$Def.",".$Atk.",'".$image_path."')";
 
 // Controllo se l'immagine è sana
 if(isset($_POST["submit"])) {

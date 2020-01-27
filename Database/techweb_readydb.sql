@@ -112,7 +112,10 @@ Creature tokens get -1/-0.','Che sia magico, benedetto dalla fortuna o semplicem
 (44, 'Angelo dell''Alba','Bianco',0,0,0,1,0,4,'Creatura','
 Flying
 When Angel of the Dawn enters the battlefield, creatures you control get +1/+1 and gain vigilance until end of turn. (Attacking doesn''t cause them to tap.)','
-Canta per tutti coloro che sono stati messi a tacere.','Set Base 2019','Comune','Livia Prima',3,3,'Resources/carta44.png');
+Canta per tutti coloro che sono stati messi a tacere.','Set Base 2019','Comune','Livia Prima',3,3,'Resources/carta44.png'),
+(45, 'Montagna', 'Rosso', 0, 0, 0, 0, 0, 0, 'Terra', 'NULL', 'NULL', 'Set Base 2011', 'Comune', 'Sean Burley', NULL, NULL, 'Resources/carta45.jpg'),
+(46, 'Pianura', 'Bianco', 0, 0, 0, 0, 0, 0, 'Terra', 'NULL', 'NULL', 'Set Base 2011', 'Comune', 'Sean Burley', NULL, NULL, 'Resources/carta46.jpg');
+
 -- --------------------------------------------------------
 
 --

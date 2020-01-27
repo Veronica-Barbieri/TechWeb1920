@@ -24,13 +24,15 @@ while ($row_card = mysqli_fetch_assoc($card_general)) {
 $html="";
 
 foreach ($cards as $key => $value) {
-  $html.='<ul class="card_box">
-            <li><h1 class="card_title">'.$value["Nome"].'</h1></li>
-            <li><img class="card_img" src="'.$value["Img_path"].'" alt="Immagine della carta '.$value["Nome"].'">
-            <li>
-              <button class="btn" type="button" name="add_card" onclick="return num_card_popup(\''.$value["Id"].'\')">Aggiungi al mazzo</button>
-            </li>
-          </ul>';
+  $html.='<a class="cardLink link" href="single_card.php?id='.$value["Id"].'&name='.$value["Nome"].'">
+            <ul class="card_box">
+              <li><h1 class="card_title">'.$value["Nome"].'</h1></li>
+              <li><img class="card_img" src="'.$value["Img_path"].'" alt="Immagine della carta '.$value["Nome"].'" />
+              <li>
+                <button class="btn" type="button" name="add_card" onclick="return num_card_popup(\''.$value["Id"].'\')">Aggiungi al mazzo</button>
+              </li>
+            </ul>
+          </a>';
 }
 
 echo $html;

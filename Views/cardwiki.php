@@ -7,36 +7,6 @@
         <label class="in_label" for="nomecarta">Nome della carta</label>
         <input class="inputArea" id="nomecarta" type="text" name="nomecarta" value="" />
       </div>
-      <div>
-        <input class="color_checkbox" id="white_chbox" type="checkbox" name="bianco" value="1" />
-        <label class="cbox_label" for="white_chbox">
-          <img src="Resources/White_Mana.png" alt="Bianco" />
-        </label>
-      </div>
-      <div>
-        <input class="color_checkbox" id="blue_chbox" type="checkbox" name="blu" value="1" />
-        <label class="cbox_label" for="blue_chbox">
-          <img src="Resources/Blue_Mana.png" alt="Blu" />
-        </label>
-      </div>
-      <div>
-        <input class="color_checkbox" id="black_chbox" type="checkbox" name="nero" value="1" />
-        <label class="cbox_label" for="black_chbox">
-          <img src="Resources/Black_Mana.png" alt="Nero" />
-        </label>
-      </div>
-      <div>
-        <input class="color_checkbox" id="red_chbox" type="checkbox" name="rosso" value="1" />
-        <label class="cbox_label" for="red_chbox">
-          <img src="Resources/Red_Mana.png" alt="Rosso" />
-        </label>
-      </div>
-      <div>
-        <input class="color_checkbox" id="green_chbox" type="checkbox" name="verde" value="1" />
-        <label class="cbox_label" for="green_chbox">
-          <img src="Resources/Green_Mana.png" alt="Verde" />
-        </label>
-      </div>
     </div>
     <div class="src_field_group">
       <div class="src_dropdown_group">
@@ -75,6 +45,38 @@
         <option value="Terra">Terra</option>
         <option value="Tribale">Tribale</option>
       </select>
+    </div>
+  </div>
+  <div class="src_field_group">
+    <div class="form_mana">
+      <input class="color_checkbox" id="white_chbox" type="checkbox" name="bianco" value="1" />
+      <label class="cbox_label" for="white_chbox">
+        <img src="Resources/White_Mana.png" alt="Bianco" />
+      </label>
+    </div>
+    <div class="form_mana">
+      <input class="color_checkbox" id="blue_chbox" type="checkbox" name="blu" value="1" />
+      <label class="cbox_label" for="blue_chbox">
+        <img src="Resources/Blue_Mana.png" alt="Blu" />
+      </label>
+    </div>
+    <div class="form_mana">
+      <input class="color_checkbox" id="black_chbox" type="checkbox" name="nero" value="1" />
+      <label class="cbox_label" for="black_chbox">
+        <img src="Resources/Black_Mana.png" alt="Nero" />
+      </label>
+    </div>
+    <div class="form_mana">
+      <input class="color_checkbox" id="red_chbox" type="checkbox" name="rosso" value="1" />
+      <label class="cbox_label" for="red_chbox">
+        <img src="Resources/Red_Mana.png" alt="Rosso" />
+      </label>
+    </div>
+    <div class="form_mana">
+      <input class="color_checkbox" id="green_chbox" type="checkbox" name="verde" value="1" />
+      <label class="cbox_label" for="green_chbox">
+        <img src="Resources/Green_Mana.png" alt="Verde" />
+      </label>
     </div>
   </div>
   <input class="formButton btn" type="submit" name="search_input" value="Cerca" />

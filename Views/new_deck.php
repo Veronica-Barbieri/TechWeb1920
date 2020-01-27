@@ -8,8 +8,8 @@
       <h2 class="simpleText">Tasti rapidi per aggiungere delle Terre base al mazzo:</h2>
       <button class="manaButton" type="button" name="BasicGreen" onclick="num_card_popup(2,'Mana verde')"> <img src="Resources/Green_Mana.png" alt="Verde" /> </button>
       <button class="manaButton" type="button" name="BasicBlue" onclick="num_card_popup(9,'Mana blu')"> <img src="Resources/Blue_Mana.png" alt="Blu" /> </button>
-      <button class="manaButton" type="button" name="BasicRed" onclick="num_card_popup(0,'Mana rosso')"> <img src="Resources/Red_Mana.png" alt="Rosso" /> </button>
-      <button class="manaButton" type="button" name="BasicWhite" onclick="num_card_popup(0,'Mana bianco')"> <img src="Resources/White_Mana.png" alt="Bianco" /> </button>
+      <button class="manaButton" type="button" name="BasicRed" onclick="num_card_popup(45,'Mana rosso')"> <img src="Resources/Red_Mana.png" alt="Rosso" /> </button>
+      <button class="manaButton" type="button" name="BasicWhite" onclick="num_card_popup(46,'Mana bianco')"> <img src="Resources/White_Mana.png" alt="Bianco" /> </button>
       <button class="manaButton" type="button" name="BasicBlack" onclick="num_card_popup(10,'Mana nero')"> <img src="Resources/Black_Mana.png" alt="Nero" /> </button>
     </div>
     <div class="card_insert_box">
@@ -21,7 +21,7 @@
         <li></li>
       </ul>
       <div class="hidden"  id="infinite-spin">
-        <i class="fas fa-spinner fa-spin"></i>
+        <span class="fas fa-spinner fa-spin"></span>
       </div>
     </div>
     <div class="card_insert_box">

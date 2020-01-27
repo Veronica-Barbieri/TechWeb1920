@@ -11,6 +11,7 @@ $deck_name = $_GET["deck_name"];
 $deck_type = $_GET["type"];
 
 $cards_to_save = array_count_values($cards_to_save);
+$num_cards = array_sum($cards_to_save);
 
 if ($deck_name == ""){
   $_GET["error"] = "Il campo 'Nome' non puo' essere vuoto";
@@ -20,6 +21,9 @@ if ($deck_name == ""){
   header("Location: ../new_deck.php?error=".$_GET["error"]);
 }elseif(count($cards_to_save) == 0){
   $_GET["error"] = "Inserire almeno una carta nel mazzo";
+  header("Location: ../new_deck.php?error=".$_GET["error"]);
+}elseif ($num_cards >= 10){
+  $_GET["error"] = "Sono state inserite troppe carte, un mazzo ne puo' contenere al massimo 10";
   header("Location: ../new_deck.php?error=".$_GET["error"]);
 } else {
   foreach ($cards_to_save as $key) {

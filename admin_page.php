@@ -11,7 +11,8 @@
     '003' => "Il file caricato è troppo pesante",
     '004' => "Sorry, there was an error uploading your file.",
     '005' => "Si e' presentato un errore nell'aggiunta della carta",
-    '100' => "Carta aggiunta correttamente"
+    '100' => "Carta aggiunta correttamente",
+    '101' => "Info modificate con successo"
   );
   session_start();
   if(!isset($_SESSION["Username"])){

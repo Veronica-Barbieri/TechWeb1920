@@ -6,7 +6,8 @@
 
   $errors = array(
     '006' => 'I campi Username e Password non possono essere vuoti, inserisci il tuo Username e la tua Password',
-    '007' => 'Username o Password non sono corretti, login fallito'
+    '007' => 'Username o Password non sono corretti, login fallito',
+    '101' => "Info modificate con successo"
   );
 
   session_start();

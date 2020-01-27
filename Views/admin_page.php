@@ -11,7 +11,7 @@
     <button class="btn" id="ad_form_btn" type="button" name="edit_profile" onclick="show_and_hide('admin_form', 'ad_form_btn')">
       Modifica le tue informazioni
     </button>
-    <form class="admin_form hidden" id="admin_form" action="Models/usr_mod_account.php" method="post">
+    <form class="admin_form hidden" id="admin_form" action="Models/usr_mod_account.php" method="post" onsubmit="return edit_info_check()">
       <fieldset class="box">
         <legend class="frm_title box">Modifica i tuoi dati:</legend>
         <div class="form_sez">
@@ -177,6 +177,14 @@ function validForm() { //controlli js per il form di inserimento di una carta
 
   if (document.getElementById("fileToUpload").files.length == 0) {
     alert("E' necessario caricare un'immagine della carta");
+    return false;
+  }
+}
+</script>
+<script type="text/javascript">
+function edit_info_check() {
+ if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.forms["registration_frm"]["mail"].value))){
+    alert("You have entered an invalid email address!")
     return false;
   }
 }

@@ -56,7 +56,7 @@ h1, .deck_title{
   font-size: 1.1em;
   text-align: center;
   padding: 0.5em;
-  background-color: #ff1c1c4f;
+  background-color: rgba(255,28,28,0.31);
 }
 .success{
   border: 1px solid #00ff28;
@@ -64,7 +64,7 @@ h1, .deck_title{
   font-size: 1.1em;
   text-align: center;
   padding: 0.5em;
-  background-color: #98ff1c4f;
+  background-color: rgba(152,255,28,0.31);
 }
 
 /*--------
@@ -102,7 +102,7 @@ CSS HEADER
   text-align: center;
   background-color: #383838;
   box-shadow: inset 0px -2px 31px 0.1em black;
-  border-bottom: 1px solid #fff8dc59;
+  border-bottom: 1px solid rgba(255,248,220,0.35);
 }
 
 .nb-col1, .nb-login, .nb-logo, .nb-item{
@@ -154,7 +154,7 @@ CSS HEADER
   margin-top: 1.2em;
   padding: 1em 0.5em 1em 0.5em;
   min-width: 50%;
-  background-color: #fff8dc1f;
+  background-color: rgba(255,248,220,0.12);
   vertical-align: top;
 }
 #hot_decks{
@@ -164,7 +164,12 @@ CSS HEADER
   width: 20%;
   display: inline-block;
   min-width: 14.9em;
-  background-color: #fff8dc1f;
+  background-color: rgba(255,248,220,0.12);
+}
+.single_hot_deck {
+  border-radius: 4px;
+  margin: 0.5em;
+  border: 1px solid #fff8dc59;
 }
 .content,.footer,.manaButton{
   background-color:#383838;
@@ -196,12 +201,12 @@ CSS HEADER
 }
 .card_type{
 	margin-top: 0.5em;
-  border-bottom: 1px solid #fff8dc59;
+  border-bottom: 1px solid rgba(255,248,220,0.35);
 }
 .box{
   box-shadow: 0 0 15px #000;
   border-radius: 4px;
-  border: 1px solid #fff8dc59;
+  border: 1px solid rgba(255,248,220,0.35);
 }
 
 /*******************/
@@ -233,7 +238,9 @@ CSS HEADER
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
-
+.in_label{
+  font-size: 1.2em;
+}
 .color_checkbox {
   position: absolute;
   opacity: 0;
@@ -296,20 +303,16 @@ CSS HEADER
 	margin: 0.5em;
 	display: block;
 }
-.content h2,.content h3,#form ul li{
-	padding-bottom: 0.5em;
-}
-.content h2,.content h3{
-	margin-top: 0.5em;
-}
+
 .manaButton{
 	border: solid black;
 	padding: 0.5em 2em 0.2em 2em;
 	cursor: pointer;
   border-radius: 8px;
+  box-shadow: 2px 2px 2px #000;
 }
 .manaButton:hover{
-  background-color: #fff8dc1f;
+  background-color: rgba(255,248,220,0.12);
 }
 .carta{
 	padding: 0.6em;
@@ -324,7 +327,7 @@ CSS HEADER
   padding: 0.5em 1em 0.5em 1em;
 }
 .card_box:hover {
-    background-color: #fff8dc2e;
+    background-color: rgba(255,248,220,0.18);
     border-radius: 12px;
     transition: 0.4s;
 }
@@ -359,12 +362,12 @@ CSS HEADER
   width: 44%;
   vertical-align: middle;
   margin: 0.5%;
-  border: 1px solid
-  #fff8dc59;
+  border: 1px solid rgba(255,248,220,0.35);
   border-radius: 3px;
+  box-shadow: 0px 1px 17px #000;
 }
 .deck_box:hover{
-  background-color: #fff8dc2e;
+  background-color: rgba(255,248,220,0.18);
   transition: 0.3s;
 }
 .formButton{
@@ -406,18 +409,18 @@ CSS HEADER
   padding: 0.1em;
 }
 .sub_list li:hover, .regole_main_title:hover{
-  background-color: #fff8dc59;
+  background-color: rgba(255,248,220,0.35);
   border-radius: 3px;
 }
 .regole_main_title{
   font-size: 1.2em;
   margin: 0.3em 0 0.3em 0;
-  border-bottom: 1px solid #fff8dc59;
+  border-bottom: 1px solid rgba(255,248,220,0.35);
 }
 .content_regole{
   width: 63%;
   display: inline-block;
-  border-left: 1px solid #fff8dc59;
+  border-left: 1px solid rgba(255,248,220,0.35);
   padding-left: 1.5em;
   text-align: left;
 }
@@ -467,7 +470,7 @@ CSS HEADER
   display: inline-block;
   padding: 0.2em;
   color: #fff8dc;
-  background-color: #fff8dc1c;
+  background-color: rgba(255,248,220,0.11);
   font-weight: bold;
 }
 .desc_sez{
@@ -480,7 +483,7 @@ CSS HEADER
   vertical-align: top;
   margin-right: 4%;
   box-shadow: 0 0 2em #000;
-  border: 1px solid #fff8dc59;
+  border: 1px solid rgba(255,248,220,0.35);
 }
 /**/
 /*contatti / about us*/
@@ -556,7 +559,7 @@ CSS HEADER
 }
 .stats{
   margin-top: 1em;
-  border-top: 1px solid #fff8dc59;
+  border-top: 1px solid rgba(255,248,220,0.35);
   padding: 1em 0;
 }
 .ad_stat{
@@ -571,7 +574,7 @@ CSS HEADER
   vertical-align: middle;
 }
 .ad_stat:hover{
-  background-color: #fff8dc59;
+  background-color: rgba(255,248,220,0.35);
   color: #000;
 }
 .admin_form{
@@ -591,11 +594,17 @@ CSS HEADER
   vertical-align: top;
 }
 .new_card_fl legend{
-  border-bottom: 1px solid #fff8dc59;
+  border-bottom: 1px solid rgba(255,248,220,0.35);
+}
+#fileToUpload{
+  border: 1px solid #fff8dc;
+  margin: 1.5em;
+  border-radius: 4px
 }
 .nc_btn{
   display: block;
   margin: 2em auto;
+  width: 10em;
 }
 /**/
 /* footer */
@@ -604,7 +613,7 @@ CSS HEADER
 	vertical-align: bottom;
 	text-align: center;
   box-shadow: inset 0px -2px 31px 0.1em black;
-  border-top: 1px solid #fff8dc59;
+  border-top: 1px solid rgba(255,248,220,0.35);
 }
 .footerTextTitle{
 	margin-bottom: 10%;
@@ -627,9 +636,8 @@ CSS HEADER
 /**/
 .card_insert_box {
   display: block;
-  min-width: 24em;
   padding: 1.5em 0;
-  border-bottom: 1px solid #fff8dc5e;
+  border-bottom: 1px solid rgba(255,248,220,0.37);
 }
 #current_usr_deck{
   width: 60%;

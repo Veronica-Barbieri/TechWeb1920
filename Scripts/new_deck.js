@@ -51,7 +51,7 @@ function delete_deck(id) {
   del.open("GET", "Models/remove_user_deck.php?id="+id, true);
   del.send();
   var deleting = document.createElement("p");
-  deleting.innerHTML = "Eliminazione in corso <i class=\"fas fa-spinner fa-spin\"></i>";
+  deleting.innerHTML = "Eliminazione in corso <span class=\"fas fa-spinner fa-spin\"></span>";
   document.getElementById("deck_box_"+id).appendChild(deleting);
 }
 

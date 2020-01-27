@@ -6,10 +6,10 @@
     </a>
   </div>
 <div class="menu_regole_wrp">
-  <h2 id="reg">Naviga le regole</h2>
+  <h2>Naviga le regole</h2>
   <ul class="menu box" id="menu_regole">
     <li> <a class="regole_main_title" href="#basi">Le basi del gioco</a> </li>
-    <li id="sub"> <a class="regole_main_title" href="#tipi">Tipi di carte</a>
+    <li> <a class="regole_main_title" href="#tipi">Tipi di carte</a>
       <ul class="sub_list">
         <li> <a href="#tipi_terra">Terre</a> </li>
         <li> <a href="#tipi_magie">Magie</a> </li>
@@ -40,7 +40,7 @@
     <h1 class="sez_title" id="tipi">Tipi di carte</h1>
     <ul>
       <li>
-        <h2 id="tipi_terra">Terre</h2>
+        <h2 class="sec_title" id="tipi_terra">Terre</h2>
         <p class="simpleText">
           Le carte terra costituiscono la base di qualsiasi mazzo efficace di Magic,
           perché producono mana, l’energia magica necessaria per lanciare tutte le
@@ -57,12 +57,12 @@
           <li class="regole_mana box"> <span>Pianura</span> <img src="Resources/White_Mana.png" alt="Bianco" /> </li>
           <li class="regole_mana box"> <span>Isola</span> <img src="Resources/Blue_Mana.png" alt="Blu" /> </li>
           <li class="regole_mana box"> <span>Palude</span> <img src="Resources/Black_Mana.png" alt="Nero" /> </li>
-          <li class="regole_mana box" class="m"> <span>Montagna</span> <img src="Resources/Red_Mana.png" alt="Rosso" /> </li>
-          <li class="regole_mana box" class="m"> <span>Foresta</span> <img src="Resources/Green_Mana.png" alt="Verde" /> </li>
+          <li class="regole_mana box"> <span>Montagna</span> <img src="Resources/Red_Mana.png" alt="Rosso" /> </li>
+          <li class="regole_mana box"> <span>Foresta</span> <img src="Resources/Green_Mana.png" alt="Verde" /> </li>
         </ul>
       </li>
       <li>
-        <h2 id="tipi_magie">Magie</h2>
+        <h2 class="sec_title" id="tipi_magie">Magie</h2>
         <p class="simpleText">
           Qualsiasi carta non terra può essere lanciata come magia. Alcuni tipi di
           magia vengono messi sul campo di battaglia e diventano “permanenti”,
@@ -71,7 +71,7 @@
         </p>
       </li>
       <li>
-        <h2 id="tipi_creature">Creature</h2>
+        <h2 class="sec_title" id="tipi_creature">Creature</h2>
         <p class="simpleText">
           Le creature sono permanenti che rappresentano i seguaci al tuo comando.
           Durante il combattimento, possono attaccare gli avversari e difenderti
@@ -80,7 +80,7 @@
         </p>
       </li>
       <li>
-        <h2 id="tipi_inc">Artefatti e incantesimi</h2>
+        <h2 class="sec_title" id="tipi_inc">Artefatti e incantesimi</h2>
         <p class="simpleText">
           Gli artefatti e gli incantesimi sono permanenti che rappresentano oggetti
           magici e manifestazioni magiche stabili. Molti artefatti sono incolori,
@@ -90,7 +90,7 @@
         </p>
       </li>
       <li>
-        <h2 id="tipi_streg">Stregonerie e istantanei</h2>
+        <h2 class="sec_title" id="tipi_streg">Stregonerie e istantanei</h2>
         <p class="simpleText">
           Le magie stregoneria e istantaneo rappresentano potenti incantamenti che
           possono influenzare la partita in molti modi diversi. Dopo che il loro
@@ -102,7 +102,7 @@
         </p>
       </li>
       <li>
-        <h2 id="tipi_planeswalker">Planeswalker</h2>
+        <h2 class="sec_title" id="tipi_planeswalker">Planeswalker</h2>
         <p class="simpleText">
           I planeswalker sono alleati potenti a cui puoi fare appello affinché
           combattano al tuo fianco. Per scoprire maggiori informazioni sui
@@ -119,8 +119,8 @@
       a destra. Questo costo è composto da simboli che specificano quale tipo di
       mana devi spendere per lanciare quella magia. Devi pagare il mana rappresentato
       da ognuno di questi simboli per poter lanciare una carta. Prendiamo un esempio, se su
-      una carta trovo due simboli <img id="mana" src="Resources/Red_Mana.png" alt="Rosso" /> e un
-      simbolo "4" grigio, il simbolo <img id="mana" src="Resources/Red_Mana.png" alt="Rosso" /> significa un mana rosso.
+      una carta trovo due simboli <img src="Resources/Red_Mana.png" alt="Rosso" /> e un
+      simbolo "4" grigio, il simbolo <img src="Resources/Red_Mana.png" alt="Rosso" /> significa un mana rosso.
       Il simbolo "4" grigio significa quattro mana di qualsiasi tipo. Quindi, questo costo
       deve essere pagato con due mana rossi e quattro mana di qualsiasi tipo.
     </p>
@@ -132,13 +132,13 @@
       Montagne, che producono mana rosso, e altre quattro terre, che possono essere
       Montagne, Foreste o altre terre in qualsiasi combinazione.
     </p>
-    <h2 id="combat">Combattimento</h2>
+    <h2 class="sec_title" id="combat">Combattimento</h2>
     <p class="simpleText">
       Vinci la partita se riduci a 0 i punti vita dell’avversario. Il metodo più
       comune per raggiungere questo obiettivo è attaccare l’avversario con le
       creature durante il combattimento.
     </p>
-    <h3 id="atk">Attaccare</h3>
+    <h3 class="sec_title" id="atk">Attaccare</h3>
     <p class="simpleText">
       Durante il tuo turno, decidi se attaccare e con quali creature farlo. Non puoi
       attaccare con una creatura se è TAPpata o se è entrata nel campo di battaglia
@@ -154,7 +154,7 @@
       direttamente altre creature. Vengono semplicemente inviate attraverso il
       campo di battaglia e sarà il tuo avversario a decidere cosa accadrà dopo.
     </p>
-    <h3 id="def">Bloccare</h3>
+    <h3 class="sec_title" id="def">Bloccare</h3>
     <p class="simpleText">
       Ora immagina di trovarti dall’altro lato del campo di battaglia: il tuo
       avversario ti ha attaccato con alcune delle sue creature. Se controlli delle
@@ -164,7 +164,7 @@
       questo caso, il giocatore in attacco decide quanti danni vengono inflitti
       dalla creatura attaccante a ognuno dei bloccanti.
     </p>
-    <h2 id="risolvere">Rispondere e usare la pila</h2>
+    <h2 class="sec_title" id="risolvere">Rispondere e usare la pila</h2>
     <p class="simpleText">
       Quando lanci una magia, non si risolve immediatamente (non ha subito effetto),
       deve attendere in pila. Ogni giocatore, tu compreso, ha adesso la possibilità

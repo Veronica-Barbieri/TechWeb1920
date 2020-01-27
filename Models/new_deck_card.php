@@ -30,13 +30,13 @@ array_push($_SESSION["deck"], $id);
       if($global_costo!=0) { ?>
         <p>Costo:
         <?php } if($card_to_show["Costo_nocolor"]!=0) { ?>
-          <img src='Resources/nocost<?php echo $card_to_show["Costo_nocolor"];?>.png' alt='"<?php echo $card_to_show["Costo_nocolor"]?> unit&agrave di costo senza colore'>
+          <img src='Resources/nocost<?php echo $card_to_show["Costo_nocolor"];?>.png' alt='"<?php echo $card_to_show["Costo_nocolor"]?> unit&agrave di costo senza colore' />
         <?php  };
 
         if($card_to_show["Costo_verde"]!=0){
           $v=0;
           while($v!=$card_to_show["Costo_verde"]){ ?>
-            <img src='Resources/Green_Mana.png' alt='Un unit&agrave di costro verde'>
+            <img src='Resources/Green_Mana.png' alt='Un unit&agrave di costro verde'/>
             <?php $v++;
           }
         };
@@ -44,7 +44,7 @@ array_push($_SESSION["deck"], $id);
         if($card_to_show["Costo_rosso"]!=0){
           $r=0;
           while($r!=$card_to_show["Costo_rosso"]){ ?>
-            <img src='Resources/Red_Mana.png' alt='Un unit&agrave di costo rosso'>
+            <img src='Resources/Red_Mana.png' alt='Un unit&agrave di costo rosso' />
             <?php $r++;
           }
         };
@@ -52,7 +52,7 @@ array_push($_SESSION["deck"], $id);
         if($card_to_show["Costo_blu"]!=0){
           $bl=0;
           while($bl!=$card_to_show["Costo_blu"]){ ?>
-            <img src='Resources/Blue_Mana.png' alt='Un unit&agrave di costo blu'>
+            <img src='Resources/Blue_Mana.png' alt='Un unit&agrave di costo blu' />
             <?php $bl++;
           }
         };
@@ -60,7 +60,7 @@ array_push($_SESSION["deck"], $id);
         if($card_to_show["Costo_nero"]!=0){
           $n=0;
           while($n!=$card_to_show["Costo_nero"]){ ?>
-            <img src='Resources/Black_Mana.png' alt='Un unit&agrave di costo nero'>
+            <img src='Resources/Black_Mana.png' alt='Un unit&agrave di costo nero' />
             <?php $n++;
           }
         };
@@ -68,13 +68,13 @@ array_push($_SESSION["deck"], $id);
         if($card_to_show["Costo_bianco"]!=0){
           $bi=0;
           while($bi!=$card_to_show["Costo_bianco"]){ ?>
-            <img src='Resources/White_Mana.png' alt='Un unit&agrave di costo bianco'>
+            <img src='Resources/White_Mana.png' alt='Un unit&agrave di costo bianco' />
             <?php $bi++;
           };
         };
     ?></p>
   </li>
-  <li><img class="card_img" xml:lang="en" id="Immagine della carta<?php echo $card_to_show["Nome"];?>" src="<?php echo $card_to_show["Img_path"];?>"></li>
+  <li><img class="card_img" xml:lang="en" id="Immagine della carta<?php echo $card_to_show["Nome"];?>" src="<?php echo $card_to_show["Img_path"];?>" /></li>
   <li>
     <button class="btn" type="button" name="delete" onclick="remove_card_deck('info_card_<?php echo $nome;?>', '<?php echo $id;?>')">Elimina dal mazzo</button>
   </li>

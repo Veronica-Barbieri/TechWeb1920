@@ -89,7 +89,7 @@ delle carte senza che prema back dal browser -->
       <?php if($card_info["Descrizione"]) { ?>
         <li>
           <span class="desc_sez_pre">Descrizione:</span>
-          <span class="desc_sez">
+          <span class="desc_sez" xml:lang="en">
             <?php echo $card_info["Descrizione"];?>
           </span>
          </li>

@@ -3,6 +3,7 @@
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title xml:lang="en"><?php echo $pagein['Namepage']; ?> - MTG Deck Builder</title>
   <meta name="title" content="Magic the Gathering - Costruttore di mazzi e wiki" />
   <meta name="description" content="Costruttore ed organizzatore di mazzi per il gioco di carte Magic the Gathering" />
@@ -27,30 +28,22 @@
   <div class="">
     <button onclick="topFunction()" id="totop" title="Go to top"><span xml:lang="eng">Back to Top</span></button>
   </div>
-  <nav class="navigation" role="navigation">
+  <div class="navigation">
     <div id="menuToggle">
       <input type="checkbox" />
-      <span></span>
-      <span></span>
-      <span></span>
-    </input>
-    <ul id="menu">
-      <a href="#"><li id="rif"><b>SCOPRI IL MONDO DI MAGIC! </b><i href="#" class="fas fa-hat-wizard"></i></li></a>
-      <a href="index.php"><li>Home</li></a>
-      <a href="regole.php"><li>Regole</li></a>
-      <a href="cardwiki.php"><li>Wiki Carte</li></a>
-      <a href="deck_forum.php"><li>Forum</li></a>
-      <a href="contacts.php" xml:lang="en"><li>About us</li></a>
-      <a href="#"><li>
-        <i href="#" class="fab fa-facebook-f" id="fb"></i>
-        <i href="#" class="fab fa-youtube" id="yt"></i>
-        <i href="#" class="fas fa-envelope" id="en"></i>
-        <i href="#" class="fa fa-question" id="q"></i>
-      </li></a>
+        <span class="hb_line"></span>
+        <span class="hb_line"></span>
+        <span class="hb_line"></span>
+      <ul id="menu">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="regole.php">Regole</a></li>
+        <li><a href="cardwiki.php">Wiki Carte</a></li>
+        <li><a href="deck_forum.php">Forum</a></li>
+        <li><a href="contacts.php" xml:lang="en">About us</a></li>
       </ul>
     </div>
-  </nav>
-  <div class="header hb_header" id="header_1">
+  </div>
+  <div class="header hb_header">
     <h1 id="title">Magic The Gathering</h1>
     <?php if(isset($_SESSION["Username"])) { ?>
       <?php if(isset($_SESSION["Admin"])){ ?>
@@ -58,26 +51,26 @@
       <?php } else {?>
         <a class='nb-login nb-link' href='usr_page.php'>
       <?php } ?>
-      <i class="fas fa-user" xml:lang='en'></i>
+      <span class="fas fa-user" xml:lang='en'></span>
       <?php echo $_SESSION["Username"] ?>
       </a>
     <?php } else {  ?>
       <a class='nb-login nb-link' href='login.php'>
-      <i class="fas fa-user" xml:lang='en'></i>
+      <span class="fas fa-user" xml:lang='en'></span>
       </a>
   <?php } ?>
   </div>
-  <div class="header dt_menu" id="header_2">
+  <div class="header dt_menu">
     <div class="nb-logo">
       <img src="Resources/m-logo.png" alt="" />
     </div>
     <div class="nb-col1">
       <ul class="navbar">
-        <li class="nb-item"><a class="nb-link" href="index.php" xml:lang="en"><i class="fas fa-home"></i>Home</a>
-        </li><li class="nb-item"><a class="nb-link" href="regole.php"><i class="fas fa-scroll"></i>Regole</a></li>
-        <li class="nb-item"><a class="nb-link" href="cardwiki.php"><i class="fas fa-hat-wizard"></i>Wiki Carte</a></li>
-        <li class="nb-item"><a class="nb-link" href="deck_forum.php" xml:lang="en"><i class="fas fa-archive"></i>Forum</a></li>
-        <li class="nb-item"><a class="nb-link" href="contacts.php" xml:lang="en"><i class="fas fa-users"></i>About us</a></li>
+        <li class="nb-item"><a class="nb-link" href="index.php" xml:lang="en"><span class="fas fa-home"></span>Home</a>
+        </li><li class="nb-item"><a class="nb-link" href="regole.php"><span class="fas fa-scroll"></span>Regole</a></li>
+        <li class="nb-item"><a class="nb-link" href="cardwiki.php"><span class="fas fa-hat-wizard"></span>Wiki Carte</a></li>
+        <li class="nb-item"><a class="nb-link" href="deck_forum.php" xml:lang="en"><span class="fas fa-archive"></span>Forum</a></li>
+        <li class="nb-item"><a class="nb-link" href="contacts.php" xml:lang="en"><span class="fas fa-users"></span>About us</a></li>
       </ul>
     </div>
     <?php if(isset($_SESSION["Username"])) { ?>
@@ -86,12 +79,12 @@
       <?php } else {?>
         <a class='nb-login' href='usr_page.php'>
       <?php } ?>
-      <i class='fas fa-sign-in-alt' xml:lang='en'></i>
+      <span class='fas fa-sign-in-alt' xml:lang='en'></span>
       <?php echo $_SESSION["Username"] ?>
       </a>
     <?php } else {  ?>
       <a class='nb-login' href='login.php'>
-      <i class='fas fa-sign-in-alt' xml:lang='en'></i>
+      <span class='fas fa-sign-in-alt' xml:lang='en'></span>
       Login
       </a>
   <?php } ?>

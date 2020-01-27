@@ -1,23 +1,25 @@
 <div class="content" id="content">
 	<div class="pres_text" id="index_pres">
-		<h1> Insegui nuove sfide! <i class="fas fa-trophy"></i></i></h1>
+		<h1> Insegui nuove sfide! <span class="fas fa-trophy"></span></h1>
 		<p class="simpleText">
-			<p id="primo"> Benvenuto nel mondo di <span class="magic" xml:lang="en"> Magic: The Gathering </span>, il gioco di carte collezionabili di maggior successo al mondo!
-			<span>Stai per scoprire i motivi che spingono milioni di persone in tutto il pianeta a giocare a Magic: profondità strategica, mondi fantastici, personaggi carismatici e una community globale.</span>
-
-			<h2>Esistono migliaia di carte* tra cui scegliere: da dove iniziare?</h2>
-			<p id="secondo">Ogni giocatore deve possedere un mazzo contenente almeno 60 carte e un intropack è un ottimo modo per procurarsene uno.</p>
-
-			<h2>Cos'è un intropack?</h2>
-			<p id="terzo">Gli intro pack ti forniscono tutto il necessario per iniziare a giocare: un mazzo di 60 carte, pronto per essere usato, pieno di creature, terre e altre magie.
-			<span>Troverai anche due buste da 15 carte che potrai sfruttare per personalizzare il tuo mazzo.</span></p>
-
-			<p id="alt">*In alternativa, puoi sempre registrarti sul sito di <span class="magic" xml:lang="en"> Magic: The Gathering Arena </span> e scaricare una versione digitale del gioco,
-			<span>ottenendo i mazzi di base gratuitamente e lanciandoti in una sfida contro giocatori da tutto il mondo.<span></p>
+			Benvenuto nel mondo di <span class="magic" xml:lang="en"> Magic: The Gathering </span>, il gioco di carte collezionabili di maggior successo al mondo!
+			Stai per scoprire i motivi che spingono milioni di persone in tutto il pianeta a giocare a Magic: profondità strategica, mondi fantastici, personaggi carismatici e una community globale.
 		</p>
+		<h2>Esistono migliaia di carte*: da dove iniziare?</h2>
+		<p class="simpleText">
+			Ogni giocatore deve possedere un mazzo contenente almeno 60 carte e un intropack è un ottimo modo per procurarsene uno.
+		</p>
+		<h2>Cos'è un intropack?</h2>
+		<p class="simpleText">
+			Gli intro pack ti forniscono tutto il necessario per iniziare a giocare: un mazzo di 60 carte, pronto per essere usato, pieno di creature, terre e altre magie.
+		<span>Troverai anche due buste da 15 carte che potrai sfruttare per personalizzare il tuo mazzo.</span>
+		</p>
+		<p class="simpleText" id="alt">*In alternativa, puoi sempre registrarti sul sito di <span class="magic" xml:lang="en"> Magic: The Gathering Arena </span> e scaricare una versione digitale del gioco,
+			<span>ottenendo i mazzi di base gratuitamente e lanciandoti in una sfida contro giocatori da tutto il mondo.</span></p>
 	</div>
 	<div class="box inline_el" id="hot_decks">
 		<h1 id="decks"> Hot Decks </h1>
+		<p class="simpleText">Alcuni esempi di mazzi, per vederne altri visita il nostro Forum!</p>
 		<?php foreach ($deck as $num => $value) { ?>
 			<div class="single_hot_deck">
 				<h2> <?php echo $value["Nome"]; ?> </h2>
